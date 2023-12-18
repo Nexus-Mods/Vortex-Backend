@@ -398,7 +398,7 @@ class Driver {
         }
 
         if (modInfo.status !== 'published') {
-          console.warn(`${entry}: Mod removed`, { status: modInfo.status });
+          console.warn(`${entry}: Mod removed`, { modId: entry, status: modInfo.status });
 
           const existing = this.mState.extensions.find((ext) => ext.modId === entry);
 
