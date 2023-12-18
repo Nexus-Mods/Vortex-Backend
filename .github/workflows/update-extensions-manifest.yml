@@ -49,3 +49,15 @@ jobs:
 
     - name: Run
       run: yarn update-extensions-manifest
+
+    - name: Git commit and push      
+      if: ${{ !env.DRY_RUN }}
+      env: 
+        CI_COMMIT_AUTHOR: Vortex Backend
+        CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
+        CI_COMMIT_MESSAGE: Update Extensions Manifest
+      run: |
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+        git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push

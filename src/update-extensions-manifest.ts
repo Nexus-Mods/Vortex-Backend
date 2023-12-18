@@ -176,6 +176,7 @@ async function start() {
 
     // after processing is complete, only do commits unless DRYRUN is set in env
     
+    /*
     if (!DRYRUN) {
                 
         // push changes?
@@ -192,14 +193,7 @@ async function start() {
         console.log('DRYRUN is true, no changes have been committed.');
         
     };
-
-    
-    // clean up folders but leave archive so we can check
-
-    if (fs.existsSync(GAMES_LOCAL_PATH)){
-        await fs.rm(GAMES_LOCAL_PATH, { recursive: true, force: true });
-    }
-
+  */
     slack.sendInfo('Auto-update of the extensions manifest has finished.');
 }
 
