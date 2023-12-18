@@ -102,7 +102,7 @@ const LIVE_MANIFEST_URL:string = 'https://raw.githubusercontent.com/Nexus-Mods/V
 //const TEMP_FOLDER: string = path.join(__dirname, 'tmp');
 
 // env variables
-const PERSONAL_ACCESS_TOKEN:string = process.env.PERSONAL_ACCESS_TOKEN || '';
+//const PERSONAL_ACCESS_TOKEN:string = process.env.PERSONAL_ACCESS_TOKEN || '';
 const NEXUS_APIKEY:string = process.env.NEXUS_APIKEY || '' ;
 const DRYRUN:boolean = (process.env.DRYRUN === 'true') || false;
 
@@ -137,14 +137,15 @@ async function start() {
         process.exit(1);
     }
     
+    /*
     if (PERSONAL_ACCESS_TOKEN === '') {
         console.error('No PERSONAL_ACCESS_TOKEN found in env');
         process.exit(1);
-    }
+    }*/
 
     const git: SimpleGit = simpleGit().clean(CleanOptions.FORCE);
 
-    const REMOTE_URL: string = `https://${GITHUB_USER}:${PERSONAL_ACCESS_TOKEN}@github.com/${VORTEX_REPO_URL}`;
+    //const REMOTE_URL: string = `https://${GITHUB_USER}:${PERSONAL_ACCESS_TOKEN}@github.com/${VORTEX_REPO_URL}`;
 
     slack.sendInfo('Auto-update of the extensions manifest has started.')  
     
