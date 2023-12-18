@@ -85,7 +85,7 @@ const REPO_ROOT_PATH: string = path.join(__dirname, '/../');
 const PACKAGE_PATH = path.join(REPO_ROOT_PATH, 'package.json');
 
 //const ANNOUNCEMENTS_BRANCH_NAME: string = 'announcements';
-const MANIFEST_PATH: string = path.join(REPO_ROOT_PATH);
+const MANIFEST_PATH: string = path.join(REPO_ROOT_PATH, 'out');
 const MANIFEST_ARCHIVE_PATH: string = path.join(REPO_ROOT_PATH, 'archive');
 
 const GAMES_REPO_NAME: string = 'vortex-games';
@@ -199,7 +199,7 @@ async function start() {
         await fs.rm(GAMES_LOCAL_PATH, { recursive: true, force: true });
     }
 
-    slack.sendInfo('Manifest has been updated.');
+    slack.sendInfo('Auto-update of the extensions manifest has finished.');
 }
 
 
