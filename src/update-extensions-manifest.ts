@@ -7,7 +7,9 @@ import * as semver from 'semver';
 import { CleanOptions, GitError, SimpleGit, simpleGit } from 'simple-git';
 import { exit } from "process";
 import 'dotenv/config';
-import { SlackClient } from './slack';
+import SlackClient from './SlackClient';
+import { parseMillisecondsIntoReadableTime } from './utils';
+import Stopwatch from '@tsdotnet/stopwatch';
 
 //import zip from 'node-7z';
 //import decompress from 'decompress';
@@ -16,12 +18,14 @@ import { SlackClient } from './slack';
 const DOWNLOAD_STATS_URL = 'https://staticstats.nexusmods.com/live_download_counts/mods/2295.csv';
 const ONE_DAY = 1000 * 60 * 60 * 24;
 
+const SLACK_CHANNEL = 'C06B8H5TGGG'; // actual channel id C05009EK5R6
+
 const GAME_ICON = ':joystick:';
 const THEME_ICON = ':art:';
 const TRANSLATION_ICON = ':earth_africa:';
 const UNKNOWN_ICON = ':question:';
 
-const slack = new SlackClient();
+const slack = new SlackClient(SLACK_CHANNEL);
 
 //type Versions = '1_1' | '1_2' | '1_3' | '1_4' | '1_8';
 type DownloadStats = { [modId: string]: { unique: number, total: number } };
@@ -88,6 +92,8 @@ const GAMES_REPO_NAME: string = 'vortex-games';
 const GAMES_BRANCH_NAME: string = 'release';
 const GAMES_REPO_URL: string = `https://github.com/Nexus-Mods/${GAMES_REPO_NAME}.git`;
 const GAMES_LOCAL_PATH: string = path.join(REPO_ROOT_PATH, 'cloned', GAMES_REPO_NAME);
+
+const LIVE_MANIFEST_URL:string = 'https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/extensions-manifest.json';
 
 //const VORTEX_REPO_NAME: string = 'vortex';
 //const VORTEX_LOCAL_PATH: string = path.join(__dirname, VORTEX_REPO_NAME);
@@ -310,7 +316,7 @@ class Driver {
     const now = Date.now();
 
     //console.log(this.mConfig);
-    console.log(this.mState);
+    //console.log(this.mState);
     console.log('Start processing');
     console.log(`Last updated: ${new Date(this.mState.last_updated).toString()}`);
 
@@ -344,6 +350,8 @@ class Driver {
     //console.log(downloadStats);
 
     console.log('Processing NexusMods...');
+    
+    const stopwatch = Stopwatch.startNew();
 
     const nexus = await Nexus.create(this.nexusApiKey, 'update-extensions-manifest', packageJson.version, 'site');
     console.log(nexus.getRateLimits());
@@ -602,41 +610,7 @@ class Driver {
 
     // all mods have been processed
 
-    // process updated extensions and prep for slack
-    if (updatedExtensions.length !== 0) {
-      let s = ['Updated extensions:'];
-
-      s = s.concat(
-        updatedExtensions.map((ext) => {
-          return `- [${ext.type}] <https://www.nexusmods.com/site/mods/${ext.modId}|${ext.name}>  (${ext.version})`;
-        })
-      );
-
-      console.log(s);
-
-      slack.sendInfo(s.join('\n'));
-
-    } else {
-      console.log('No extensions have had files updated.');
-    }
-
-    // process updated extensions and prep for slack
-    if (addedExtensions.length !== 0) {
-      let s = ["These have been added to the site but won't be automatically added to the manifest.", 'Added extensions:'];
-
-      s = s.concat(
-        addedExtensions.map((ext) => {
-          return `- [${categories[ext.category_id]}] <https://www.nexusmods.com/site/mods/${ext.mod_id}|${ext.name}>  (${ext.version})`;
-        })
-      );
-
-      console.log(s);
-
-    slack.sendInfo(s.join('\n'));
-
-    } else {
-      console.log('No extensions have been added.');
-    }
+    sendSlackSummary(addedExtensions, updatedExtensions, stopwatch.elapsedMilliseconds);    
 
     console.log('processNexusMods done');
   }
@@ -736,13 +710,13 @@ class Driver {
     }
     //const updates = await nexus.getRecentlyUpdatedMods(range);
     const updatesJson = JSON.stringify(updates, undefined, 2);
-    fs.writeFileSync('updated.json', updatesJson, 'utf8');
+    //fs.writeFileSync('updated.json', updatesJson, 'utf8');
     console.log('updatesJson', updatesJson);
 
     // filtering down by anything that is newer than our last update
     const filtered = updates.filter((entry) => entry.latest_file_update > timestamp / 1000 || entry.latest_mod_activity > timestamp / 1000);
 
-    console.log('filtered', { filtered });
+    console.log('filtered', filtered);
 
     return filtered;
   }
@@ -774,6 +748,132 @@ class Driver {
 
     return result;
   }
+}
+
+function getEmojiStringFromExtensionType(extensionType: ExtensionType | undefined): string {
+
+  if(extensionType === undefined) return UNKNOWN_ICON;
+  
+  switch (extensionType) {
+    case 'game':
+      return GAME_ICON;
+    case 'theme':
+      return THEME_ICON;
+    case 'translation':
+      return TRANSLATION_ICON;
+    default:
+      return UNKNOWN_ICON;
+  }
+}
+
+
+function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvailableExtension[], duration: number) {
+
+  let added: string[] = [];
+  let updated: string[] = [];
+
+  // process added extensions and prepare for slack
+  if (addedExtensions.length !== 0) {
+    added = addedExtensions.map((mod) => {
+        return `${getEmojiStringFromExtensionType(categories[mod.category_id])}] <https://www.nexusmods.com/site/mods/${mod.mod_id}|${mod.name}> - ${mod.version}`;
+      });
+  } else {
+    console.log('No extensions have been added.');
+  }
+
+  // process updated extensions and prepare for slack
+  if (updatedExtensions.length !== 0) {
+
+    updated = updatedExtensions.map((ext) => {
+      return `${getEmojiStringFromExtensionType(ext.type)} <https://www.nexusmods.com/site/mods/${ext.modId}|${ext.name}> - ${ext.version}`;
+    });
+
+  } else {
+    console.log('No extensions have had files updated.');
+  }
+
+  // build slack blocks for message
+
+  const headerBlock: any[] = [
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: `<${LIVE_MANIFEST_URL}|Extensions manifest file> has been updated`,
+      },
+    },
+  ];
+
+  const noExtensionChanges: any[] = [
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: 'No extensions have been added or updated',
+      },
+    },
+  ]
+
+  const addedExtensionsBlock: any[] = [
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: '*Added extensions:*',
+      },
+    },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: added.join('\n'),
+      },
+    }
+  ];
+
+  const updatedExtensionsBlock: any[] = [
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: '*Updated extensions:*',
+      },
+    },
+    {
+      type: 'section',
+      text: {
+        type: 'mrkdwn',
+        text: updated.join('\n'),
+      },
+    }
+  ];
+
+  const footerBlock: any[] = [
+    {
+      type: 'context',
+      elements: [
+        {
+          type: 'mrkdwn',
+          text: `Completed in ${parseMillisecondsIntoReadableTime(duration)}`,
+        },
+      ],
+    }
+  ];
+
+  let blocks = [...headerBlock];
+
+  if (addedExtensions.length > 0) 
+  blocks = blocks.concat(addedExtensionsBlock);
+
+  if (updatedExtensions.length > 0) 
+  blocks = blocks.concat(updatedExtensionsBlock);
+
+  if (addedExtensions.length === 0 && updatedExtensions.length === 0) 
+  blocks = blocks.concat(noExtensionChanges);
+
+  blocks = blocks.concat(footerBlock);
+
+  slack.sendMessage('summary', blocks);
 }
 
 start();

@@ -1,8 +1,9 @@
 import * as Slack from '@slack/bolt';
 import 'dotenv/config';
 import { ExtensionType } from './types';
-import { SlackClient } from './slack';
+import SlackClient from './SlackClient';
 import Stopwatch from "@tsdotnet/stopwatch";
+import { parseMillisecondsIntoReadableTime } from './utils';
 
 const SLACK_CHANNEL = 'C06B8H5TGGG'; // actual channel id C05009EK5R6
 
@@ -11,13 +12,7 @@ const THEME_ICON = ':art:';
 const TRANSLATION_ICON = ':earth_africa:';
 const UNKNOWN_ICON = ':question:';
 
-// env variables
-const PERSONAL_ACCESS_TOKEN = process.env.PERSONAL_ACCESS_TOKEN || '';
-const NEXUS_APIKEY = process.env.NEXUS_APIKEY || '';
-const SLACK_SIGNING_SECRET = process.env.SLACK_SIGNING_SECRET || '';
-const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN || '';
-
-const slack = new SlackClient();
+const slack = new SlackClient(SLACK_CHANNEL);
 
 const stopwatch = Stopwatch.startNew();
 
@@ -118,26 +113,6 @@ function buildSlackBlocks(addedExtensions: string[], updatedExtensions: string[]
   blocks = blocks.concat(footerBlock);
 
   return blocks;
-}
-
-function parseMillisecondsIntoReadableTime(duration:number){
-  //Get hours from milliseconds
-  var hours = duration / (1000*60*60);
-  var absoluteHours = Math.floor(hours);
-  var h = absoluteHours > 9 ? absoluteHours : '0' + absoluteHours;
-
-  //Get remainder from hours and convert to minutes
-  var minutes = (hours - absoluteHours) * 60;
-  var absoluteMinutes = Math.floor(minutes);
-  var m = absoluteMinutes > 9 ? absoluteMinutes : '0' +  absoluteMinutes;
-
-  //Get remainder from minutes and convert to seconds
-  var seconds = (minutes - absoluteMinutes) * 60;
-  var absoluteSeconds = Math.floor(seconds);
-  var s = absoluteSeconds > 9 ? absoluteSeconds : '0' + absoluteSeconds;
-
-
-  return h + ':' + m + ':' + s;
 }
 
 postMessage();
