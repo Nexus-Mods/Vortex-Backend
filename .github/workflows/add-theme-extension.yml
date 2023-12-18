@@ -1,0 +1,48 @@
+# This is a basic workflow that is manually triggered
+
+name: Add Theme Extension
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      modid:
+        description: 'Extension modid to add i.e. 598'
+        default: ''
+        required: true
+        type: string
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job
+  Add-Extension:  
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest  
+    
+    env:
+      PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      NEXUS_APIKEY: ${{ secrets.NEXUS_APIKEY }}
+      EXT_TYPE: 'Theme'
+      EXT_MODID: ${{ inputs.modid }}
+      EXT_GAMEDOMAIN: ''
+      EXT_LANGUAGE_CODE: ''   
+      
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: "recursive"
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+        cache: "yarn"
+
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - name: Run
+      run: npm run start

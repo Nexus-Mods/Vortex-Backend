@@ -1,0 +1,9 @@
+lib
+node_modules
+config.json
+updated.json
+yarn-error.log
+announcements
+vortex-games
+vortex
+.env

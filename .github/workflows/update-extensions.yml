@@ -1,0 +1,42 @@
+# This is a basic workflow that is manually triggered
+
+name: Update Extensions Manifest
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '45 8 * * *'
+    
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job
+  Update-Extensions:  
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest  
+    
+    env:
+      PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      NEXUS_APIKEY: ${{ secrets.NEXUS_APIKEY }}
+      SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET }}
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: "recursive"
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+        cache: "yarn"
+
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - name: Run
+      run: yarn update-extensions
