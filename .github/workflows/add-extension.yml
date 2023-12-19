@@ -15,7 +15,7 @@ on:
         type: string
       type:
         type: choice
-        description: Who to greet
+        description: Type of extension to add
         required: true
         default: 'game'
         options: 
