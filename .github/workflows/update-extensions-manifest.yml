@@ -51,7 +51,7 @@ jobs:
       run: yarn update-extensions-manifest
 
     - name: Git commit and push      
-      if: ${{ !env.DRY_RUN }}
+      if: ${{ env.DRY_RUN == false }}
       env: 
         CI_COMMIT_AUTHOR: Vortex Backend
         CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
