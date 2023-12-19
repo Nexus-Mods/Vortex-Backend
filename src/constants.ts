@@ -1,7 +1,7 @@
 import { ExtensionType } from './types';
 
 // static urls
-export const LIVE_MANIFEST_URL:string = 'https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/extensions-manifest.json';
+export const LIVE_MANIFEST_URL:string = 'https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/extensions-manifest.json';
 export const DOWNLOAD_STATS_URL = 'https://staticstats.nexusmods.com/live_download_counts/mods/2295.csv';
 
 // emojis for slack messages
