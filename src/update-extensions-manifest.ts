@@ -1,5 +1,5 @@
 import { parse } from "csv-parse";
-import { ExtensionType, IAvailableExtension, IExtensionManifest } from "./types";
+import { DownloadStats, ExtensionType, IAvailableExtension, IExtensionManifest, IExtraInfo, ModDownloadStats, Rejected } from "./types";
 import * as fs from 'fs-extra';
 import * as path from 'path';
 import Nexus, { IUpdateEntry, IModInfo, IFileInfo } from '@nexusmods/nexus-api';
@@ -8,80 +8,13 @@ import { CleanOptions, GitError, SimpleGit, simpleGit } from 'simple-git';
 import { exit } from "process";
 import 'dotenv/config';
 import SlackClient from './SlackClient';
-import { parseMillisecondsIntoReadableTime } from './utils';
+import { getEmojiStringFromExtensionType, getFormattedDate, parseMillisecondsIntoReadableTime } from './utils';
 import Stopwatch from '@tsdotnet/stopwatch';
+import { DOWNLOAD_STATS_URL, GAME_EXCLUSIONLIST, HTML_REGEX, LIVE_MANIFEST_URL, MANIFEST_FILENAME, ONE_DAY, SLACK_CHANNEL, VERSION_MATCH_REGEX, CATEGORIES, htmlMap } from './constants';
 
-//import zip from 'node-7z';
-//import decompress from 'decompress';
 
-//export const MANIFEST_FOLDER = '.';
-const DOWNLOAD_STATS_URL = 'https://staticstats.nexusmods.com/live_download_counts/mods/2295.csv';
-const ONE_DAY = 1000 * 60 * 60 * 24;
-
-const SLACK_CHANNEL = 'C06B8H5TGGG'; // actual channel id C05009EK5R6
-
-const GAME_ICON = ':joystick:';
-const THEME_ICON = ':art:';
-const TRANSLATION_ICON = ':earth_africa:';
-const UNKNOWN_ICON = ':question:';
-
-const slack = new SlackClient(SLACK_CHANNEL);
-
-//type Versions = '1_1' | '1_2' | '1_3' | '1_4' | '1_8';
-type DownloadStats = { [modId: string]: { unique: number, total: number } };
-
-type ModDownloadStats = {
-    modId: string;
-    total: number;
-    unique: number;
-};
-
-/*
-type GitSubmoduleInfo = {
-    branch: string;
-    path: string;
-    url: string;
-}
-
-interface IConfirmResult {
-    type: ExtensionType;
-    extraInfo: IExtraInfo;
-}*/
-
-const categories: { [id: number]: ExtensionType } = {
-    4: 'game',
-    7: 'translation',
-    13: 'theme'
-}
-
-const formatVersionMax: { [version: string]: string } = {
-    '1_3': '1_3',
-    '1_4': '1_7',
-    '1_8': '1_8'
-};
-
-const HTML_REGEX = new RegExp('&[lg]t;', 'g');
-const VERSION_MATCH_REGEX = new RegExp('^requires vortex ([><=-^~0-9\. ]*[0-9])', 'i');
-const htmlMap: { [entity: string]: string } = {
-    '&gt;': '>',
-    '&lt;': '<',
-};
-
-const GAME_EXCLUSIONLIST = [
-    'game-subnautica',
-    'game-subnauticabelowzero',
-];
-
-// const LATEST_VERSION = '1_8';
-//const SUPPORTED_VERSIONS: Versions[] = ['1_4', '1_8']; // only supporting file versions 1_4 and 1_8
-
-const GITHUB_USER = 'insomnious'
-const VORTEX_REPO_URL: string = 'Nexus-Mods/Vortex.git';
-
-const MANIFEST_FILENAME = 'extensions-manifest.json';
 
 const REPO_ROOT_PATH: string = path.join(__dirname, '/../');
-
 const PACKAGE_PATH = path.join(REPO_ROOT_PATH, 'package.json');
 
 //const ANNOUNCEMENTS_BRANCH_NAME: string = 'announcements';
@@ -93,40 +26,11 @@ const GAMES_BRANCH_NAME: string = 'release';
 const GAMES_REPO_URL: string = `https://github.com/Nexus-Mods/${GAMES_REPO_NAME}.git`;
 const GAMES_LOCAL_PATH: string = path.join(REPO_ROOT_PATH, 'cloned', GAMES_REPO_NAME);
 
-const LIVE_MANIFEST_URL:string = 'https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/extensions-manifest.json';
-
-//const VORTEX_REPO_NAME: string = 'vortex';
-//const VORTEX_LOCAL_PATH: string = path.join(__dirname, VORTEX_REPO_NAME);
-//const VORTEX_REPO_URL: string = `https://github.com/Nexus-Mods/${VORTEX_REPO_NAME}.git`;
-
-//const TEMP_FOLDER: string = path.join(__dirname, 'tmp');
-
 // env variables
-//const PERSONAL_ACCESS_TOKEN:string = process.env.PERSONAL_ACCESS_TOKEN || '';
 const NEXUS_APIKEY:string = process.env.NEXUS_APIKEY || '' ;
-const DRYRUN:boolean = (process.env.DRYRUN === 'true') || false;
+//const DRYRUN:boolean = (process.env.DRYRUN === 'true') || false;
 
-console.log(DRYRUN);
-
-/**
- * Extra info we need that isn't store in the mod's nexus metadata. Previously manually added in the electron app when a new extension was created.
- * gameName is a human readable name that links the extension to the game it is managing so we can display in Vortex's games page.
- * language is a country code i.e. 'en-US' or 'de' to specify the translation language
- */
-export interface IExtraInfo {
-    language?: string;
-    gameName?: string;
-}
-
-export class Rejected extends Error {
-    constructor() {
-        super('Update rejected');
-        Error.captureStackTrace(this, this.constructor);
-
-        this.name = this.constructor.name;
-    }
-}
-
+const slack = new SlackClient(SLACK_CHANNEL);
 
 async function start() {
 
@@ -136,29 +40,17 @@ async function start() {
         console.error('No NEXUS_APIKEY found in env');
         process.exit(1);
     }
-    
-    /*
-    if (PERSONAL_ACCESS_TOKEN === '') {
-        console.error('No PERSONAL_ACCESS_TOKEN found in env');
-        process.exit(1);
-    }*/
 
     const git: SimpleGit = simpleGit().clean(CleanOptions.FORCE);
-
-    //const REMOTE_URL: string = `https://${GITHUB_USER}:${PERSONAL_ACCESS_TOKEN}@github.com/${VORTEX_REPO_URL}`;
 
     slack.sendInfo('Auto-update of the extensions manifest has started.')  
     
     console.log('MANIFEST_PATH', MANIFEST_PATH);
 
-    // vortex-games repo for bundled game extensions
-
+    // clone vortex-games repo for bundled game extensions
     try {
-
         await git.clone(GAMES_REPO_URL, GAMES_LOCAL_PATH, ['--single-branch', '--branch', GAMES_BRANCH_NAME]);
         console.log(`git cloned ${GAMES_REPO_URL}#${GAMES_BRANCH_NAME} to ${GAMES_LOCAL_PATH}`);
-
-
 
     } catch (err: any) {
         if (err.message.includes('already exists')) {
@@ -173,47 +65,9 @@ async function start() {
 
     const driver = new Driver(NEXUS_APIKEY);
     await driver.process();
-
-    // after processing is complete, only do commits unless DRYRUN is set in env
-    
-    /*
-    if (!DRYRUN) {
-                
-        // push changes?
-        try {
-            await simpleGit(MANIFEST_PATH).add('.');
-            await simpleGit(MANIFEST_PATH).commit('auto update extensions');
-            await simpleGit(MANIFEST_PATH).push();
-            console.log('git added, commited and pushed from ' + MANIFEST_PATH);
-        } catch (err: any) {
-            console.error(err.message)
-            slack.sendError(err.message);
-        }
-    } else {
-        console.log('DRYRUN is true, no changes have been committed.');
-        
-    };
-  */
-    slack.sendInfo('Auto-update of the extensions manifest has finished.');
 }
 
 
-/**
- * Takes a date and returns it in YYYYMMDD_HHMM format
- * @param input date that needs formatting
- * @returns string formatted date
- */
-function getFormattedDate(date: Date): string {
-
-    const year = date.getFullYear();
-    const month = ('0' + (date.getMonth() + 1)).slice(-2);
-    const day = ('0' + date.getDate()).slice(-2);
-
-    const hours = ('0' + date.getHours()).slice(-2);
-    const minutes = ('0' + date.getMinutes()).slice(-2);
-
-    return `${year}${month}${day}_${hours}${minutes}`;
-}
 
 
 function dependenciesFromDescription(existing: { [key: string]: string }, description: string) {
@@ -273,19 +127,19 @@ async function csvParseAsync(input: string): Promise<Array<ModDownloadStats>> {
 
 
 class Driver {
-  private mState: IExtensionManifest;
+  private manifest: IExtensionManifest;
   private nexusApiKey: string;
   private mPackage: any;
 
   constructor(nexusApiKey: string) {
-    this.mState = {
+
+    this.manifest = {
       last_updated: 0,
       extensions: [],
     };
+
     this.mPackage = JSON.parse(fs.readFileSync(PACKAGE_PATH, 'utf8'));
     this.nexusApiKey = nexusApiKey;
-    //this.mConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), "utf8"));
-    //console.log(this.mPackage);
   }
 
   private async readManifestFile(): Promise<IExtensionManifest> {
@@ -302,18 +156,17 @@ class Driver {
     // write an archive file too?
     await fs.writeFile(path.join(MANIFEST_ARCHIVE_PATH, `${getFormattedDate(new Date())}_${MANIFEST_FILENAME}`), JSON.stringify(data, undefined, 2), 'utf-8');
 
+    // write the main file
     await fs.writeFile(path.join(MANIFEST_PATH, MANIFEST_FILENAME), JSON.stringify(data, undefined, 2), 'utf-8');
   }
 
   public async process() {
 
-    this.mState = await this.readManifestFile();
+    this.manifest = await this.readManifestFile();
     const now = Date.now();
 
-    //console.log(this.mConfig);
-    //console.log(this.mState);
     console.log('Start processing');
-    console.log(`Last updated: ${new Date(this.mState.last_updated).toString()}`);
+    console.log(`Last updated: ${new Date(this.manifest.last_updated).toString()}`);
 
     // get updates and new additions from the site
     await this.processNexusMods(this.mPackage);
@@ -321,46 +174,35 @@ class Driver {
     // get updated info from the vortex-games repo
     await this.processGames();
 
+    // update last updated timestamp
+    this.manifest.last_updated = now;
+
     console.log('Finished processing');
 
-    // update last updated timestamp
-    this.mState.last_updated = now;
-
-    await this.save();
+    // write the modified manifest object back to file
+    await this.writeManifestFile(this.manifest);
   }
 
-  public async save() {
-    await this.writeManifestFile(this.mState);
-  }
 
   public async processNexusMods(packageJson: any) {
-    /*
-        if (this.mConfig.apiKey === undefined) {
-            console.error('No API key set in config.json');
-            return;
-        }*/
-
-    // NOTE: don't think we need this as download stats are in the API response
-    //const downloadStats = await fetchDownloadStats();
-    //console.log(downloadStats);
-
+    
     console.log('Processing NexusMods...');
     
     const stopwatch = Stopwatch.startNew();
 
-    const nexus = await Nexus.create(this.nexusApiKey, 'update-extensions-manifest', packageJson.version, 'site');
+    const nexus = await Nexus.create(this.nexusApiKey, 'update-extensions-manifest-action', packageJson.version, 'site');
     console.log(nexus.getRateLimits());
 
     // get all updates from the site since we last updated, as recorded in the latest version extensions file i.e. extensions_1_8.json
     // we end up with an array of mod ids that have been updated
-    const lastUpdate = parseInt(process.env.UPDATE_CHECK_SINCE ?? this.mState.last_updated.toString(), 10);
+    const lastUpdate = parseInt(process.env.UPDATE_CHECK_SINCE ?? this.manifest.last_updated.toString(), 10);
 
     let updates: number[] = (await this.getUpdatesSince(nexus, lastUpdate)).map((entry) => entry.mod_id);
 
     //console.log(updates);
 
     // get modids array of all mods that are currently in all manifests
-    let knownMods: number[] = this.mState.extensions.filter((extension) => extension.modId !== undefined).map((extension) => extension.modId as number);
+    let knownMods: number[] = this.manifest.extensions.filter((extension) => extension.modId !== undefined).map((extension) => extension.modId as number);
 
     //console.log('knownMods', knownMods);
 
@@ -394,19 +236,19 @@ class Driver {
         if (modInfo.status !== 'published') {
           console.warn(`${entry}: Mod removed`, { modId: entry, status: modInfo.status });
 
-          const existing = this.mState.extensions.find((ext) => ext.modId === entry);
+          const existing = this.manifest.extensions.find((ext) => ext.modId === entry);
 
           if (existing !== undefined) {
             this.removeNexusMod(existing);
             //console.log('after removeNexusMod()', existing);
           }
 
-          Object.keys(this.mState).map((version) => {});
+          Object.keys(this.manifest).map((version) => {});
 
           return Promise.resolve();
         }
 
-        const category: ExtensionType = categories[modInfo.category_id];
+        const category: ExtensionType = CATEGORIES[modInfo.category_id];
         if (category === undefined) {
           // not in a category for Vortex extensions
           console.log(`${entry}: Not a game/theme/translation`, { category_id: modInfo.category_id });
@@ -421,7 +263,7 @@ class Driver {
         //const version = LATEST_VERSION;
 
         // get existing extension data for this file version
-        const existing = this.mState.extensions.find((ext) => ext.modId === entry);
+        const existing = this.manifest.extensions.find((ext) => ext.modId === entry);
 
         const refVersionLow = '1.8.0';
         const refVersionHigh = '1.8.999';
@@ -540,7 +382,7 @@ class Driver {
                * theme will contain scss files etc. game should contain more meta. translation diff folders.
                */
 
-              const extensionType: ExtensionType = categories[modInfo.category_id];
+              const extensionType: ExtensionType = CATEGORIES[modInfo.category_id];
 
               addedExtensions.push(modInfo);
 
@@ -587,7 +429,7 @@ class Driver {
             if (existing !== undefined) {
               existing.fileId = latestFile.file_id;
             } else {
-              this.mState.extensions.push({ modId: entry, fileId: latestFile.file_id });
+              this.manifest.extensions.push({ modId: entry, fileId: latestFile.file_id });
             }
             console.log(`${entry}: Rejected`, { modId: entry, fileId: latestFile.file_id });
           } else {
@@ -623,7 +465,7 @@ class Driver {
       gameList.map(async (gameId) => {
         const info = JSON.parse(await fs.readFile(path.join(GAMES_LOCAL_PATH, gameId, 'info.json'), 'utf8'));
 
-        let existing = this.mState.extensions.find((ext) => ext.modId === undefined && ext.id === (info.id || gameId));
+        let existing = this.manifest.extensions.find((ext) => ext.modId === undefined && ext.id === (info.id || gameId));
 
         if (existing === undefined) {
           existing = {
@@ -633,7 +475,7 @@ class Driver {
             github: 'Nexus-Mods/vortex-games',
             githubRawPath: gameId,
           };
-          this.mState.extensions.push(existing);
+          this.manifest.extensions.push(existing);
         }
         existing.id = info.id || gameId;
 
@@ -745,21 +587,7 @@ class Driver {
   }
 }
 
-function getEmojiStringFromExtensionType(extensionType: ExtensionType | undefined): string {
 
-  if(extensionType === undefined) return UNKNOWN_ICON;
-  
-  switch (extensionType) {
-    case 'game':
-      return GAME_ICON;
-    case 'theme':
-      return THEME_ICON;
-    case 'translation':
-      return TRANSLATION_ICON;
-    default:
-      return UNKNOWN_ICON;
-  }
-}
 
 
 function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvailableExtension[], duration: number) {
@@ -770,7 +598,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
   // process added extensions and prepare for slack
   if (addedExtensions.length !== 0) {
     added = addedExtensions.map((mod) => {
-        return `${getEmojiStringFromExtensionType(categories[mod.category_id])}] <https://www.nexusmods.com/site/mods/${mod.mod_id}|${mod.name}> - ${mod.version}`;
+        return `${getEmojiStringFromExtensionType(CATEGORIES[mod.category_id])}] <https://www.nexusmods.com/site/mods/${mod.mod_id}|${mod.name}> - ${mod.version}`;
       });
   } else {
     console.log('No extensions have been added.');

@@ -88,6 +88,7 @@
   "scripts": {
     "dev": "ts-node-dev --exit-child src/index.ts",
     "update-extensions-manifest": "ts-node src/update-extensions-manifest.ts",
+    "add-extension": "ts-node src/add-extension.ts",
     "test-slack": "ts-node src/test-slack.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

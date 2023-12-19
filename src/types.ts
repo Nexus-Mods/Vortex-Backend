@@ -1,4 +1,4 @@
-export type ExtensionType = 'game' | 'translation' | 'theme';
+export type ExtensionType = 'game' | 'translation' | 'theme' | null;
 
 export interface IExtensionDownloadInfo {
   name?: string;
@@ -93,3 +93,30 @@ export interface IGitHubRelease {
   url: string;
   zipball_url: string;
 }
+
+/**
+ * Extra info we need that isn't store in the mod's nexus metadata. Previously manually added in the electron app when a new extension was created.
+ * gameName is a human readable name that links the extension to the game it is managing so we can display in Vortex's games page.
+ * language is a country code i.e. 'en-US' or 'de' to specify the translation language
+ */
+export interface IExtraInfo {
+  language?: string;
+  gameName?: string;
+}
+
+export class Rejected extends Error {
+  constructor() {
+      super('Update rejected');
+      Error.captureStackTrace(this, this.constructor);
+
+      this.name = this.constructor.name;
+  }
+}
+
+export type DownloadStats = { [modId: string]: { unique: number, total: number } };
+
+export type ModDownloadStats = {
+    modId: string;
+    total: number;
+    unique: number;
+};
