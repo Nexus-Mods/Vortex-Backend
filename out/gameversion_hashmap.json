@@ -1,0 +1,339 @@
+{
+  "skyrimse": {
+    "a9d8e847c864391f43093f4d1ce18fdd": {
+      "files": [
+        "appxmanifest.xml",
+        "Data\\Skyrim.esm",
+        "Data\\Update.esm"
+      ],
+      "hashValue": "a9d8e847c864391f43093f4d1ce18fdd",
+      "userFacingVersion": "1.6.355.0",
+      "variant": "xbox"
+    }
+  },
+  "fallout4": {
+    "7d50e9724d712e657dc3467f42ce9359": {
+      "files": [
+        "appxmanifest.xml",
+        "Data\\Fallout4.esm"
+      ],
+      "hashValue": "7d50e9724d712e657dc3467f42ce9359",
+      "userFacingVersion": "1.34",
+      "variant": "xbox"
+    }
+  },
+  "falloutnv": {
+    "38a0935f8c9906670ffdc2753ab192ff": {
+      "files": [
+        "Data\\Update.bsa",
+        "Data\\FalloutNV.esm"
+      ],
+      "hashValue": "38a0935f8c9906670ffdc2753ab192ff",
+      "userFacingVersion": "1.4.0.525",
+      "variant": "xbox(english)"
+    },
+    "ceb14f9c7d5398a6c1e9049e404db0ff": {
+      "files": [
+        "Data\\Update.bsa",
+        "Data\\FalloutNV.esm"
+      ],
+      "hashValue": "ceb14f9c7d5398a6c1e9049e404db0ff",
+      "userFacingVersion": "1.4.0.525",
+      "variant": "steam(TTW)"
+    }
+  },
+  "fallout3": {
+    "e112f056ef9f381fe9e0a3319aa0695c": {
+      "files": [
+        "Data\\Fallout3.esm"
+      ],
+      "hashValue": "e112f056ef9f381fe9e0a3319aa0695c",
+      "userFacingVersion": "1.7.0.4",
+      "variant": "xbox(english)"
+    }
+  },
+  "dawnofman": {
+    "b8ae744cc567951ffb96e8232103cd16": {
+      "files": [
+        "DawnOfMan_Data\\Managed\\Assembly-CSharp.dll"
+      ],
+      "hashValue": "b8ae744cc567951ffb96e8232103cd16",
+      "userFacingVersion": "1.7.2",
+      "variant": "steam"
+    }
+  },
+  "oblivion": {
+    "c3fef8cd8c0028a04c885cf476f8646b": {
+      "files": [
+        "Data\\Oblivion.esm"
+      ],
+      "hashValue": "c3fef8cd8c0028a04c885cf476f8646b",
+      "userFacingVersion": "1.2.0416",
+      "variant": "xbox(english)"
+    }
+  },
+  "witcher3": {
+    "2de6b186a6899433ffae64bad5f4c99a": {
+      "files": [
+        "bin\\x64\\witcher3.exe"
+      ],
+      "hashValue": "2de6b186a6899433ffae64bad5f4c99a",
+      "userFacingVersion": "1.32",
+      "variant": "gog(unpatched)"
+    },
+    "5a695851376f24b32355c9dc3a7d78a6": {
+      "files": [
+        "bin\\x64\\witcher3.exe"
+      ],
+      "hashValue": "5a695851376f24b32355c9dc3a7d78a6",
+      "userFacingVersion": "1.32",
+      "variant": "gog(patched)"
+    },
+    "cd529b38887db597f1e02bacd8b51a63": {
+      "files": [
+        "bin\\x64\\witcher3.exe"
+      ],
+      "hashValue": "cd529b38887db597f1e02bacd8b51a63",
+      "userFacingVersion": "1.32"
+    },
+    "56167fa56a842993a44e00f4d6371961": {
+      "files": [
+        "bin\\x64\\witcher3.exe"
+      ],
+      "hashValue": "56167fa56a842993a44e00f4d6371961",
+      "userFacingVersion": "4.0.0"
+    },
+    "f3e365f16da4a690ed965e83f7e50a19": {
+      "files": [
+        "bin\\x64\\witcher3.exe"
+      ],
+      "hashValue": "f3e365f16da4a690ed965e83f7e50a19",
+      "userFacingVersion": "4.0.0",
+      "variant": "gog"
+    },
+    "37816acf135ffec141865148f68b7faa": {
+      "files": [
+        "bin\\x64\\witcher3.exe"
+      ],
+      "hashValue": "37816acf135ffec141865148f68b7faa",
+      "userFacingVersion": "4.0.0",
+      "variant": "steam"
+    }
+  },
+  "7daystodie": {
+    "41760b8b303d36ea3796c5d4f9003d71": {
+      "files": [
+        "7DaysToDie_Data\\Managed\\Assembly-CSharp.dll"
+      ],
+      "hashValue": "41760b8b303d36ea3796c5d4f9003d71",
+      "userFacingVersion": "Alpha 20.4 B42",
+      "variant": "steam"
+    },
+    "c3c6028c6aff2178364c47342b23e6c6": {
+      "files": [
+        "7DaysToDie_Data\\Managed\\Assembly-CSharp.dll"
+      ],
+      "hashValue": "c3c6028c6aff2178364c47342b23e6c6",
+      "userFacingVersion": "Alpha 20.6 B9",
+      "variant": "Steam"
+    }
+  },
+  "darkestdungeon": {
+    "8a1800dfb17e90febad6c0e038fb5328": {
+      "files": [
+        "_windowsnosteam\\Darkest.exe"
+      ],
+      "hashValue": "8a1800dfb17e90febad6c0e038fb5328",
+      "userFacingVersion": "24839",
+      "variant": "steam"
+    }
+  },
+  "residentevil22019": {
+    "bf7b878882d93bd78f0c9ca8ea7291cf": {
+      "files": [
+        "re2.exe"
+      ],
+      "hashValue": "bf7b878882d93bd78f0c9ca8ea7291cf",
+      "userFacingVersion": "1.07",
+      "variant": "steam"
+    }
+  },
+  "grimdawn": {
+    "dfc8e6a9772239e8d1e53a92c181784a": {
+      "files": [
+        "Grim Dawn.exe",
+        "Game.dll"
+      ],
+      "hashValue": "dfc8e6a9772239e8d1e53a92c181784a",
+      "userFacingVersion": "1.1.9.2",
+      "variant": "steam"
+    }
+  },
+  "kerbalspaceprogram": {
+    "77b2b337cac5cd0f9636abcaf3d376eb": {
+      "files": [
+        "KSP_x64_Data\\Managed\\Assembly-CSharp.dll"
+      ],
+      "hashValue": "77b2b337cac5cd0f9636abcaf3d376eb",
+      "userFacingVersion": "1.12.3",
+      "variant": "steam"
+    }
+  },
+  "survivingmars": {
+    "af127454926a8da2618cf5950f9d1b35": {
+      "files": [
+        "MarsSteam.exe",
+        "pops_api.dll",
+        "steam_api64.dll"
+      ],
+      "hashValue": "af127454926a8da2618cf5950f9d1b35",
+      "userFacingVersion": "1010838",
+      "variant": "steam"
+    },
+    "0728b345bea16e474886c7c1d4940345": {
+      "files": [
+        "Galaxy64.dll",
+        "Launch Surviving Mars.lnk",
+        "MarsGOG.exe",
+        "gog.ico",
+        "goggame-1641787812.hashdb",
+        "goggame-1641787812.info",
+        "goggame-1683782840.hashdb",
+        "goggame-1683782840.info",
+        "goggame-1833146547.hashdb",
+        "goggame-1833146547.info",
+        "goggame-1908011586.hashdb",
+        "goggame-1908011586.info",
+        "goggame-1968222224.hashdb",
+        "goggame-1968222224.info",
+        "goggame-1990927897.hashdb",
+        "goggame-1990927897.info",
+        "goggame-2129244347.hashdb",
+        "goggame-2129244347.ico",
+        "goggame-2129244347.id",
+        "goggame-2129244347.info",
+        "goggame-2129244347.script",
+        "goggame-galaxyFileList.ini",
+        "goglog.ini",
+        "pops_api.dll",
+        "support.ico",
+        "unins000.dat",
+        "unins000.exe",
+        "unins000.ini",
+        "unins000.msg",
+        "unins001.dat",
+        "unins001.exe",
+        "unins001.ini",
+        "unins001.msg",
+        "unins002.dat",
+        "unins002.exe",
+        "unins002.ini",
+        "unins002.msg",
+        "unins003.dat",
+        "unins003.exe",
+        "unins003.ini",
+        "unins003.msg",
+        "unins004.dat",
+        "unins004.exe",
+        "unins004.ini",
+        "unins004.msg",
+        "unins005.dat",
+        "unins005.exe",
+        "unins005.ini",
+        "unins005.msg",
+        "unins006.dat",
+        "unins006.exe",
+        "unins006.ini",
+        "unins006.msg"
+      ],
+      "hashValue": "0728b345bea16e474886c7c1d4940345",
+      "userFacingVersion": "1011166",
+      "variant": "gog"
+    },
+    "1559e4c64df69623bbc360c2f7144a43": {
+      "files": [
+        "EOSSDK-Win64-Shipping.dll",
+        "MarsEpic.exe",
+        "pops_api.dll"
+      ],
+      "hashValue": "1559e4c64df69623bbc360c2f7144a43",
+      "userFacingVersion": "1011166",
+      "variant": "epic"
+    }
+  },
+  "residentevil32020": {
+    "3aa78b7664d9cac669fa0765dd5f6789": {
+      "files": [
+        "re3.exe"
+      ],
+      "hashValue": "3aa78b7664d9cac669fa0765dd5f6789",
+      "userFacingVersion": "1.07",
+      "variant": "steam"
+    }
+  },
+  "devilmaycry5": {
+    "79bb4c76e0fee7f70c511c394f504e0d": {
+      "files": [
+        "DevilMayCry5.exe"
+      ],
+      "hashValue": "79bb4c76e0fee7f70c511c394f504e0d",
+      "userFacingVersion": "1.13",
+      "variant": "steam"
+    }
+  },
+  "bloodstainedritualofthenight": {
+    "d88590c9337be2079df7bc04c28bd4b3": {
+      "files": [
+        "BloodstainedRotN.exe",
+        "BloodstainedROTN\\Binaries\\Win64\\BloodstainedRotN-Win64-Shipping.exe"
+      ],
+      "hashValue": "d88590c9337be2079df7bc04c28bd4b3",
+      "userFacingVersion": "1.21.0.1",
+      "variant": "steam"
+    }
+  },
+  "teso": {
+    "183ede2539c3b82f3f9598a85d9ee47a": {
+      "files": [
+        "..\\The Elder Scrolls Online\\game\\game_player.version",
+        "..\\The Elder Scrolls Online\\depot\\depot.version",
+        "Bethesda.net_Launcher.version"
+      ],
+      "hashValue": "183ede2539c3b82f3f9598a85d9ee47a",
+      "userFacingVersion": "7.3.8",
+      "variant": "bethesda"
+    }
+  },
+  "conanexiles": {
+    "b9ecc9d083af59a8b7cc2d10330f464f": {
+      "files": [
+        "ConanSandbox.exe",
+        "Manifest_UFSFiles_Win64.txt",
+        "ConanSandbox\\AssetRegistry.bin"
+      ],
+      "hashValue": "b9ecc9d083af59a8b7cc2d10330f464f",
+      "userFacingVersion": "2.8.1"
+    }
+  },
+  "dragonsdogma": {
+    "c8a2d31c9e861e365ba521fb3d34bec8": {
+      "files": [
+        "DDDA.exe"
+      ],
+      "hashValue": "c8a2d31c9e861e365ba521fb3d34bec8",
+      "userFacingVersion": "1.0.0.18"
+    }
+  },
+  "shadowrunreturns": {
+    "1b0a61e33f4d70e23b9a54008fd9cf7f": {
+      "files": [
+        "Shadowrun_Data\\Managed\\Assembly-UnityScript.dll",
+        "Shadowrun_Data\\Managed\\Assembly-CSharp.dll",
+        "Shadowrun_Data\\Managed\\Assembly-CSharp-firstpass.dll",
+        "ShadowrunEditor.exe"
+      ],
+      "hashValue": "1b0a61e33f4d70e23b9a54008fd9cf7f",
+      "userFacingVersion": "1.2.7"
+    }
+  }
+}
