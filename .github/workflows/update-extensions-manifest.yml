@@ -14,7 +14,7 @@ on:
         default: false  
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/20 * * * *'
+    - cron:  '45 8 * * *'
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
