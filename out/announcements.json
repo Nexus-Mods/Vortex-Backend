@@ -105,7 +105,7 @@
   "description": "This is a new announcement",
   "severity": "information",
   "link": "https://www.google.com",
-  "gamemode": ""
+  "gamemode": "*"
   }
 ]
 
