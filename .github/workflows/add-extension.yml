@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest  
     
     env:
-      DRY_RUN: ${{ inputs.dry-run }}
+      DRY_RUN: ${{ !!(inputs.dry-run) }}
       NEXUS_APIKEY: ${{ secrets.NEXUS_APIKEY }}      
       SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET }}
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
