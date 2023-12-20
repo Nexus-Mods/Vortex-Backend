@@ -622,7 +622,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: `<${LIVE_MANIFEST_URL}|Extensions manifest file> has been updated`,
+        text: `Extensions <${LIVE_MANIFEST_URL}|manifest file> has been updated`,
       },
     },
   ];
