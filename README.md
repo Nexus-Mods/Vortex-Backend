@@ -15,6 +15,8 @@ This is updated on demand or scheduled via a GitHub Action which loops through t
 
 > Completely new extensions aren't added automatically as we verify these manually and there isn't an automated way of linking extensions to the games they are supporting etc. To add a new extension to the manifest, the 'Add Extension' github action is used.
 
+See below: [GitHub Actions](#github-actions)
+
 ## `announcements.json`
 
 The announcements file is an array of `IAnnouncement` objects
@@ -73,19 +75,24 @@ This is complicated
 
 ### Update Extension Manifest
 
-GitHub Action runs scheduled every day 08:45 or manually via workflow_disaptch.
+Runs scheduled every day 08:45 or manually via workflow_dispatch.
 
-This workflow reads the cur
+This workflow reads the current manifest and refreshes download and endorsement count for existing extensions. It marks mods that have have been hidden or deleted. If files have been updated, the download URLs are updated to.
 
-#### Workflow Inputs
+#### Inputs
 
 - `dry-run` - Defaults to false, if set to true then the last commit and push step isn't performed.
 
 ### Add Extension
 
-GitHub Action runs manually via workflow_disaptch.
+This adds a new extension to the manifest.
 
-#### Workflow Inputs
+Run manually via workflow_dispatch.
 
-- asd
+#### Inputs
+
+- `modid` - REQUIRED - Mod ID of the extension that needs adding e.g. `598`
+- `extension-type` - REQUIRED - What type of extension is being added. Choose from game, theme, translation or tool. Which one chosen determines what else must be inputted.
+- `gamedomain` - REQUIRED FOR GAME TYPE - Nexus site gamedomain that this extension provides support for. e.g. `back4blood`
+- `language` - REQUIRED FOR TRANSLATION TYPE - Language tag that this translation is for. e.g. `es-MX` for Spanish (Mexico)
 - `dry-run` - Defaults to false, if set to true then the last commit and push step isn't performed.
