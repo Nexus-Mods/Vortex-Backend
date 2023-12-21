@@ -1,6 +1,6 @@
 # Vortex-Backend
 
-This repo contains the live files that Vortex accesses and any relevant Actions that are needed to update them. They are contained in the `/out` folder.
+This repo contains all the live files that Vortex accesses and any relevant Actions that are needed to update them. They are contained in the `/out` folder.
 
 - extensions-manifest.json
 - announcements.json
@@ -8,8 +8,6 @@ This repo contains the live files that Vortex accesses and any relevant Actions 
 - gameversion_hashmap.json
 
 ## `extensions-manifest.json`
-
-The extensions manifest is an ...
 
 This contains all the information that Vortex uses to know what extensions (of all types) are available to download and use.
 
