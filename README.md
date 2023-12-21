@@ -49,10 +49,10 @@ The survey file is an array of `ISurveyInstance` objects
 
 ```json
 {
-	"id": "vortex-sdv-feedback-1",
-	"endDate": "2022-08-18T12:00:00",
-	"link": "https://forms.gle/pk2vabpgCQSC4fteA",
-	"gamemode": "stardewvalley"
+    "id": "vortex-sdv-feedback-1",
+    "endDate": "2022-08-18T12:00:00",
+    "link": "https://forms.gle/pk2vabpgCQSC4fteA",
+    "gamemode": "stardewvalley"
 }
 ```
 
