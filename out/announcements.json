@@ -5,6 +5,13 @@
 	  "severity": "information",
 	  "link": "https://www.google.com",
 	  "gamemode": ""
+	},
+	{
+	  "date": "2024-01-01T13:30:33",
+	  "description": "This is an _older announcement_ just for new vortex versions. Here [is an old link](www.google.com) too",
+	  "severity": "warning",
+	  "link": "https://www.google.com",
+	  "gamemode": ""
 	}
 ]
 
