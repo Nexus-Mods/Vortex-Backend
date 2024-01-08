@@ -598,7 +598,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
   // process added extensions and prepare for slack
   if (addedExtensions.length !== 0) {
     added = addedExtensions.map((mod) => {
-        return `${getEmojiStringFromExtensionType(CATEGORIES[mod.category_id])}] <https://www.nexusmods.com/site/mods/${mod.mod_id}|${mod.name}> - ${mod.version}`;
+        return `${getEmojiStringFromExtensionType(CATEGORIES[mod.category_id])} <https://www.nexusmods.com/site/mods/${mod.mod_id}|${mod.name}> - ${mod.version}`;
       });
   } else {
     console.log('No extensions have been added.');
