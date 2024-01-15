@@ -622,7 +622,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: `Extensions <${LIVE_MANIFEST_URL}|manifest file> has been updated`,
+        text: `<${LIVE_MANIFEST_URL}|Extensions manifest> has been updated`,
       },
     },
   ];
@@ -632,7 +632,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: 'No extensions have been added or updated',
+        text: 'No extensions have been updated or need adding',
       },
     },
   ]
