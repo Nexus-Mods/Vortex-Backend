@@ -642,7 +642,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: '*Added extensions:*',
+        text: '*Extensions that need adding:*',
       },
     },
     {
@@ -659,7 +659,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: '*Updated extensions:*',
+        text: '*Extensions that have been updated:*',
       },
     },
     {

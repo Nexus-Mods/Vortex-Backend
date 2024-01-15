@@ -9,6 +9,7 @@ export const GAME_EMOJI = ':joystick:';
 export const THEME_EMOJI = ':art:';
 export const TRANSLATION_EMOJI = ':earth_africa:';
 export const UNKNOWN_EMOJI = ':question:';
+export const TOOL_EMOJI = ':hammer_and_wrench:';
 
 // time constants
 export const ONE_DAY = 1000 * 60 * 60 * 24;

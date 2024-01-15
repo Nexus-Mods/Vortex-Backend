@@ -1,4 +1,4 @@
-import { GAME_EMOJI, THEME_EMOJI, TRANSLATION_EMOJI, UNKNOWN_EMOJI } from './constants';
+import { GAME_EMOJI, THEME_EMOJI, TOOL_EMOJI, TRANSLATION_EMOJI, UNKNOWN_EMOJI } from './constants';
 import { ExtensionType } from './types';
 
 export function parseMillisecondsIntoReadableTime(duration: number) {
@@ -21,6 +21,7 @@ export function parseMillisecondsIntoReadableTime(duration: number) {
 }
 
 export function getEmojiStringFromExtensionType(extensionType: ExtensionType | undefined): string {
+  
   if (extensionType === undefined) return UNKNOWN_EMOJI;
 
   switch (extensionType) {
@@ -30,6 +31,8 @@ export function getEmojiStringFromExtensionType(extensionType: ExtensionType | u
       return THEME_EMOJI;
     case 'translation':
       return TRANSLATION_EMOJI;
+    case null:
+        return TOOL_EMOJI;
     default:
       return UNKNOWN_EMOJI;
   }

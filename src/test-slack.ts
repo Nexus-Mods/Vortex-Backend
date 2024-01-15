@@ -11,6 +11,7 @@ const GAME_ICON = ':joystick:';
 const THEME_ICON = ':art:';
 const TRANSLATION_ICON = ':earth_africa:';
 const UNKNOWN_ICON = ':question:';
+const TOOL_EMOJI = ':hammer_and_wrench:';
 
 const slack = new SlackClient(SLACK_CHANNEL);
 
@@ -29,6 +30,8 @@ async function postMessage() {
     getEmojiStringFromExtensionType('game') + ' <https://google.com|DELTARUNE Vortex Extension> - 1.0.3',
     getEmojiStringFromExtensionType('theme') + ' <https://google.com|Visual Assist Night - Vortex Theme> - 3.4',
     getEmojiStringFromExtensionType('translation') + ' <https://google.com|Russian localization for Vortex> - 1.9.10',
+    getEmojiStringFromExtensionType(null) + ' <https://google.com|Test tool> - 1.2.3',
+    getEmojiStringFromExtensionType(undefined) + ' <https://google.com|Undefined test> - 1.2.3',
   ];
 
   const blocks = buildSlackBlocks(addedExtensions, updatedExtensions);  
@@ -36,7 +39,7 @@ async function postMessage() {
   slack.sendMessage('This is text', blocks);
 }
 
-function getEmojiStringFromExtensionType(extensionType: ExtensionType): string {
+function getEmojiStringFromExtensionType(extensionType: ExtensionType | undefined): string {
   switch (extensionType) {
     case 'game':
       return GAME_ICON;
@@ -44,6 +47,8 @@ function getEmojiStringFromExtensionType(extensionType: ExtensionType): string {
       return THEME_ICON;
     case 'translation':
       return TRANSLATION_ICON;
+    case null:
+          return TOOL_EMOJI;
     default:
       return UNKNOWN_ICON;
   }
@@ -56,7 +61,7 @@ function buildSlackBlocks(addedExtensions: string[], updatedExtensions: string[]
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: 'Extensions manifest file (`<https://google.com|extensions_1_8.json>`) has been updated',
+        text: '<https://google.com|Extensions manifest> has been updated',
       },
     },
   ];
@@ -78,7 +83,7 @@ function buildSlackBlocks(addedExtensions: string[], updatedExtensions: string[]
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: '*Added extensions:*',
+        text: '*Extensions that need adding:*',
       },
     },
     {
@@ -95,7 +100,7 @@ function buildSlackBlocks(addedExtensions: string[], updatedExtensions: string[]
       type: 'section',
       text: {
         type: 'mrkdwn',
-        text: '*Updated extensions:*',
+        text: '*Extensions that have been updated:*',
       },
     },
     {
