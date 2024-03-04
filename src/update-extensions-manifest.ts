@@ -266,7 +266,7 @@ class Driver {
         const existing = this.manifest.extensions.find((ext) => ext.modId === entry);
 
         const refVersionLow = '1.8.0';
-        const refVersionHigh = '1.8.999';
+        const refVersionHigh = '1.9.12';
 
         // start checking all files associated with this mod (extension) and we need to end up with a single main file
         const mainFiles = modFiles.files.filter((file) => file.category_id === 1);
