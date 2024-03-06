@@ -1,5 +1,5 @@
 {
-  "last_updated": 1709714959432,
+  "last_updated": 1709717641821,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -276,7 +276,7 @@
         "long": "[b][color=#f1c232][size=5][u]Japanese Translation for Vortex (Vortex日本語化ファイル)[/u][/size][/color][/b]\n<br />\n<br />バージョン: 1.3.5 (1.3.6～1.3.8でも利用可能)\n<br />最終更新日: 2020/09/11\n<br />制作: BowmoreLover\n<br />\n<br />[size=3][color=#f1c232][u][b]お知らせ[/b][/u][/color][/size]\n<br />\n<br />[color=#ffff00][b]2020/06/22:[/b][/color]\n<br />Vortex 1.2.15以降で日本語拡張機能をインストールしようとすると、\"Invalid Extension\"という赤い通知メッセージが出てインストールできない問題が発生していましたが、6/22にリリースされた Vortex 1.2.17にて対策されました。。\n<br />暫定対策版 \"Japanese Translation for Vortex 1.2.15-r2\" を導入済みで、Vortex 1.2.17以降にアップデートした場合、次の手順で暫定対策版をアンインストールしてください。\n<br />(1) 拡張機能ページで \"Japanese Translation for Vortex 1.2.15-r2\" の Remove ボタンを押し、Vortexを再起動する\n<br />(2) Settingsページを開き、Languageを \"日本語(にほんご/にっぽんご)(日本)\" に変更する。\n<br />(3) 以上で正式版に切り替わり、以降は自動更新されます。\n<br />\n<br />\n<br />[size=3][color=#f1c232][u][b]このファイルについて[/b][/u][/color][/size]\n<br />\n<br />Vortexの日本語化ファイルです。\n<br />Nexus Modsのページにアップロードされた日本語化ファイルは、Nexus Modsのスタッフによって精査された後、Vortexの拡張機能として公開される流れとなっていますので、基本的にVortexの画面からインストールしてください。すでに日本語化拡張機能を導入済みの場合、自動的に更新されますので、特に作業は必要ありません。\n<br />なお、本ページの更新から拡張機能としての公開までに数日かかる場合があります。\n<br />\n<br />ご注意:\n<br />[list]\n<br />[*]現在のバージョンではVortex本体側のローカライズが不完全なため、UI/メッセージの一部が英語のままとなります。\n<br />[*]有志によって作成/公開されているVortexの拡張機能は、今のところ日本語化の対象外となります。\n<br />[*]ローカライズ対象文字列は専用のツールを開発して出来る限り抽出したつもりですが、まだ漏れがあるかもしれません。\n<br />[*]翻訳内容については随時変更/改善していく予定です(提案/指摘歓迎)。\n<br />[/list]\n<br />\n<br />\n<br />[size=3][b][color=#f1c232][u]前提プログラム[/u][/color][/b][/size]\n<br />\n<br />[url=https://www.nexusmods.com/site/mods/1]Vortex[/url] Version 1.3.5以降\n<br />\n<br />※事前リリース版は[url=https://github.com/Nexus-Mods/Vortex/releases]Nexus ModsのGitHub[/url]からダウンロードできます。\n<br />\n<br />\n<br />[size=3][color=#f1c232][u][b]インストール方法[/b][/u][/color][/size]\n<br />\n<br />(1) 新規インストールの場合\n<br />\n<br />VortexのSettingsページを開き、InterfaceタブのLanguageから「日本語 (にほんご／にっぽんご)」を選択した後、Vortexを再起動します。\n<br />これで日本語化拡張機能がインストールされ、以降は自動アップデートされます。\n<br />\n<br />\n<br />(2) 日本語化拡張機能をアップデートする場合\n<br />\n<br />Vortexの起動時に更新された拡張機能が自動的にアップデートされます。\n<br />\n<br />\n<br />(3) 古いバッチ形式の日本語化をインストールしている場合\n<br />\n<br />拡張機能をサポートする前の古い日本語化ファイルを、ファイルコピーまたはバッチコマンドを実行してインストールしている場合、古い日本語化ファイルを削除しないと、日本語化拡張機能をインストールしても正しく適用されません。\n<br />VortexのSettingsページから言語をEnglishに戻した後、次のフォルダーを削除してからVortexを再起動してください。\n<br />・C:&#92;Users&#92;ユーザー名&#92;AppData&#92;Roaming&#92;Vortex&#92;locales&#92;ja\n<br />・C:&#92;ProgramData&#92;Vortex&#92;locales&#92;ja\n<br />※ドライブ名とパスはOS環境/ユーザアカウント名によって異なります。\n<br />その後、(1)の方法で新規インストールを行ってください。\n<br />\n<br />\n<br />[size=3][color=#f1c232][u][b]問題解決のヒント[/b][/u][/color][/size]\n<br />\n<br />[list]\n<br />[*]Vortexで\"missing .node module\"エラーが出る場合、Visual C++のランタイムパッケージのインストールが必要です。こちらのページからvc_redist.x64.exeをインストールしてください（バージョンは明記されていませんが、最新のものでいいはず）→ [url=https://support.microsoft.com/ja-jp/help/2977003/the-latest-supported-visual-c-downloads]最新のサポートされる Visual C++ のダウンロード（マイクロソフト）[/url]\n<br />[*]NMMからのインポート時に「すべてのMODを無効にしてください」エラーとなってインポートできない場合、ゲームフォルダーに残っているプラグインを手動で削除してください。\n<br />[/list]\n<br />\n<br />\n<br />[size=3][color=#f1c232][u][b]訳文の改善について[/b][/u][/color][/size]\n<br />\n<br />0.18.2にて、ルール定義画面や依存関係/警告アイコンのツールチップに表示される文章を改善し、前後関係をわかりやすくしました(ご指摘いただいたmrredpizza氏に感謝)。\n<br />誤訳の指摘や改善提案があれば、私の[url=http://thinkingskeever.hatenablog.com/entry/2018/10/21/140000]ブログ記事のコメント[/url]、Nexusのプライベートメッセージ(漢字使用不可、ローマ字で書くこと)、Discordアカウント「[color=#6fa8dc][b]BowmoreLover#6259[/b][/color]」のいずれかまでお願いします。\n<br />\n<br />\n<br />[size=3][b][color=#f1c232][u]Vortexの日本語ドキュメントについて[/u][/color][/b][/size]\n<br />\n<br />以下のページでVortexのドキュメント/Wikiの和訳を公開中です。\n<br />\n<br />[url=http://thinkingskeever.hatenablog.com/entry/2018/10/15/182000]Vortex紹介ページの和訳 (Thinking Skeever)[/url]\n<br />\n<br />[url=http://thinkingskeever.hatenablog.com/entry/2018/10/17/183000]Nexus Mods: Vortexヘルプセンターの和訳 (Thinking Skeever)[/url]\n<br />\n<br />[url=http://thinkingskeever.hatenablog.com/entry/2018/10/21/140000]Nexus Wiki: Vortexページの和訳 (Thinking Skeever)[/url]\n<br />\n<br />\n<br />[size=3][b][color=#f1c232][u]変更履歴[/u][/color][/b][/size]\n<br />[spoiler]\n<br />2018/11/02 (0.16.10) : 初回リリース\n<br />2018/11/02 (0.16.11) : 最新の事前リリース版に対応\n<br />2018/11/06 (0.16.12) : 最新版に対応\n<br />2018/12/07 (0.16.15) : 最新版に対応\n<br />2019/02/12 (0.17.3)  : 最新版に対応\n<br />2019/03/01 (0.17.5)  : 最新版に対応\n<br />2019/03/07 (0.17.7)  : 最新版に対応\n<br />2019/03/21 (0.17.8)  : 最新版に対応、一部用語の訳文変更\n<br />2019/04/11 (0.17.11) : 最新版に対応\n<br />2019/05/28 (0.18.5)  : 最新版に対応\n<br />2019/05/30 (0.18.6)  : 最新版に対応\n<br />2019/06/13 (0.18.8)  : 最新版に対応\n<br />2019/06/27 (0.18.11) : 最新版に対応 (0.18.12でも利用可能)\n<br />2019/06/30 (0.18.12) : 訳文の改善(ルール定義/ツールチップで依存関係をわかりやすく)。ご指摘いただいたmrredpizza氏に感謝します。\n<br />2019/07/16 (0.18.14) : 最新版に対応\n<br />2019/07/17 (0.18.16) : 最新版に対応\n<br />2019/07/24 (0.19.1)  : 最新版に対応\n<br />2019/07/31 (1.0.0)   : 最新版に対応\n<br />2019/10/16 (1.0.5)   : 最新版に対応、次のゲーム拡張の和訳を追加: 7daystodie, codevein, residentevil22019, spyroreignitedtrilogy\n<br />2019/11/28 (1.1.3)   : 最新版に対応、拡張機能化のためにインストーラーファイルの構成を変更、一部訳文の改善/訂正、Vortex拡張機能対応\n<br />2019/11/29 (1.1.4)   : 最新版に対応 (訳文2行追加) (1.1.5でも利用可能)\n<br />2020/01/23 (1.1.10)  : 最新版に対応、一部文字化けの訂正 (1.1.12～1.1.15でも利用可能)\n<br />2020/04/24 (1.2.9)   : 最新版に対応、バッチインストーラーの廃止\n<br />2020/06/09 (1.2.15)  : 最新版に対応 (1.2.16～1.2.20でも利用可能)\n<br />2020/06/12 (1.2.15-r2) : 日本語化拡張機能がインストールできない問題の暫定対策版\n<br />2020/09/10 (1.3.4)   : 最新版に対応 \n<br />2020/09/11 (1.3.5)   : 最新版に対応 (1.3.6～1.3.8でも利用可能)\n<br />[/spoiler]\n<br />\n<br />[size=3][b][color=#f1c232][u]Credits[/u][/color][/b][/size]\n<br />\n<br />Vortex by Nexus Mods\n<br />The license of this file conforms to the license of Vortex (GPL-3 License).\n<br />\n<br />使用ツール:\n<br />[url=https://www.nexusmods.com/skyrimspecialedition/mods/134]xTranslater[/url] by McGuffin\n<br />[url=https://www.nexusmods.com/site/mods/33]Unofficial Vortex Translation Tool[/url] by BowmoreLover\n<br />\n<br />以上"
       },
       "downloads": 238023,
-      "endorsements": 9974,
+      "endorsements": 9975,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/32/32-1541090883-928894847.jpeg",
       "name": "Japanese Translation for Vortex",
       "tags": [],
@@ -2903,7 +2903,7 @@
         "long": "[b]How to install:[/b]\n<br />\n<br />In Vortex go to \"Extensions\", click the \"Find more\" button, find this extension, and install it.\n<br />   ﻿or\n<br />Download manually from the site and extract to \"C:/UserName/AppData/Roaming/Vortex/plugins\".  (Make sure to \"Show hidden files and folders\", so you can get to the \"AppData\" folder.\n<br />\n<br />\n<br />This is my first time making a Vortex Extension, so let me know if anything needs changed."
       },
       "downloads": 94344,
-      "endorsements": 5867,
+      "endorsements": 5868,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/194/194-1608892589-313025421.jpeg",
       "name": "Dark Souls III Support",
       "timestamp": 1661415578,
@@ -4296,7 +4296,7 @@
         "long": "This extension adds Monster Hunter Rise as a game supported in Vortex. Current the extension supports LUA, Pak and loose files (replacer) mods, the loose files are merged together into a pak patch file.\n<br />\n<br />Vortex Install (Easy) - if the extension does not appear in the games page - refresh your extensions list (might take a little while for the update to show up)\n<br />\n<br />[list]\n<br />[*]In Vortex, locate Monster Hunter Rise in the Games tab.\n<br />[*]Click on the game tile to manage it, install the extension as prompted.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />\n<br />Vortex Install (Advanced) (NOT RECOMMENDED)\n<br />\n<br />[list]\n<br />[*]In Vortex, enabled advanced mode in the settings.\n<br />[*]Navigate to the Extensions tab.\n<br />[*]Drop the 7z archive into the \"drop zone\" at the bottom of the page.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />\n<br />Manual Install (NOT RECOMMENDED)\n<br />\n<br />Extract the 7z archive to %appdata%&#92;Vortex&#92;plugins.\n<br />\n<br />\n<br />Github: https://github.com/IDCs/game-mhr"
       },
       "downloads": 98530,
-      "endorsements": 4850,
+      "endorsements": 4851,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/349/349-1644925727-312850667.jpeg",
       "name": "Monster Hunter Rise Vortex Game Support",
       "timestamp": 1655797209,
@@ -4338,7 +4338,7 @@
         "long": "[size=3]This adds Vortex support for the [url=https://www.nexusmods.com/monbazou]Mon Bazou[/url] game.[/size]\n<br />\n<br />[size=3]Will Download and auto-install the most current version of [url=http://www.nexusmods.com/site/mods/115]BepInEx from Nexus[/url].\n<br />\n<br />[size=3][size=4][b]Installation:[/b][/size]\n<br />\n<br />1- Open Vortex Select \"Games\" tab and activate the game.\n<br />\n<br />2- Vortex will download BepInEx from here on Nexus then:\n<br />\n<br />     a. If you already have BepInEx installed you are done! just go install mods as usual and enjoy the game.\n<br />\n<br />     b. If you do not have it, once Vortex is done installing It will restart[b]***[/b] once loaded you  now find a mod named:\n<br />         \"[b]Bepis Injector Extensible[/b]\" under Vortex's \"[b]MODS[/b]\" tab, [size=3][b]ENABLE[/b] IT [/size]and [b]DEPLOY[/b] as usual.\n<br />          Close Vortex, Now this is [b]IMPORTANT:[/b]\n<br />          Repeat step 1 then install your mods, deploy and enjoy your game.\n<br />\n<br />[size=4][size=2][size=3][size=2][size=4]Source code for BepInEX[/size] \n<br />[url=https://github.com/BepInEx/BepInEx]https://github.com/BepInEx/BepInEx[/url] [/size][/size][/size][/size]\n<br />[/size][/size]"
       },
       "downloads": 12014,
-      "endorsements": 662,
+      "endorsements": 663,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/356/356-1646408199-1549302824.jpeg",
       "name": "Mon Bazou - Vortex Extension",
       "timestamp": 1647258333,
@@ -4414,7 +4414,7 @@
         "long": "Adds support for Elden ring to the vortex.\n<br />\n<br />[b]Installation[/b]\n<br />In Vortex go to \"Extensions\", click the \"Find more\" button, find this extension, and install it. \n<br />\n<br />[b]Manual Installation[/b]\n<br />Download manually from the site then paste %appdata%&#92;Vortex&#92;plugins to the file explorer address bar and press enter then extract the file into a new folder inside that folder. \n<br />If on the vortex tab of vortex setting multi-user mode is set to \"Shared\" you have to extract the archive into windowsdrive&#92;ProgramData&#92;vortex&#92;plugins instead of %appdata%&#92;Vortex&#92;plugins."
       },
       "downloads": 292442,
-      "endorsements": 12003,
+      "endorsements": 12004,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/370/370-1647694507-1869342320.jpeg",
       "name": "Elden Ring Support for Vortex",
       "timestamp": 1648967946,
@@ -7478,7 +7478,7 @@
         "long": "[b][size=3]Vortex extension support for Lethal Company\n<br />[/size][/b]\n<br />[url=https://github.com/Senjay-id/LC-Vortex-Extension]Source Code[/url]"
       },
       "downloads": 78818,
-      "endorsements": 765,
+      "endorsements": 766,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/703/703-1699934371-1889969152.jpeg",
       "name": "Lethal Company Vortex Extension",
       "timestamp": 1707203698,
