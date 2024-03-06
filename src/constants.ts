@@ -15,7 +15,8 @@ export const TOOL_EMOJI = ':hammer_and_wrench:';
 export const ONE_DAY = 1000 * 60 * 60 * 24;
 
 // slack constants
-export const SLACK_CHANNEL = 'C06B8H5TGGG'; // this is bot-test-slack and bot-github-vortex is channel id C05009EK5R6
+// this is dev-vortex. bot-test-slack = C06B8H5TGGG and bot-github-vortex = C05009EK5R6
+export const SLACK_CHANNEL = 'C0GM4G264'; 
 
 // files and paths
 export const MANIFEST_FILENAME = 'extensions-manifest.json';
