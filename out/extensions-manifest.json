@@ -1,5 +1,5 @@
 {
-  "last_updated": 1710414061346,
+  "last_updated": 1710414135342,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -7883,6 +7883,25 @@
       "version": "1.10.8",
       "type": "translation",
       "language": "it"
+    },
+    {
+      "modId": 811,
+      "fileId": 2897,
+      "author": "Ilker BINZET",
+      "uploader": "binzedd",
+      "description": {
+        "short": "Vortex Mod Manager için bu Türkçe çeviri paketi, kullanıcı arayüzünü tamamen Türkçeleştirerek oyun modlarınızı yönetmeyi kolaylaştırır. Yükleme ve güncelleme süreçleri şimdi daha kullanıcı dostu!",
+        "long": "[b][left][font=Verdana][size=3][/size][/font][/left][/b][center][b][font=Verdana][size=3][img]https://i.ibb.co/k2qCPBK/2024.png[/img]\n<br />\n<br />\n<br />\n<br />﻿Vortex Mod Manager Türkçe Çeviri (Turkish Localization)\n<br />\n<br />\n<br />[/size][/font][/b][/center]Vortex Mod Manager için bu Türkçe çeviri paketi, kullanıcı arayüzünü tamamen Türkçeleştirerek oyun modlarınızı yönetmeyi kolaylaştırır. Yükleme ve güncelleme süreçleri şimdi daha kullanıcı dostu!\n<br />\n<br />\n<br />Elle Kurulum: \n<br />[list=1]\n<br />[*]Modunuzu manuel olarak kurmak için, indirdiğiniz arşivdeki klasörü [code]`﻿﻿C:&#92;Program Files&#92;Black Tree Gaming Ltd&#92;Vortex&#92;resources&#92;locales`[/code] dizinine kopyalayın. Bu işlem, Vortex Mod Manager'ın dil dosyalarını Türkçe çeviri ile güncelleyecektir.\n<br />[*]Lütfen kopyalama işleminden önce Vortex uygulamasının kapalı olduğundan emin olun. \n<br />[*]İşlem tamamlandıktan sonra Vortex'i açın ve Türkçe dil seçeneğini aktif hale getirin.\n<br />[/list]\n<br />Github: [url=https://github.com/ilker-binzet/Vortex-Mod-Manager-Turkish-Localization]Vortex Mod Manager Turkish Localization (github.com)[/url]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/811/811-1710320594-1222414446.png",
+      "name": "Vortex Mod Manager Turkish Localization 2024",
+      "timestamp": 1710320531,
+      "tags": [],
+      "version": "1",
+      "type": "translation",
+      "language": "tr"
     }
   ]
 }
