@@ -19,7 +19,9 @@ See below: [GitHub Actions](#github-actions)
 
 ## `announcements.json`
 
-The announcements file is an array of `IAnnouncement` objects
+The announcements file is an array of `IAnnouncement` objects.
+
+This is downloaded locally to `%APPDATA%\Vortex\temp\announcements.json` on Vortex startup.
 
 ```json
 { 
