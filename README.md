@@ -39,7 +39,6 @@ This is downloaded from GitHub when Vortex loads or if running a development bui
 - `link` - When a URL is provided, Vortex will generate a button for the announcement allowing the users to click and open the URL in a new webpage.
 - `severity` - This element accepts one of the following: "information" | "warning" | "critical"; this will modify UI elements accordingly to highlight the severity type of the announcement. (Currently only changes the color of the announcement's icon)
 - `gamemode` - Providing a specific game id will only show this announcement when actively managing the game matching the game id.
-- `icon` - The name of the icon we wish to add to this announcement - When provided, Vortex will search for the icon's name within its icon selection and attempt to display it alongside the description.
 - `version` - Providing a specific version number will ensure that the announcement only shows inside copies of Vortex with that specific version number.
 
 
