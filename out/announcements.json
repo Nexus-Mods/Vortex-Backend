@@ -1,1 +1,7 @@
-[]
+[{ 
+  "date": "2023-03-25T08:54:00", 
+  "description": "A bug has been discovered when using the latest version of LSLib\\Divine as it now requires [.NET Desktop Runtime 8](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.3-windows-x64-installer) to be installed before it can correctly read PAK files. Please close Vortex, install the runtime, restart computer and then open Vortex. Check out [this forum post](https://forums.nexusmods.com/topic/13476390-workaround-for-baldurs-gate-3-lslib-net-runtime-issues/) for more information.", 
+  "severity": "critical", 
+  "gamemode": "baldursgate3", 
+  "icon": "bug" 
+}]
