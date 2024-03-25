@@ -25,16 +25,17 @@ This is downloaded from GitHub when Vortex loads or if running a development bui
 
 ```json
 { 
-    "date": "2019-01-14T10:20:10", 
+    "date": "2019-01-14T10:20:10",
+    "title": "Title goes here",
     "description": "This is a fake announcement", 
     "link": "www.github.com", 
     "severity": "critical", 
     "gamemode": "skyrim", 
-    "icon": "bug" 
 }
 ```
 
 - `date` - MANDATORY - Expects a valid date in ISO 8601 format.
+- `title` - The title text above the description
 - `description` - MANDATORY - The announcement text you wish to display.
 - `link` - When a URL is provided, Vortex will generate a button for the announcement allowing the users to click and open the URL in a new webpage.
 - `severity` - This element accepts one of the following: "information" | "warning" | "critical"; this will modify UI elements accordingly to highlight the severity type of the announcement. (Currently only changes the color of the announcement's icon)
