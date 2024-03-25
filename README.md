@@ -21,7 +21,7 @@ See below: [GitHub Actions](#github-actions)
 
 The announcements file is an array of `IAnnouncement` objects.
 
-This is downloaded on Vortex startup or if `%APPDATA%\vortex_devel\temp\announcements.json` exists during a development build, this is used instead.  
+This is downloaded from GitHub when Vortex loads or if running a development build and `%APPDATA%\vortex_devel\temp\announcements.json` exists, then this local file is used instead.  
 
 ```json
 { 
