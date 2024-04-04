@@ -11,7 +11,7 @@ import SlackClient from './SlackClient';
 import { getEmojiStringFromExtensionType, getFormattedDate, parseMillisecondsIntoReadableTime } from './utils';
 import Stopwatch from '@tsdotnet/stopwatch';
 import { DOWNLOAD_STATS_URL, GAME_EXCLUSIONLIST, HTML_REGEX, LIVE_MANIFEST_URL, MANIFEST_FILENAME, ONE_DAY, SLACK_CHANNEL, VERSION_MATCH_REGEX, CATEGORIES, htmlMap } from './constants';
-
+import AddGithubProjectIssue from './github-add-issue';
 
 
 const REPO_ROOT_PATH: string = path.join(__dirname, '/../');
@@ -447,7 +447,15 @@ class Driver {
 
     // all mods have been processed
 
-    sendSlackSummary(addedExtensions, updatedExtensions, stopwatch.elapsedMilliseconds);    
+    sendSlackSummary(addedExtensions, updatedExtensions, stopwatch.elapsedMilliseconds);  
+    
+    // add to github issues project
+
+    if (addedExtensions.length !== 0) {    
+        addedExtensions.map(async (mod) => {
+          await AddGithubProjectIssue(mod.name, mod.mod_id.toString());
+        });
+    }
 
     console.log('processNexusMods done');
   }
