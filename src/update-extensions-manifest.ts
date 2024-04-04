@@ -453,7 +453,7 @@ class Driver {
 
     if (addedExtensions.length !== 0) {    
         addedExtensions.map(async (mod) => {
-          await AddGithubProjectIssue(mod.name, mod.mod_id.toString());
+          await AddGithubProjectIssue(mod.name ?? '', mod.mod_id.toString());
         });
     }
 
