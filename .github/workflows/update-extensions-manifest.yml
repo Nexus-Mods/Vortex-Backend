@@ -28,6 +28,7 @@ jobs:
       NEXUS_APIKEY: ${{ secrets.NEXUS_APIKEY }}
       SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET }}
       SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
