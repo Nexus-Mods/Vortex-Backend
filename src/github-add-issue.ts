@@ -6,15 +6,16 @@ import { Octokit } from 'octokit';
 
 dotenv.config();
 
+const ORG_REPO_NAME = "Nexus-Mods/Vortex"; // github standard format for repo
 const REPO_ID = 'R_kgDOBAT0mw'; // graphql id for github.com/Nexus-Mods/Vortex
 const PROJECT_ID = 'PVT_kwDOAQS0W84AL03l'; // graphql id for https://github.com/orgs/Nexus-Mods/projects/3
 const ISSUE_TEMPLATE_NAME = 'Verify Extension'; // labels will get pulled from here
 const STATUS_FIELD_ID = "PVTSSF_lADOAQS0W84AL03lzgHitgU"; // graphql id for "Status" field in the project
 const QUEUED_STATUS_VALUE_ID = "f75ad846"; // graphql id for "Queued" value in the "Status" field
 
-function getTitle(name:string) {
+function getTitle(name:string, id:string) {
 
-  return `Verify Extension: ${name}`;
+  return `Verify Extension: [${id}] ${name}`;
 }
 
 function getBody(name:string, id:string ) {
@@ -98,6 +99,19 @@ type AddProjectV2ItemByIdResponse = {
   };
 };
 
+type SearchResponse = {
+  search: {
+    issueCount: number;
+    edges: {
+      node: {
+        title: string;
+        url: string;
+        updatedAt: string;
+      };
+    }[];
+  };
+};
+
 //AddGithubProjectIssue('Test Extension', '123');
 
 export default async function AddGithubProjectIssue(extensionName:string, extensionId:string) {
@@ -112,8 +126,40 @@ export default async function AddGithubProjectIssue(extensionName:string, extens
 
   console.log('Hello, %s', login);
 
-  const issueTitle = getTitle(extensionName);
+  const issueTitle = getTitle(extensionName, extensionId);
   const issueBody = getBody(extensionName, extensionId); 
+
+
+  // check for existing issue?
+
+  const searchResponse:SearchResponse = await octokit.graphql(
+    `query ($queryString: String!) {
+      search(query: $queryString, type: ISSUE, first: 100) {
+        issueCount
+        edges {
+          node {
+            ... on Issue {
+              title
+              url
+              updatedAt
+           }
+          }
+        }
+      }
+    }
+    `,
+      {
+        queryString: `repo:${ORG_REPO_NAME} is:issue is:open in:title Verify Extension: [${extensionId}]`
+      }
+  );
+
+  console.log(JSON.stringify(searchResponse.search));
+
+  if(searchResponse.search.issueCount > 0) {
+    console.log(`Issue already exists for mod id ${extensionId}`);
+    return;
+  }
+
 
   // create new issue
   // add issue to github project

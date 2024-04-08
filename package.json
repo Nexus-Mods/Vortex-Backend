@@ -91,6 +91,7 @@
     "update-extensions-manifest": "ts-node src/update-extensions-manifest.ts",
     "add-extension": "ts-node src/add-extension.ts",
     "test-slack": "ts-node src/test-slack.ts",
+    "test-github": "ts-node src/test-github.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
