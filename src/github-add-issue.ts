@@ -37,6 +37,12 @@ _Get all relevant metadata and links from nexusmods.com_ ​
 | **Game Domain** |  |
 | **Game URL** |  |
 
+Check to see if there is an existing extension for this game
+
+|  |  |
+|--|--|
+| **Existing Extension URL** |  |
+
 ## Checked with
 
 |  |  |
@@ -50,7 +56,7 @@ TBC
 
 ## Verification checklist
 
-- [ ] Is there already an extension for this game? If yes, is this new extension functionally better?
+- [ ] If there is an existing extension for this game, is this functionally better?
 - [ ] Is the extension named correctly?
 - [ ] Is it packaged correctly?
 - [ ] Is artwork correct?
