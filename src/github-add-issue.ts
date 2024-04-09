@@ -50,6 +50,7 @@ TBC
 
 ## Verification checklist
 
+- [ ] Is there already an extension for this game? If yes, is this new extension functionally better?
 - [ ] Is the extension named correctly?
 - [ ] Is it packaged correctly?
 - [ ] Is artwork correct?
