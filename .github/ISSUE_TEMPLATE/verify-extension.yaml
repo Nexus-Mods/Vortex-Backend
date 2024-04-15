@@ -48,7 +48,6 @@ body:
     validations:
       required: false
 
-
   - type: checkboxes
     id: confirmation
     attributes:
@@ -75,3 +74,15 @@ body:
       options:
         - label: This game extension has been tested
           required: true
+
+  - type: textarea
+    id: tasklist
+    attributes:
+      label: 🖱️Tasks
+      value: |
+          ```[tasklist]
+          ## (What do engineers have to do step by step?)
+          - [ ] Verify the issue
+          - [ ] Solve the issue
+          - [ ] Test the solution
+          ````
