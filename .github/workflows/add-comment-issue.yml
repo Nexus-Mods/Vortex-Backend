@@ -10,13 +10,11 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Add comment
-        run: gh issue comment "$NUMBER" --body "$BODY"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          NUMBER: ${{ github.event.issue.number }}
-          BODY: >
+      - name: Append Issue Body
+        uses: julien-deramond/update-issue-body@v1
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
             ### Verification Tasks
 
             description stuff goes here
@@ -24,5 +22,7 @@ jobs:
             - [ ] Task 1
 
             - [ ] Task 2
-            
+
             - [ ] Task 3
+          edit-mode: append
+          append-separator: newline
