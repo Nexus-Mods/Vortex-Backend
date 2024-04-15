@@ -51,7 +51,7 @@ body:
   - type: checkboxes
     id: confirmation
     attributes:
-      label: Confirmation
+      label: Confirmations
       description: Please double-check that all links above are accurate, working and that a check for any existing game extensions has been completed.  
       options:
         - label: I confirm the above is accurate
@@ -74,22 +74,3 @@ body:
       options:
         - label: This game extension has been tested
           required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ### INTERNAL USE ONLY
-
-  - type: checkboxes
-    id: tasks
-    attributes:
-      label: Verification Tasks
-      description: |
-        Leave this task list. After publishing - edit labels, publish again and convert to Issues if necesarry (recommended)
-        P.S. sorry for the inconvenience!
-      options:
-        - label: Task 1
-        - label: Task 2
-        - label: Task 3
-    validations:
-      required: false
