@@ -20,9 +20,7 @@ jobs:
             description stuff goes here
 
             - [ ] Task 1
-
             - [ ] Task 2
-
             - [ ] Task 3
           edit-mode: append
           append-separator: newline
