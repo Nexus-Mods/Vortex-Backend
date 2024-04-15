@@ -76,7 +76,7 @@ body:
           required: true
 
   - type: textarea
-    id: tasklist
+    id: tasks
     attributes:
       label: 🖱️Tasks
       value: |
@@ -85,4 +85,4 @@ body:
           - [ ] Verify the issue
           - [ ] Solve the issue
           - [ ] Test the solution
-          ````
+          ```
