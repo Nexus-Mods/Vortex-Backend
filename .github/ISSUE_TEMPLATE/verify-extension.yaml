@@ -75,14 +75,16 @@ body:
         - label: This game extension has been tested
           required: true
 
-  - type: textarea
+  - type: checkboxes
     id: tasks
     attributes:
-      label: 🖱️Tasks
-      value: |
-          ```[tasklist]
-          ## (What do engineers have to do step by step?)
-          - [ ] Verify the issue
-          - [ ] Solve the issue
-          - [ ] Test the solution
-          ```
+      label: Verification Tasks
+      description: |
+        Leave this task list. After publishing - edit labels, publish again and convert to Issues if necesarry (recommended)
+        P.S. sorry for the inconvenience!
+      options:
+        - label: Task 1
+        - label: Task 2
+        - label: Task 3
+    validations:
+      required: false
