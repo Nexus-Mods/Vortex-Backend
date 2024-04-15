@@ -13,6 +13,15 @@ body:
         To submit your extension for verification and before one of our team can take a look, please fill in the form below. This form will provide you with details about the verification process, puts all the pertinent information in a single place and will give you the ability to track the submission journey. 
 
   - type: input
+    id: nexus-username
+    attributes:
+      label: Nexus Username
+      description: Username of your Nexus account
+      placeholder: ex. insomnious
+    validations:
+      required: true
+
+  - type: input
     id: extension-url
     attributes:
       label: Extension URL
