@@ -6,8 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to develop a game extension for Vortex! To submit your extension for verification and before one of our team can take a look, please fill in the form below. 
-        This form will provide you with details about the verification process, puts all the pertinent information in a single place and will give you the ability to track the submission journey. 
+        ### Thank you for taking the time to develop a game extension for Vortex! 
+        
+        We are excited to see what you have created and to help you get it verified.
+        
+        To submit your extension for verification and before one of our team can take a look, please fill in the form below. This form will provide you with details about the verification process, puts all the pertinent information in a single place and will give you the ability to track the submission journey. 
 
   - type: input
     id: extension-url
