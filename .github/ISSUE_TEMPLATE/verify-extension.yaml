@@ -75,6 +75,11 @@ body:
         - label: This game extension has been tested
           required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        ### INTERNAL USE ONLY
+
   - type: checkboxes
     id: tasks
     attributes:
