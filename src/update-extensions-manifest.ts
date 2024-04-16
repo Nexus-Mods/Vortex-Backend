@@ -451,11 +451,13 @@ class Driver {
     
     // add to github issues project
 
+    /* no longer used as authors will submit their extensions for review
     if (addedExtensions.length !== 0) {    
         addedExtensions.map(async (mod) => {
           await AddGithubProjectIssue(mod.name ?? '', mod.mod_id.toString());
         });
     }
+    */
 
     console.log('processNexusMods done');
   }
