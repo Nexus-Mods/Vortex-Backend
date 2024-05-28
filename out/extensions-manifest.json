@@ -1,5 +1,5 @@
 {
-  "last_updated": 1716890178389,
+  "last_updated": 1716895946097,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8262,6 +8262,25 @@
       "tags": [],
       "version": "1.1.1",
       "type": null
+    },
+    {
+      "modId": 875,
+      "fileId": 3270,
+      "author": "BUTR Team and Nexus Mods",
+      "uploader": "Aragas",
+      "description": {
+        "short": "Community's extension to support Bannerlord modding.",
+        "long": "Community's extension to support Bannerlord modding.\n<br />It provides additional functionality to enhance your experience with Mount &amp; Blade II: Bannerlord.\n<br />[size=5]\n<br />Features[/size]\n<br />[list]\n<br />[*] [b]BLSE[/b] - the extension can automatically detect Bannerlord Software Extender (BLSE) and recommend its installation if it's missing. This ensures that you have all the necessary components for modding Bannerlord.\n<br />[*] [b]Save Viewer[/b] - keep track of your progress with a comprehensive list of save games. If BLSE is installed, you can select a save file to load directly from the Vortex UI.\n<br />[*] [b]Load Order Manager[/b] - the extension allows you to control your game's load order for optimal performance and compatibility. It ensures that your mods are loaded in the correct order to prevent conflicts and crashes.\n<br />[/list][size=5]\n<br />Usage[/size]\n<br />After installing this extension via Vortex, you can access its features through the Vortex UI.\n<br />[size=5]\n<br />License[/size]\n<br />This project is licensed under the [url=LICENSE.md]GPL-3.0 License[/url]."
+      },
+      "downloads": 1,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3174.jpg",
+      "name": "Mount and Blade II Bannerlord Vortex Support",
+      "timestamp": 1716884345,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Mount & Blade II: Bannerlord"
     }
   ]
 }
