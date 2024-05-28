@@ -2050,6 +2050,8 @@
       "fileId": 493
     },
     {
+      "modId": 875,
+      "fileId": 3270,
       "image": "https://raw.githubusercontent.com/Nexus-Mods/vortex-games/release/game-mount-and-blade2/gameart.jpg",
       "name": "Game: Mount and Blade II: Bannerlord",
       "type": "game",
@@ -2062,7 +2064,7 @@
         "short": "A Vortex extension for Mount and Blade II: Bannerlord mod management.",
         "long": "A Vortex extension for Mount and Blade II: Bannerlord mod management."
       },
-      "version": "0.4.13",
+      "version": "1.0.1",
       "hide": true
     },
     {
