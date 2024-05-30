@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717071443981,
+  "last_updated": 1717072225316,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8357,6 +8357,25 @@
       "version": "0.1.6",
       "type": "game",
       "gameName": "Lies of P"
+    },
+    {
+      "modId": 865,
+      "fileId": 3166,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds DOOM Eternal modding support to Vortex Mod Manager. <br /><br />This extension will automatically download and install the Doom Eternal Mod Injector at setup.  This is required for mods to work.",
+        "long": "This extension adds DOOM Eternal modding support to Vortex Mod Manager. The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />This extension will automatically download and install the [url=https://gamebanana.com/tools/7475]Doom Eternal Mod Injector[/url] at setup.  This is required for mods to work. \n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other \"Engine Injector\" type mods, please use the \"Binaries (Engine Injector)\" mod type. You will need to unzip the file in the mod staging folder to get those files in the right place [size=2](right-click on the mod in the mod list and select \"Open in File Manager\"). I am working on a way to automate this task.[/size]\n<br />[*]The EternalModInjector is version dependent, and you will need to update it for new versions of the game. This extension currently automatically downloads version: [url=https://gamebanana.com/updates/224809][b]2023-09-17 (Update 6.66 Rev 2.2 C)[/b][/url]\n<br />[/list]\n<br />\n<br />Credits:\n<br />\n<br />Big credits to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] for his excellent [url=https://github.com/Nexus-Mods/vortex-api/issues/34]documentation of the 7Zip integration for Vortex[/url] and his assistant with writing some of the functions used in this extension.\n<br />\n<br />Credit to deleted user Iluviel735 who made a previous extension for this game on Nexus Mods.\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 2,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3199.jpg",
+      "name": "DOOM Eternal Vortex Extension",
+      "timestamp": 1715289884,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "DOOM Eternal"
     }
   ]
 }
