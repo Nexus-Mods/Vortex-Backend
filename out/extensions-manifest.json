@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717069453712,
+  "last_updated": 1717069699555,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8300,6 +8300,25 @@
       "version": "1.1.1",
       "type": "game",
       "gameName": "Alan Wake 2"
+    },
+    {
+      "modId": 662,
+      "fileId": 3237,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Vortex Extension to allow mod installs for Witchfire, currently available only on the Epic Games Store.",
+        "long": "This is an extension to allow mod installs for Witchfire, currently available only on the Epic Games Store. This may be updated later as the game is still in Early Access.\n<br />\n<br />This mod integrates the [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer extension[/url]. You can download and install it manually, or the extension will install it during setup.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type.\n<br />[*]In order to manage load order of .pak files, you need to make sure the mod type is \"Unreal Engine 4 Sortable Mod\" for each of those mods.\n<br />[*]Until this extension is added to Vortex by the mod team, please use the \"Manual Download\" button and drop it into the Extensions in Vortex. The \"Mod Manager Download\" button does not seem to work when installing game extensions from the browser.\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 54,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5754.jpg",
+      "name": "Witchfire Vortex Extension",
+      "timestamp": 1716325709,
+      "tags": [],
+      "version": "0.2.9",
+      "type": "game",
+      "gameName": "Witchfire"
     }
   ]
 }
