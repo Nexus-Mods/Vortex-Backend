@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717072225316,
+  "last_updated": 1717073473178,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8376,6 +8376,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "DOOM Eternal"
+    },
+    {
+      "modId": 876,
+      "fileId": 3200,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds game support for Dragon Age: Inquisition to Vortex Mod Manager",
+        "long": "Adds game support for Dragon Age: Inquisition to Vortex Mod Manager.\n<br />\n<br />This extension will automatically download and install both DAI Mod Manager (for .daimod files) and Frosty Mod Manger (for .fbmod files).\n<br />\n<br />[url=https://www.tapatalk.com/groups/daitools/latest-version-announcement-t1068.html]https://www.tapatalk.com/groups/daitools/latest-version-announcement-t1068.html\n<br />[/url]\n<br />[url=https://github.com/CadeEvs/FrostyToolsuite]https://github.com/CadeEvs/FrostyToolsuite[/url]\n<br />\n<br />There is a helpful YouTube video linked below and in the Video section that provides great instructions on using both .daimod and .fbmod files at the same time. \n<br />\n<br />[url=https://www.youtube.com/watch?v=TiXuixE8vr0]https://www.youtube.com/watch?v=TiXuixE8vr0[/url]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_728.jpg",
+      "name": "Dragon Age Inquisition Vortex Extension",
+      "timestamp": 1715830377,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Dragon Age: Inquisition"
     }
   ]
 }
