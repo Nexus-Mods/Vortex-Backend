@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717073473178,
+  "last_updated": 1717073590377,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8395,6 +8395,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Dragon Age: Inquisition"
+    },
+    {
+      "modId": 877,
+      "fileId": 3204,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Mass Effect Andromeda support to Vortex Mod Manager. Note that FrostyToolSuite's Frosty Mod Manager is required and will be automatically installed by this extension. <br /><br />You must have Steam and/or EA App open when launching the game from Vortex in order for mods to load and the game to start.",
+        "long": "Add Mass Effect Andromeda support to Vortex. Note that FrostyToolSuite's Frosty Mod Manager is required and will be installed automatically after adding the game in Vortex.\n<br />\n<br />Frostbite Engine mods (.fbmods) will be installed to the default folder that Frosty Mod Manager uses. So basically, this extension allows you to download mods from Nexus and pass them directly to Frosty MM in the correct folder, so you don't have to move files around manually. \n<br />\n<br />For any upscalers, reshades, etc. use mod type \"Binaries / Root Game Folder\" to place the files next to the game executable in the root installation folder. \n<br />\n<br />This extension will automatically install Frosty Mod Manager from the link below. \n<br />\n<br />[size=4][url=https://github.com/CadeEvs/FrostyToolsuite/releases/tag/v1.0.6.3]https://github.com/CadeEvs/FrostyToolsuite/releases/tag/v1.0.6.3[/url] [/size][b][size=4]\n<br />[/size][/b]\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam and/or EA App open when launching the game from Vortex in order for mods to load and the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 31,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_1894.jpg",
+      "name": "Mass Effect Andromeda Vortex Extension",
+      "timestamp": 1715907382,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Mass Effect Andromeda"
     }
   ]
 }
