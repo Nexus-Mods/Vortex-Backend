@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717059770425,
+  "last_updated": 1717069453712,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8281,6 +8281,25 @@
       "version": "1.0.7",
       "type": "game",
       "gameName": "Mount & Blade II: Bannerlord"
+    },
+    {
+      "modId": 836,
+      "fileId": 3095,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Add Vortex Mod Manager support to Alan Wake 2, currently only available on the Epic Games Store.<br /><br />NOTE: Launching the game through Vortex currently does not let you access your save games, settings, etc. synced with your Epic Account. For now, you need to launch the game in the Epic Games Launcher.",
+        "long": "This extension adds Vortex Mod Manager support to Alan Wake 2, currently only available on the Epic Games Store. Mods are installed to the game's root folder by default.\n<br />\n<br />This extension will automatically download and install the [url=https://www.nexusmods.com/alanwake2/mods/19]Alan Wake 2 Mod Loader[/url] during setup. This tool is needed to load loose file mods for the game.\n<br />\n<br /> Mods for the game can be downloaded from the [url=https://www.nexusmods.com/alanwake2/mods/]Alan Wake 2 Nexus site[/url].\n<br />\n<br />A few things to note: [list]\n<br />[*]Until this extension is added to Vortex by the mod team, please use the \"Manual Download\" button and drop it into the Extensions in Vortex. The \"Mod Manager Download\" button does not seem to work when installing game extensions from the browser.\n<br />[/list]\n<br />\n<br />Credit goes to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] for assisting me in some of the functions used in this extension. \n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 43,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5835.jpg",
+      "name": "Alan Wake 2 Vortex Extension",
+      "timestamp": 1714343407,
+      "tags": [],
+      "version": "1.1.1",
+      "type": "game",
+      "gameName": "Alan Wake 2"
     }
   ]
 }
