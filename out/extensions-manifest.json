@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717073590377,
+  "last_updated": 1717077411573,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8414,6 +8414,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Mass Effect Andromeda"
+    },
+    {
+      "modId": 879,
+      "fileId": 3244,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Ghost of Tsushima Director's Cut support to Vortex Mod Manager.",
+        "long": "Adds Ghost of Tsushima Director's Cut support to Vortex Mod Manager.\n<br />\n<br />Includes a mod type for \"Save Games (Documents)\" that goes to your Ghost of Tsushima Documents folder. Note that you need to make another folder in the mod staging folder that matches the existing folder name in \"C:&#92;Users&#92;Name&#92;Documents&#92;Ghost of Tsushima DIRECTOR'S CUT\" so that the save file ends up in the right place. An example path is shown below:\n<br />\n<br />C:&#92;Users&#92;Name&#92;Documents&#92;Ghost of Tsushima DIRECTOR'S CUT[b]&#92;7656XXXXXXXXXXXXX &lt;- In the mod staging folder for your Save Game, add tthis folder that matches your existing folder and put the save game file in that folder, then re-deploy. \n<br />\n<br />\n<br />[size=4]If anyone can follow this guide and let me know the Epic Games ID, that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />\n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size][/b]"
+      },
+      "downloads": 68,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6434.jpg",
+      "name": "Ghost of Tsushima Director's Cut Vortex Extension",
+      "timestamp": 1716393260,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Ghost of Tsushima Director's Cut"
     }
   ]
 }
