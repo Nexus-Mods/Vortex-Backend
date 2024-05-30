@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717071096477,
+  "last_updated": 1717071443981,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8338,6 +8338,25 @@
       "version": "0.2.2",
       "type": "game",
       "gameName": "Helldivers 2"
+    },
+    {
+      "modId": 852,
+      "fileId": 3259,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Add Lies of P support to Vortex Mod Manager.<br /><br />XBOX Users - Download the Optional File from the mod page",
+        "long": "This extension adds Lies of P support to Vortex Mod Manager. \n<br />\n<br />[b][size=3]XBOX Users - Download the Optional File from the mod page[/size][/b]\n<br />\n<br />This mod integrates the [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer extension[/url]. You can download and install it manually, or the extension will install it during setup.\n<br />\n<br />A few things to note:  \n<br />- For upscalers, reshades, and other \"Engine Injector\" type mods, please use the \"Binaries (Engine Injector)\" mod type.\n<br />- In order to manage load order of .pak files, you need to select the \"Unreal Engine 4 Sortable Mod\" mod type for each of those mods.\n<br />- Until this extension is added to Vortex by the mod team, please use the \"Manual Download\" button and drop it into the Extensions in Vortex. The \"Mod Manager Download\" button does not seem to work when installing game extensions from the browser.\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 46,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5441.jpg",
+      "name": "Lies of P Vortex Extension",
+      "timestamp": 1716559784,
+      "tags": [],
+      "version": "0.1.6",
+      "type": "game",
+      "gameName": "Lies of P"
     }
   ]
 }
