@@ -1,5 +1,5 @@
 {
-  "last_updated": 1717069699555,
+  "last_updated": 1717071096477,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8319,6 +8319,25 @@
       "version": "0.2.9",
       "type": "game",
       "gameName": "Witchfire"
+    },
+    {
+      "modId": 845,
+      "fileId": 3169,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Vortex extension for Helldivers 2 (Steam Version).",
+        "long": "Vortex extension for Helldivers 2 (Steam Version).\n<br />\n<br />Includes mod types for engine injector mods (upscalers, reshades, etc.) and .dl_bin (game data) mods, such as [url=https://www.nexusmods.com/helldivers2/mods/12]MLR Unlocked[/url]﻿. The mod installer will automatically place .dl_bin files in the correct game data folder. \n<br />\n<br />\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*]Until this extension is added to Vortex by the mod team, please use the \"Manual Download\" button and drop it into the Extensions in Vortex. The \"Mod Manager Download\" button does not seem to work when installing game extensions from the browser.\n<br />[/list]\n<br />\n<br />Credit goes to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] for assisting me in some of the functions used in this extension. \n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 216,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6119.jpg",
+      "name": "Helldivers 2 Vortex Extension",
+      "timestamp": 1715310198,
+      "tags": [],
+      "version": "0.2.2",
+      "type": "game",
+      "gameName": "Helldivers 2"
     }
   ]
 }
