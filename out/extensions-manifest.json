@@ -1,5 +1,5 @@
 {
-  "last_updated": 1718272987560,
+  "last_updated": 1718278404874,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8528,6 +8528,25 @@
       "version": "1.0.1",
       "type": "game",
       "gameName": "Snowbreak: Containment Zone"
+    },
+    {
+      "modId": 894,
+      "fileId": 3256,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Warhammer 40K: Space Marine modding support to Vortex Mod Manager.",
+        "long": "This extension adds Warhammer 40K: Space Marine modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />[b]\n<br />[/b]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3049.jpg",
+      "name": "Warhammer 40K Space Marine Vortex Extension",
+      "timestamp": 1716515438,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Warhammer 40,000: Space Marine"
     }
   ]
 }
