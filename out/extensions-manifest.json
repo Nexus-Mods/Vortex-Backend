@@ -1,5 +1,5 @@
 {
-  "last_updated": 1718265266134,
+  "last_updated": 1718268544777,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8471,6 +8471,25 @@
       "version": "1.0.0",
       "type": "game",
       "gameName": "BUNNY GARDEN"
+    },
+    {
+      "modId": 887,
+      "fileId": 3325,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Assassin's Creed Origins support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. <br /><br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.",
+        "long": "Adds Assassin's Creed Origins support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. \n<br />\n<br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.\n<br />\n<br />The extension will also send you a notification about [url=https://www.undertow.club/downloads/resorep.1254]Resorep[/url]﻿, which is a legacy utility for texture injection. The app is behind a login \"wall\", so it must be downloaded and installed manually if you want to use it. \n<br />\n<br />===============================================================\n<br />\n<br />[b][size=3]If you own the Ubisoft Connect version of the game (NOT from Steam), can you let me know what is the ID for this game? It will be found in the registry where in the example below it is \"720\" for AC Unity. You can verify it is the correct game by looking at the \"InstallDir\" and seeing the game name. The auto-detect game install location will not work until I get this number.[/size][/b]\n<br />\n<br />HKEY_LOCAL_MACHINE&#92;SOFTWARE&#92;WOW6432Node&#92;Microsoft&#92;Windows&#92;CurrentVersion&#92;Uninstall&#92;Uplay Install XXX\n<br />\n<br />\n<br />[img]https://i.imgur.com/esmf0DZ.png[/img]\n<br />\n<br />===============================================================\n<br />\n<br />\n<br />For any upscalers, reshades, etc. use mod type \"Binaries / Root Game Folder\" to place the files next to the game executable in the root installation folder. \n<br />\n<br />This extension will automatically install AnvilToolkit from the link below. \n<br />\n<br />[size=3][url=https://www.nexusmods.com/assassinscreedunity/mods/38][color=#57a5cc]https://www.nexusmods.com/assassinscreedunity/mods/38[/color][/url]﻿[b]\n<br />[/b][/size]\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2153.jpg",
+      "name": "Assassin's Creed Origins Vortex Extension",
+      "timestamp": 1717540914,
+      "tags": [],
+      "version": "0.1.4",
+      "type": "game",
+      "gameName": "Assassin's Creed Origins"
     }
   ]
 }
