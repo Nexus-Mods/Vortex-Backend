@@ -1,5 +1,5 @@
 {
-  "last_updated": 1718869594267,
+  "last_updated": 1718870909757,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -4399,7 +4399,7 @@
         "long": "Adds support for Elden ring to the vortex.\n<br />\n<br />[b]Installation[/b]\n<br />In Vortex go to \"Extensions\", click the \"Find more\" button, find this extension, and install it. \n<br />\n<br />[b]Manual Installation[/b]\n<br />Download manually from the site then paste %appdata%&#92;Vortex&#92;plugins to the file explorer address bar and press enter then extract the file into a new folder inside that folder. \n<br />If on the vortex tab of vortex setting multi-user mode is set to \"Shared\" you have to extract the archive into windowsdrive&#92;ProgramData&#92;vortex&#92;plugins instead of %appdata%&#92;Vortex&#92;plugins."
       },
       "downloads": 347966,
-      "endorsements": 14128,
+      "endorsements": 14129,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/370%2F370-1647694507-1869342320.jpeg",
       "name": "Elden Ring Support for Vortex",
       "timestamp": 1648967946,
@@ -4997,7 +4997,7 @@
         "long": "Adds Vortex game support for Resident Evil 3 (2020)\n<br />\n<br />Download the game extension through Vortex's extensions browser - requires the RE Engine Wrapper extension which will be installed automatically when managing the game.\n<br />\n<br />Important note: the game extension will only function with the DX11 non-RT version of the game!"
       },
       "downloads": 33029,
-      "endorsements": 1722,
+      "endorsements": 1723,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/433%2F433-1659507424-1196646885.jpeg",
       "name": "Resident Evil 3 (2020)",
       "timestamp": 1660737462,
@@ -6716,7 +6716,7 @@
         "long": "[url=https://gitgud.io/karryn-prison-mods/karryns-prison-vortex-extension/-/commits/master][img]https://gitgud.io/karryn-prison-mods/karryns-prison-vortex-extension/badges/master/pipeline.svg?ignore_skipped=true[/img][/url][url=https://gitgud.io/karryn-prison-mods/karryns-prison-vortex-extension/-/releases][img]https://gitgud.io/karryn-prison-mods/karryns-prison-vortex-extension/-/badges/release.svg[/img][/url][url=https://discord.gg/remtairy][img]https://img.shields.io/discord/454295440305946644?color=%235865F2&amp;label=Discord&amp;logo=Discord[/img][/url]\n<br />\n<br />To set up extension and start installing mods please refer to [url=https://gitgud.io/karryn-prison-mods/modding-wiki/-/wikis/Installation/Using-Vortex]this guide[/url]﻿.\n<br />\n<br />Repository with source code is on [url=https://gitgud.io/karryn-prison-mods/karryns-prison-vortex-extension/]gitgud[/url]﻿."
       },
       "downloads": 35622,
-      "endorsements": 2137,
+      "endorsements": 2138,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/566%2F566-1686218101-625196592.jpeg",
       "name": "Karryn's Prison Support",
       "timestamp": 1703122017,
@@ -8087,7 +8087,7 @@
         "long": "[b][size=5]NOTICE:  MAJOR UPDATE [/size]\n<br />[list]\n<br />[*][b]If you have updated from a previous version of this extension, please delete your old Fluffy Mod Manger and REFramework mods and use the new ones downloaded automatically (this will not affect your mod setup).[/b]\n<br />[*][b]It is also recommended that you Reinstall all of your mods in Vortex to update to the new mod installation structure where all mods will be enabled in Fluffy (including REFramework mods). You may need to re-enable mods in Fluffy after doing this as all the REFramework mods will now be managed in Fluffy.[/b]\n<br />[*][b]You can do this easily by clicking on your first mod, scroll down, then hold SHIFT key and click on the last mod. Then, select the \"Reinstall\" button in the blue bar at the bottom.[/b]\n<br />[/list][/b]\n<br />[img]https://i.imgur.com/tFKv824.png[/img]\n<br />\n<br />This extension adds Vortex mod support for Dragon's Dogma 2.  Should automatically detect the installation location for the Steam version of the game. Other versions will need to specify the game folder manually when activating the game. \n<br />\n<br />This extension is intended to be used in combination with[url=https://www.nexusmods.com/site/mods/818] Fluffy Mod Manager[/url] (FMM). That mod will install automatically after installing this extension, along with [url=https://www.nexusmods.com/dragonsdogma2/mods/8]REFramework[/url] (for plugins and script mods).\n<br />\n<br />[b][size=4]You need to enable mods in Fluffy Mod Manger for them to be installed to the game files! There is a tool included with the extension, so you will see a button for Fluffy in the Dashboard tab or at the top of the Vortex window.[/size][/b]\n<br />\n<br />[b]\n<br />[/b]\n<br />Mod Installation Notes:[list]\n<br />[*]For mods not to be used with Fluffy Mod Manager (upscalers, reshades, etc.), you will need to change the mod type to \"Binaries / Root Game Folder\" and unzip the mod files in the staging folder. This is necessary because the default Fluffy Mod Manger mods need to be kept in their zips for easier management with Fluffy.\n<br />[/list]\n<br />\n<br />\n<br />Credit goes to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] for assisting me with some of the functions used in this extension. \n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
       },
       "downloads": 14061,
-      "endorsements": 476,
+      "endorsements": 477,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/851%2F851-1713113090-592652318.jpeg",
       "name": "Dragon's Dogma 2 Vortex Extension",
       "timestamp": 1717865099,
@@ -8273,7 +8273,7 @@
         "long": "Community's extension to support Bannerlord modding.\n<br />It provides additional functionality to enhance your experience with Mount &amp; Blade II: Bannerlord.\n<br />[size=5]\n<br />Features[/size]\n<br />[list]\n<br />[*] [b]BLSE[/b] - the extension can automatically detect Bannerlord Software Extender (BLSE) and recommend its installation if it's missing. This ensures that you have all the necessary components for modding Bannerlord.\n<br />[*] [b]Save Viewer[/b] - keep track of your progress with a comprehensive list of save games. If BLSE is installed, you can select a save file to load directly from the Vortex UI.\n<br />[*] [b]Load Order Manager[/b] - the extension allows you to control your game's load order for optimal performance and compatibility. It ensures that your mods are loaded in the correct order to prevent conflicts and crashes.\n<br />[/list][size=5]\n<br />Usage[/size]\n<br />After installing this extension via Vortex, you can access its features through the Vortex UI.\n<br />[size=5]\n<br />License[/size]\n<br />This project is licensed under the [url=LICENSE.md]GPL-3.0 License[/url]."
       },
       "downloads": 39550,
-      "endorsements": 455,
+      "endorsements": 456,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/875%2F875-1716902173-1485482673.jpeg",
       "name": "Mount and Blade II Bannerlord Vortex Support",
       "timestamp": 1717934333,
