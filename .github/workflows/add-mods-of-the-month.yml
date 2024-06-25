@@ -1,6 +1,6 @@
 # This is a basic workflow that is manually triggered
 
-name: Add Mods of the month entry
+name: Add Mods of The Month Entry
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -56,7 +56,7 @@ jobs:
         env: 
           CI_COMMIT_AUTHOR: Vortex Backend
           CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
-          CI_COMMIT_MESSAGE: Update Extensions Manifest
+          CI_COMMIT_MESSAGE: Update Mods of the month
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
