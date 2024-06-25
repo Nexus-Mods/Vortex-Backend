@@ -60,6 +60,7 @@
     "minimatch": "^3.1.2",
     "minimist": "^1.2.8",
     "mkdirp": "^1.0.4",
+    "nanoid": "^5.0.7",
     "node-7z": "github:Nexus-Mods/node-7z",
     "node-7z-archive": "^1.1.4",
     "normalize-path": "^3.0.0",
@@ -90,6 +91,7 @@
     "dev": "ts-node-dev --exit-child src/index.ts",
     "update-extensions-manifest": "ts-node src/update-extensions-manifest.ts",
     "add-extension": "ts-node src/add-extension.ts",
+    "add-mods-of-month": "ts-node src/add-mods-of-month.ts",
     "test-slack": "ts-node src/test-slack.ts",
     "test-github": "ts-node src/test-github.ts",
     "test": "echo \"Error: no test specified\" && exit 1"

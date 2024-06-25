@@ -104,6 +104,12 @@ export interface IExtraInfo {
   gameName?: string;
 }
 
+export interface IMOTMEntry {
+  id: string;
+  link: string;
+  date: number;
+}
+
 export class Rejected extends Error {
   constructor() {
       super('Update rejected');
