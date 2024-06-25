@@ -1,6 +1,6 @@
 import { IMOTMEntry } from './types';
 import * as fs from 'fs-extra';
-import { nanoid } from 'nanoid';
+import * as nanoid from 'nanoid';
 import * as path from 'path';
 import 'dotenv/config';
 import { getFormattedDate } from './utils';
@@ -65,7 +65,7 @@ class Driver {
     this.mEntries = await this.readMOTMFile();
     const newEntry: IMOTMEntry = {
       date: !!EXT_MOTM_DATE ? +EXT_MOTM_DATE : Date.now(),
-      id: nanoid(),
+      id: nanoid.nanoid(),
       link: EXT_MOTM_LINK
     }
     const existingEntry = this.mEntries.find(e => e.link === newEntry.link);
