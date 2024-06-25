@@ -52,8 +52,7 @@ jobs:
         run: yarn add-mods-of-month    
   
       # commit and push if not dry run  
-      - name: Git commit and push      
-        if: ${{ env.DRY_RUN == 'false' }}
+      - name: Git commit and push
         env: 
           CI_COMMIT_AUTHOR: Vortex Backend
           CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
