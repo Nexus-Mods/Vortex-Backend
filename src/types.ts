@@ -105,8 +105,19 @@ export interface IExtraInfo {
 }
 
 export interface IMOTMEntry {
+  /**
+   * Generated ID for the video 
+   */
   id: string;
-  link: string;
+  
+  /**
+   * YouTube id of the video
+   */
+  videoid: string;
+
+  /**
+   * timestamp of the video
+   */
   date: number;
 }
 

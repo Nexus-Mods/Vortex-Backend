@@ -45,15 +45,14 @@ class Driver {
     return JSON.parse(await fs.readFile(path.join(MOTM_PATH, MOTM_FILENAME), { encoding: 'utf8' }));
   }
 
-  private convertYoutubeLink(url: string): string {
+  private extractVideoIdFromYouTubeUrl(url: string): string {
     let videoId: string;
     if (url.includes("watch?v=")) {
       videoId = url.split("watch?v=")[1].split("&")[0];
     } else {
       throw new Error('Invalid URL');
     }
-    const newUrl = `https://www.youtube.com/embed/${videoId}?si=JqVJ8tNV5jDq4y6N&origin=vortex.com`;
-    return newUrl;
+    return videoId;
   }
 
   private async writeMOTMFile(data: any) {
@@ -77,9 +76,9 @@ class Driver {
     const newEntry: IMOTMEntry = {
       date: !!EXT_MOTM_DATE ? +EXT_MOTM_DATE : Date.now(),
       id: nanoid.nanoid(),
-      link: this.convertYoutubeLink(EXT_MOTM_LINK)
+      videoid: this.extractVideoIdFromYouTubeUrl(EXT_MOTM_LINK)
     }
-    const existingEntry = this.mEntries.find(e => e.link === newEntry.link);
+    const existingEntry = this.mEntries.find(e => e.videoid === newEntry.videoid);
     if (existingEntry) {
       console.log('Entry already exists, rejecting...');
       throw new Error('Entry already exists');
