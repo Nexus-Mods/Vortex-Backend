@@ -9,12 +9,12 @@ on:
     # Inputs the workflow accepts.
     inputs:
       link:
-        description: 'Youtube video link'
+        description: 'YouTube Video URL'
         default: ''
         required: true
         type: string
       date:
-        description: 'unix timestamp of the video date (optional)'
+        description: 'UNIX timestamp (optional, used instead of current date)'
         default: ''
         required: false
         type: string
@@ -56,7 +56,7 @@ jobs:
         env: 
           CI_COMMIT_AUTHOR: Vortex Backend
           CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
-          CI_COMMIT_MESSAGE: Update Mods of the month
+          CI_COMMIT_MESSAGE: Update Mods of the Month
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
