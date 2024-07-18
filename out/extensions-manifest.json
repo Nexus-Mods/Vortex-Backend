@@ -1,5 +1,5 @@
 {
-  "last_updated": 1721298982466,
+  "last_updated": 1721300068883,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8566,6 +8566,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Tomb Raider (2013)"
+    },
+    {
+      "modId": 857,
+      "fileId": 3386,
+      "author": "Senjay",
+      "uploader": "Senjay",
+      "description": {
+        "short": "Vortex Extension Support for Terraria ModLoader",
+        "long": "[b][size=4]Vortex Extension Support for Terraria ModLoader\n<br />[/size][/b]"
+      },
+      "downloads": 11,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_549.jpg",
+      "name": "Terraria ModLoader Vortex Extension",
+      "timestamp": 1718264906,
+      "tags": [],
+      "version": "1.0.2",
+      "type": "game",
+      "gameName": "Terraria"
     }
   ]
 }
