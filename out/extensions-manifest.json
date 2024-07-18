@@ -1,5 +1,5 @@
 {
-  "last_updated": 1721303194128,
+  "last_updated": 1721304283924,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8680,6 +8680,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Metro Exodus"
+    },
+    {
+      "modId": 880,
+      "fileId": 3504,
+      "author": "orax",
+      "uploader": "0R4X",
+      "description": {
+        "short": "Adds Grounded game support to Vortex.",
+        "long": "This is an (beta) extension for Vortex to add support for Grounded. The Steam version is supported.\n<br />\n<br />I need the \"Windows Store ID\" to add support for the Xbox/Windows version. See [url=https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Game-detection#windows-store-xbox]Game-detection#windows-store-xbox[/url].\n<br />\n<br />Source code : [url=https://github.com/0-F/game-grounded]https://github.com/0-F/game-grounded[/url]"
+      },
+      "downloads": 9,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3384.jpg",
+      "name": "Grounded - Vortex support",
+      "timestamp": 1720813734,
+      "tags": [],
+      "version": "0.2.0",
+      "type": "game",
+      "gameName": "Grounded"
     }
   ]
 }
