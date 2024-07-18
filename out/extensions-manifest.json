@@ -1,5 +1,5 @@
 {
-  "last_updated": 1721302018973,
+  "last_updated": 1721303194128,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8661,6 +8661,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Resident Evil 4 (2023)"
+    },
+    {
+      "modId": 907,
+      "fileId": 3305,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Metro Exodus modding support to Vortex Mod Manager.",
+        "long": "This extension adds Metro Exodus modding support to Vortex Mod Manager.\n<br />\n<br />The Steam, GOG, and Epic versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />===================================================================================\n<br />\n<br />[b]XBOX (Game Pass) Users - I need additional info before I can get a working extension for you.[list]\n<br />[*]Follow the instructions at the link below and send me the two lines in the Example below from the appmanifest.xml\n<br />[*][url=https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Game-detection]   ﻿MODDINGWIKI Developers General Game detection · Nexus-Mods/Vortex Wiki[/url]\n<br />[/list]Example:\n<br />[/b][code]&lt;Identity Name=\"HoodedHorse.ManorLords\" Publisher=\"CN=EFF196E1-65CE-4A5A-9010-7DFDCEAC7876\" Version=\"0.7.955.0\" ProcessorArchitecture=\"x64\"/&gt;\n<br />\n<br />&lt;Application Id=\"AppHoodedHorseManorLordsShipping\" Executable=\"GameLaunchHelper.exe\" EntryPoint=\"Windows.FullTrustApplication\"&gt;\n<br />[/code]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />[/url]"
+      },
+      "downloads": 4,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2734.jpg",
+      "name": "Metro Exodus Vortex Extension",
+      "timestamp": 1717257827,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Metro Exodus"
     }
   ]
 }
