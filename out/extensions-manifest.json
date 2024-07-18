@@ -1,5 +1,5 @@
 {
-  "last_updated": 1721304283924,
+  "last_updated": 1721305357345,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8699,6 +8699,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Grounded"
+    },
+    {
+      "modId": 878,
+      "fileId": 3422,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Assassin's Creed Unity support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. <br /><br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.",
+        "long": "Adds Assassin's Creed Unity support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. \n<br />\n<br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.\n<br />\n<br />For any upscalers, reshades, etc. use mod type \"Binaries / Root Game Folder\" to place the files next to the game executable in the root installation folder. \n<br />\n<br />This extension will automatically install AnvilToolkit from the link below. \n<br />\n<br />[size=3][url=https://www.nexusmods.com/assassinscreedunity/mods/38][color=#57a5cc]https://www.nexusmods.com/assassinscreedunity/mods/38[/color][/url]﻿[b]\n<br />[/b][/size]\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />===============================================================\n<br />\n<br />\n<br />[b][size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about those games that is only available after installation.\n<br />[/size][b][size=4]If anyone can follow this guide and let me know the Epic Games ID, that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size][/b]\n<br />[/b]\n<br />==============================================\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 21,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2619.jpg",
+      "name": "Assassin's Creed Unity Vortex Extension",
+      "timestamp": 1718905164,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Assassin's Creed Unity"
     }
   ]
 }
