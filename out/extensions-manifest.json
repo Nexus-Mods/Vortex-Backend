@@ -1,5 +1,5 @@
 {
-  "last_updated": 1721634407446,
+  "last_updated": 1721652334902,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8718,6 +8718,24 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Assassin's Creed Unity"
+    },
+    {
+      "modId": 945,
+      "fileId": 3491,
+      "author": "Senjay",
+      "uploader": "Senjay",
+      "description": {
+        "short": "Vortex extension sanity checks for Fallout New Vegas that handles common problems and quality of life addition",
+        "long": "[size=3]Vortex extension sanity checks for Fallout New Vegas that handles common problems and quality of life addition.\n<br />Non-intrusive notification and can be dismissed permanently.\n<br />\n<br />[/size][size=4][color=#00ffff][b]Features[/b]\n<br />[/color][/size][list]\n<br />[*][size=3]Checks the presence of translation plugin that's included by default from the game and notify users by prompting a file deletion at their consent[/size]\n<br />[/list][list]\n<br />[*][size=3]Checks if the executable files is not 4GB patched and send a notification linking the patcher[/size]\n<br />[/list][list]\n<br />[*][size=3]Automatic creation of .override files for BSA files so that it can override previous BSA files[/size]\n<br />[/list][list]\n<br />[*][size=3]Enhanced default GECK configuration files if it doesn't exists (only for mod makers)[/size]\n<br />[/list][size=3]\n<br />[/size][color=#00ffff][size=4][b]Vortex Installation[/b][/size][/color][size=3]\n<br />Open the extension page and click find more, search for the extension name and click install, you will be prompted to restart by vortex.\n<br />\n<br />[/size][color=#00ffff][size=4][b]Alternate Vortex Installation[/b][/size][/color][size=3]\n<br />Manually download the mod, Open the extension page, drag and drop the zip file at the dedicated drop file box, [size=3]you will be prompted to restart by vortex.[/size]\n<br />\n<br />[/size][size=4][url=https://github.com/Senjay-id/fnv-sanitycheck-extension]Source Code[/url][/size][size=3]\n<br />\n<br />[/size][size=3][b][size=5][url=https://ko-fi.com/Senjay] [img]https://i.imgur.com/7Cm07AZ.png[/img] \n<br /> [/url][/size][/b][/size]"
+      },
+      "downloads": 10,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/945/945-1720589323-1528196885.png",
+      "name": "Fallout New Vegas Sanity Checks",
+      "timestamp": 1720589412,
+      "tags": [],
+      "version": "1.0.0",
+      "type": null
     }
   ]
 }
