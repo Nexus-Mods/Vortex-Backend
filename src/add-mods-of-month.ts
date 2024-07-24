@@ -18,18 +18,18 @@ const EXT_MOTM_MONTH = process.env.EXT_MOTM_MONTH || '';
 const EXT_MOTM_YEAR = process.env.EXT_MOTM_YEAR || '';
 
 const MONTH_DICT: { [key: string]: number } = {
-  'January': 1,
-  'February': 2,
-  'March': 3,
-  'April': 4,
-  'May': 5,
-  'June': 6,
-  'July': 7,
-  'August': 8,
-  'September': 9,
-  'October': 10,
-  'November': 11,
-  'December': 12
+  'January': 0,
+  'February': 1,
+  'March': 2,
+  'April': 3,
+  'May': 4,
+  'June': 5,
+  'July': 6,
+  'August': 7,
+  'September': 8,
+  'October': 9,
+  'November': 10,
+  'December': 11
 }
 
 async function start() {
