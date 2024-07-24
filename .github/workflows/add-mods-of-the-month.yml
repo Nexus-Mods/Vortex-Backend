@@ -13,11 +13,37 @@ on:
         default: ''
         required: true
         type: string
-      date:
-        description: 'UNIX timestamp (optional, used instead of current date)'
-        default: ''
-        required: false
-        type: string
+      month:
+        description: 'Month of video'
+        required: true
+        default: 'January'
+        type: choice
+        options:
+          - 'January'
+          - 'February'
+          - 'March'
+          - 'April'
+          - 'May'
+          - 'June'
+          - 'July'
+          - 'August'
+          - 'September'
+          - 'October'
+          - 'November'
+          - 'December'
+      year:
+        description: 'Year of video'
+        required: true
+        default: '2024'
+        type: choice
+        options:
+          - '2024'
+          - '2025'
+          - '2026'
+          - '2027'
+          - '2028'
+          - '2029'
+          - '2030'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,7 +54,8 @@ jobs:
     
     env:
       EXT_MOTM_LINK: ${{ inputs.link }}
-      EXT_MOTM_DATE: ${{ inputs.date }}
+      EXT_MOTM_MONTH: ${{ inputs.month }}
+      EXT_MOTM_YEAR: ${{ inputs.year }}
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:

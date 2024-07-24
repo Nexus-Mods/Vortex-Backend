@@ -14,21 +14,34 @@ const MOTM_ARCHIVE_PATH: string = path.join(REPO_ROOT_PATH, 'archive');
 
 // env variables
 const EXT_MOTM_LINK = process.env.EXT_MOTM_LINK || '';
-const EXT_MOTM_DATE = process.env.EXT_MOTM_DATE || '';
+const EXT_MOTM_MONTH = process.env.EXT_MOTM_MONTH || '';
+const EXT_MOTM_YEAR = process.env.EXT_MOTM_YEAR || '';
+
+const MONTH_DICT: { [key: string]: number } = {
+  'January': 1,
+  'February': 2,
+  'March': 3,
+  'April': 4,
+  'May': 5,
+  'June': 6,
+  'July': 7,
+  'August': 8,
+  'September': 9,
+  'October': 10,
+  'November': 11,
+  'December': 12
+}
 
 async function start() {
 
   console.log('Start Program');
 
-  if (EXT_MOTM_LINK === '') {
-    console.error('No EXT_MOTM_LINK found in env');
-    process.exit(1);
-  }
-
-  if (EXT_MOTM_DATE !== '' && isNaN(+EXT_MOTM_DATE)) {
-    console.error('EXT_MOTM_DATE is not a unix timestamp number');
-    process.exit(1);
-  }
+  [EXT_MOTM_LINK, EXT_MOTM_MONTH, EXT_MOTM_YEAR].forEach((envVar) => {
+    if (envVar === '') {
+      console.error(`No ${envVar} found in env`);
+      process.exit(1);
+    }
+  });
 
   const driver = new Driver();
   await driver.process();
@@ -70,11 +83,13 @@ class Driver {
 
 
   public async process() {
-    console.log('main env variables', { EXT_MOTM_LINK, EXT_MOTM_DATE });
+    console.log('main env variables', { EXT_MOTM_LINK, EXT_MOTM_MONTH, EXT_MOTM_YEAR });
     console.log('Processing MOTM...');
     this.mEntries = await this.readMOTMFile();
+    const timestampMS = new Date(+EXT_MOTM_YEAR, MONTH_DICT[EXT_MOTM_MONTH]).getTime();
+    const date = Math.floor(timestampMS / 1000);
     const newEntry: IMOTMEntry = {
-      date: !!EXT_MOTM_DATE ? +EXT_MOTM_DATE : Date.now(),
+      date,
       id: nanoid.nanoid(),
       videoid: this.extractVideoIdFromYouTubeUrl(EXT_MOTM_LINK)
     }
