@@ -1,5 +1,5 @@
 {
-  "last_updated": 1721893628258,
+  "last_updated": 1721895358462,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -295,7 +295,7 @@
         "long": "Description / Beschreibung\n<br />\n<br />This file contains the german translation for Vortex which is bundled in Vortex versions before 1.1.0.\n<br />\n<br />Diese Datei enthält die Deutsche Übersetzung für Vortex die vor Version 1.1.0 mitgeliefert wurde.\n<br />\n<br />\n<br />Installation\n<br />\n<br />No installation necessary. Vortex up to 1.0.x includes this translation, from 1.1.0 forward the language drop-down in Settings-&gt;Interface includes third-party languages like this one.\n<br />\n<br />Eine Installation ist nicht nötig. Vortex bis einschließlich 1.0.x wird mit dieser Übersetzung ausgeliefert, ab 1.1.0 werden alle Übersetzungen von Dritten unter Settings-&gt;Interface aufgelistet.\n<br />\n<br />Contributing / Unterstützung\n<br />\n<br />This translation was mostly created by \"dertrutinator\" and me (Tannin) but all contributions are welcome. Also I'd very much welcome someone taking up maintenance of this page.\n<br />\n<br />Diese Übersetzung wurde hauptsächlich von \"dertrutinator\" und mir (Tannin) erstellt aber alle Beiträge sind herzlich willkommen. Ich würde mich auch freuen wenn jemand die Verwaltung dieser Seite übernimmt."
       },
       "downloads": 146960,
-      "endorsements": 8233,
+      "endorsements": 8234,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/60/60-1572509321-568437082.jpeg",
       "name": "German translation for Vortex",
       "tags": [],
@@ -1925,7 +1925,7 @@
         "long": "[size=4][center][b]Jeśli chcesz wesprzeć działalność tłumaczeniową FLATlabs, [url=https://www.patreon.com/flatlabs]rozważ subskrypcję w serwisie Patreon[/url]﻿.﻿[/b][/center]\n<br />\n<br />About\n<br />[/size]\n<br />This mod is a WIP Polish translation for Vortex mod manager made with Unofficial Vortex Translation Tool. It is not finished yet but probably won't cover every string in the application as Vortex code is a very big pile of crap that has many lines hardcoded in it.\n<br />\n<br />[size=4]Installation\n<br />\n<br />[/size]Download the archive, unzip it in any folder and run the .cmd file to place the JSON files inside the Vortex folder. Then open your Vortex, go to Settings -&gt; Interface and change language to [i]polski[/i]. No need to restart the app. [b]If lacking of polish letters in headings bothers you, go to[i] Settings -&gt; Theme -&gt; Clone[/i] your theme and change [i]headings font family[/i] to e.g. Roboto Black. For Polish language it'll be [i]Ustawienia -&gt; Motyw -&gt; Klonuj[/i] and \"[i]krój czcionki (nagłówki)[/i]\".[/b]\n<br />\n<br />[size=4]Uninstallation\n<br />\n<br />[/size]Just delete all the [i]pl[/i] folders (with everything that's inside of them) in localization folders of your Vortex directory."
       },
       "downloads": 50769,
-      "endorsements": 3935,
+      "endorsements": 3936,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/101/101-1586045647-1066687117.jpeg",
       "name": "Polish translation for Vortex",
       "timestamp": 1586085369,
@@ -7295,7 +7295,7 @@
         "long": "This extension adds Warhammer 40,000: Darktide as a game supported in Vortex. Only steam version is detected (xbox in update 1.0.2).\n<br />\n<br />[u][u][code][url=https://ko-fi.com/infarctus][img]https://github.com/doodlum/nexusmods-widgets/blob/main/Ko-fi_40px_60fps.png?raw=true[/img]\n<br />[/url][/code][/u][/u]\n<br />[size=4]Vortex Install (Easy)\n<br />[/size]\n<br />[list]\n<br />[*]In Vortex, locate WarHammer 40,000 Darktide in the Games tab.\n<br />[*]Click on the game tile to manage it and install the extension as prompted.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />[size=4]Vortex Install (Advanced)[/size]\n<br />\n<br />[list]\n<br />[*]In Vortex, navigate to the Extensions tab.\n<br />[*]Drop the Zip archive into the \"drop zone\" at the bottom of the page.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list][size=4]\n<br />Manual Install\n<br />[/size]\n<br />Extract the Zip archive to %appdata%&#92;Vortex&#92;plugins&#92;warhammer40kdarktide\n<br />\n<br />[b][size=4]Important\n<br />\n<br />[/size][/b][size=3]When you uninstall a mod on vortex, purge and redeploy mods to remove the folder especially if you use ﻿[url=https://www.nexusmods.com/warhammer40kdarktide/mods/139]Mod Load Order File Maker[/url]﻿.\n<br />If you don't use it you can use the load order tab to change the order or if a mod loads or not.[/size]"
       },
       "downloads": 25633,
-      "endorsements": 1068,
+      "endorsements": 1069,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/684/684-1699031054-754694810.png",
       "name": "Warhammer 40k Darktide Vortex Extension",
       "timestamp": 1719328394,
@@ -7330,7 +7330,7 @@
         "long": "[size=4][b]What[/b][/size]\n<br />\n<br />[size=3]Adds Vortex support for My Time at Sandrock BepInEx mods.[/size]"
       },
       "downloads": 5523,
-      "endorsements": 247,
+      "endorsements": 248,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/688/688-1699084026-8324007.jpeg",
       "name": "My Time at Sandrock Vortex Extension",
       "timestamp": 1699084137,
@@ -7612,7 +7612,7 @@
         "long": "This is an extension for [url=https://www.nexusmods.com/about/vortex/]Vortex[/url] to add support for Palworld. The [url=https://store.steampowered.com/app/1623730/Palworld/]Steam[/url] and [url=https://www.xbox.com/en-GB/games/store/palworld-game-preview/9NKV34XDW014]Xbox[/url] versions of Palworld are both supported, although there are differences between the two.\n<br />\n<br />[size=3][b]Features\n<br />[/b][/size]\n<br />[list]\n<br />[*]Downloads and installs UE4SS if it doesn't exist\n<br />[*]Automatic game detection\n<br />[*]Support for PAK mods\n<br />[*]Support for Lua&#92;UE4SS mods\n<br />[*]Support for Blueprint&#92;Logic mods\n<br />[/list]\n<br />[size=3][b]Installation\n<br />[/b][/size]\n<br />This extension requires Vortex 1.9.10 or greater.\n<br />\n<br />To install, click the Vortex button at the top of the Palworld Extension page on Nexus Mods, and then click Install.\n<br />\n<br />You can also manually install it by click the Manual button at the top of the page and dragging it into the drop target labelled Drop File(s) in the Extensions page at the bottom right.\n<br />\n<br />Afterwards, restart Vortex and you can begin installing supported Palworld mods with Vortex.\n<br />\n<br />If you've already got a previous version, the extension should auto update on a Vortex restart.\n<br />\n<br />[b][size=3]Game detection[/size][/b]\n<br />\n<br />The Palworld game extension enables Vortex to automatically locate installs from the Steam and Xbox apps.\n<br />\n<br />It is also possible to manually set the game folder if the auto detection doesn't find the correct installation. A valid Palworld game folder contains:\n<br />\n<br />[list]\n<br />[*]Palworld.exe\n<br />[/list]\n<br />If your game lacks this file then it is likely that your installation has become corrupted somehow.\n<br />\n<br />[b][size=3]Mod Management[/size][/b]\n<br />\n<br />By default, Vortex will deploy files to the game's root folder and extracts the archive while preserving it's folder structure.\n<br />\n<br />[b]PAK mods[/b]\n<br />\n<br />If a PAK mod is detected, it's deployment folder is \"&#92;Pal&#92;Content&#92;Paks&#92;~mods\".\n<br />\n<br />[b]Lua&#92;UE4SS mods\n<br />[/b]\n<br />If a LUA mod is detected, it's deployment folder is `&#92;Pal&#92;Binaries&#92;Win64&#92;Mods`.\n<br />\n<br />Starting in v0.1.5 of the Palworld Extension, Lua mods are now added to the `&#92;Pal&#92;Binaries&#92;Win64&#92;Mods&#92;mods.txt` as the primary method for UE4SS detecting that the mod is installed and enabled.\n<br />\n<br />Previously, Vortex created an `enabled.txt` within the individual mods folder. This has since been proven to cause problems with collections and so now uses the above `mods.txt` method.\n<br />\n<br />[b]Blueprint&#92;Logic mods[/b]\n<br />\n<br />If a Blueprint&#92;Logic mod is detected, it's deployment folder is `&#92;Pal&#92;Content&#92;Paks&#92;LogicMods`. These mods are detected by reading the contents of the PAK file and looking at it's mount point. If this fails, then Vortex falls back to looking for the existence of a `LogicMods` folder within the archive.\n<br />\n<br />[b]Unsupported mods[/b]\n<br />\n<br />Vortex doesn't officially support managing of mods that are reshades, save game&#92;config edits or require external tools (apart from UE4SS and UnrealPakTool). \n<br />[size=3][b]\n<br />Known Issues\n<br />[/b][/size]\n<br />Due to erroneous metadata on Nexus Mods, the download file for UE4SS 3.0.0 might point to a different game and raise a notification. It is completely safe to ignore this.\n<br />\n<br />[size=3][b]See also[/b][/size]\n<br />\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/palworld]Mods for Palworld (Nexus Mods)[/url]﻿\n<br />[*][url=https://forums.nexusmods.com/index.php?/forum/4306-vortex-support/]Vortex Forum (Nexus Mods)[/url]\n<br />[*][url=https://www.nexusmods.com/about/vortex/]Download Vortex (Nexus Mods)[/url]﻿\n<br />[/list]\n<br />[b][size=3]Thanks[/size][/b]\n<br />\n<br />[list]\n<br />[*]The [url=https://github.com/UE4SS-RE/RE-UE4SS]UE4SS [/url]﻿team for doing an amazing job.\n<br />[*][url=https://github.com/allcoolthingsatoneplace/UnrealPakTool]UnrealPakTool [/url]﻿for enabling us to peek inside the PAK files.\n<br />[*][url=https://github.com/Khejanin]Khejanin [/url]﻿for helping with PAK type detection. \n<br />[*][url=https://www.nexusmods.com/users/1077141]Êçhëłøñ[/url]﻿ for help with testing and performing some great deep dives into mod types and patterns.\n<br />[/list]"
       },
       "downloads": 176001,
-      "endorsements": 5822,
+      "endorsements": 5823,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/770/770-1706097925-1731342602.jpeg",
       "name": "Palworld Vortex Extension",
       "timestamp": 1709108958,
