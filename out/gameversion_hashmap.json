@@ -136,6 +136,12 @@
       "hashValue": "c3c6028c6aff2178364c47342b23e6c6",
       "userFacingVersion": "Alpha 20.6 B9",
       "variant": "Steam"
+    },
+    "d41d8cd98f00b204e9800998ecf8427e": {
+      "files": [],
+      "hashValue": "d41d8cd98f00b204e9800998ecf8427e",
+      "userFacingVersion": "1.0.0 (B333)",
+      "variant": "steam"
     }
   },
   "darkestdungeon": {
