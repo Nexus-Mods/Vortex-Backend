@@ -137,9 +137,11 @@
       "userFacingVersion": "Alpha 20.6 B9",
       "variant": "Steam"
     },
-    "d41d8cd98f00b204e9800998ecf8427e": {
-      "files": [],
-      "hashValue": "d41d8cd98f00b204e9800998ecf8427e",
+    "2faa3292fac4217b396d5315c6d2071c": {
+      "files": [
+        "7DaysToDie_Data\\Managed\\Assembly-CSharp.dll"
+      ],
+      "hashValue": "2faa3292fac4217b396d5315c6d2071c",
       "userFacingVersion": "1.0.0 (B333)",
       "variant": "steam"
     }
