@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722347587802,
+  "last_updated": 1722348144788,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8907,6 +8907,25 @@
       "version": "0.2.1",
       "type": "game",
       "gameName": "System Shock"
+    },
+    {
+      "modId": 924,
+      "fileId": 3580,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Dishonored modding support to Vortex Mod Manager.<br /><br />This extension will automatically download and install the TFC Installer for installing texture mods.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />This extension adds Dishonored modding support to Vortex Mod Manager.\n<br />\n<br />The Steam, GOG, and Epic versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />This extension will automatically download and install the [url=https://www.nexusmods.com/site/mods/588?tab=description]TFC Installer for UE2/3[/url]. This allows you to install texture mods and other types of mods that update the game data archives.\n<br />[b][size=3]\n<br />[/size][/b]\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Note that this is designed for mods that install to the game's root folder. \n<br />[*]If your mod needs to be next to the game executable file (reshades, game .dll files, etc.), use mod type \"Binaries (Engine Injector)\".\n<br />[*]If your texture (or other type) mod requires TFC Installer, you need to run the automatically downloaded tool from the Dashboard in Vortex to install those mods to the game archives. The folders for TFC mods will be found in the root game folder.\n<br />[/list]\n<br />[b]\n<br />[/b]\n<br />=======================================================\n<br />\n<br />[b]XBOX (Game Pass) Users - I need additional info before I can get a working extension for you.[list]\n<br />[*]Follow the instructions at the link below and send me the two lines in the Example below from the appmanifest.xml\n<br />[*][url=https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Game-detection]   ﻿MODDINGWIKI Developers General Game detection · Nexus-Mods/Vortex Wiki[/url]\n<br />[/list]Example:\n<br />[/b][code]&lt;Identity Name=\"HoodedHorse.ManorLords\" Publisher=\"CN=EFF196E1-65CE-4A5A-9010-7DFDCEAC7876\" Version=\"0.7.955.0\" ProcessorArchitecture=\"x64\"/&gt;\n<br />\n<br />&lt;Application Id=\"AppHoodedHorseManorLordsShipping\" Executable=\"GameLaunchHelper.exe\" EntryPoint=\"Windows.FullTrustApplication\"&gt;\n<br />[/code]\n<br />=======================================================\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 22,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_802.jpg",
+      "name": "Dishonored Vortex Extension",
+      "timestamp": 1721660955,
+      "tags": [],
+      "version": "0.2.0",
+      "type": "game",
+      "gameName": "Dishonored"
     }
   ]
 }
