@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722346811393,
+  "last_updated": 1722347587802,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8888,6 +8888,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Bioshock Infinite"
+    },
+    {
+      "modId": 923,
+      "fileId": 3590,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds System Shock (2023) modding support to Vortex Mod Manager.<br /><br />This extension integrates the Unreal Engine Mod Installer extension and will prompt the user to install it if they haven't already.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />This extension adds System Shock (2023) modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />This extension integrates the [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer extension[/url]. You can download and install it manually, or Vortex will ask you to install it after setup.\n<br />\n<br />\n<br />A few things to note:  [list]\n<br />[*]Any non-pak mods will be installed to the Binaries folder (next to game .exe) by default.\n<br />[*]Mods intended for the game's root directory should be automatically installed as mod type \"Root Game Folder\".\n<br />[*]Config files will be automatically installed to the correct folder in Local AppData.\n<br />[*]In order to manage load order of .pak files, you need to make sure the mod type is \"Unreal Engine 4 Sortable Mod\" for each of those mods (this should be assigned by default).\n<br />[/list]\n<br />\n<br />=======================================\n<br />\n<br />[b]Epic versions will not be automatically discovered or launch the game properly until I receive some information about those games that is only available after installation.\n<br />\n<br />[b][size=4]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size][/b]\n<br />\n<br />=======================================\n<br />[/b]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 13,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5415.jpg",
+      "name": "System Shock (2023) Vortex Extension",
+      "timestamp": 1721669819,
+      "tags": [],
+      "version": "0.2.1",
+      "type": "game",
+      "gameName": "System Shock"
     }
   ]
 }
