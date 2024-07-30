@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722334063959,
+  "last_updated": 1722334422742,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8774,6 +8774,25 @@
       "version": "0.1.3",
       "type": "game",
       "gameName": "Soulmask"
+    },
+    {
+      "modId": 910,
+      "fileId": 3599,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Assassin's Creed Odyssey support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. <br /><br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />[size=2]Adds Assassin's Creed Odyssey support to Vortex Mod Manager. Note that AnvillToolkit and Forger Patch Manager are required for some mods and will be automatically installed by this extension. \n<br />\n<br />This will work for both the Steam and Ubisoft Connect versions of the game.\n<br />\n<br />This extension will automatically install AnvilToolkit and Forger Patch Manager from the links below. \n<br />\n<br />[url=https://www.nexusmods.com/assassinscreedunity/mods/38][color=#57a5cc]https://www.nexusmods.com/assassinscreedunity/mods/38\n<br />[/color][/url]\n<br />[url=https://www.nexusmods.com/assassinscreedodyssey/mods/42][color=#57a5cc]https://www.nexusmods.com/assassinscreedodyssey/mods/42[/color][/url][/size]\n<br />\n<br />The extension will also send you a notification about [url=https://www.undertow.club/downloads/resorep.1254]Resorep[/url]﻿, which is a legacy utility for texture injection. The app is behind a login \"wall\", so it must be downloaded and installed manually if you want to use it. \n<br />\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 62,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2610.jpg",
+      "name": "Assassin's Creed Odyssey Vortex Extension",
+      "timestamp": 1721785522,
+      "tags": [],
+      "version": "0.2.0",
+      "type": "game",
+      "gameName": "Assassin's Creed Odyssey"
     }
   ]
 }
