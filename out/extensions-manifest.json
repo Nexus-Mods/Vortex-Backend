@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722341723318,
+  "last_updated": 1722346811393,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8869,6 +8869,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "BioShock 2"
+    },
+    {
+      "modId": 922,
+      "fileId": 3585,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds BioShock Infinite modding support to Vortex Mod Manager.<br /><br />This extension will automatically download and install the TFC Installer for installing texture mods.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />This extension adds BioShock Infinite modding support to Vortex Mod Manager.\n<br />\n<br />The Steam, GOG, and Epic versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />This extension will automatically download and install the [url=https://www.nexusmods.com/site/mods/588?tab=description]TFC Installer for UE2/3[/url]. This allows you to install texture mods and other types of mods that update the game data archives.\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Note that this is designed for mods that install to the game's root folder. \n<br />[*]If your mod needs to be next to the game executable file (reshades, game .dll files, etc.), use mod type \"Binaries (Engine Injector)\".\n<br />[*]If your texture (or other type) mod requires TFC Installer, you need to run the automatically downloaded tool from the Dashboard in Vortex to install those mods to the game archives\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 20,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3076.jpg",
+      "name": "BioShock Infinite Vortex Extension",
+      "timestamp": 1721662443,
+      "tags": [],
+      "version": "0.2.0",
+      "type": "game",
+      "gameName": "Bioshock Infinite"
     }
   ]
 }
