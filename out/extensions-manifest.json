@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722333988118,
+  "last_updated": 1722334063959,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8755,6 +8755,25 @@
       "version": "0.3.1",
       "type": "game",
       "gameName": "Senua's Saga: Hellblade II"
+    },
+    {
+      "modId": 911,
+      "fileId": 3380,
+      "author": "ghot93",
+      "uploader": "ghot93",
+      "description": {
+        "short": "Adds Soulmask support to Vortex.",
+        "long": "Adds Soulmask support to Vortex.\n<br />Supports load order and .pak mods.\n<br />\n<br />[u]!!! You must add [b]-fileopenlog[/b] to your launch options to play with mods !!!\n<br />[/u]or you can launch the game with the tool \"Launch With Mods\" on your Vortex's dashboard."
+      },
+      "downloads": 269,
+      "endorsements": 3,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6474.jpg",
+      "name": "Soulmask Vortex Extension",
+      "timestamp": 1718116369,
+      "tags": [],
+      "version": "0.1.3",
+      "type": "game",
+      "gameName": "Soulmask"
     }
   ]
 }
