@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722408115596,
+  "last_updated": 1722409760946,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8983,6 +8983,25 @@
       "version": "1.0.3",
       "type": "game",
       "gameName": "Supermarket Simulator"
+    },
+    {
+      "modId": 946,
+      "fileId": 3549,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds State of Decay 2 modding support to Vortex Mod Manager.<br /><br />Steam and Epic versions are supported in the Main File.<br /><br />XBOX Version Users - Download the Optional File instead! There are many differences in the Xbox version that I am not able to accommodate in a single extension currently.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />This extension adds State of Decay 2 modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Epic versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />[b][color=#ff00ff][size=4]XBOX Version Users - Download the Optional File instead! There are many differences in the Xbox version that I am not able to accommodate in a single extension currently.[/size][/color][/b]\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Automatically installs .pak mods to the correct folder and adds them to the Load Order tab. If the mod contains multiple .pak files, you will get a popup to pick which files you want to install.\n<br />[*]Automatically installs config files to the correct folder.\n<br />[*]Places \"Cooked\" mods in the correct folder (this is the default mod install location).\n<br />[*]Includes mod type \"Root Game Folder\" for the few mods that need to be installed to the game's program folder (next to .exe).\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 37,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2433.jpg",
+      "name": "State of Decay 2 Vortex Extension",
+      "timestamp": 1721497712,
+      "tags": [],
+      "version": "0.2.1",
+      "type": "game",
+      "gameName": "State of Decay 2"
     }
   ]
 }
