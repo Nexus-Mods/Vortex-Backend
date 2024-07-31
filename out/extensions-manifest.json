@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722412000513,
+  "last_updated": 1722412969136,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9040,6 +9040,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Far Cry 3"
+    },
+    {
+      "modId": 954,
+      "fileId": 3525,
+      "author": "NotAZebrum",
+      "uploader": "NotAZebrum",
+      "description": {
+        "short": "Vortex support for The Legend of Heroes: Trails Through Daybreak",
+        "long": "[size=5]Creating mods[/size]\n<br />\n<br />[size=4]Non-FOMOD[/size]\n<br />\n<br />For non-FOMOD mods, the extension will simply place everything in the archive into the Mods folder in the game directory. Thus, mod files must be at the root of the archive—not in a subdirectory.\n<br />\n<br />[size=4]FOMOD[/size]\n<br />\n<br />The optional files include a very simple FOMOD example. My [url=https://www.nexusmods.com/thelegendofheorestrailsthroughdaybreak/mods/1]Toned Bodies mod[/url] is a slightly more sophisticated example. You could use either as a base mods you want to make. \n<br />\n<br />You can instead use the [url=http://www.nexusmods.com/fallout4/Mods&#92;6821]FOMOD Creation Tool[/url] if you don’t want to edit XML by hand.\n<br />\n<br />[size=4]Getting help[/size]\n<br />\n<br />Very useful tutorials and tools: [url=https://github.com/eArmada8/kuro_mdl_tool/wiki]https://github.com/eArmada8/kuro_mdl_tool/wiki[/url]. \n<br />Kiseki modding Discord: [url=https://discord.com/invite/zTVRKdAQ]https://discord.com/invite/zTVRKdAQ[/url]. \n<br />There is also quite a lot of discussion on loverslab.com (but be aware that there is much that is NSFW there): [url=https://www.loverslab.com/topic/233082-trails-through-daybreak-nis-america-english-language-release/page/]https://www.loverslab.com/topic/233082-trails-through-daybreak-nis-america-english-language-release/page/[/url]."
+      },
+      "downloads": 27,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6573.jpg",
+      "name": "Vortex extension for Trails Through Daybreak",
+      "timestamp": 1721255650,
+      "tags": [],
+      "version": "0.0.1",
+      "type": "game",
+      "gameName": "The Legend of Heroes: Trails through Daybreak"
     }
   ]
 }
