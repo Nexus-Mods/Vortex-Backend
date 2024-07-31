@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722403619414,
+  "last_updated": 1722405933110,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8945,6 +8945,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Assassin's Creed Valhalla"
+    },
+    {
+      "modId": 873,
+      "fileId": 3649,
+      "author": "MagicJinn",
+      "uploader": "MagicJinn",
+      "description": {
+        "short": "Sunless Sea Vortex Extension for automatic installs of both BepInEx and JSON mods using Vortex.",
+        "long": "Sunless Sea Vortex Extension for automatic installs of both BepInEx and JSON mods using Vortex.\n<br />\n<br />Built to handle most if not all cases and file structures for mod installation, and throws automatic warnings and has a fallback for incorrect mod formats."
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_1149.jpg",
+      "name": "Sunless Sea Vortex Support",
+      "timestamp": 1722364238,
+      "tags": [],
+      "version": "1.0.3",
+      "type": "game",
+      "gameName": "Sunless Sea"
     }
   ]
 }
