@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722422693238,
+  "last_updated": 1722429602532,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9268,6 +9268,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Assassin's Creed III Remastered"
+    },
+    {
+      "modId": 981,
+      "fileId": 3624,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Trepang2 modding support to Vortex Mod Manager.<br /><br />Supports the Steam and GOG versions of the game.",
+        "long": "This is an extension to allow mod installs for Trepang2, currently available only on the Epic Games Store. This may be updated later as the game is still in Early Access.\n<br />\n<br />This works for the Steam and GOG versions of the game. Other versions may need to select the install location manually.\n<br />\n<br />This mod integrates the [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer extension[/url]. The extension will install it during setup.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]Any non-pak mods will be installed to the Binaries folder (next to game .exe) by default.\n<br />[*]Mods intended for the game's root directory should be automatically installed as mod type \"Root Game Folder\".\n<br />[*]Config files will be automatically installed to the correct folder in Local AppData.\n<br />[*]Saves will be automatically installed to the correct folder in Local AppData.\n<br />[*]In order to manage load order of .pak files, you need to make sure the mod type is \"Unreal Engine 4 Sortable Mod\" for each of those mods (this should be assigned by default).\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 3,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4589.jpg",
+      "name": "Trepang2 Vortex Extension",
+      "timestamp": 1722147986,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Trepang2"
     }
   ]
 }
