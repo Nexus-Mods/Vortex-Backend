@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722405933110,
+  "last_updated": 1722408115596,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8964,6 +8964,25 @@
       "version": "1.0.3",
       "type": "game",
       "gameName": "Sunless Sea"
+    },
+    {
+      "modId": 942,
+      "fileId": 3502,
+      "author": "Senjay",
+      "uploader": "Senjay",
+      "description": {
+        "short": "Vortex extension support for Supermarket Simulator",
+        "long": "[size=4][b][color=#00ffff][b]Vortex installation[/b][/color][/b][/size][size=2][b]\n<br />[/b][/size][size=3]Open the extension page and click find more, search for the extension name and click install, you will be prompted to restart by vortex.[/size][size=2][b]\n<br />\n<br />[/b][/size][color=#00ffff][size=4][b][b]Alternate vortex installation[/b][/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3]Manually download the mod, Open the extension page, drag and drop the zip file at the dedicated drop file box, you will be prompted to restart by vortex.[/size][size=2][b]\n<br />\n<br />[/b][/size][color=#00ffff][size=4][b]Mod author section[/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3]Here's a list of supported mod package sample to deploy your mods correctly[/size][size=2][b]\n<br />\n<br />[/b][/size][size=2][b][size=3]MelonLoader type mods[/size]\n<br />\n<br />[code]NoMaxOrderLimit.zip\n<br />└── ? NoMaxOrderLimit.dll\n<br />[/code]\n<br />[size=2][b][size=2][b][code]AutomaticPriceUpdater.zip\n<br />├── ? Mods\n<br />│   └── ? AutoPriceUpdater.dll\n<br />└── ? UserData\n<br />    └── ? PriceUpdater.cfg\n<br />\n<br />[/code][/b][/size][/b][/size]\n<br />[/b][/size][size=3][b]BepInEx type mods[/b][/size][size=2][b]\n<br />\n<br />[code]StoreDelivery.zip\n<br />└── ? StoreDelivery-1.0.2\n<br />    └── ? BepInEx\n<br />        ├── ? config\n<br />        │   └── ? tf.bark.sms.StoreDelivery.cfg\n<br />        └── ? plugins\n<br />            └── ? StoreDelivery\n<br />                └── ? StoreDelivery.dll\n<br />[/code]\n<br />[code]﻿TestMod.zip\n<br />└── ? TestMod.dll\n<br />[/code]\n<br />[/b][/size][size=3][b]Texture replacer mods[/b]\n<br />[/size][size=2][b]\n<br />[code]﻿GERMANPRODUCTS 2nd License 6 Items.zip\n<br />├── ? objects_textures\n<br />│   └── ? T_license2_alb.png\n<br />├── ? products_icons\n<br />│   ├── ? 151_Icon.png\n<br />│   └── ? 24_Icon.png\n<br />└── ? products_names\n<br />    ├── ? 151_Brand.txt\n<br />    ├── ? 151_Name.txt\n<br />    ├── ? 24_Brand.txt\n<br />    └── ? 24_Name.txt\n<br />\n<br />[/code]\n<br />[code]﻿REAL USA PRODUCTS TAKE 2.zip\n<br />└── ? TextureReplacer\n<br />    ├── ? objects_textures\n<br />    │   ├── ? Books_bpxngl_a.png\n<br />    │   └── ? new_uv_new_uv_AlbedoTransparency.png\n<br />    ├── ? products_icons\n<br />    │   ├── ? 100_Icon.png\n<br />    │   └── ? 101_Icon.png\n<br />    └── ? products_names\n<br />        ├── ? 100_Brand.txt\n<br />        └── ? 100_Name.txt\n<br />[/code]\n<br />\n<br />[b][url=https://ko-fi.com/Senjay]  [img]https://i.imgur.com/7Cm07AZ.png[/img] \n<br /> [/url][/b][/b][/size]"
+      },
+      "downloads": 136,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6225.jpg",
+      "name": "Supermarket Simulator Vortex Extension",
+      "timestamp": 1720734827,
+      "tags": [],
+      "version": "1.0.3",
+      "type": "game",
+      "gameName": "Supermarket Simulator"
     }
   ]
 }
