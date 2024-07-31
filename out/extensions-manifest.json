@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722410655025,
+  "last_updated": 1722411443100,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9021,6 +9021,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Return to Castle Wolfenstein"
+    },
+    {
+      "modId": 953,
+      "fileId": 3654,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Far Cry 3 modding support to Vortex Mod Manager.<br /><br />This extension will automatically download and install: FC3 Mod Installer, Large Address Aware, and an XML settings file.",
+        "long": "This extension adds Far Cry 3 modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Ubisoft Connect (including Epic version) versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />This extension will automatically download and install the following items:\n<br /> \n<br />[url=https://downloads.fcmodding.com/all/mod-installer/]FC3 Mod Installer[/url] - To install .a2, .a3, and .bin mod files to be packaged into the game files.\n<br />[url=https://www.techpowerup.com/forums/threads/large-address-aware.112556/]Large Address Aware[/url] - To make the game executable large address aware, so that the game can use full capabilities of modern hardware\n<br />[url=https://www.nexusmods.com/farcry3/mods/331]XML settings file[/url] - To enable game settings that allow for full DX11 use on modern hardware.\n<br />\n<br />[b][url=https://mods.farcry.info/fc3][size=3]Click here to find FC3 Mod Installer Mods[/size]\n<br />[/url][/b]\n<br />[b]NOTE: When installing .a3 files to Vortex, you must first place the files into a compressed zip, then drop them into Vortex. Installation will fail if you try to drop .a3 files directly into Vortex (working on a fix for this). The .a2 and .bin files are not affected, and can be dropped in directly. [/b]\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 6,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_167.jpg",
+      "name": "Far Cry 3 Vortex Extension NEW",
+      "timestamp": 1722411196,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Far Cry 3"
     }
   ]
 }
