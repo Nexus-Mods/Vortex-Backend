@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722420559306,
+  "last_updated": 1722421114941,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9173,6 +9173,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Ghost Recon Breakpoint"
+    },
+    {
+      "modId": 975,
+      "fileId": 3617,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Nobody Wants to Die modding support to Vortex Mod Manager.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />This extension adds Nobody Wants to Die modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />Includes Load Order tab for managing load order of .pak mods.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[*]Config files should be automatically installed to the correct Local AppData folder.\n<br />[*]Save games should be automatically installed to the correct Local AppData folder.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Mods intended for the root game directory will be automatically installed with mod type \"Root Game Folder\".\n<br />[/list]\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 2,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6617.jpg",
+      "name": "Nobody Wants to Die Vortex Extension",
+      "timestamp": 1722021498,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Nobody Wants to Die"
     }
   ]
 }
