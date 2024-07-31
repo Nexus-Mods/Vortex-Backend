@@ -7963,22 +7963,22 @@
       "modId": 825,
       "fileId": 2962
     },
-    {
-      "modId": 342,
-      "fileId": 1318,
-      "author": "BeYkeRYkt",
-      "uploader": "BeYkeRYkt",
+        {
+      "modId": 980,
+      "fileId": 3622,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
       "description": {
-        "short": "Adds management and load order support for .pak mods to Vortex Mod Manager for Ready Or Not game.",
-        "long": "This [url=https://www.nexusmods.com/about/vortex/]Vortex[/url] extension adds mod management and load order support for [url=https://www.nexusmods.com/readyornot]Ready Or Not[/url]. Extension is based on and uses Pickysaurus [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer[/url]﻿.\n<br />\n<br />[size=4]Installation[/size]\n<br />\n<br />In Vortex, simply go to the Games section, find Ready Or Not tile, click on \"Manage\", and follow the prompts to install the extension and restart\n<br /> Vortex. If a prompt appears to install the Unreal Engine Mod Installer, click \"Fix\" in the prompt and restart Vortex once more.\n<br />\n<br />You can also enable advanced mode in Vortex's settings, download the ZIP archive from the Files tab above, and drop the archive into Vortex's Extensions\n<br /> section. You can even do it more manually by extracting the ZIP archive to a custom subfolder in Vortex's plugins folder (likely %APPDATA%&#92;Vortex&#92;plugins).\n<br />\n<br />Source code: https://github.com/BeYkeRYkt/vortex_readyornot_extension"
+        "short": "This extension adds Ready Or Not (UE5 Update) modding support to Vortex Mod Manager.",
+        "long": "[b][size=3][b]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/b]\n<br />If you have the existing Ready Or Not extension installed, you can use this by replacing the index.js file at:\n<br />\n<br />...&#92;AppData&#92;Roaming&#92;Vortex&#92;plugins&#92;Vortex Extension Update - Ready Or Not - Vortex Extension v1.1.0[/size][/b]\n<br />\n<br />This extension adds Ready Or Not (UE5 Update) modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />Includes Load Order tab for managing load order of .pak mods.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[*]Config files should be automatically installed to the correct Local AppData folder.\n<br />[*]Save games should be automatically installed to the correct Local AppData folder.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Mods intended for the root game directory will be automatically installed with mod type \"Root Game Folder\".\n<br />[/list]\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
       },
-      "downloads": 164245,
-      "endorsements": 4753,
-      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/342/342-1642672924-307066686.jpeg",
+      "downloads": 30,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4205.jpg",
       "name": "Ready Or Not - Vortex Extension",
-      "timestamp": 1642616109,
+      "timestamp": 1722037197,
       "tags": [],
-      "version": "1.1.0",
+      "version": "0.1.0",
       "type": "game",
       "gameName": "Ready or Not"
     },
@@ -9268,25 +9268,6 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Assassin's Creed III Remastered"
-    },
-    {
-      "modId": 980,
-      "fileId": 3622,
-      "author": "ChemBoy1",
-      "uploader": "ChemBoy1",
-      "description": {
-        "short": "This extension adds Ready Or Not (UE5 Update) modding support to Vortex Mod Manager.",
-        "long": "[b][size=3][b]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/b]\n<br />If you have the existing Ready Or Not extension installed, you can use this by replacing the index.js file at:\n<br />\n<br />...&#92;AppData&#92;Roaming&#92;Vortex&#92;plugins&#92;Vortex Extension Update - Ready Or Not - Vortex Extension v1.1.0[/size][/b]\n<br />\n<br />This extension adds Ready Or Not (UE5 Update) modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />Includes Load Order tab for managing load order of .pak mods.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[*]Config files should be automatically installed to the correct Local AppData folder.\n<br />[*]Save games should be automatically installed to the correct Local AppData folder.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Mods intended for the root game directory will be automatically installed with mod type \"Root Game Folder\".\n<br />[/list]\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
-      },
-      "downloads": 30,
-      "endorsements": 0,
-      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4205.jpg",
-      "name": "Ready Or Not Vortex Extension - UE5 Update",
-      "timestamp": 1722037197,
-      "tags": [],
-      "version": "0.1.0",
-      "type": "game",
-      "gameName": "Ready or Not"
     }
   ]
 }
