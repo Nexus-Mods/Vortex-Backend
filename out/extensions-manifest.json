@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722348144788,
+  "last_updated": 1722403619414,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -8926,6 +8926,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Dishonored"
+    },
+    {
+      "modId": 931,
+      "fileId": 3465,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Assassin's Creed Valhalla support to Vortex Mod Manager. Note that Forger Patch Manager is required for some mods and will be automatically installed by this extension. <br /><br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.",
+        "long": "Adds Assassin's Creed Valhalla support to Vortex Mod Manager.\n<br />\n<br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.\n<br />\n<br />[size=3]This extension will automatically install Forger Patch Manager from the link below. \n<br />\n<br />[/size][url=https://www.nexusmods.com/assassinscreedodyssey/mods/42][color=#57a5cc][size=3]https://www.nexusmods.com/assassinscreedodyssey/mods/42[/size][/color][/url][size=3][url=https://www.nexusmods.com/assassinscreedunity/mods/38][color=#57a5cc]\n<br />[/color][/url][/size]\n<br />\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam, and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 41,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3509.jpg",
+      "name": "Assassin's Creed Valhalla Vortex Extension",
+      "timestamp": 1719935529,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Assassin's Creed Valhalla"
     }
   ]
 }
