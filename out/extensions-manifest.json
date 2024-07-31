@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722409760946,
+  "last_updated": 1722410655025,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9002,6 +9002,25 @@
       "version": "0.2.1",
       "type": "game",
       "gameName": "State of Decay 2"
+    },
+    {
+      "modId": 937,
+      "fileId": 3653,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds RTCW modding support to Vortex Mod Manager.",
+        "long": "This extension adds Return to Castle Wolfenstein (RTCW) modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />[b][size=3]It is highly recommended that you download and install one of the following mods to improve the gameplay experience on modern systems:\n<br />[list]\n<br />[*][b][size=3][url=https://www.moddb.com/mods/realrtcw-realism-mod/downloads/realrtcw-40]RealRTCW[/url]﻿[/size][/b]\n<br />[*][b][size=3][url=https://github.com/iortcw/iortcw]ioRTCW[/url]﻿[/size][/b]\n<br />[/list][/size][/b]\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Note that this is designed for mods that install to the game's root folder. \n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 13,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_1425.jpg",
+      "name": "Return to Castle Wolfenstein Vortex Extension",
+      "timestamp": 1722408833,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Return to Castle Wolfenstein"
     }
   ]
 }
