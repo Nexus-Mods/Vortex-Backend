@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722416310002,
+  "last_updated": 1722416641013,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9097,6 +9097,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Street Fighter 6"
+    },
+    {
+      "modId": 964,
+      "fileId": 3630,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds The Outer Worlds modding support to Vortex Mod Manager. Works for the Steam, GOG, and Epic versions.<br /><br />SPACER\"S CHOICE EDITION USERS - Download the Optional File from the mod page instead!",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. [/size][/b]\n<br />\n<br />This extension adds The Outer Worlds modding support to Vortex Mod Manager.\n<br />\n<br />[b][color=#ff00ff][size=4]SPACER\"S CHOICE EDITION USERS - Download the Optional File instead!\n<br />[/size]Note that there are only a handful of mods on Nexus that have been updated for this version of the game. Most mods for the original game version are not compatible with SCE.\n<br />[/color][/b]\n<br />The Steam GOG, and Epic versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />[b][color=#ea9999][size=3]Xbox Version Users - Download the Xbox version Main File for the classic edition.[/size][/color][/b]\n<br />\n<br />[size=3][b][color=#ea9999]The Xbox version for Spacer's Choice will not work until I get the required info detailed below.[/color][/b]\n<br />[/size]\n<br />This extension integrates the [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer extension[/url]. You can download and install it manually, or Vortex will ask you to install it after setup. Includes Load Order tab for managing load order of .pak mods.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]Any non-pak mods will be installed to the Binaries folder (next to game .exe) by default.\n<br />[*]Mods intended for the game's root directory should be automatically installed as mod type \"Root Game Folder\".\n<br />[*]Config files will be automatically installed to the correct folder in Local AppData.\n<br />[*]In order to manage load order of .pak files, you need to make sure the mod type is \"Unreal Engine 4 Sortable Mod\" for each of those mods (this should be assigned by default).\n<br />[/list]\n<br />\n<br />[b]============================================\n<br />[/b]\n<br />[b][b][color=#ff00ff]XBOX (Game Pass) Users - Spacer's Choice Edition[/color] - I need additional info before I can get a working extension for you.[list]\n<br />[*]Follow the instructions at the link below and send me the two lines in the Example below from the appmanifest.xml\n<br />[*][url=https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Game-detection]   ﻿MODDINGWIKI Developers General Game detection · Nexus-Mods/Vortex Wiki[/url]\n<br />[/list]Example:\n<br />[/b][code]&lt;Identity Name=\"HoodedHorse.ManorLords\" Publisher=\"CN=EFF196E1-65CE-4A5A-9010-7DFDCEAC7876\" Version=\"0.7.955.0\" ProcessorArchitecture=\"x64\"/&gt;\n<br />\n<br />&lt;Application Id=\"AppHoodedHorseManorLordsShipping\" Executable=\"GameLaunchHelper.exe\" EntryPoint=\"Windows.FullTrustApplication\"&gt;\n<br />[/code]\n<br />[b]============================================[/b]\n<br />[/b]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3037.jpg",
+      "name": "The Outer Worlds Vortex Extension",
+      "timestamp": 1722200202,
+      "tags": [],
+      "version": "0.2.1",
+      "type": "game",
+      "gameName": "The Outer Worlds"
     }
   ]
 }
