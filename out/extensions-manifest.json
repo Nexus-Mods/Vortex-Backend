@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722421114941,
+  "last_updated": 1722421393645,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9192,6 +9192,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Nobody Wants to Die"
+    },
+    {
+      "modId": 976,
+      "fileId": 3618,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Assassin's Creed support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. <br /><br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />[/size][/b]\n<br />Adds Assassin's Creed support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. \n<br />\n<br />This will work for the Steam, GOG, and Ubisoft Connect versions of the game. \n<br />\n<br />[size=2]This extension will automatically install AnvilToolkit from the link below. \n<br />\n<br />[url=https://www.nexusmods.com/assassinscreedunity/mods/38][color=#57a5cc]https://www.nexusmods.com/assassinscreedunity/mods/38[/color][/url][/size][b]\n<br />[/b]\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />===============================================================\n<br />\n<br />[b][size=3]If you own the Ubisoft Connect version of the game, can you let me know what is the ID for this game? It will be found in the registry where in the example below it is \"720\" for AC Unity. You can verify it is the correct game by looking at the \"InstallDir\" and seeing the game name. The auto-detect game install location will not work until I get this number.[/size][/b]\n<br />\n<br />HKEY_LOCAL_MACHINE&#92;SOFTWARE&#92;WOW6432Node&#92;Microsoft&#92;Windows&#92;CurrentVersion&#92;Uninstall&#92;Uplay Install XXX\n<br />\n<br />\n<br />[img]https://i.imgur.com/esmf0DZ.png[/img]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 1,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_741.jpg",
+      "name": "Assassin's Creed Vortex Extension",
+      "timestamp": 1722025956,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Assassin's Creed"
     }
   ]
 }
