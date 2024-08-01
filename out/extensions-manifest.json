@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722509468958,
+  "last_updated": 1722509541367,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9344,6 +9344,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Assassin's Creed: Brotherhood"
+    },
+    {
+      "modId": 990,
+      "fileId": 3688,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Assassin's Creed Revelations support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. <br /><br />You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.",
+        "long": "Adds Assassin's Creed Revelations support to Vortex Mod Manager. Note that AnvillToolkit is required for some mods and will be automatically installed by this extension. \n<br />\n<br />This will work for both the Ubisoft Connect and Steam versions of the game. \n<br />\n<br />[size=2]This extension will automatically install AnvilToolkit from the link below. [/size]\n<br />\n<br />[url=https://www.nexusmods.com/site/mods/455][b][size=2]https://www.nexusmods.com/site/mods/455[/size][/b][/url]\n<br />[b]\n<br />[/b]\n<br />﻿A few things to note:  \n<br />[list]\n<br />[*][b][size=3]You must have Steam and/or Ubisoft Connect apps open when launching the game from Vortex for the game to start.[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2703.jpg",
+      "name": "Assassin's Creed Revelations Vortex Extension",
+      "timestamp": 1722450951,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Assassin's Creed: Revelations"
     }
   ]
 }
