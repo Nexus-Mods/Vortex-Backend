@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722923024895,
+  "last_updated": 1722928505710,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9382,6 +9382,25 @@
       "version": "0..0.1",
       "type": "game",
       "gameName": "Into The Radius 2"
+    },
+    {
+      "modId": 925,
+      "fileId": 3725,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Dishonored 2 modding support to Vortex Mod Manager.",
+        "long": "This extension adds Dishonored 2 modding support to Vortex Mod Manager.\n<br />\n<br />[size=2]This works for the Steam, GOG, and Xbox versions of the game.[/size]\n<br />\n<br />[b]The Epic version will not work until I get the info requested below.[/b]\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Note that this is designed for mods that install to the game's root folder. \n<br />[/list]\n<br />=======================================================\n<br />\n<br />[b][size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.\n<br />[/size][b][size=4]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />\n<br />I also need to know the name of the game executable in the main folder.\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size][/b]\n<br />[/b]\n<br />=======================================================\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 13,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2911.jpg",
+      "name": "Dishonored 2 Vortex Extension",
+      "timestamp": 1722660984,
+      "tags": [],
+      "version": "0.3.0",
+      "type": "game",
+      "gameName": "Dishonored 2"
     }
   ]
 }
