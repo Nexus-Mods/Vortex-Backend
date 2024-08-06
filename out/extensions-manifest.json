@@ -1,5 +1,5 @@
 {
-  "last_updated": 1722844007685,
+  "last_updated": 1722923024895,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9363,6 +9363,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Assassin's Creed: Revelations"
+    },
+    {
+      "modId": 994,
+      "fileId": 3747,
+      "author": "HUNjozsi",
+      "uploader": "HUNjozsi",
+      "description": {
+        "short": "Adds Vortex support for 'Into The Radius 2'",
+        "long": "This mod adds Vortex support to Into The Radius 2, by using an extension\n<br />You can find mods for ITR2 here - [url=https://www.nexusmods.com/intotheradius2]Nexus Mods - ITR2\n<br />\n<br />[/url]The extension [i]should [/i]find your game's install location automatically, but in case it doesn't - you can manually set the path by following these steps inside Vortex.\n<br />\n<br />   ﻿   ﻿   ﻿   ﻿   ﻿   ﻿   ﻿﻿[img]https://i.ibb.co/gtxtMhW/BYktm9-Fm-SI.png[/img]\n<br />[b]\n<br />[color=#e69138]The game's folder can usually be found in: [/color][/b][b][color=#e69138]' Program Files&#92;Steam&#92;steamapps&#92;common&#92;[/color][/b][b][color=#e69138] \"[/color][/b]\n<br />If you have trouble locating the game folder, open your Steam library --&gt; right click on the game --&gt; Manage --&gt; Browse local files\n<br />﻿\n<br />Mods installed with this extension will go inside of the \" IntoTheRadius&#92;Content&#92;Paks&#92;Mods \" folder. If the 'Mods' folder doesn't exist, the extension will create it automatically.\n<br />\n<br />Most mods hosted on Nexus are compatible, but manual drag &amp; drop installation may be required on mods that don't have the 'Install with Vortex' option enabled.\n<br />Additionally, if the mod has multiple file options inside - they will have to be installed manually / and or repackaged by the author, by including a [url=https://wiki.nexusmods.com/index.php/How_to_create_mod_installers]mod installer. (Nexus Wiki)[/url]\n<br />\n<br />Updates:\n<br />[i]- None yet\n<br />\n<br />\n<br />[/i]Credits:\n<br />[url=https://wiki.nexusmods.com/index.php/Creating_a_game_extension_for_Vortex]Nexus Mods Wiki - Creating a game extension for Vortex[/url]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6632.jpg",
+      "name": "Into the Radius 2 - Vortex Support",
+      "timestamp": 1722875752,
+      "tags": [],
+      "version": "0..0.1",
+      "type": "game",
+      "gameName": "Into The Radius 2"
     }
   ]
 }
