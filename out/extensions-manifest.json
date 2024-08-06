@@ -9100,7 +9100,7 @@
     },
     {
       "modId": 964,
-      "fileId": 3630,
+      "fileId": 3715,
       "author": "ChemBoy1",
       "uploader": "ChemBoy1",
       "description": {
@@ -9113,7 +9113,7 @@
       "name": "The Outer Worlds Vortex Extension",
       "timestamp": 1722200202,
       "tags": [],
-      "version": "0.2.1",
+      "version": "0.3.0",
       "type": "game",
       "gameName": "The Outer Worlds"
     },
