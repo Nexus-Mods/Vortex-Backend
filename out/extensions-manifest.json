@@ -7113,7 +7113,7 @@
     },
     {
       "modId": 634,
-      "fileId": 3798,
+      "fileId": 3799,
       "author": "Nexus Mods",
       "uploader": "insomnious",
       "description": {
@@ -7124,9 +7124,9 @@
       "endorsements": 43561,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/634/634-1693310625-1048751349.jpeg",
       "name": "Starfield Vortex Extension",
-      "timestamp": 1723454863,
+      "timestamp": 1723456849,
       "tags": [],
-      "version": "1.8.8",
+      "version": "1.9.0",
       "type": "game",
       "gameName": "Starfield"
     },
