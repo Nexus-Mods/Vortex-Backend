@@ -1,5 +1,5 @@
 {
-  "last_updated": 1724070687462,
+  "last_updated": 1724070826624,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9420,6 +9420,25 @@
       "version": "1.0.0",
       "type": "game",
       "gameName": "I Am Future"
+    },
+    {
+      "modId": 985,
+      "fileId": 3775,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Wolfenstein (2009) modding support to Vortex Mod Manager.",
+        "long": "This extension adds Wolfenstein (2009) modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Retail versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />[b]\n<br />[/b]\n<br />Some things to note:\n<br />[list]\n<br />[*]Includes a tool to launch the game with the following command line arguments: '+set com_allowconsole 1 +set com_skipIntro 1 +set com_SingleDeclFile 0 +set sys_lang \"english\"'\n<br />[*]Default mod install location is by singleplayer .exe (\"SP\" folder)\n<br />[*]Includes mod types for the root game folder and the multiplayer \"MP\" folder. \n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3535.jpg",
+      "name": "Wolfenstein (2009) Vortex Extension",
+      "timestamp": 1723093741,
+      "tags": [],
+      "version": "0.2.2",
+      "type": "game",
+      "gameName": "Wolfenstein (2009)"
     }
   ]
 }
