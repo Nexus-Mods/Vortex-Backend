@@ -1,5 +1,5 @@
 {
-  "last_updated": 1724053605541,
+  "last_updated": 1724070687462,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9401,6 +9401,25 @@
       "version": "0.3.0",
       "type": "game",
       "gameName": "Dishonored 2"
+    },
+    {
+      "modId": 1006,
+      "fileId": 3831,
+      "author": "VOID",
+      "uploader": "VOIDL3S5",
+      "description": {
+        "short": "A vortex extension for the game I am Future",
+        "long": "Auto installs [url=https://www.nexusmods.com/iamfuture/mods/1?tab=files]https://www.nexusmods.com/iamfuture/mods/1?tab=files[/url]"
+      },
+      "downloads": 3,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6668.jpg",
+      "name": "I am Future Vortex Extention",
+      "timestamp": 1723808381,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "I Am Future"
     }
   ]
 }
