@@ -1,5 +1,5 @@
 {
-  "last_updated": 1725868011078,
+  "last_updated": 1725873224271,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9278,6 +9278,25 @@
       "version": "0.1.9",
       "type": "game",
       "gameName": "Black Myth: Wukong"
+    },
+    {
+      "modId": 1030,
+      "fileId": 3980,
+      "author": "rahalah team",
+      "uploader": "lub131",
+      "description": {
+        "short": "Arabic localization for Vortex<br />تعريب برنامج فورتكس",
+        "long": "Arabic localization for Vortex\n<br />تعريب برنامج فورتكس للعربية\n<br />[b]------------------------------------------------------------------------------------------------------\n<br />[/b][i]لمتابعه كل جديد[/i]\n<br />[url=https://discord.com/invite/gjwDuHekjy][b]خادم ديسكرود [/b][/url][b]\n<br />[/b][url=https://x.com/rahalah_team][b]رابط اكس/تويتر \n<br />[/b][/url][url=https://www.youtube.com/@%D9%81%D8%B1%D9%8A%D9%82_%D8%B1%D8%AD%D9%84%D8%A9][b]يوتيوب[/b][/url]\n<br />[b]------------------------------------------------------------------------------------------------------\n<br />[i]ملاحظه هامة\n<br />[/i][b]هناك عدد من الاخطاء في التعريب وبعض الترجمات من الذكاء الاصطناعي\n<br />في حالة واجهات اي كلامات غريبة فقط اخبرنا \n<br />------------------------------------------------------------------------------------------------------[/b]\n<br />[/b][b][i]تعريب:\n<br />[/i][/b][i]لوب \n<br />عبدو\n<br />HOSEEN SYR[/i]\n<br />[b]------------------------------------------------------------------------------------------------------[/b]\n<br />\n<br />[i]دعم فريق رحلة لتعريب الألعاب\n<br />[/i]\n<br />[b]نحن في فريق \"رحلة\" نعمل بجد لتعريب الألعاب وجعلها متاحة للجميع باللغة العربية، ونحن نقدم هذا العمل مجانًا. لكننا بحاجة إلى التمويل لزيادة جودة أعمالنا وتطوير أدواتنا. من خلال اشتراكك ودعمك المالي، ستساعدنا في تحقيق حلمنا بنشر اللغة العربية وتعزيز الثقافة العربية في مجال الألعاب.\n<br />دعمنا يسهل تحقيق حلمنا[/b]\n<br />\n<br />[b]\n<br />سواء كنت ترغب في الاشتراك ماليًا أو دعمنا معنويًا، فإن دعمك لنا بأي شكل كان، يساهم بشكل كبير في تحقيق رؤيتنا.[/b]\n<br />[b]طرق الدعم[/b]\n<br />[b]• [/b][url=steam://openurl_external/https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fbuymeacoffee.com%2Frahalah]https://buymeacoffee.com/rahalah[/url]\n<br />[b]• 01091238604 Vodafone cash[/b]\n<br />[b]• Lub__131 instapay[/b]\n<br />[b]• Lub_131/393752334 binance[/b]\n<br />\n<br />[quote] [b]فريق رحلة[/b]\n<br />نتمنى ان نكون في حسن ظنكم[/quote]"
+      },
+      "downloads": 10,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1030/1030-1725716614-374954339.jpeg",
+      "name": "Arabic localization for Vortex",
+      "timestamp": 1725872682,
+      "tags": [],
+      "version": "1.2.4",
+      "type": "translation",
+      "language": "ar"
     }
   ]
 }
