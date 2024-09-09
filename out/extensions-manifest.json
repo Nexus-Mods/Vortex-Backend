@@ -1,5 +1,5 @@
 {
-  "last_updated": 1725873224271,
+  "last_updated": 1725877170394,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9297,6 +9297,25 @@
       "version": "1.2.4",
       "type": "translation",
       "language": "ar"
+    },
+    {
+      "modId": 1027,
+      "fileId": 3895,
+      "author": "SutandoTsukai181 and Kojo Bailey",
+      "uploader": "KojoBailey",
+      "description": {
+        "short": "Vortex game support for JoJo's Bizarre Adventure: All-Star Battle R on Windows PC.",
+        "long": "[font=Tahoma]Adds [/font][u]Vortex game support[/u][font=Tahoma] for [/font][b]JoJo's Bizarre Adventure: All-Star Battle R[/b][font=Tahoma] on Windows PC.[/font]\n<br />\n<br />[url=https://www.nexusmods.com/jojosbizarreadventureallstarbattler]JoJo ASBR on Nexus Mods[/url]\n<br />[url=https://store.steampowered.com/app/1372110/JoJos_Bizarre_Adventure_AllStar_Battle_R/]JoJo ASBR on Steam[/url] \n<br />\n<br />[font=Tahoma]For more information on modding ASBR, check out [/font][url=https://jojomodding.miraheze.org/]JoJo's Bizarre Modding Wiki[/url][font=Tahoma].[/font]\n<br />\n<br />[font=Tahoma]Modding directories like [/font][font=Courier New]data_win32[/font][font=Tahoma] and [/font][font=Courier New]japi[/font][font=Tahoma] should be automatically created when you install mods that use them. If a mod that is intended to go in a certain folder doesn't specify it in its download archive file (whether that be [/font][font=Courier New].zip[/font][font=Tahoma] or something else), its location will need to be manually set. There is no reliable way to automatically detect where a mod \"should\" go.[/font]\n<br />\n<br />[font=Tahoma]Merging is enabled, so make sure to manage that in the Vortex app when you have conflicting mods.[/font]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4767.jpg",
+      "name": "JoJo's Bizarre Adventure All-Star Battle R - Vortex Game Support",
+      "timestamp": 1724916512,
+      "tags": [],
+      "version": "1.2.0",
+      "type": "game",
+      "gameName": "JoJo's Bizarre Adventure: All-Star Battle R"
     }
   ]
 }
