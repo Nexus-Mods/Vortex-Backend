@@ -1,5 +1,5 @@
 {
-  "last_updated": 1725969661440,
+  "last_updated": 1725975801860,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9316,6 +9316,25 @@
       "version": "1.2.0",
       "type": "game",
       "gameName": "JoJo's Bizarre Adventure: All-Star Battle R"
+    },
+    {
+      "modId": 961,
+      "fileId": 3983,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Warhammer 40K Space Marine 2 modding support to Vortex Mod Manager.",
+        "long": "This extension adds Warhammer 40K Space Marine 2 modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually\n<br />\n<br />[b][color=#ea9999][size=3]Epic versions will not be discovered or launch properly until I get the information requested below. I have not tested this on the Epic version, and do not know if it has identical files/folders as the Steam version in order to work properly.\n<br />[/size][/color][/b]\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Installs mods next to the game's \"shipping\" executable by default (upscalers, reshades, DLL mods).\n<br />[*]Automatically installs mods intended for the root game folder (\"client_pc\" folder in zip). \n<br />[*]Automatically installs \"loose\" data file mods (\"local\" folder in zip or a subfolder). \n<br />[*]Includes mod type for the Local AppData config folder (steam version).\n<br />[*]Includes mod types for the \"paks&#92;default' and \"paks&#92;default&#92;scenes\" folders. Automatically installs .pak and .cache files to \"paks&#92;default\" folder.\n<br />[/list]\n<br />Hopefully, we can get tools to edit the game's texture, mesh, and animation data files.\n<br />\n<br />=======================================================\n<br />\n<br />[b][size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.\n<br />[/size][b][size=4]If anyone can follow this guide and let me know the Epic Games ID ([color=#b6d7a8]AppName[/color]), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size][/b]\n<br />[/b]\n<br />=======================================================\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 51,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6771.jpg",
+      "name": "Warhammer 40K Space Marine 2 Vortex Extension",
+      "timestamp": 1725973816,
+      "tags": [],
+      "version": "0.1.5",
+      "type": "game",
+      "gameName": "Warhammer 40,000: Space Marine 2"
     }
   ]
 }
