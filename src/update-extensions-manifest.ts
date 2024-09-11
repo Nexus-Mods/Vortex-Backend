@@ -29,6 +29,7 @@ const GAMES_LOCAL_PATH: string = path.join(REPO_ROOT_PATH, 'cloned', GAMES_REPO_
 // env variables
 const NEXUS_APIKEY:string = process.env.NEXUS_APIKEY || '' ;
 //const DRYRUN:boolean = (process.env.DRYRUN === 'true') || false;
+const BUNDLED_GAMES_ONLY:boolean = (process.env.BUNDLED_GAMES_ONLY === 'true') || false;
 
 const slack = new SlackClient(SLACK_CHANNEL);
 
@@ -168,8 +169,11 @@ class Driver {
     console.log('Start processing');
     console.log(`Last updated: ${new Date(this.manifest.last_updated).toString()}`);
 
-    // get updates and new additions from the site
-    await this.processNexusMods(this.mPackage);
+
+    if(!BUNDLED_GAMES_ONLY) {
+      // get updates and new additions from the site
+      await this.processNexusMods(this.mPackage);
+    }
 
     // get updated info from the vortex-games repo
     await this.processGames();
