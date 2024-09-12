@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726055669738,
+  "last_updated": 1726131297340,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -1644,7 +1644,7 @@
       "type": "game",
       "github": "Nexus-Mods/vortex-games",
       "githubRawPath": "game-witcher3",
-      "version": "1.6.7",
+      "version": "1.6.8",
       "id": "game-witcher3",
       "hide": true
     },
@@ -2042,7 +2042,7 @@
         "short": "Support for Halo: The Master Chief Collection",
         "long": "Support for Halo: The Master Chief Collection"
       },
-      "version": "1.1.0",
+      "version": "1.1.1",
       "hide": true
     },
     {
