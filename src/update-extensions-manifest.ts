@@ -10,7 +10,7 @@ import 'dotenv/config';
 import SlackClient from './SlackClient';
 import { getEmojiStringFromExtensionType, getFormattedDate, parseMillisecondsIntoReadableTime } from './utils';
 import Stopwatch from '@tsdotnet/stopwatch';
-import { DOWNLOAD_STATS_URL, GAME_EXCLUSIONLIST, HTML_REGEX, LIVE_MANIFEST_URL, MANIFEST_FILENAME, ONE_DAY, SLACK_CHANNEL, VERSION_MATCH_REGEX, CATEGORIES, htmlMap } from './constants';
+import { DOWNLOAD_STATS_URL, GAME_EXCLUSIONLIST, HTML_REGEX, LIVE_MANIFEST_URL, MANIFEST_FILENAME, ONE_DAY, SLACK_CHANNEL, VERSION_MATCH_REGEX, CATEGORIES, htmlMap, GAME_EMOJI } from './constants';
 import AddGithubProjectIssue from './github-add-issue';
 
 
@@ -43,8 +43,6 @@ async function start() {
     }
 
     const git: SimpleGit = simpleGit().clean(CleanOptions.FORCE);
-
-    slack.sendInfo('Auto-update of the extensions manifest has started.')  
     
     console.log('MANIFEST_PATH', MANIFEST_PATH);
 
@@ -165,6 +163,8 @@ class Driver {
 
     this.manifest = await this.readManifestFile();
     const now = Date.now();
+    
+    slack.sendInfo('Auto-update of the extensions manifest has started.')  
 
     console.log('Start processing');
     console.log(`Last updated: ${new Date(this.manifest.last_updated).toString()}`);
@@ -474,6 +474,8 @@ class Driver {
     const gameList: string[] = (await fs.readdir(GAMES_LOCAL_PATH)).filter((dirName) => dirName.startsWith('game-') && !GAME_EXCLUSIONLIST.includes(dirName));
 
     console.log(`gameList`, { games: JSON.stringify(gameList) });
+    
+    let updatedExtensions:IAvailableExtension[] = [];
 
     await Promise.all(
       gameList.map(async (gameId) => {
@@ -510,15 +512,68 @@ class Driver {
           long: info.description,
         };
 
+        // add to array if version has changed
+        if(existing.version !== info.version) {
+          updatedExtensions.push(existing);
+        }
+
         // the only thing we really need to update is the version
         existing.version = info.version;
 
         console.log(`Completed ${gameId} (${info.version})`);
       })
     );
+        
 
-    console.log(`Games have been processed.`);
+    // did we have any bundled game updates?
+    if(updatedExtensions.length > 0) {
+
+      const updated = updatedExtensions.map((ext) => {
+        return `${GAME_EMOJI} ${ext.gameName} (${ext.version})`;
+      });
+
+      const summary = `${updatedExtensions.length} updated bundled ${updatedExtensions.length === 1 ? 'game' : 'games'}\r\n${updated.join('\n')}`;
+      
+      console.log(summary);
+
+      slack.sendMessage(summary, [
+        {
+          type: 'section',
+          text: {
+            type: 'mrkdwn',
+            text: '*Bundled games that have been updated:*',
+          },
+        },
+        {
+          type: 'section',
+          text: {
+            type: 'mrkdwn',
+            text: updated.join('\n'),
+          },
+        }
+      ]);
+
+    } else {
+
+      const summary = `No bundled games have been updated`;
+
+      console.log(summary);
+
+      slack.sendMessage(summary, [
+        {
+          type: 'section',
+          text: {
+            type: 'mrkdwn',
+            text: 'No bundled games have been updated',
+          }
+        }
+      ]);
+    }    
+
+    console.log(`Bundled games have been processed.`);
   }
+
+  
 
   private removeNexusMod(entry: IAvailableExtension) {
     // we don't actually remove the entry in the manifest, we just reduce the object to just the modId and fileId
@@ -710,7 +765,7 @@ function sendSlackSummary(addedExtensions: IModInfo[], updatedExtensions: IAvail
 
   blocks = blocks.concat(footerBlock);
 
-  slack.sendMessage('summary', blocks);
+  slack.sendMessage(`Update Extensions: ${addedExtensions} added, ${updatedExtensions} updated`, blocks);
 }
 
 start();
