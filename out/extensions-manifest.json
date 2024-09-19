@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726739926726,
+  "last_updated": 1726744398878,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9430,6 +9430,25 @@
       "version": "0.1.3",
       "type": "game",
       "gameName": "Star Wars Outlaws"
+    },
+    {
+      "modId": 1022,
+      "fileId": 3877,
+      "author": "p1xel8ted",
+      "uploader": "p1xel8ted",
+      "description": {
+        "short": "Provides Vortex support for Cult of the Lamb BepInEx mods. Supports Steam and GOG editions of the game.",
+        "long": "[size=4][b]What[/b][/size]\n<br />\n<br />[size=3]Adds Vortex support for Cult of the Lamb. Supports Steam and GOG platforms.[/size]\n<br />\n<br />[b][size=4]Note[/size]\n<br />\n<br />[/b][size=3]This will auto-download and install the pack from here, with the correct config applied for Cult of the Lamb\n<br />\n<br />[url=https://www.nexusmods.com/cultofthelamb/mods/31]Cult of the Lamb BepInEx 5 Pack at Cult of the Lamb Nexus - Mods and community (nexusmods.com)[/url]\n<br />[/size]"
+      },
+      "downloads": 34,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4736.jpg",
+      "name": "Cult of the Lamb Vortex Extension",
+      "timestamp": 1724672127,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Cult of the Lamb"
     }
   ]
 }
