@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726739218017,
+  "last_updated": 1726739420230,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9354,6 +9354,25 @@
       "version": "2.0.0",
       "type": "game",
       "gameName": "LOCKDOWN Protocol"
+    },
+    {
+      "modId": 1007,
+      "fileId": 3885,
+      "author": "Xapu1337",
+      "uploader": "Xapu1337",
+      "description": {
+        "short": "Vortex extension for Escape The Backrooms",
+        "long": "Vortex extension for Escape The Backrooms"
+      },
+      "downloads": 17,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4722.jpg",
+      "name": "Vortex Extension - Escape The Backrooms",
+      "timestamp": 1724704566,
+      "tags": [],
+      "version": "0.0.3",
+      "type": "game",
+      "gameName": "Escape the Backrooms"
     }
   ]
 }
