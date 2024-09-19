@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726739468056,
+  "last_updated": 1726739643214,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9392,6 +9392,25 @@
       "version": "1.0.0",
       "type": "game",
       "gameName": "Deep Rock Galactic: Survivor"
+    },
+    {
+      "modId": 1028,
+      "fileId": 3949,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Age of Mythology: Retold support to Vortex Mod Manager.",
+        "long": "[size=2]Adds Age of Mythology: Retold support to Vortex Mod Manager.\n<br />\n<br />This works for the Steam and Xbox (GamePass) versions of the game. Other versions may need to specify the installation location manually. \n<br />\n<br />[/size][b][color=#ea9999]Mod Authors[/color]:\n<br />[list]\n<br />[*][b]Get support for modding this game at the [url=https://forums.ageofempires.com/c/age-of-mythology/retold-modding/447]Age of Mythology Retold Modding Forum[/url]﻿.[/b]\n<br />[*][b]Tool for extracting game resources - [url=https://forums.ageofempires.com/t/v-0-7-resource-manager-age-of-myth-retold-bar-extractor/260136]Resource Manager[/url]﻿[/b]\n<br />[*][b]You must package your data mods to match the game's folder structure. For example, a modified \"Data.bar\" file would be packaged in folders like this: \"game&#92;data&#92;Data_mods.bar\". This is the same pattern for mod's uploaded to Microsoft's \"World's Edge\" program.[/b]\n<br />[/list][/b]\n<br />﻿A few things to note:  [list]\n<br />[*][b][size=2]Installs mods to \"%USERPROFILE%&#92;Games&#92;Age of Mythology Retold&#92;*USER_ID*&#92;mods&#92;local\" folder.[/size][/b]\n<br />[*][b][color=#b6d7a8][size=2]You must enable mods in the in-game Mod Manager to be loaded by the game.[/size][/color][/b]\n<br />[*][b][size=2]Includes mod types for config and save files[/size][/b]\n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 46,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6775.jpg",
+      "name": "Age of Mythology Retold Vortex Extension",
+      "timestamp": 1725484014,
+      "tags": [],
+      "version": "0.1.5",
+      "type": "game",
+      "gameName": "Age of Mythology: Retold"
     }
   ]
 }
