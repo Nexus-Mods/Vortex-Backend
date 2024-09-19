@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726739420230,
+  "last_updated": 1726739468056,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9373,6 +9373,25 @@
       "version": "0.0.3",
       "type": "game",
       "gameName": "Escape the Backrooms"
+    },
+    {
+      "modId": 1021,
+      "fileId": 3887,
+      "author": "Caioreix",
+      "uploader": "caioreix",
+      "description": {
+        "short": "Adds support for Deep Rock Galactic: Survivor to Vortex.",
+        "long": "[b][size=6]DRG Survivor Support[b]        [b][b][url=https://discord.gg/F2usDSCzwX][img]https://i.postimg.cc/QdQSwvY4/636e0b52aa9e99b832574a53-full-logo-blurple-RGB-1.png[/img][/url][/b][/b][/b][/size][/b]\n<br />\n<br />This extension adds support for Deep Rock Galactic: Survivor to Vortex.\n<br />You can use it to install plugins for script hook.\n<br />\n<br />[size=5][b]How to install[/b][/size]\n<br />\n<br />[list]\n<br />[*]Instal Vortex 1.12+\n<br />[*]Click [url=https://www.nexusmods.com/site/mods/1021?tab=files]Mod Manager Download[/url] (Or in vortex go to Extensions-&gt;Find More. Find this extension and click install.)\n<br />[*]Enjoy :)﻿\n<br />[/list]"
+      },
+      "downloads": 3,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6399.jpg",
+      "name": "Deep Rock Galactic Survivor Support",
+      "timestamp": 1724828166,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Deep Rock Galactic: Survivor"
     }
   ]
 }
