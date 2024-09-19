@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726746659258,
+  "last_updated": 1726752623040,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9487,6 +9487,25 @@
       "version": "1.0.1",
       "type": "game",
       "gameName": "Sons Of The Forest"
+    },
+    {
+      "modId": 960,
+      "fileId": 4008,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Frostpunk 2 modding support to Vortex Mod Manager.",
+        "long": "[b][color=#ffe599][size=3]﻿NOTE: Frostpunk 2 will be receiving an official modding SDK called FrostKit. This may include additional ways to install mods. This extension will be updated to accommodate that, if necessary. [/size][/color][/b]\n<br />\n<br />This extension adds Frostpunk 2 modding support to Vortex Mod Manager.\n<br />\n<br />The Steam, Xbox, and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually. See note below on the Epic version.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[*]Config files should be automatically installed to the correct Local AppData folder.\n<br />[*]Save files should be automatically installed to the correct Local AppData folder.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Other mods that need to go to the game folder can use mod type \"Root Game Folder\".\n<br />[*]The UE4SS mod will be automatically installed by the game's executable.\n<br />[*]UE4SS Script mods can be installed using mod type \"UE4SS Scripts\".\n<br />[*]UE4SS LogicMod (Blueprint) mods can be installed using mod type \"UE4SS LogicMods (Blueprint)\". \n<br />[/list]\n<br />\n<br />==============================================\n<br />[b][size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about those games that is only available after installation.\n<br />[/size][b][size=4]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size][/b]\n<br />[/b]\n<br />==============================================\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6349.jpg",
+      "name": "Frostpunk 2 Vortex Extension",
+      "timestamp": 1726604692,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Frostpunk 2"
     }
   ]
 }
