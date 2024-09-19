@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726733235568,
+  "last_updated": 1726739218017,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9335,6 +9335,25 @@
       "version": "0.1.7",
       "type": "game",
       "gameName": "Warhammer 40,000: Space Marine 2"
+    },
+    {
+      "modId": 1010,
+      "fileId": 3963,
+      "author": "RogieDoji",
+      "uploader": "rboone98",
+      "description": {
+        "short": "This extension adds modding support for Lockdown Protocol in Vortex, making it easier than ever to manage your mods for this game. The extension automatically detects the game installation, ensures that necessary directories are created, and handles the installation of mods, including .pak and .lua files UE4SS into the correct folders",
+        "long": "[b]Description:[/b]\n<br />This extension adds modding support for [i]Lockdown Protocol[/i] in Vortex, making it easier than ever to manage your mods for this game. The extension automatically detects the game installation, ensures that necessary directories are created, and handles the installation of mods, including [code].pak\n<br />[/code] and [code].lua\n<br />[/code] files, into the correct directories. Additionally, this extension packages a common tool (UE4SS) that is often required by mods and installs it directly into the game's [code]Win64\n<br />[/code] directory, streamlining the setup process for users.\n<br />[b]Features:[/b]\n<br />[list]\n<br />[*][b]Automatic Game Detection[/b]: Automatically detects the game installation path for [i]Lockdown Protocol[/i] via Steam.\n<br />[*][b]Mod Management[/b]: Seamlessly installs [code].pak[/code]\n<br /> and [code].lua\n<br />[/code] mods into the appropriate [code]LogicMods\n<br />[/code] folder.[*][b]Tool Installation[/b]: Includes and installs the [code]dwmapi.dll[/code] and [code]UE4SS[/code] folder directly into the [code]Win64[/code] directory, required by many mods.\n<br />[*][b]User-Friendly[/b]: Designed to be easy to use, ensuring mod files are placed correctly without any manual steps.\n<br />[*][b]Customizable[/b]: Supports merging mods, creating a smooth modding experience.\n<br />[/list][b]Requirements:[/b]\n<br />[list]\n<br />[*]Vortex Mod Manager\n<br />[*][i]Lockdown Protocol[/i] installed via Steam\n<br />[/list][b]Installation:[/b]\n<br />[list=1]\n<br />[*]Download and install Vortex Mod Manager.\n<br />[*]Open the extensions section on the side and drag this zip file into the drop files here section at the bottom\n<br />[*]Restart Vortex and enable the extension from the \"Extensions\" tab.\n<br />[*]Manage your [i]Lockdown Protocol[/i] mods with ease!\n<br />[/list][b]Compatibility:[/b]\n<br />[list]\n<br />[*]Compatible with all versions of [i]Lockdown Protocol[/i] distributed via Steam.\n<br />[/list][b]Support:  [/b]If you encounter any issues or have suggestions for improvement, feel free to DM me on Discord @RogieDoji, or ask in the modding channel of the official [i]Lockdown Protocol[/i] Discord.\n<br />\n<br />[b]Credits:[/b]Developed by RogieDoji. Special thanks to the Vortex team and the [i]Lockdown Protocol[/i] modding community."
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6705.jpg",
+      "name": "Lockdown Protocol Extension",
+      "timestamp": 1725662884,
+      "tags": [],
+      "version": "2.0.0",
+      "type": "game",
+      "gameName": "LOCKDOWN Protocol"
     }
   ]
 }
