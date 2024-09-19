@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726744398878,
+  "last_updated": 1726746601031,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9449,6 +9449,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Cult of the Lamb"
+    },
+    {
+      "modId": 1041,
+      "fileId": 4009,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Final Fantasy XVI support to Vortex Mod Manager. Note that Reloaded-II Mod Manager is required for some mods and will be automatically installed by this extension.",
+        "long": "Adds Final Fantasy XVI support to Vortex Mod Manager.\n<br />\n<br />This extension will automatically install [url=https://github.com/Reloaded-Project/Reloaded-II]Reloaded-II Mod Manager[/url]. It can be run from the Dashboard tab in Vortex. \n<br />\n<br />[b][size=3]The extension does not support Symlinks, so the mod staging folder and game folder need to be on the same drive. \n<br />[/size][/b]\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is the default mod installation path.\n<br />[*]Reloaded-II Mod Manager will be automatically downloaded and installed into a \"Reloaded\" folder inside the game folder.\n<br />[*]Mods for Reloaded (have a \"ModConfig.json\" file) will be installed in the correct \"Reloaded&#92;Mods\" folder for the tool to load them. \n<br />[/list]\n<br />\n<br />==============================================\n<br />[b][size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.\n<br />[/size][b][size=4]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size][/b]\n<br />[/b]\n<br />==============================================\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 19,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6815.jpg",
+      "name": "Final Fantasy XVI Vortex Extension",
+      "timestamp": 1726607883,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Final Fantasy XVI"
     }
   ]
 }
