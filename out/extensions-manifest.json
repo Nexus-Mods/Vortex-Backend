@@ -1,5 +1,5 @@
 {
-  "last_updated": 1726746601031,
+  "last_updated": 1726746659258,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9468,6 +9468,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Final Fantasy XVI"
+    },
+    {
+      "modId": 1038,
+      "fileId": 3995,
+      "author": "Senjay",
+      "uploader": "Senjay",
+      "description": {
+        "short": "Vortex extension support for Sons Of The Forest",
+        "long": "[color=#00ffff][size=4][b][b]Vortex installation[/b][/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3]Open the extension page and click find more, search for the extension name and click install, you will be prompted to restart by vortex.[/size][size=2][b]\n<br />[color=#00ffff]\n<br />[/color][/b][/size][color=#00ffff][size=4][b][b]Alternate vortex installation[/b][/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3]Manually download the mod, Open the extension page, drag and drop the zip file at the dedicated drop file box, you will be prompted to restart by vortex.[/size][size=2][b]\n<br />\n<br />[/b][/size][color=#00ffff][size=4][b]Mod author section[/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3][size=3]Mods that doesn't have any pattern will be installed to the game root folder by default.[/size]\n<br />Here's a list of valid mod package sample to deploy your mods correctly[/size][size=2]\n<br />[b]\n<br />[/b][/size][size=3][b]Red Loader mods[/b][/size][size=2][b]\n<br />[/b]To ensure that your Red Loader mod is installed correctly, make sure that \"mods\" is at the top level directory. I've made partial support if you don't have \"mods\" at the top level directory but it won't support complex mod structure.\n<br />[b][code]mymod.zip\n<br />└── mods\n<br />    ├── mymodname\n<br />    │   ├── mymodasset\n<br />    │   ├── mymodaudio.wav\n<br />    │   └── manifest.json\n<br />    └── mymod.dll\n<br />[/code]\n<br />\n<br />[/b][/size]"
+      },
+      "downloads": 13,
+      "endorsements": 2,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5165.jpg",
+      "name": "Sons Of The Forest Vortex Extension",
+      "timestamp": 1726265387,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Sons Of The Forest"
     }
   ]
 }
