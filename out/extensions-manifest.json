@@ -1,5 +1,5 @@
 {
-  "last_updated": 1727768810960,
+  "last_updated": 1727787529271,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9506,6 +9506,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Frostpunk 2"
+    },
+    {
+      "modId": 1031,
+      "fileId": 4071,
+      "author": "Squishylemon007",
+      "uploader": "Squishylemon007",
+      "description": {
+        "short": "Provides support for EmuVR using WIGUx Modloader",
+        "long": "With the WIGUx Extension, you can utilise Vortex to manage your EmuVR mods. It offers features like mod collections, automatic updates for installed mods, and the ability to enable and disable mods. Vortex can also handle labels, modules, custom textures, mods, and pretty much anything else that WIGUx supports. \n<br />\n<br />[u]If Vortex does not automatically detect EmuVR, It means you have not ran EmuVR with the latest version of WIGUx, The newest version now creates a registry that includes information about the games version and install path[/u]\n<br />\n<br />What makes WIGUx Extension different from the UGC Explorer or Room Manger?\n<br />Unlike the UGC Explorer or Room Manager, the WIGUx Extension is not designed to edit mod files directly. Instead, its primary function is to enable Vortex to manage mods seamlessly for EmuVR., It can provide statistics for each mod such as there version, nexus page, if they need updating (They should auto-update if a update is detected), share mod collections, and have your own mod profiles.\n<br />\n<br />How to make a WIGUx Vortex Compatible mod?\n<br />If you are a Mod Author and want to make your mod work with the WIGUx Extension for Vortex then you need to upload your mod with a specific file structure, We have tried to make it as easy as possible for you. The file structure of the mod starts at the root of EmuVR and must contain the folders that lead to where your mod would install below is a example ugc prop mod, which to install its path would be EmuVR&#92;Custom&#92;UGC&#92;mod.ugc\n<br />\n<br />[img width=597,height=177]https://lh7-rt.googleusercontent.com/docsz/AD_4nXdoeGz4L3vkc2R9YJf2rwck_Zn7Jzq696ef_TLkL0t4Axz9mNDToMVFM54Nr3CaiZH5Ns7vymPNRfbmnD00aBTBcZb0USRDWyeNjWSAJAQZX3b3pjqd7qhg2nRmOditzre5YW0EEemfZcsxTThnbuUGO-eH?key=ibPxGX9Gmz7GtEr1tybO9w[/img]\n<br />When you have created the mods structure make sure when you compress your mod ( turn it into a zip ) make sure that the root of the zip are the folders that would be directly placed into the users EmuVR directory, dont compress a folder that contains the folder structure directly zip the folders.\n<br />\n<br />Next, go to the NexusMods Mod Upload Page for [url=https://www.nexusmods.com/emuvr/mods/add]EmuVR[/url]. Fill out all the required information there. For the files, simply upload the zip file you previously created. If everything is structured correctly, Nexus Mods should recognise it as compatible with Vortex via the WIGUx Extension and allow you to download it using mod manager. Walla, you've created your first Vortex-compatible mod."
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6773.jpg",
+      "name": "WIGUx Vortex Extension",
+      "timestamp": 1727786213,
+      "tags": [],
+      "version": "0.12.7",
+      "type": "game",
+      "gameName": "EmuVR"
     }
   ]
 }
