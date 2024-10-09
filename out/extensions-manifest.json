@@ -1,5 +1,5 @@
 {
-  "last_updated": 1728469053303,
+  "last_updated": 1728479784133,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9601,6 +9601,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Dragon Ball: Sparking ZERO"
+    },
+    {
+      "modId": 1056,
+      "fileId": 4100,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Dark Messiah of Might &amp; Magic modding support to Vortex Mod Manager.",
+        "long": "This extension adds Dark Messiah of Might &amp; Magic modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />This extension will automatically download and install the [url=https://www.moddb.com/games/dark-messiah-of-might-magic/downloads/wos-dark-messiah-mod-launcher-r0-926]wiltOS Mod Launcher[/url] for the game. This allows a new way to load mods. It also passes commandline arguments, sets game settings, and makes the game large address aware (use more than 2GB RAM).\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]Includes tools in the \"Dashboards\" tab to launch the game with additional arguments and also to launch the RTX Remix version with the appropriate arguments. Please update the RTX Remix tool command line arguments with your preferred resolution if you use it.\n<br />[*]Default mod install location is root game folder.\n<br />[*]Will install  [url=https://www.moddb.com/games/dark-messiah-of-might-magic/downloads/wos-dark-messiah-mod-launcher-r0-926]wiltOS Mod Launcher[/url] to the root game folder.\n<br />[*]Installs mods intended for use with the Mod Launcher (such as [url=https://www.moddb.com/mods/dark-messiah-unlimited-edition/downloads/wos-unlimited-edition-141-all-in-one]Unlimited Edition[/url]﻿) to the \"_mods\" folder (if mod zip includes \"info.json\" file).\n<br />[*]Installs save files (.sav) to \"mm&#92;SAVE\" folder.\n<br />[*]Installs game data files to \"mm\" folder and its subfolders, including \"materials\" folder.\n<br />[*]Installs .vpk files to the \"vpks\" folder.\n<br />[/list]\n<br />Note - If you plan to use the mod [url=https://www.nexusmods.com/darkmessiahofmightandmagic/mods/60?tab=description]DME[/url], you will need to do some manual steps and file manipulation to get it to work. Read the description carefully. I contacted the mod author to see if they can update to use the new Mod Launcher.\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_628.jpg",
+      "name": "Dark Messiah of Might and Magic Vortex Extension",
+      "timestamp": 1728420187,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Dark Messiah of Might and Magic"
     }
   ]
 }
