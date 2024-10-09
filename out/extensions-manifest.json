@@ -1,5 +1,5 @@
 {
-  "last_updated": 1728479784133,
+  "last_updated": 1728480084721,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9620,6 +9620,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Dark Messiah of Might and Magic"
+    },
+    {
+      "modId": 963,
+      "fileId": 4096,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Silent Hill 2 (2024) modding support to Vortex Mod Manager.",
+        "long": "This extension adds Silent Hill 2 (2024) modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />Includes Load Ordering for UE5 mods (.pak, .ucas, .utoc). \n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[*]Config files should be automatically installed to the correct Local AppData folder.\n<br />[*]Save files should be automatically installed to the correct Local AppData folder.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Other mods that need to go to the game folder can use mod type \"Root Game Folder\".\n<br />[*]The UE4SS mod will be automatically installed by the game's executable.\n<br />[*]UE4SS Script mods can be installed using mod type \"UE4SS Scripts\".\n<br />[*]UE4SS LogicMod (Blueprint) mods can be installed using mod type \"UE4SS LogicMods (Blueprint)\". \n<br />[/list]\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 43,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6880.jpg",
+      "name": "Silent Hill 2 (2024) Vortex Extension",
+      "timestamp": 1728397239,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Silent Hill 2 (2024)"
     }
   ]
 }
