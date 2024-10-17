@@ -1,5 +1,5 @@
 {
-  "last_updated": 1729151211933,
+  "last_updated": 1729172377336,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9658,6 +9658,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Until Dawn"
+    },
+    {
+      "modId": 1058,
+      "fileId": 4103,
+      "author": "RedFog18",
+      "uploader": "RedFog18",
+      "description": {
+        "short": "Extension For TCG Card Simulator",
+        "long": "A pretty basic Extension to provide mod management support between Vortex and TCG Card Simulator along with an Automatic install of Bepinx version: 5.4.21 until Im able to load in https://www.nexusmods.com/tcgcardshopsimulator/mods/2 for better compatibility with the game."
+      },
+      "downloads": 13,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6826.jpg",
+      "name": "TCG Card Simulator Extension",
+      "timestamp": 1728423687,
+      "tags": [],
+      "version": "0.0.2",
+      "type": "game",
+      "gameName": "TCG Card Shop Simulator"
     }
   ]
 }
