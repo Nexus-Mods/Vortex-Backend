@@ -1,5 +1,5 @@
 {
-  "last_updated": 1729172377336,
+  "last_updated": 1729172583144,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9677,6 +9677,25 @@
       "version": "0.0.2",
       "type": "game",
       "gameName": "TCG Card Shop Simulator"
+    },
+    {
+      "modId": 1062,
+      "fileId": 4129,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Metaphor: ReFantazio support to Vortex Mod Manager. Note that Reloaded-II Mod Manager is required for some mods and will be automatically installed by this extension.",
+        "long": "Adds Metaphor: ReFantazio support to Vortex Mod Manager.\n<br />\n<br />This extension will automatically install [url=https://github.com/Reloaded-Project/Reloaded-II]Reloaded-II Mod Manager[/url]. It can be run from the Dashboard tab in Vortex. \n<br />\n<br />[b][color=#ea9999][size=4]The extension does not support Symlinks, so the mod staging folder and game folder need to be on the same drive. \n<br />[/size][/color][/b]\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is the default mod installation path.\n<br />[*]Reloaded-II Mod Manager will be automatically downloaded and installed into a \"Reloaded\" folder inside the game folder.\n<br />[*]Mods for Reloaded (have a \"ModConfig.json\" file) will be installed in the correct \"Reloaded&#92;Mods\" folder for the tool to load them. \n<br />[/list]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 88,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6906.jpg",
+      "name": "Metaphor ReFantazio Vortex Extension",
+      "timestamp": 1728928534,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Metaphor: ReFantazio"
     }
   ]
 }
