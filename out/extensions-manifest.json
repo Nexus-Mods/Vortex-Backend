@@ -1,5 +1,5 @@
 {
-  "last_updated": 1729172952905,
+  "last_updated": 1729173071169,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9715,6 +9715,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Bellwright"
+    },
+    {
+      "modId": 1066,
+      "fileId": 4136,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Mortal Kombat 1 modding support to Vortex Mod Manager.",
+        "long": "This extension adds Mortal Kombat 1 modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />[b][color=#ea9999][size=3]This game does not support symlinks when loading pak with .ucas and .utoc files, so symlinks have been disabled. You must have the mod staging folder and the game on the same drive to use this extension. [/size][/color][/b]\n<br />\n<br />Includes Load Ordering for pak mods.\n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[/list][list]\n<br />[*]Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Other mods that need to go to the game folder can use mod type \"Root Game Folder\".\n<br />[*]The UE4SS mod will be automatically installed by the game's executable.\n<br />[*]UE4SS Script mods can be installed using mod type \"UE4SS Scripts\".\n<br />[*]UE4SS LogicMod (Blueprint) mods can be installed using mod type \"UE4SS LogicMods (Blueprint)\". \n<br />[*]Automatically downloads and installs the [url=https://www.nexusmods.com/mortalkombat/mods/7]Signature Bypass Mod[/url]﻿﻿﻿. Thanks to [url=https://next.nexusmods.com/profile/peek6/about-me]peek5[/url]﻿. This must tool can be run from the Dashboard tab in Vortex.\n<br />[*]Includes default tool to launch the game with '-fileopenlog' argument. \n<br />[/list]\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered here to make it work with this game. \n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 2,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5735.jpg",
+      "name": "Mortal Kombat 1 Vortex Extension",
+      "timestamp": 1729050375,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Mortal Kombat 1"
     }
   ]
 }
