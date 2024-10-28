@@ -1,0 +1,89 @@
+name: Daily Open and Closed Issues Check
+
+# This workflow is triggered every 24 hours
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs daily at midnight UTC
+
+jobs:
+  fetch_issues:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+    - name: Fetch open issues from the repository
+      id: fetch_open_issues
+      run: |
+        # Fetch open issues using GitHub API
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        "https://api.github.com/repos/nexus-mods/vortex/issues?state=open" > open_issues.json
+        
+        # Show fetched open issues
+        cat open_issues.json
+
+    - name: Fetch closed issues from the repository (last 30 days)
+      id: fetch_closed_issues
+      run: |
+        # Calculate the date 30 days ago
+        last_month=$(date -d "-30 days" +%Y-%m-%d)
+
+        # Fetch closed issues using GitHub API with the 'since' parameter to get those closed in the last month
+        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+        "https://api.github.com/repos/nexus-mods/vortex/issues?state=closed&since=$last_month" > closed_issues.json
+        
+        # Show fetched closed issues
+        cat closed_issues.json
+    
+    - name: Process issues, extract hashes, and log the report
+      run: |
+        echo "Processing open and closed issues (excluding issues by vortexfeedback):"
+        echo "# Open and Closed Issues on "nexus-mods/vortex" (Updated on $(date))" > issues_report.md
+        
+        process_issues() {
+          issues_file=$1
+          
+          for row in $(jq -c '.[]' $issues_file); do
+            author=$(echo $row | jq -r '.user.login')
+
+            # Ignore issues by vortexfeedback
+            if [ "$author" = "VortexFeedback" ]; then
+              echo "Skipping issue by vortexfeedback"
+              continue
+            fi
+
+            issue_number=$(echo $row | jq '.number')
+            issue_title=$(echo $row | jq '.title' | sed 's/\"//g')
+            issue_url=$(echo $row | jq '.html_url' | sed 's/\"//g')
+            issue_body=$(echo $row | jq '.body' | sed 's/\"//g')
+            issue_state=$(echo $row | jq '.state' | sed 's/\"//g')
+            issue_labels=$(echo $row | jq -r '.labels[].name' | tr '\n' ',' | sed 's/,$//')
+
+            # Extract the hash value from the issue body if present
+            issue_hash=$(echo "$issue_body" | grep -oP '(?<=hash: ).*' || echo "No hash found")
+
+            echo "- [Issue #$issue_number: $issue_title]($issue_url)" >> issues_report.md
+            echo "  - State: $issue_state" >> issues_report.md
+            echo "  - Labels: $issue_labels" >> issues_report.md
+            echo "  - Hash: $issue_hash" >> issues_report.md
+            echo "---" >> issues_report.md
+          done
+        }
+
+        # Process both open and closed issues
+        process_issues open_issues.json
+        process_issues closed_issues.json
+    
+    - name: Commit the results
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add issues_report.md
+        git commit -m "Update open and closed issues report with hashes [$(date)]"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Clean up
+      run: rm open_issues.json closed_issues.json
