@@ -44,42 +44,56 @@ jobs:
         mkdir -p $OUTPUT_DIR  # Create the output directory if it doesn't exist
         
         # Initialize an empty JSON array
-        echo "[]" > $OUTPUT_DIR/issues_report.json
+        echo "[" > $OUTPUT_DIR/issues_report.json
 
         # Function to process issues
         process_issues() {
           issues_file=$1
 
-          # Check if the JSON file is empty or malformed
           if [ ! -s "$issues_file" ]; then
             echo "Warning: $issues_file is empty or does not exist. Skipping."
             return
           fi
-
-          # Validate JSON format before processing
-          if ! jq empty "$issues_file" 2>/dev/null; then
-            echo "Error: $issues_file is not valid JSON. Skipping."
-            return
-          fi
           
           # Read issues from the JSON file
-          for row in $(jq -c '.[]' "$issues_file"); do
-            author=$(echo "$row" | jq -r '.user.login')
+          while IFS= read -r line; do
+            # Check if the line contains issue data
+            if echo "$line" | grep -q '"user":'; then
+              author=$(echo "$line" | grep -oP '(?<="login":")[^"]*')
+              
+              # Ignore issues by vortexfeedback
+              if [ "$author" = "vortexfeedback" ]; then
+                echo "Skipping issue by vortexfeedback"
+                continue
+              fi
 
-            # Ignore issues by vortexfeedback
-            if [ "$author" = "VortexFeedback" ]; then
-              echo "Skipping issue by vortexfeedback"
-              continue
+              # Get the issue details
+              issue_number=$(echo "$line" | grep -oP '(?<="number":)[^,]*')
+              issue_title=$(echo "$line" | grep -oP '(?<="title":")[^"]*')
+              issue_url=$(echo "$line" | grep -oP '(?<="html_url":")[^"]*')
+              issue_body=$(echo "$line" | grep -oP '(?<="body":")[^"]*')
+              issue_state=$(echo "$line" | grep -oP '(?<="state":")[^"]*')
+              
+              # Append the issue data to the JSON array
+              echo "{" >> $OUTPUT_DIR/issues_report.json
+              echo "  \"number\": $issue_number," >> $OUTPUT_DIR/issues_report.json
+              echo "  \"title\": \"$issue_title\"," >> $OUTPUT_DIR/issues_report.json
+              echo "  \"url\": \"$issue_url\"," >> $OUTPUT_DIR/issues_report.json
+              echo "  \"body\": \"$issue_body\"," >> $OUTPUT_DIR/issues_report.json
+              echo "  \"state\": \"$issue_state\"," >> $OUTPUT_DIR/issues_report.json
+              echo "  \"author\": \"$author\"" >> $OUTPUT_DIR/issues_report.json
+              echo "}," >> $OUTPUT_DIR/issues_report.json
             fi
-            
-            # Append the issue data to the JSON array
-            echo "$row" | jq --argjson new_row "$row" '. += [$new_row]' $OUTPUT_DIR/issues_report.json > tmp.json && mv tmp.json $OUTPUT_DIR/issues_report.json
-          done
+          done < "$issues_file"
         }
 
         # Process both open and closed issues
         process_issues open_issues.json
         process_issues closed_issues.json
+
+        # Remove the last comma to make it valid JSON and close the array
+        sed -i '$ s/,$//' $OUTPUT_DIR/issues_report.json
+        echo "]" >> $OUTPUT_DIR/issues_report.json
     
     - name: Commit the results
       run: |
