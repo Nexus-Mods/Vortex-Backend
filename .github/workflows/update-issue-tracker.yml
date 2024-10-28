@@ -55,6 +55,12 @@ jobs:
             echo "Warning: $issues_file is empty or does not exist. Skipping."
             return
           fi
+
+          # Validate JSON format before processing
+          if ! jq empty "$issues_file" 2>/dev/null; then
+            echo "Error: $issues_file is not valid JSON. Skipping."
+            return
+          fi
           
           # Read issues from the JSON file
           for row in $(jq -c '.[]' "$issues_file"); do
