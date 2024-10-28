@@ -2,9 +2,9 @@ name: Daily Open and Closed Issues Check
 
 # This workflow is triggered every 24 hours
 on:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"  # Runs daily at midnight UTC
-    workflow_dispatch:  # Allows the workflow to be run manually
 
 jobs:
   fetch_issues:
