@@ -1,9 +1,10 @@
 name: Daily Open and Closed Issues Check
 
+# This workflow is triggered manually and every 24 hours
 on:
-  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows the workflow to be run manually
 
 jobs:
   fetch_issues:
@@ -36,14 +37,15 @@ jobs:
         # Show fetched closed issues
         cat closed_issues.json
     
-    - name: Process issues, extract hashes, and log the report
+    - name: Process issues and generate JSON report
       run: |
         echo "Processing open and closed issues (excluding issues by vortexfeedback):"
         OUTPUT_DIR="../../out"
         mkdir -p $OUTPUT_DIR  # Create the output directory if it doesn't exist
-        touch $OUTPUT_DIR/issues_report.md
-        echo "# Open and Closed Issues on nexus-mods/vortex (Updated on $(date))" > $OUTPUT_DIR/issues_report.md
         
+        # Initialize an empty JSON array
+        echo "[]" > $OUTPUT_DIR/issues_report.json
+
         # Function to process issues
         process_issues() {
           issues_file=$1
@@ -54,6 +56,7 @@ jobs:
             return
           fi
           
+          # Read issues from the JSON file
           for row in $(jq -c '.[]' "$issues_file"); do
             author=$(echo "$row" | jq -r '.user.login')
 
@@ -62,22 +65,9 @@ jobs:
               echo "Skipping issue by vortexfeedback"
               continue
             fi
-
-            issue_number=$(echo "$row" | jq '.number')
-            issue_title=$(echo "$row" | jq '.title' | sed 's/\"//g')
-            issue_url=$(echo "$row" | jq '.html_url' | sed 's/\"//g')
-            issue_body=$(echo "$row" | jq '.body' | sed 's/\"//g')
-            issue_state=$(echo "$row" | jq '.state' | sed 's/\"//g')
-            issue_labels=$(echo "$row" | jq -r '.labels[].name' | tr '\n' ',' | sed 's/,$//')
-
-            # Extract the hash value from the issue body if present
-            issue_hash=$(echo "$issue_body" | grep -oP '(?<=hash: ).*' || echo "No hash found")
-
-            echo "- [Issue #$issue_number: $issue_title]($issue_url)" >> $OUTPUT_DIR/issues_report.md
-            echo "  - State: $issue_state" >> $OUTPUT_DIR/issues_report.md
-            echo "  - Labels: $issue_labels" >> $OUTPUT_DIR/issues_report.md
-            echo "  - Hash: $issue_hash" >> $OUTPUT_DIR/issues_report.md
-            echo "---" >> $OUTPUT_DIR/issues_report.md
+            
+            # Append the issue data to the JSON array
+            echo "$row" | jq --argjson new_row "$row" '. += [$new_row]' $OUTPUT_DIR/issues_report.json > tmp.json && mv tmp.json $OUTPUT_DIR/issues_report.json
           done
         }
 
@@ -89,8 +79,8 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add $OUTPUT_DIR/issues_report.md
-        git commit -m "Update open and closed issues report with hashes [$(date)]"
+        git add $OUTPUT_DIR/issues_report.json
+        git commit -m "Update issues report in JSON format [$(date)]"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
