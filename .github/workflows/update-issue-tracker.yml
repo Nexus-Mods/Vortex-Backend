@@ -1,6 +1,5 @@
 name: Daily Open and Closed Issues Check
 
-# This workflow is triggered every 24 hours
 on:
   workflow_dispatch:
   schedule:
@@ -42,13 +41,21 @@ jobs:
         echo "Processing open and closed issues (excluding issues by vortexfeedback):"
         OUTPUT_DIR="../../out"
         mkdir -p $OUTPUT_DIR  # Create the output directory if it doesn't exist
+        touch $OUTPUT_DIR/issues_report.md
         echo "# Open and Closed Issues on nexus-mods/vortex (Updated on $(date))" > $OUTPUT_DIR/issues_report.md
         
+        # Function to process issues
         process_issues() {
           issues_file=$1
+
+          # Check if the JSON file is empty or malformed
+          if [ ! -s "$issues_file" ]; then
+            echo "Warning: $issues_file is empty or does not exist. Skipping."
+            return
+          fi
           
-          for row in $(jq -c '.[]' $issues_file); do
-            author=$(echo $row | jq -r '.user.login')
+          for row in $(jq -c '.[]' "$issues_file"); do
+            author=$(echo "$row" | jq -r '.user.login')
 
             # Ignore issues by vortexfeedback
             if [ "$author" = "VortexFeedback" ]; then
@@ -56,12 +63,12 @@ jobs:
               continue
             fi
 
-            issue_number=$(echo $row | jq '.number')
-            issue_title=$(echo $row | jq '.title' | sed 's/\"//g')
-            issue_url=$(echo $row | jq '.html_url' | sed 's/\"//g')
-            issue_body=$(echo $row | jq '.body' | sed 's/\"//g')
-            issue_state=$(echo $row | jq '.state' | sed 's/\"//g')
-            issue_labels=$(echo $row | jq -r '.labels[].name' | tr '\n' ',' | sed 's/,$//')
+            issue_number=$(echo "$row" | jq '.number')
+            issue_title=$(echo "$row" | jq '.title' | sed 's/\"//g')
+            issue_url=$(echo "$row" | jq '.html_url' | sed 's/\"//g')
+            issue_body=$(echo "$row" | jq '.body' | sed 's/\"//g')
+            issue_state=$(echo "$row" | jq '.state' | sed 's/\"//g')
+            issue_labels=$(echo "$row" | jq -r '.labels[].name' | tr '\n' ',' | sed 's/,$//')
 
             # Extract the hash value from the issue body if present
             issue_hash=$(echo "$issue_body" | grep -oP '(?<=hash: ).*' || echo "No hash found")
