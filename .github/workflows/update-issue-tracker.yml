@@ -40,7 +40,9 @@ jobs:
     - name: Process issues, extract hashes, and log the report
       run: |
         echo "Processing open and closed issues (excluding issues by vortexfeedback):"
-        echo "# Open and Closed Issues on "nexus-mods/vortex" (Updated on $(date))" > issues_report.md
+        OUTPUT_DIR="../../out"
+        mkdir -p $OUTPUT_DIR  # Create the output directory if it doesn't exist
+        echo "# Open and Closed Issues on nexus-mods/vortex (Updated on $(date))" > $OUTPUT_DIR/issues_report.md
         
         process_issues() {
           issues_file=$1
@@ -64,11 +66,11 @@ jobs:
             # Extract the hash value from the issue body if present
             issue_hash=$(echo "$issue_body" | grep -oP '(?<=hash: ).*' || echo "No hash found")
 
-            echo "- [Issue #$issue_number: $issue_title]($issue_url)" >> issues_report.md
-            echo "  - State: $issue_state" >> issues_report.md
-            echo "  - Labels: $issue_labels" >> issues_report.md
-            echo "  - Hash: $issue_hash" >> issues_report.md
-            echo "---" >> issues_report.md
+            echo "- [Issue #$issue_number: $issue_title]($issue_url)" >> $OUTPUT_DIR/issues_report.md
+            echo "  - State: $issue_state" >> $OUTPUT_DIR/issues_report.md
+            echo "  - Labels: $issue_labels" >> $OUTPUT_DIR/issues_report.md
+            echo "  - Hash: $issue_hash" >> $OUTPUT_DIR/issues_report.md
+            echo "---" >> $OUTPUT_DIR/issues_report.md
           done
         }
 
@@ -80,7 +82,7 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add issues_report.md
+        git add $OUTPUT_DIR/issues_report.md
         git commit -m "Update open and closed issues report with hashes [$(date)]"
         git push
       env:
