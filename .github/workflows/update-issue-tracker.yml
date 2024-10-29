@@ -20,7 +20,8 @@ jobs:
 
     steps:
     - name: Show Inputs
-      run: echo "Selected branch: ${{ github.event.inputs.branch }}"
+      run: |
+        echo "Selected branch: ${{ github.event.inputs.branch }}"
 
     - uses: actions/checkout@v4
       with:
