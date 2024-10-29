@@ -97,7 +97,7 @@
     "add-mods-of-month": "ts-node src/add-mods-of-month.ts",
     "test-slack": "ts-node src/test-slack.ts",
     "test-github": "ts-node src/test-github.ts",
-    "test-github-issues": "ts-node src/github-update-issues.ts",
+    "update-github-issues": "ts-node src/github-update-issues.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
