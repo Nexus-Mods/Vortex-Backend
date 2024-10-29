@@ -98,7 +98,7 @@ async function run() {
 
         // Remove PRs
         issues = response.data.reduce((acc: IGithubIssue[], issue: IGithubIssue) => {
-          if (!issue || issue.pull_request || issue.title.toLowerCase().startsWith('review')) {
+          if (!issue?.body || issue.pull_request || issue.title.toLowerCase().startsWith('review')) {
             return acc;
           }
           acc.push(mapToGithubIssue(issue));
