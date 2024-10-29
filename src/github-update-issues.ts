@@ -16,11 +16,6 @@ async function run() {
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
-    try {
-      fs.unlinkSync(issuesReportFile);
-    } catch (err) {
-      // do nothing
-    }
     const mapToGithubIssue = (rawIssue: any): IGithubIssue => {
       return {
         url: rawIssue.url,
@@ -112,6 +107,12 @@ async function run() {
     processIssues(openIssues);
     processIssues(closedIssues);
 
+    try {
+      // Remove the existing file
+      fs.unlinkSync(issuesReportFile);
+    } catch (err) {
+      // do nothing
+    }
     // Write issues report to JSON file
     fs.writeFileSync(issuesReportFile, JSON.stringify(issuesReport, null, 2));
     core.info(`Issues report written to ${issuesReportFile}`);
