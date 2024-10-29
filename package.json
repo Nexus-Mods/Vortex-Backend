@@ -17,6 +17,8 @@
   "version": "1.1.0",
   "main": "index.js",
   "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
     "@babel/parser": "^7.22.5",
     "@babel/traverse": "^7.22.5",
     "@nexusmods/nexus-api": "^1.1.5",
@@ -83,6 +85,7 @@
     "tree-kill": "^1.2.2",
     "tsconfig": "^7.0.0",
     "v8-compile-cache-lib": "^3.0.1",
+    "vortex-api": "github:Nexus-Mods/vortex-api",
     "wrappy": "^1.0.2",
     "xtend": "^4.0.2",
     "yn": "^3.1.1"
@@ -94,6 +97,7 @@
     "add-mods-of-month": "ts-node src/add-mods-of-month.ts",
     "test-slack": "ts-node src/test-slack.ts",
     "test-github": "ts-node src/test-github.ts",
+    "test-github-issues": "ts-node src/github-update-issues.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

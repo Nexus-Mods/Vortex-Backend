@@ -1,109 +1,61 @@
-name: Daily Open and Closed Issues Check
+name: Update Github Issues
 
-# This workflow is triggered manually and every 24 hours
 on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to update'
+        required: true
+        default: 'main'
+
   schedule:
-    - cron: "0 0 * * *"  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows the workflow to be run manually
+    - cron:  '0 0 * * *'
 
 jobs:
-  fetch_issues:
-    runs-on: ubuntu-latest
+  Update-Github-Issues:  
+    runs-on: ubuntu-latest  
+    
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-    - name: Checkout the repository
-      uses: actions/checkout@v3
+    - name: Show Inputs
+      run: echo "Selected branch: ${{ github.event.inputs.branch }}"
 
-    - name: Fetch open issues from the repository
-      id: fetch_open_issues
+    - uses: actions/checkout@v4
+      with:
+        submodules: "recursive"
+        ref: ${{ github.event.inputs.branch }}  # Checkout the specified branch
+
+    - name: Validate branch exists
       run: |
-        # Fetch open issues using GitHub API
-        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        "https://api.github.com/repos/nexus-mods/vortex/issues?state=open" > open_issues.json
-        
-        # Show fetched open issues
-        cat open_issues.json
+        git fetch --all
+        if ! git rev-parse --verify "origin/${{ github.event.inputs.branch }}" > /dev/null 2>&1; then
+          echo "Branch '${{ github.event.inputs.branch }}' does not exist."
+          exit 1
+        fi
 
-    - name: Fetch closed issues from the repository (last 30 days)
-      id: fetch_closed_issues
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18.x'
+        cache: "yarn"
+
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - name: Run
+      run: yarn update-github-issues
+
+    - name: Git commit and push      
+      env: 
+        CI_COMMIT_AUTHOR: Vortex Backend
+        CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
+        CI_COMMIT_MESSAGE: Update Github Issues
       run: |
-        # Calculate the date 30 days ago
-        last_month=$(date -d "-30 days" +%Y-%m-%d)
-
-        # Fetch closed issues using GitHub API with the 'since' parameter to get those closed in the last month
-        curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-        "https://api.github.com/repos/nexus-mods/vortex/issues?state=closed&since=$last_month" > closed_issues.json
-        
-        # Show fetched closed issues
-        cat closed_issues.json
-    
-    - name: Process issues and generate JSON report
-      run: |
-        echo "Processing open and closed issues (excluding issues by vortexfeedback):"
-        OUTPUT_DIR="../../out"
-        mkdir -p $OUTPUT_DIR  # Create the output directory if it doesn't exist
-        
-        # Initialize an empty JSON array
-        echo "[" > $OUTPUT_DIR/issues_report.json
-
-        # Function to process issues
-        process_issues() {
-          issues_file=$1
-
-          if [ ! -s "$issues_file" ]; then
-            echo "Warning: $issues_file is empty or does not exist. Skipping."
-            return
-          fi
-          
-          # Read issues from the JSON file
-          while IFS= read -r line; do
-            # Check if the line contains issue data
-            if echo "$line" | grep -q '"user":'; then
-              author=$(echo "$line" | grep -oP '(?<="login":")[^"]*')
-              
-              # Ignore issues by vortexfeedback
-              if [ "$author" = "vortexfeedback" ]; then
-                echo "Skipping issue by vortexfeedback"
-                continue
-              fi
-
-              # Get the issue details
-              issue_number=$(echo "$line" | grep -oP '(?<="number":)[^,]*')
-              issue_title=$(echo "$line" | grep -oP '(?<="title":")[^"]*')
-              issue_url=$(echo "$line" | grep -oP '(?<="html_url":")[^"]*')
-              issue_body=$(echo "$line" | grep -oP '(?<="body":")[^"]*')
-              issue_state=$(echo "$line" | grep -oP '(?<="state":")[^"]*')
-              
-              # Append the issue data to the JSON array
-              echo "{" >> $OUTPUT_DIR/issues_report.json
-              echo "  \"number\": $issue_number," >> $OUTPUT_DIR/issues_report.json
-              echo "  \"title\": \"$issue_title\"," >> $OUTPUT_DIR/issues_report.json
-              echo "  \"url\": \"$issue_url\"," >> $OUTPUT_DIR/issues_report.json
-              echo "  \"body\": \"$issue_body\"," >> $OUTPUT_DIR/issues_report.json
-              echo "  \"state\": \"$issue_state\"," >> $OUTPUT_DIR/issues_report.json
-              echo "  \"author\": \"$author\"" >> $OUTPUT_DIR/issues_report.json
-              echo "}," >> $OUTPUT_DIR/issues_report.json
-            fi
-          done < "$issues_file"
-        }
-
-        # Process both open and closed issues
-        process_issues open_issues.json
-        process_issues closed_issues.json
-
-        # Remove the last comma to make it valid JSON and close the array
-        sed -i '$ s/,$//' $OUTPUT_DIR/issues_report.json
-        echo "]" >> $OUTPUT_DIR/issues_report.json
-    
-    - name: Commit the results
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add $OUTPUT_DIR/issues_report.json
-        git commit -m "Update issues report in JSON format [$(date)]"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-    - name: Clean up
-      run: rm open_issues.json closed_issues.json
+        git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+        git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+        git pull origin ${{ github.event.inputs.branch }}  # Pull the latest changes from the branch
+        git add .  # Add changes before committing
+        git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+        git push origin ${{ github.event.inputs.branch }}  # Push changes to the specified branch
