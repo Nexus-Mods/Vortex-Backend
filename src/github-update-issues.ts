@@ -17,7 +17,7 @@ async function run() {
     }
 
     // Function to fetch issues with pagination support
-    const fetchIssues = async (state, since) => {
+    const fetchIssues = async (state: string, since: string | null) => {
       const issues = [];
       let page = 1;
       let hasMorePages = true;
@@ -43,16 +43,16 @@ async function run() {
     };
 
     // Fetch open and closed issues
-    const openIssues = await fetchIssues('open');
+    const openIssues = await fetchIssues('open', null);
     const lastMonthDate = new Date();
     lastMonthDate.setMonth(lastMonthDate.getMonth() - 1);
     const closedIssues = await fetchIssues('closed', lastMonthDate.toISOString());
 
     // Initialize the issues report
-    const issuesReport = [];
+    const issuesReport: any[] = [];
 
     // Function to process issues
-    const processIssues = (issues) => {
+    const processIssues = (issues: any[]) => {
       for (const issue of issues) {
         const author = issue.user.login;
         if (author.toLowerCase() === 'vortexfeedback') {
@@ -71,7 +71,7 @@ async function run() {
     fs.writeFileSync(issuesReportFile, JSON.stringify(issuesReport, null, 2));
     core.info(`Issues report written to ${issuesReportFile}`);
   } catch (error) {
-    core.setFailed(error.message);
+    core.setFailed(error);
   }
 }
 
