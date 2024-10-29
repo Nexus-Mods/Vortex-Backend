@@ -44,8 +44,7 @@
     "closed_at": null,
     "body": "**Describe the bug**\r\n\r\nFound another `TODO` bug that I've had a lot of trouble reliably recreating. Essentially, upgrades to a currently enabled extension sometimes results in an error dialog complaining about a duplicate action creation that I think is probably coming from [this extension load during installation](https://github.com/Nexus-Mods/Vortex/blob/master/src/extensions/extension_manager/installExtension.ts#L53). Closing the dialog and restarting Vortex manually will sometimes work fine, but sometimes results in two versions of the extension appearing in the extensions list (depending on how the old version was installed).\r\n\r\nI think this is partially impacted by how the previous version was installed since just manipulating the `info.json` of a \"properly\" installed extension to trigger an update doesn't trigger this bug. However, if you manually install a ZIP version of the extension (even downloaded from Nexus), it doesn't seem to recognise it as the same extension and will allow you to *install*, rather than upgrade, the latest version from Nexus Mods, triggering this error.\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Install an extension that creates an action (Beat Saber Support 0.3.1 would do)\r\n2. Attempt to update that extension\r\n3. You *should* see the error message complaining about a duplicate action (`BS_ENABLE_OCI` if testing with Beat Saber)\r\n\r\n\r\n**Expected behavior**\r\n\r\n**Platform (please complete the following information):**\r\n - OS: Windows 10\r\n - Vortex 1.2.16\r\n\r\n**Additional context**\r\n\r\nLike I said, this is sorta tricky to replicate even in a clean environment, especially without the ability to install older versions through the Extensions pane, and with how Vortex doesn't seem to match manually installed extensions without Nexus-installed versions of the same extension.",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6594",
@@ -92,8 +91,7 @@
     "closed_at": null,
     "body": "**Describe the bug**\r\n\r\nAs always, this could be expected behaviour for a very good reason! I'm just stumbling around in the categories code and noticed something weird.\r\n\r\nEmitting an `update-categories` event with an `ICategoryDictionary` parameter results in the `category_management` extension dispatching the `updateCategories` action. The reducer for that action just overwrites any existing categories in the `persistent` state. As far as I can tell, this means that it's impossible for a specific game to have categories populated from more than one source.\r\n\r\nThis same behaviour also means that an extension using `retrieve-category-list` to populate initial categories (I know it's supposed to be internal, but hypothetically) would completely replace the categories from Nexus Mods provided by `nexus_integration`\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. Use the Categories dialog to pull Nexus Mods categories\r\n1. Use a toolbar button/global action/whatever to emit `update-categories` with valid params\r\n2. The categories from the event will completely replace the Nexus categories\r\n\r\n**Expected behavior**\r\n\r\nSo I might be expecting this wrong, but I would have guessed that this should *merge* the categories into state, rather than replacing them all.\r\n\r\nI understand that it's possible to just use the `setCategory` action to specifically add individual categories, but `update-categories`/`retrieve-category-list` *seems* like it should be the place for adding multiple categories.\r\n\r\n**Platform (please complete the following information):**\r\n - OS: Windows 10\r\n - Vortex Version 1.2.16\r\n\r\n**Additional context**\r\n\r\nAs always, feel free to tell me I'm doing it wrong :) \r\n",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6116",
@@ -149,8 +147,7 @@
     "closed_at": null,
     "body": "Response to https://github.com/Nexus-Mods/Vortex/issues/6113 since prematurely closed.\r\n\r\nThat has nothing to do with it, and thats my point exactly, you are NOT and I repeat NOT deploying where game dictates, the game has 2!! mod folders, both packages/core/override, the one you deploy to is documents which are always on C drives unless people move it, if game is D drive, then interdrive loading. You change it to game folder, a change already custom done.\r\n\r\nfunction queryModPath(gamePath) { return path.join(gamePath, 'packages', 'core', 'override'); game path, not documents. Has nothing to do with how mods are packaged and such.\r\n\r\nSo when advanced mode is active, allow the option to set deployment folder as you can with staging folder, advanced is for the advanced..",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/5959",
@@ -197,8 +194,7 @@
     "closed_at": null,
     "body": "**Describe the bug**\r\nObserved while managing Fallout 4 mods multiple times in the last days:\r\nUpgrading a mod without can result in an open mod conflict with a deactivated mod \r\n\r\n**To Reproduce**\r\n1. Fully Install older version of a mod (e.g. https://www.nexusmods.com/fallout4/mods/42857?tab=files)\r\n2. Install a newer version of it without deleting the old one\r\n3. Should result in a message about a redundant mod AND a conflict between those two\r\n4. clicking on the message for the redundant mod to autofix it disables the old mod as expected, but the message about the conflict is still there even if the old version is no longer of relevance (restarting vortex helps as workaround)\r\n\r\n**Expected behavior**\r\nBoth messages disapear since both issues are solved by disabling the old mod version\r\n\r\n**Screenshots**\r\nThe messages I'm talking about:\r\n![image](https://user-images.githubusercontent.com/10450330/74476019-d7c97d80-4ea8-11ea-90d0-6af7ed5401c1.png)\r\n\r\n**Platform (please complete the following information):**\r\n - OS: Windows 10\r\n - Vortex Version 1.1.12\r\n",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/5037",
@@ -265,8 +261,7 @@
       "user_view_type": "public",
       "site_admin": false
     },
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/4683",
@@ -313,8 +308,7 @@
     "closed_at": null,
     "body": "**Describe the bug**\r\nSometimes, Vortex doesn't enable plugins (esp, esm, esl) when being deployed\r\n\r\n**To Reproduce**\r\nSteps to reproduce the behavior:\r\n1. download a mod with a .esp included\r\n2. Click on install mod.\r\n3. deploy mod.\r\n4. check for errors that might pop up like \"masters are missing, etc.\r\n5. go to the plugins tab to see if there are any plugins disabled.\r\n6. Open up Wrye Bash to see if any plugins are disabled.\r\n\r\n**Expected behavior**\r\nPlugins should be reliably activated upon install, like vortex used to do in the less recent versions.\r\n\r\n**Screenshots**\r\nIf applicable, add screenshots to help explain your problem.\r\n\r\n**Platform (please complete the following information):**\r\n - OS: [Windows 10]\r\n - Vortex Version [18.6]\r\n\r\n**Additional context**\r\nLike I said, this isn't always happening and it actually enables the plugin on deploying.\r\nIt's almost like it fails to detect a master for a bit, thus not activating the plugin. If the check for master error appears and you click check, nothing appears to actually happen even if you have the master already enabled. Or maybe it's because said plugin is being installed with it's master plugin at the same time and the master is failing to be enabled first.\r\n",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/3437",
@@ -370,8 +364,7 @@
     "closed_at": null,
     "body": "When you change the font size to a larger font, the icons on the menu bars do not scale with the fonts. \r\n\r\n![vortex font](https://user-images.githubusercontent.com/47787421/53027978-f6329f80-3433-11e9-896c-cd67dde14337.jpg)\r\n",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/757",
@@ -427,8 +420,7 @@
     "closed_at": null,
     "body": "In the conflict resolution screen, an icon is shown to the right when another mod's rules reference the current mod.\r\nThis dialog could be improved by showing what type of rule this is, e.g. Load Before/Load After.\r\n\r\n![rules](https://user-images.githubusercontent.com/10516759/43892254-72aebcda-9b99-11e8-868d-fa1a9723fa85.png)",
     "closed_by": null,
-    "state_reason": null,
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": null
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/15439",
@@ -495,8 +487,7 @@
       "user_view_type": "public",
       "site_admin": false
     },
-    "state_reason": "completed",
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": "completed"
   },
   {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/15005",
@@ -553,7 +544,6 @@
       "user_view_type": "public",
       "site_admin": false
     },
-    "state_reason": "completed",
-    "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    "state_reason": "completed"
   }
 ]
