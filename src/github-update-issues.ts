@@ -26,6 +26,7 @@ async function run() {
         url: rawIssue.url,
         repository_url: rawIssue.repository_url,
         id: rawIssue.id,
+        number: rawIssue.number,
         title: rawIssue.title,
         user: rawIssue.user,
         labels: rawIssue.labels.map((label: any) => ({

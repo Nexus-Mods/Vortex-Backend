@@ -4,6 +4,7 @@ export interface IGithubIssue {
   url: string;
   repository_url: string;
   id: number;
+  number: number;
   title: string;
   user: IGitHubUser;
   labels: Array<{
