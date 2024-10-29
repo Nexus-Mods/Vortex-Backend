@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import axios from 'axios';
 import { IGithubIssue } from './types';
+import { nanoid } from 'nanoid';
 
 function extractErrorDetails(issue: IGithubIssue) {
   const report = issue.body;
@@ -34,6 +35,9 @@ function generateHash(issue: IGithubIssue) {
   //  not unique enough and may hinder the ability to correctly group
   //  issues
   const data = `${errorMessage ?? ''}\n${stack ?? ''}`;
+  if (data === '\n') {
+    return undefined;
+  }
   return crypto.createHash('sha256').update(data).digest('hex');
 }
 
