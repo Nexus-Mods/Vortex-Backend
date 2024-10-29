@@ -3,6 +3,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6597",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 641632905,
+    "number": 6597,
     "title": "Extension upgrade throws errors for duplicate action names",
     "user": {
       "login": "agc93",
@@ -49,6 +50,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6594",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 641316979,
+    "number": 6594,
     "title": "actions.updateCategories/update-categories event clobbers existing categories",
     "user": {
       "login": "agc93",
@@ -95,6 +97,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6116",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 603444085,
+    "number": 6116,
     "title": "Suggestion - Deployment folder Settings",
     "user": {
       "login": "Nypheena",
@@ -150,6 +153,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/5959",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 564938873,
+    "number": 5959,
     "title": "Triaged [Added] - Autofix for \"redundant mod\" doesn't effect mod conflict notification ",
     "user": {
       "login": "JulianKoch",
@@ -196,6 +200,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/5037",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 464940832,
+    "number": 5037,
     "title": "Triage [Review] - Morrowind Plugin Sorting Support",
     "user": {
       "login": "spacecowgirl314",
@@ -262,6 +267,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/4683",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 450814214,
+    "number": 4683,
     "title": "Triage [Review] - Sometimes, Vortex doesn't enable plugins (esp, esm, esl) when being deployed",
     "user": {
       "login": "HylianSteel",
@@ -308,6 +314,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/3437",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 411992131,
+    "number": 3437,
     "title": "Triaged [Added] - UI Menu Icons Crowded",
     "user": {
       "login": "imtarfu",
@@ -363,6 +370,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/757",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 349060048,
+    "number": 757,
     "title": "Triaged [Icebox] - Show What Rules Reference Selected Mod",
     "user": {
       "login": "wxMichael",
@@ -418,6 +426,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/15439",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 2222332190,
+    "number": 15439,
     "title": "Remove libxmljs dependency",
     "user": {
       "login": "insomnious",
@@ -484,6 +493,7 @@
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/15005",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 2038687395,
+    "number": 15005,
     "title": "The file  \"<filename unknown>\" is currently bot accesable",
     "user": {
       "login": "TomeKATANA",
