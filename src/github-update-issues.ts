@@ -1,3 +1,5 @@
+import { IGithubIssue } from "./types";
+
 const core = require('@actions/core');
 const github = require('@actions/github');
 const axios = require('axios');
@@ -16,9 +18,10 @@ async function run() {
       fs.mkdirSync(outputDir, { recursive: true });
     }
 
+    const genIssue = (data: any): IGithubIssue => data as IGithubIssue;
     // Function to fetch issues with pagination support
     const fetchIssues = async (state: string, since: string | null) => {
-      const issues = [];
+      let issues: IGithubIssue[] = [];
       let page = 1;
       let hasMorePages = true;
 
@@ -30,7 +33,9 @@ async function run() {
           }
         });
 
-        issues.push(...response.data);
+        // Remove PRs
+        issues = response.data.filter((issue: IGithubIssue) => !issue.pull_request && !issue.title.toLowerCase().startsWith('review'));
+        issues = issues.map(genIssue);
 
         if (response.data.length < 100) {
           hasMorePages = false; // If fewer than 100 issues are returned, we're done
