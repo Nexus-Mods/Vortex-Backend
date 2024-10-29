@@ -1,10 +1,42 @@
-import { IGithubIssue } from "./types";
+import * as core from '@actions/core';
+import * as crypto from 'crypto';
+import * as fs from 'fs';
+import * as path from 'path';
+import axios from 'axios';
+import { IGithubIssue } from './types';
 
-const core = require('@actions/core');
-const github = require('@actions/github');
-const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
+function extractErrorDetails(issue: IGithubIssue) {
+  const report = issue.body;
+  const messageRegex = /#### Message\n([^\n]+)/;
+  const contextRegex = /#### Context\n```\n([\s\S]*?)```/;
+  const stackRegex = /#### Stack\n```\n([\s\S]*?)```/;
+
+  const messageMatch = report.match(messageRegex);
+  const errorMessage = messageMatch ? messageMatch[1].trim() : null;
+
+  const contextMatch = report.match(contextRegex);
+  const context = contextMatch ? contextMatch[1].trim() : null;
+
+  const stackMatch = report.match(stackRegex);
+  const stack = stackMatch ? stackMatch[1].trim() : null;
+
+  return {
+      errorMessage,
+      context,
+      stack
+  };
+}
+
+function generateHash(issue: IGithubIssue) {
+  const { errorMessage, context, stack } = extractErrorDetails(issue);
+  // We could create the hash using the context here too, but given that
+  //  the context can include collection installation data, it's probably
+  //  not unique enough and may hinder the ability to correctly group
+  //  issues
+  const data = `${errorMessage ?? ''}\n${stack ?? ''}`;
+  return crypto.createHash('sha256').update(data).digest('hex');
+}
+
 
 async function run() {
   try {
@@ -46,7 +78,8 @@ async function run() {
           html_url: rawIssue.pull_request.html_url,
           diff_url: rawIssue.pull_request.diff_url,
           patch_url: rawIssue.pull_request.patch_url
-        } : undefined
+        } : undefined,
+        hash: generateHash(rawIssue)
       };
     }
     // Function to fetch issues with pagination support
@@ -116,7 +149,7 @@ async function run() {
     // Write issues report to JSON file
     fs.writeFileSync(issuesReportFile, JSON.stringify(issuesReport, null, 2));
     core.info(`Issues report written to ${issuesReportFile}`);
-  } catch (error) {
+  } catch (error: any) {
     core.setFailed(error);
   }
 }

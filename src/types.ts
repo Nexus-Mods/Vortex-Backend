@@ -30,6 +30,7 @@ export interface IGithubIssue {
     diff_url: string;
     patch_url: string;
   };
+  hash?: string;
 }
 
 export interface IExtensionDownloadInfo {
