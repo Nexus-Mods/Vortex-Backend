@@ -1,5 +1,5 @@
 {
-  "last_updated": 1730274492397,
+  "last_updated": 1730292960313,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9734,6 +9734,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Mortal Kombat 1"
+    },
+    {
+      "modId": 1079,
+      "fileId": 4186,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Red Dead Redemption support to Vortex Mod Manager. Note that Magic RDR is required for some mods and will be automatically installed by this extension.",
+        "long": "Adds Red Dead Redemption support to Vortex Mod Manager.\n<br />\n<br />Steam version should be discovered automatically. Other versions may need to specify the installation location manually. [b]Epic Users - See note below.[/b]\n<br />\n<br />This extension will automatically install [url=https://github.com/Foxxyyy/Magic-RDR/releases]Magic RDR[/url]. It can be run from the Dashboard tab in Vortex and is required to install some mods.\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Root Game Folder\" mod type. This is the default mod installation path.\n<br />[*]Magic RDR will be automatically downloaded and installed in the root game folder.\n<br />[/list]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />[b][size=4]Epic Users - The game will not be automatically detected or launch properly until I get a piece of information only available after installing the Epic version.[/size][/b]\n<br />[size=4][b]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful![/b]\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5175.jpg",
+      "name": "Red Dead Redemption Vortex Extension",
+      "timestamp": 1730249424,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Red Dead Redemption"
     }
   ]
 }
