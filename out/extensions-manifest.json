@@ -1,5 +1,5 @@
 {
-  "last_updated": 1730293049504,
+  "last_updated": 1730293160016,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9772,6 +9772,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "MechWarrior 5: Clans"
+    },
+    {
+      "modId": 1073,
+      "fileId": 4162,
+      "author": "ghot93",
+      "uploader": "ghot93",
+      "description": {
+        "short": "Adds The Killing Antidote support to Vortex.",
+        "long": "Adds The Killing Antidote support to Vortex.\n<br />Supports load order and .pak mods."
+      },
+      "downloads": 67,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6187.jpg",
+      "name": "The Killing Antidote Vortex Extension",
+      "timestamp": 1729536285,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "The Killing Antidote"
     }
   ]
 }
