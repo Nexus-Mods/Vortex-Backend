@@ -1,5 +1,5 @@
 {
-  "last_updated": 1730293160016,
+  "last_updated": 1730293237049,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9791,6 +9791,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "The Killing Antidote"
+    },
+    {
+      "modId": 1070,
+      "fileId": 4152,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Diplomacy is Not an Option support to Vortex Mod Manager. Note that BepInEx is required for some mods and will be automatically installed by this extension.",
+        "long": "Adds Diplomacy is Not an Option support to Vortex Mod Manager. This extension will automatically install [url=https://www.nexusmods.com/diplomacyisnotanoption/mods/1?tab=files]BepInEx[/url].[b][color=#ea9999][size=4]\n<br />[/size][/color][/b]\n<br />Steam version of the game will be automatically discovered. Other versions may need to specify the installation location manually.  [b]See note below on Epic version.[/b]\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is the default mod installation path.\n<br />[*]BepInEx will be automatically downloaded and installed inside the game folder.\n<br />[*]Mods for BepInEx will be installed in the correct folders. \n<br />[/list]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />[size=3][b]Epic Users - The game will not be automatically detected or launch properly until I get a piece of information only available after installing the Epic version.[/b]\n<br />[b]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful![/b]\n<br />\n<br />[url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6883.jpg",
+      "name": "Diplomacy is Not an Option Vortex Extension",
+      "timestamp": 1729295155,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Diplomacy is Not an Option"
     }
   ]
 }
