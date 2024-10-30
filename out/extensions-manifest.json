@@ -1,5 +1,5 @@
 {
-  "last_updated": 1730292960313,
+  "last_updated": 1730293049504,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9753,6 +9753,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Red Dead Redemption"
+    },
+    {
+      "modId": 1074,
+      "fileId": 4163,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds MechWarrior 5: Clans modding support to Vortex Mod Manager.",
+        "long": "This extension adds MechWarrior 5: Clans modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Xbox Game Pass versions of the game should be automatically discovered. Other versions may need to select the install location manually. [b]Epic users see note below.[/b]\n<br />\n<br />Includes Load Ordering for UE5 mods (.pak, .ucas, .utoc). \n<br />\n<br />[b][color=#ea9999][size=3]This game does not support symlinks when loading pak files, so symlinks have been disabled. You must have the mod staging folder and the game on the same drive to use this extension. \n<br />[/size][/color][/b]\n<br />A few things to note:  \n<br />[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable, please use the \"Binaries (Engine Injector)\" mod type. This is also currently the default mod installation path.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Other mods that need to go to the game folder can use mod type \"Root Game Folder\".\n<br />[*]The UE4SS mod will be automatically installed by the game's executable.\n<br />[*]UE4SS Script mods can be installed using mod type \"UE4SS Scripts\".\n<br />[*]UE4SS LogicMod (Blueprint) mods can be installed using mod type \"UE4SS LogicMods (Blueprint)\". \n<br />[/list]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />[b][size=4]Epic Users - The game will not be automatically detected or launch properly until I get a piece of information only available after installing the Epic version.[/size][/b]\n<br />[size=4][b]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful![/b]\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />\n<br />Credit to Pickysaurus (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 42,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6935.jpg",
+      "name": "MechWarrior 5 Clans Vortex Extension",
+      "timestamp": 1729618705,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "MechWarrior 5: Clans"
     }
   ]
 }
