@@ -8,18 +8,17 @@ import { genHash } from './utils';
 
 function extractErrorDetails(issue: IGithubIssue) {
   const report = issue.body;
-  const messageRegex = /#### Message\n([^\n]+)/;
-  const contextRegex = /#### Context\n```\n([\s\S]*?)```/;
-  const stackRegex = /#### Stack\n```\n([\s\S]*?)```/;
+  const messagePattern = /^#### Message\s+([\s\S]*?)^(?=####|$)/igm;
+  const contextPattern = /^#### Context\s+```([\s\S]*?)```/igm;
+  const stackPattern = /^#### Stack\s+```([\s\S]*?)```/igm;
 
-  const messageMatch = report.match(messageRegex);
-  const errorMessage = messageMatch ? messageMatch[1].trim() : null;
+  const messageMatch = report.match(messagePattern);
+  const contextMatch = report.match(contextPattern);
+  const stackMatch = report.match(stackPattern);
 
-  const contextMatch = report.match(contextRegex);
-  const context = contextMatch ? contextMatch[1].trim() : null;
-
-  const stackMatch = report.match(stackRegex);
-  const stack = stackMatch ? stackMatch[1].trim() : null;
+  const errorMessage = messageMatch ? messageMatch[0].replace(/^#### Message\s+/, '').trim() : '';
+  const context = contextMatch ? contextMatch[0].replace(/^#### Context\s+```/, '').replace(/```$/, '').trim() : '';
+  const stack = stackMatch ? stackMatch[0].replace(/^#### Stack\s+```/, '').replace(/```$/, '').trim() : '';
 
   return {
       errorMessage,
@@ -29,13 +28,7 @@ function extractErrorDetails(issue: IGithubIssue) {
 }
 
 function generateHash(issue: IGithubIssue) {
-  const { errorMessage, context, stack } = extractErrorDetails(issue);
-  if (!errorMessage || !context || !stack) {
-    return undefined;
-  }
-  const error = new Error(errorMessage);
-  error.stack = stack;
-  return genHash(error);
+  return genHash(issue.body.slice(0, -30));
 }
 
 
@@ -45,45 +38,21 @@ async function run() {
     const repo = 'nexus-mods/vortex';
     const outputDir = path.resolve(__dirname, path.join('..', 'out'));
     const issuesReportFile = path.join(outputDir, 'issues_report.json');
-    // Ensure output directory exists
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
     const mapToGithubIssue = (rawIssue: any): IGithubIssue => {
+      const hashRegex = new RegExp('hash: ([a-z0-9]+)', 'igm');
+      const result = hashRegex.exec(rawIssue.body);
+      const hash = result ? result[1] : null;
+      if (hash === null) {
+        core.info(`Hash not found in issue ${rawIssue.number}`);
+      }
       return {
-        url: rawIssue.url,
-        repository_url: rawIssue.repository_url,
-        id: rawIssue.id,
-        number: rawIssue.number,
-        title: rawIssue.title,
-        user: rawIssue.user,
-        labels: rawIssue.labels.map((label: any) => ({
-          id: label.id,
-          node_id: label.node_id,
-          url: label.url,
-          name: label.name,
-          color: label.color,
-          default: label.default,
-          description: label.description
-        })),
-        state: rawIssue.state,
-        locked: rawIssue.locked,
-        created_at: rawIssue.created_at,
-        updated_at: rawIssue.updated_at,
-        closed_at: rawIssue.closed_at,
-        body: rawIssue.body,
-        closed_by: rawIssue.closed_by,
-        state_reason: rawIssue.state_reason,
-        pull_request: rawIssue.pull_request ? {
-          url: rawIssue.pull_request.url,
-          html_url: rawIssue.pull_request.html_url,
-          diff_url: rawIssue.pull_request.diff_url,
-          patch_url: rawIssue.pull_request.patch_url
-        } : undefined,
-        hash: generateHash(rawIssue)
+        ...rawIssue,
+        hash: hash,
       };
     }
-    // Function to fetch issues with pagination support
     const fetchIssues = async (state: string, since: string | null) => {
       let issues: IGithubIssue[] = [];
       let page = 1;
@@ -93,47 +62,52 @@ async function run() {
         const url = `https://api.github.com/repos/${repo}/issues?state=${state}&per_page=100&page=${page}${since ? `&since=${since}` : ''}`;
         const response = await axios.get(url, {
           headers: {
-            Authorization: `token ${GITHUB_TOKEN}`
+            Authorization: `${GITHUB_TOKEN}`
           }
         });
 
-        // Remove PRs
-        issues = response.data.reduce((acc: IGithubIssue[], issue: IGithubIssue) => {
+        issues = issues.concat(response.data.reduce((acc: IGithubIssue[], issue: IGithubIssue) => {
           if (!issue?.body || issue.pull_request || issue.title.toLowerCase().startsWith('review')) {
             return acc;
           }
           acc.push(mapToGithubIssue(issue));
           return acc;
-        }, []);
+        }, []));
 
         if (response.data.length < 100) {
-          hasMorePages = false; // If fewer than 100 issues are returned, we're done
+          hasMorePages = false;
         } else {
-          page++; // Otherwise, increment page number to fetch next page
+          page++;
         }
       }
-
+"### Application error\r\n#### System\r\n| | |\r\n|------------ | -------------|\r\n|Platform | win32 10.0.22631  |\r\n|Architecture | x64 |\r\n|Application Version | 0.0.1 |\r\n|Process | renderer |\r\n#### Message\r\nnot implemented\r\n#### Title\r\n```\r\nFailed to purge mods\r\n```\r\n\r\n#### Context\r\n```\r\nextension-api = [object Object],gamemode = Vampire the Masquerade\tBloodlines,extension_version = 1.0.2\r\n```\r\n#### Stack\r\n```\r\nnot implemented\r\nError: not implemented\r\n    at loadAllManifests (C:\\Projects\\vortex\\src\\extensions\\mod_management\\util\\deploy.ts:64:25)\r\n    at C:\\Projects\\vortex\\src\\extensions\\mod_management\\util\\deploy.ts:208:19\r\n    at tryCatcher (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\util.js:16:23)\r\n    at Promise._settlePromiseFromHandler (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\r\n    at Promise._settlePromise (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\r\n    at Promise._settlePromiseCtx (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:641:10)\r\n    at _drainQueueStep (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:97:12)\r\n    at _drainQueue (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:86:9)\r\n    at Async._drainQueues (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:102:5)\r\n    at Async.drainQueues (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:15:14)\r\nPrior Context:\r\n    at C:\\Projects\\vortex\\src\\util\\util.ts:183:22\r\n    at withActivationLock (C:\\Projects\\vortex\\src\\extensions\\mod_management\\util\\activationStore.ts:303:10)\r\n    at purgeModsImpl (C:\\Projects\\vortex\\src\\extensions\\mod_management\\util\\deploy.ts:196:28)\r\n    at C:\\Projects\\vortex\\src\\extensions\\mod_management\\util\\deploy.ts:110:16\r\n    at tryCatcher (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\util.js:16:23)\r\n    at Promise._settlePromiseFromHandler (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\r\n    at Promise._settlePromise (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\r\n    at Promise._settlePromise0 (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\r\n    at Promise._settlePromises (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\r\n    at _drainQueueStep (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:93:12)\r\n    at _drainQueue (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:86:9)\r\n    at Async._drainQueues (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:102:5)\r\n    at Async.drainQueues (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:15:14)\r\n\r\nReported from:\r\nError: \r\n    at showError (C:\\Projects\\vortex\\src\\util\\message.ts:255:21)\r\n    at onShowError (C:\\Projects\\vortex\\src\\extensions\\mod_management\\views\\DeactivationButton.tsx:156:16)\r\n    at C:\\Projects\\vortex\\src\\extensions\\mod_management\\views\\DeactivationButton.tsx:97:11\r\n    at tryCatcher (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\util.js:16:23)\r\n    at Promise._settlePromiseFromHandler (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\r\n    at Promise._settlePromise (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\r\n    at Promise._settlePromise0 (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\r\n    at Promise._settlePromises (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\promise.js:725:18)\r\n    at _drainQueueStep (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:93:12)\r\n    at _drainQueue (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:86:9)\r\n    at Async._drainQueues (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:102:5)\r\n    at Async.drainQueues (C:\\Projects\\vortex\\node_modules\\bluebird\\js\\release\\async.js:15:14)\r\n```\r\n\r\n## Steps To Reproduce:\r\n\r\n•a fdafsdf \r\n•asdf \r\n•asdf \r\n•asdf asdf \r\n•asdf as\r\n•fd as\r\n\r\n\r\n\r\nHash: 50aa8eba2a968d7edc6c38ddbe6e20c9"
       return issues;
     };
 
-    // Fetch open and closed issues
     const openIssues = await fetchIssues('open', null);
     const lastMonthDate = new Date();
     lastMonthDate.setMonth(lastMonthDate.getMonth() - 1);
     const closedIssues = await fetchIssues('closed', lastMonthDate.toISOString());
 
-    // Initialize the issues report
-    const issuesReport: any[] = [];
+    const issuesReport: IGithubIssue[] = [];
 
-    // Function to process issues
-    const processIssues = (issues: any[]) => {
-      for (const issue of issues) {
+    const processIssues = (issues: IGithubIssue[]) => {
+      for (const issue of issues) {;
         const author = issue.user.login;
+        const hashMatch = /hash: ([a-z0-9]+)/gmi;
         if (author.toLowerCase() === 'vortexfeedback') {
           core.info(`Skipping issue by vortexfeedback: ${issue.number}`);
           continue;
         }
+        if (!issue.hash && !hashMatch.test(issue.body)) {
+          // No hash.
+          continue;
+        }
+        
+        const hash = issue.hash ?? hashMatch?.exec?.(issue.body)?.[1];
+        issue.hash = hash
         issuesReport.push(issue);
+        core.info(`Added issue by ${author}: ${issue.number}`);
       }
     };
 
