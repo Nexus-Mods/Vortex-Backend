@@ -4,7 +4,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import axios from 'axios';
 import { IGithubIssue } from './types';
-import { nanoid } from 'nanoid';
+import { genHash } from './utils';
 
 function extractErrorDetails(issue: IGithubIssue) {
   const report = issue.body;
@@ -30,15 +30,12 @@ function extractErrorDetails(issue: IGithubIssue) {
 
 function generateHash(issue: IGithubIssue) {
   const { errorMessage, context, stack } = extractErrorDetails(issue);
-  // We could create the hash using the context here too, but given that
-  //  the context can include collection installation data, it's probably
-  //  not unique enough and may hinder the ability to correctly group
-  //  issues
-  const data = `${errorMessage ?? ''}\n${stack ?? ''}`;
-  if (data === '\n') {
+  if (!errorMessage || !context || !stack) {
     return undefined;
   }
-  return crypto.createHash('sha256').update(data).digest('hex');
+  const error = new Error(errorMessage);
+  error.stack = stack;
+  return genHash(error);
 }
 
 
