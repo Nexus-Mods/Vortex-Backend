@@ -1,5 +1,52 @@
 [
   {
+    "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6604",
+    "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
+    "id": 641891849,
+    "number": 6604,
+    "title": "Support for Oblivion's INIs being in different places.",
+    "user": {
+      "login": "Pickysaurus",
+      "id": 31670524,
+      "node_id": "MDQ6VXNlcjMxNjcwNTI0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31670524?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Pickysaurus",
+      "html_url": "https://github.com/Pickysaurus",
+      "followers_url": "https://api.github.com/users/Pickysaurus/followers",
+      "following_url": "https://api.github.com/users/Pickysaurus/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Pickysaurus/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Pickysaurus/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Pickysaurus/subscriptions",
+      "organizations_url": "https://api.github.com/users/Pickysaurus/orgs",
+      "repos_url": "https://api.github.com/users/Pickysaurus/repos",
+      "events_url": "https://api.github.com/users/Pickysaurus/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Pickysaurus/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "labels": [
+      {
+        "id": 437053436,
+        "node_id": "MDU6TGFiZWw0MzcwNTM0MzY=",
+        "url": "https://api.github.com/repos/Nexus-Mods/Vortex/labels/improvement%20:chart_with_upwards_trend:",
+        "name": "improvement :chart_with_upwards_trend:",
+        "color": "8512A8",
+        "default": false,
+        "description": "An issue that improves an existing feature"
+      }
+    ],
+    "state": "open",
+    "locked": false,
+    "created_at": "2020-06-19T11:07:51Z",
+    "updated_at": "2020-06-29T14:07:04Z",
+    "closed_at": null,
+    "body": "According to Infernio of Wyrebash. Oblivion can use either the game folder INI or the My Games folder INI based on a INI preference:\r\n> They ship an Oblivion.ini in the game folder that has bUseMyGamesDirectory set to 0. That's a vanilla Oblivion setting that Wrye Bash has always supported, which makes Oblivion (and, by extension, Wrye Bash) not use the My Games/AppData folders and instead stick plugins.txt, saves, BashSettings.dat, etc. into the game folder.\r\n\r\nWe may want to look into supporting this way of handling Oblivion settings. ",
+    "closed_by": null,
+    "state_reason": null
+  },
+  {
     "url": "https://api.github.com/repos/Nexus-Mods/Vortex/issues/6597",
     "repository_url": "https://api.github.com/repos/Nexus-Mods/Vortex",
     "id": 641632905,
