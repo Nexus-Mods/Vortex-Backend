@@ -6375,10 +6375,10 @@
       "gameName": "Dungeon Siege II"
     },
     {
-      "modId": 548,
-      "fileId": 2015,
+      "modId": 1072,
+      "fileId": 4159,
       "author": "ViperLord",
-      "uploader": "viperlord",
+      "uploader": "yoss7arian",
       "description": {
         "short": "Vortex Extension created using: https://www.nexusmods.com/site/mods/155 then hand modified",
         "long": "[b]Description:[/b]\n<br />Quick extension for handling dsreg and dsmap files. For dlls, or other things change mod type to Engine Injector to put things i the game root\n<br />\n<br />[b]Note:\n<br />[/b]Pretty much as is, but it's working for me"
@@ -6389,7 +6389,7 @@
       "name": "Dungeon Siege 1 - Vortex Extension",
       "timestamp": 1679943762,
       "tags": [],
-      "version": "1.1",
+      "version": "1.1.0",
       "type": "game",
       "gameName": "Dungeon Siege 1"
     },
