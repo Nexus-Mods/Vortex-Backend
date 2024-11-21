@@ -1,5 +1,5 @@
 {
-  "last_updated": 1732180604342,
+  "last_updated": 1732182261525,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9848,6 +9848,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Dragon Age: The Veilguard"
+    },
+    {
+      "modId": 1060,
+      "fileId": 4114,
+      "author": "Alcedo Games",
+      "uploader": "NordboDev",
+      "description": {
+        "short": "Adds support to Old Market Simulator",
+        "long": "Allows users to upload mods to this game, i have provided BepInEx with a configuration manager, now go nuts. (I am not the developer of this game)\n<br />\n<br />[url=https://store.steampowered.com/app/2878420/Old_Market_Simulator/]Purchase the Game\n<br />[/url]﻿\n<br />Old Market Simulator is a 1-4 player co-op game where you manage your market by ordering goods, growing produce, raising animals, fishing, and crafting items in your workshop, while hiring employees and expanding your business."
+      },
+      "downloads": 60,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7040.jpg",
+      "name": "Old Market Simulator",
+      "timestamp": 1728558166,
+      "tags": [],
+      "version": "1.0.4",
+      "type": "game",
+      "gameName": "Old Market Simulator"
     }
   ]
 }
