@@ -1,5 +1,5 @@
 {
-  "last_updated": 1732175228209,
+  "last_updated": 1732180604342,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9829,6 +9829,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Horizon Zero Dawn Remastered"
+    },
+    {
+      "modId": 1075,
+      "fileId": 4312,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Dragon Age: The Veilguard support to Vortex Mod Manager. Frosty Mod Manager support is not available at this time (in development).",
+        "long": "Add Dragon Age: The Veilguard support to Vortex. Frosty Mod Manager support is tentative at this time. I will turn on automatic download of Frosty Mod Manager when proper support is available. \n<br />\n<br />The Steam version of the game should be automatically discovered. EA should work too (let me know). Other versions may need to select the install location manually. [b]Epic users see note below.\n<br />\n<br />[b][color=#ea9999][size=3]This game does not support symlinks due to how the new version of Frosty Mod Manager works. You must have the mod staging folder and the game on the same drive to use this extension. [/size][/color][/b][/b]\n<br />\n<br />[b][size=4][url=https://github.com/FrostyToolsuite/FrostyToolsuite]LINK TO FROSTYTOOLSUITE (IN DEVELOPMENT)[/url]\n<br />[/size]\n<br />[size=4][color=#b6d7a8]There is an alpha version of Frosty with DATV support. It will work with this extension when installed as a mod. Use at your own risk. I will not add alpha versions to automatic download until things are more stable. \n<br />[/color]\n<br />[url=https://github.com/wavebend/FrostyToolsuite/releases]https://github.com/wavebend/FrostyToolsuite/releases\n<br />\n<br />[/url]Installation Guide: [url=https://docs.google.com/document/d/1F6X8fjh6RS_IHX7cqx36lyhCEpLPZSYknki-M28w_K0/edit?tab=t.0]https://docs.google.com/document/d/1F6X8fjh6RS_IHX7cqx36lyhCEpLPZSYknki-M28w_K0/edit?tab=t.0[/url]\n<br />[/size]\n<br />\n<br />[size=3]﻿A few things to note:[/size][/b]  \n<br />[list]\n<br />[*][size=3]You must have Steam and/or EA App open when launching the game from Vortex in order for mods to load and the game to start.[/size]\n<br />[*][size=3]Frostbite Engine mods (.fbmods) will be installed to the default folder that Frosty Mod Manager uses. So basically, this extension allows you to download mods from Nexus and pass them directly to Frosty MM in the correct folder, so you don't have to move files around manually. \n<br />[/size]\n<br />[*][size=3]Non-Frosty mods, like upscalers, reshades, etc. will be placed next to the game executable in the root installation folder. \n<br />[/size]\n<br />[/list]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />[b][size=4]Epic Users - The game will not be automatically detected or launch properly until I get a piece of information only available after installing the Epic version.[/size][/b]\n<br />[size=4][b]If anyone can follow this guide and let me know the Epic Games ID ([color=#b6d7a8]AppName[/color]), that would be very helpful![/b]\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 465,
+      "endorsements": 4,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6945.jpg",
+      "name": "Dragon Age The Veilguard Vortex Extension",
+      "timestamp": 1732168381,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Dragon Age: The Veilguard"
     }
   ]
 }
