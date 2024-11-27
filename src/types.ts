@@ -121,6 +121,15 @@ export interface IMOTMEntry {
   date: number;
 }
 
+/**
+ * Yes... hacky... but the mod spotlights entries are no different than the MOTM entries.
+ *  The only difference is that they are stored in a different file,
+ *   and the MOTM entries are still being read from the MOTM file,
+ *   and I like to be anal about naming things.
+ */ 
+export type ModSpotlightEntry = IMOTMEntry;
+export type VideoEntryType = 'modsofthemonth' | 'modspotlights';
+
 export class Rejected extends Error {
   constructor() {
       super('Update rejected');
