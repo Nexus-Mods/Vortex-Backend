@@ -1,5 +1,5 @@
 {
-  "last_updated": 1732786805289,
+  "last_updated": 1732786851243,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9905,6 +9905,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Planet Coaster 2"
+    },
+    {
+      "modId": 1102,
+      "fileId": 4328,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Farming Simulator 25 modding support to Vortex Mod Manager.",
+        "long": "This extension adds Farming Simulator 25 modding support to Vortex Mod Manager.\n<br />\n<br />Steam version should find the installation location automatically. [b]Epic Users - See note below.\n<br />[/b]\n<br />[b]Mod Installation Notes:[/b]\n<br />[list]\n<br />[*]Installs mods to the \"My Games\" mods folder by default.\n<br />[*]Includes a mod type to install mods to the game's root folder. \n<br />[/list]\n<br />[b]=======================================================================[/b]\n<br />\n<br />[b][size=4]Epic Users - The game will not be automatically detected or launch properly until I get a piece of information only available after installing the Epic version.[/size][/b]\n<br />[size=4]If anyone can follow this guide and let me know the Epic Games ID ([color=#b6d7a8][b]AppName[/b][/color]), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />[b]=======================================================================[/b]\n<br />\n<br />\n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size]"
+      },
+      "downloads": 15,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7052.jpg",
+      "name": "Farming Simulator 25 Vortex Extension",
+      "timestamp": 1732490448,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Farming Simulator 25"
     }
   ]
 }
