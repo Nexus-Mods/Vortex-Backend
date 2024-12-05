@@ -1,5 +1,5 @@
 {
-  "last_updated": 1733384801372,
+  "last_updated": 1733405713066,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9924,6 +9924,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Farming Simulator 25"
+    },
+    {
+      "modId": 1084,
+      "fileId": 4321,
+      "author": "Tyzeron",
+      "uploader": "Tyzeron",
+      "description": {
+        "short": "An extension to Vortex mod manager to support the game Liar's Bar",
+        "long": "Introducing the [b]Liar's Bar[/b] [b]Vortex Extension[/b]! This extension integrates support for the Steam game [url=https://store.steampowered.com/app/3097560/Liars_Bar/]Liar's Bar[/url] into the [url=https://www.nexusmods.com/about/vortex/]Vortex mod manager[/url], enabling seamless download and management of Liar's Bar mods.\n<br />\n<br />It also automatically fetches the required [b]BepInEx[/b] from the [url=https://github.com/bepinex/bepinex]official BepInEx GitHub[/url], ensuring a smooth modding experience.\n<br />\n<br />The source code of this Vortex Extension for Liar's Bar can be found in [url=https://github.com/tyzeron/LiarsBar-Vortex-Extension]this GitHub repository[/url]."
+      },
+      "downloads": 168,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6987.jpg",
+      "name": "Liar's Bar Vortex Extension",
+      "timestamp": 1732374027,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Liar's Bar"
     }
   ]
 }
