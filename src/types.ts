@@ -57,6 +57,39 @@ export interface IGitHubUser {
   site_admin: boolean;
 }
 
+export interface IGithubIssue {
+  url: string;
+  repository_url: string;
+  id: number;
+  number: number;
+  title: string;
+  user: IGitHubUser;
+  labels: Array<{
+    id: number;
+    node_id: string;
+    url: string;
+    name: string;
+    color: string;
+    default: boolean;
+    description: string | null;
+  }>;
+  state: string;
+  locked: boolean;
+  created_at: string;
+  updated_at: string;
+  closed_at: string | null;
+  body: string;
+  closed_by: string | null;
+  state_reason: string | null;
+  pull_request?: {
+    url: string;
+    html_url: string;
+    diff_url: string;
+    patch_url: string;
+  };
+  hash?: string;
+}
+
 export interface IGitHubAsset {
   browser_download_url: string;
   content_type: string;
@@ -109,7 +142,7 @@ export interface IMOTMEntry {
    * Generated ID for the video 
    */
   id: string;
-  
+
   /**
    * YouTube id of the video
    */
@@ -123,17 +156,17 @@ export interface IMOTMEntry {
 
 export class Rejected extends Error {
   constructor() {
-      super('Update rejected');
-      Error.captureStackTrace(this, this.constructor);
+    super('Update rejected');
+    Error.captureStackTrace(this, this.constructor);
 
-      this.name = this.constructor.name;
+    this.name = this.constructor.name;
   }
 }
 
 export type DownloadStats = { [modId: string]: { unique: number, total: number } };
 
 export type ModDownloadStats = {
-    modId: string;
-    total: number;
-    unique: number;
+  modId: string;
+  total: number;
+  unique: number;
 };
