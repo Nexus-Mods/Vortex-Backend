@@ -1,0 +1,50 @@
+name: Add New Mod Spotlights Video
+
+on:
+  workflow_dispatch:
+    inputs:
+      link:
+        description: 'YouTube Video URL'
+        default: ''
+        required: true
+        type: string
+
+jobs:
+  Add-Mod-Spotlights-Video:
+    runs-on: ubuntu-latest  
+
+    env:
+      EXT_LINK: ${{ inputs.link }}
+
+    steps:
+      - name: Show Inputs
+        run: echo "${{ toJSON(github.event.inputs) }}"
+  
+      - uses: actions/checkout@v4
+        with:
+          submodules: "recursive"
+  
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          cache: "yarn"
+  
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+    
+      - name: Run
+        run: yarn add-mod-spotlights-video
+  
+      # commit and push if not dry run  
+      - name: Git commit and push
+        env: 
+          CI_COMMIT_AUTHOR: Vortex Backend
+          CI_COMMIT_EMAIL: insomnious@users.noreply.github.com
+          CI_COMMIT_MESSAGE: Update Mod Spotlights Videos
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+          git pull
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
