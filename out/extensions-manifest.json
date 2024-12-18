@@ -1,5 +1,5 @@
 {
-  "last_updated": 1734510449784,
+  "last_updated": 1734510680624,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9962,6 +9962,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Indiana Jones and the Great Circle"
+    },
+    {
+      "modId": 1120,
+      "fileId": 4408,
+      "author": "Rakibei",
+      "uploader": "RakibeiXamari",
+      "description": {
+        "short": "Vortex Extension for Coral Island",
+        "long": "Vortex Extension for Coral Island.\n<br />\n<br />Should work for any .pak based mods"
+      },
+      "downloads": 16,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5898.jpg",
+      "name": "Coral Island Vortex Extension",
+      "timestamp": 1733856110,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Coral Island"
     }
   ]
 }
