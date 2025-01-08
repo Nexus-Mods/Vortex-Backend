@@ -1,5 +1,5 @@
 {
-  "last_updated": 1736322406386,
+  "last_updated": 1736347722431,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9966,6 +9966,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Coral Island"
+    },
+    {
+      "modId": 1132,
+      "fileId": 4496,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Marvel Rivals modding support to Vortex Mod Manager. Supports both the Steam and Epic versions of the game.",
+        "long": "[color=#ea9999][size=4][b]Note: You need to use the Manual Download and drag the zip into the Vortex Extensions tab until Nexus Mods developer completes their review. [/b][/size][/color]\n<br />\n<br />This extension adds Marvel Rivals modding support to Vortex Mod Manager.\n<br />\n<br />Supports both the Steam and Epic versions of the game. Includes Load Ordering for pak mods.\n<br />\n<br />A few things to note:  [list]\n<br />[*]Config files will be automatically installed to the correct Local AppData folder.\n<br />[*]Pak mods will be installed to the correct ~mods folder automatically and can be load-ordered in the \"Load Order\" tab.\n<br />[*]Other mods that need to go to the game root folder will use mod type \"Root Game Folder\".\n<br />[/list]\n<br />You may have noticed another extension available for this game. Here is a list of features that my extension has that the other does not:\n<br />- Support for the Epic version\n<br />- Launches the game properly from Vortex\n<br />- Supports Load Ordering for pak mods\n<br />- Uses correct folder structure and automatic installation folder discovery\n<br />- Presents the user with a selection box when installing a mod with more than one pak file included in the archive\n<br />- Includes installers for configs and the game root folder\n<br />\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here. \n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />[/url]"
+      },
+      "downloads": 572,
+      "endorsements": 3,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7106.jpg",
+      "name": "Marvel Rivals Vortex Extension",
+      "timestamp": 1735676732,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Marvel Rivals"
     }
   ]
 }
