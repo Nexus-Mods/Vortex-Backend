@@ -1,5 +1,5 @@
 {
-  "last_updated": 1736754419382,
+  "last_updated": 1736771455760,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -9985,6 +9985,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Marvel Rivals"
+    },
+    {
+      "modId": 1133,
+      "fileId": 4521,
+      "author": "Caioreix",
+      "uploader": "caioreix",
+      "description": {
+        "short": "Adds support for Travellers Rest to Vortex.",
+        "long": "[size=6][b]Travellers Rest[/b][/size]\n<br />\n<br />This extension adds support for Travellers Rest to Vortex.\n<br />You can use it to install plugins for script hook.\n<br />\n<br />[size=5][b]How to install[/b][/size]\n<br />[list]\n<br />[*]Instal Vortex 1.12+\n<br />[*]Click [url=https://www.nexusmods.com/site/mods/1133?tab=files]Mod Manager Download[/url]﻿﻿ (Or in vortex go to Extensions-&gt;Find More. Find this extension and click install.)\n<br />[*]Enjoy :)﻿\n<br />[/list]"
+      },
+      "downloads": 13,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6635.jpg",
+      "name": "Travellers Rest Vortex Support",
+      "timestamp": 1736284151,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Travellers Rest"
     }
   ]
 }
