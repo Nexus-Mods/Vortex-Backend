@@ -1,5 +1,5 @@
 {
-  "last_updated": 1736771771180,
+  "last_updated": 1736771821106,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10023,6 +10023,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Hades"
+    },
+    {
+      "modId": 1138,
+      "fileId": 4534,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Hades II modding support to Vortex Mod Manager.",
+        "long": "This extension adds Hades II modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version should find the installation location automatically. [b]Epic version owners - See notes below. [/b]\n<br />\n<br />[color=#ea9999][size=4][b]I need the data requested below for the Epic version to get it working. [/b][/size][/color][color=#ea9999][b]\n<br />[/b]\n<br />[/color]Mod Installation Notes:\n<br />[list]\n<br />[*]Installs mods to the \"Content/Mods\" folder by default.\n<br />[*]Automatically downloads and installs [url=https://www.nexusmods.com/hades2/mods/1]Mod Importer[/url]﻿﻿﻿ and [url=https://github.com/SGG-Modding/ModUtil/releases/tag/2.10.1]Mod Utility v2.10.1[/url]﻿, which are required by most mods.\n<br />[*]Includes mod types to install mods to the game's root folder and binaries folders.\n<br />[/list]\n<br />=======================================================\n<br />\n<br />[size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.\n<br />[/size][size=4]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />=======================================================\n<br />\n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size]"
+      },
+      "downloads": 6,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6354.jpg",
+      "name": "Hades II Vortex Extension",
+      "timestamp": 1736389893,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Hades II"
     }
   ]
 }
