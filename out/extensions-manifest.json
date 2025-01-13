@@ -1,5 +1,5 @@
 {
-  "last_updated": 1736771455760,
+  "last_updated": 1736771771180,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10004,6 +10004,25 @@
       "version": "1.0.0",
       "type": "game",
       "gameName": "Travellers Rest"
+    },
+    {
+      "modId": 1137,
+      "fileId": 4525,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Hades modding support to Vortex Mod Manager.",
+        "long": "This extension adds Hades modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version should find the installation location automatically. [b]Epic and Xbox owners - See notes below. \n<br />\n<br />[color=#ea9999][size=4]I need the data requested below for the Epic and Xbox versions to get those working. [/size][/color][/b][color=#ea9999]\n<br />\n<br />[/color]Mod Installation Notes:\n<br />[list]\n<br />[*]Installs mods to the \"Content/Mods\" folder by default.\n<br />[*]Automatically downloads and installs [url=https://www.nexusmods.com/hades/mods/26]Mod Importer[/url]﻿﻿ and [url=https://www.nexusmods.com/hades/mods/27]Mod Utility[/url]﻿, which are required by most mods.\n<br />[*]Includes mod types to install mods to the game's root folder and binaries folders.\n<br />[/list]\n<br />=======================================================\n<br />\n<br />[size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.\n<br />[/size][size=4]If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />=======================================================\n<br />\n<br />XBOX (Game Pass) Users - I need additional info before I can get a working extension for you.[list]\n<br />[*]Follow the instructions at the link below and send me the two lines in the Example below from the appmanifest.xml\n<br />[*][url=https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Game-detection]   ﻿MODDINGWIKI Developers General Game detection · Nexus-Mods/Vortex Wiki[/url]\n<br />[/list]Example:\n<br />[code]&lt;Identity Name=\"HoodedHorse.ManorLords\" Publisher=\"CN=EFF196E1-65CE-4A5A-9010-7DFDCEAC7876\" Version=\"0.7.955.0\" ProcessorArchitecture=\"x64\"/&gt;\n<br />\n<br />&lt;Application Id=\"AppHoodedHorseManorLordsShipping\" Executable=\"GameLaunchHelper.exe\" EntryPoint=\"Windows.FullTrustApplication\"&gt;\n<br />[/code]\n<br />=======================================================\n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size]"
+      },
+      "downloads": 10,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2668.jpg",
+      "name": "Hades Vortex Extension",
+      "timestamp": 1736348345,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Hades"
     }
   ]
 }
