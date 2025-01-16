@@ -1,5 +1,5 @@
 {
-  "last_updated": 1737013609144,
+  "last_updated": 1737035706107,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10042,6 +10042,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Hades II"
+    },
+    {
+      "modId": 1145,
+      "fileId": 4553,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Red Faction: Guerrilla Re-Mars-tered modding support to Vortex Mod Manager.",
+        "long": "This extension adds Red Faction: Guerrilla Re-Mars-tered modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions should find the installation location automatically.\n<br />\n<br />[size=3][b][color=#b6d7a8]The classic version of RFG can also be used with this extension. However, you will need to download and install the correct version of the Mod Manager tool from [url=https://www.factionfiles.com/ff.php?action=file&amp;id=3863]HERE[/url]. [/color][/b]\n<br />[/size]\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Installs mods to the \"mods\" folder by default.\n<br />[*]Automatically downloads and installs [url=https://www.nexusmods.com/redfactionguerrillaremarstered/mods/10]Mod Manager[/url]﻿﻿﻿﻿, which is required by most mods. This tool must be run from the Dashboard after installing mods with Vortex.\n<br />[*]Includes mod type to install mods to the game's root folder.\n<br />[/list]\n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size]"
+      },
+      "downloads": 2,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_2538.jpg",
+      "name": "Red Faction Guerrilla Re-Mars-tered Vortex Extension",
+      "timestamp": 1736889759,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Red Faction Guerrilla Re-Mars-tered"
     }
   ]
 }
