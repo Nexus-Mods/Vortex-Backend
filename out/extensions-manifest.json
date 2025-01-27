@@ -1,5 +1,5 @@
 {
-  "last_updated": 1737964009044,
+  "last_updated": 1737969617494,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10061,6 +10061,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Red Faction Guerrilla Re-Mars-tered"
+    },
+    {
+      "modId": 1150,
+      "fileId": 4592,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Final Fantasy VII Rebirth modding support to Vortex Mod Manager.",
+        "long": "This extension adds Final Fantasy VII Rebirth modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Epic versions of the game should be automatically discovered. Other versions may need to select the install location manually.[b]\n<br />[/b]\n<br />[size=3][b][color=#ea9999]This game does not support symlinks when loading pak with .ucas and .utoc files, so symlinks have been disabled. You must have the mod staging folder and the game on the same drive to use this extension. [/color]\n<br />\n<br />[color=#f9cb9c]UE4SS LogicMod (Blueprint) Mod Authors - You MUST include a \"LogicMods\" folder above your .pak file in order for this extension to install the mod to the correct location. Without this, there is no way to differentiate between LogicMod paks and regular pak mods. [/color][/b][/size]\n<br />\n<br />A few things to note:[list]\n<br />[*]For upscalers, reshades, and other mods that need to be next to the game executable will be installed to the Binaries folder.\n<br />[*][s]Config files will be automatically installed to the correct 'My Games' folder[/s]. Disabled due to lack of symlinks support\n<br />[*][s]Save files will be installed to the correct 'My Games' folder. - [/s][i][s]Steam version only[/s] Disabled due to lack of symlinks support[/i]\n<br />[*]UE Pak mods will be installed to the correct ~mods folder automatically and can be load ordered in the Load Order tab.\n<br />[*]Mods intended for the game's root folder will be automatically installed as mod type \"Root Game Folder\".\n<br />[*]The UE4SS mod will be automatically installed next to the game's executable.\n<br />[*]UE4SS Script mods will be installed automatically using mod type \"UE4SS Scripts\".\n<br />[*]UE4SS LogicMod (Blueprint) mods will be installed using mod type \"UE4SS LogicMods (Blueprint)\". \n<br />[/list]\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension.\n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 1960,
+      "endorsements": 10,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7237.jpg",
+      "name": "Final Fantasy VII Rebirth Vortex Extension",
+      "timestamp": 1737922151,
+      "tags": [],
+      "version": "0.2.0",
+      "type": "game",
+      "gameName": "Final Fantasy VII Rebirth"
     }
   ]
 }
