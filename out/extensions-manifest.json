@@ -1,5 +1,5 @@
 {
-  "last_updated": 1737969617494,
+  "last_updated": 1738048059319,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10080,6 +10080,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Final Fantasy VII Rebirth"
+    },
+    {
+      "modId": 1159,
+      "fileId": 4591,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds NINJA GAIDEN 2 Black modding support to Vortex Mod Manager. Supports Steam and Xbox Game Pass versions.",
+        "long": "[size=3][b]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions to install. \n<br />\n<br />[size=3][color=#ea9999]This game does not support symlinks when loading pak with .ucas and .utoc files, so symlinks have been disabled. You must have the mod staging folder and the game on the same drive to use this extension. [/color][/size][/b]\n<br />[/size]\n<br />This extension adds NINJA GAIDEN 2 Black modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Xbox versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />Includes Load Ordering for UE5 mods (.pak, .ucas, .utoc). \n<br />\n<br />A few things to note:  \n<br />[list]\n<br />[*]Upscalers, reshades, and other mods that need to be next to the game executable will be installed there automatically using the \"Binaries (Engine Injector)\" mod type.\n<br />[*]UE5 Pak mods will be installed to the correct ~mods folder automatically. \n<br />[*]Other mods that need to go to the game folder can use mod type \"Root Game Folder\".\n<br />[*]The UE4SS mod will be automatically installed by the game's executable.\n<br />[*]UE4SS Script mods can be installed using mod type \"UE4SS Scripts\".\n<br />[*]UE4SS LogicMod (Blueprint) mods can be installed using mod type \"UE4SS LogicMods (Blueprint)\". \n<br />[/list]\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I butchered to make it work here with UE5 mods. \n<br />Credit to [url=https://next.nexusmods.com/profile/insomnious/about-me]insomnious[/url] (Nexus Mods App Developer) for his Palworld extension and the method for dynamically setting the game executable so that the Game Pass version is supported.\n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 93,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7247.jpg",
+      "name": "NINJA GAIDEN 2 Black Vortex Extension",
+      "timestamp": 1737768790,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Ninja Gaiden 2 Black"
     }
   ]
 }
