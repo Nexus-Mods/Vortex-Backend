@@ -1,5 +1,5 @@
 {
-  "last_updated": 1738568808955,
+  "last_updated": 1738577587424,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10099,6 +10099,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Ninja Gaiden 2 Black"
+    },
+    {
+      "modId": 1166,
+      "fileId": 4621,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Marvel's Spider-Man 2 support to Vortex Mod Manager. Overstrike will be installed automatically.",
+        "long": "This extension adds Marvel's Spider-Man 2 support to Vortex Mod Manager. Overstrike will be installed automatically.\n<br />\n<br />Should automatically detect the installation location for the Steam version of the game. Other versions will need to specify the game folder manually when activating the game. [b]Epic users - see note below.\n<br />[/b]\n<br />[b][color=#b4a7d6]Until this mod is added to Vortex by the Nexus Mods staff, you must use the Manual Download and drop the zip into the Extensions tab in Vortex to install.\n<br />[/color][/b][color=#ffe599]\n<br />[size=3][b]This extension will automatically download and install [url=https://www.nexusmods.com/marvelsspiderman2/mods/1]Overstrike[/url].\n<br />[/b][/size][/color]\n<br />[color=#b6d7a8][size=3][b]You must enable mods in Overstrike to install them to the game files! A notification will be shown after mod deployment to run Overstrike.\n<br />[/b][/size][/color]\n<br />Mod Installation Notes:[list]\n<br />[*]Automatically installs[url=https://www.nexusmods.com/site/mods/818] [/url]Overstrike. You must run Overstrike to install mods into the game data archives. \n<br />[*]Installs mods for Overstrike ('.smpcmod', '.suit', '.stage', '.modular' extensions) to the correct folder \"Mods Library\".\n<br />[*]Mods not for Overstrike will be installed to the root game folder.\n<br />[/list]\n<br />\n<br />=======================================\n<br />\n<br />[size=3]Epic versions will not be automatically discovered or launch the game properly until I receive some information about those games that is only available after installation.\n<br />\n<br />If anyone can follow this guide and let me know the Epic Games ID (AppName), that would be very helpful!\n<br />\n<br />[url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />=======================================\n<br />\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 49,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6082.jpg",
+      "name": "Marvel's Spider-Man 2 Vortex Extension",
+      "timestamp": 1738289253,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Marvel's Spider-Man 2"
     }
   ]
 }
