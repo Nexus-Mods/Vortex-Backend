@@ -1,5 +1,5 @@
 {
-  "last_updated": 1738577587424,
+  "last_updated": 1738577877313,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10118,6 +10118,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Marvel's Spider-Man 2"
+    },
+    {
+      "modId": 1171,
+      "fileId": 4636,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds NINJA GAIDEN: Master Collection support to Vortex Mod Manager. Single extension supports all 3 games: NGS1, NGS2, NG3RE. Mod Loader  will be installed automatically.",
+        "long": "This extension adds NINJA GAIDEN: Master Collection support to Vortex Mod Manager. Mod Loader  will be installed automatically.\n<br />\n<br />This extension supports all 3 games in the collection with a single extension:\n<br />[list]\n<br />[*]NINJA GAIDEN Sigma (NGS1)\n<br />[*]NINJA GAIDEN Sigma 2 (NGS2)\n<br />[*]NINJA GAIDEN 3 Razor's Edge (NG3RE)\n<br />[/list]\n<br />Supports the Steam and Xbox versions of all 3 games. Other versions will need to specify the game folder manually when activating the game.\n<br />\n<br />[size=3][b][color=#b4a7d6]Until this mod is added to Vortex by the Nexus Mods staff, you must use the Manual Download and drop the zip into the Extensions tab in Vortex to install.\n<br />[/color][color=#ffe599]\n<br />This extension will automatically download and install one of these 4 Mod Loader versions: [url=https://www.nexusmods.com/ninjagaidenmastercollection/mods/34]Xbox[/url], [url=https://www.nexusmods.com/ninjagaidenmastercollection/mods/240]Steam-NGS1[/url], [url=https://www.nexusmods.com/ninjagaidenmastercollection/mods/241?tab=files]Steam-NGS2[/url]﻿, [url=https://www.nexusmods.com/ninjagaidenmastercollection/mods/243]Steam-NG3RE[/url].\n<br />[/color]\n<br />[/b][/size][color=#ea9999][size=3][b]For the Xbox versions, you must run the Mod Loader using the included tool in the Vortex Dashboard tab [i][u]AFTER LAUNCHING THE GAME[/u][/i]. [/b][/size][/color]You will get a hex check error popup that you can safely ignore. [color=#ea9999][size=3]\n<br />[/size][/color]\n<br />Mod Installation Notes:[list]\n<br />[*]Automatically installs[url=https://www.nexusmods.com/site/mods/818] [/url]Mod Loader.\n<br />[*]Installs mods for Mod Loader ('.dat' extension) to the correct folder \"mods\".\n<br />[*]Mods not for Mod Loader will be installed to the root game folder.\n<br />[/list]\n<br />\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_3858.jpg",
+      "name": "NINJA GAIDEN Master Collection Vortex Extension",
+      "timestamp": 1738387295,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Ninja Gaiden: Master Collection"
     }
   ]
 }
