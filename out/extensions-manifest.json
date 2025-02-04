@@ -1,5 +1,5 @@
 {
-  "last_updated": 1738655203652,
+  "last_updated": 1738657794588,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -892,7 +892,7 @@
       "type": "game",
       "github": "Nexus-Mods/vortex-games",
       "githubRawPath": "game-fallout3",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "id": "game-fallout3",
       "hide": true
     },
@@ -940,7 +940,7 @@
       "type": "game",
       "github": "Nexus-Mods/vortex-games",
       "githubRawPath": "game-falloutnv",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "id": "game-falloutnv",
       "hide": true
     },
@@ -1171,7 +1171,7 @@
     {
       "image": "https://raw.githubusercontent.com/Nexus-Mods/vortex-games/master/game-nomanssky/gameart.jpg",
       "name": "Game: No Man's Sky",
-      "author": "Black Tree Gaming Ltd.",
+      "author": "Nexus Mods",
       "description": {
         "short": "Support for No Man's Sky",
         "long": "Support for No Man's Sky"
@@ -1180,7 +1180,7 @@
       "type": "game",
       "github": "Nexus-Mods/vortex-games",
       "githubRawPath": "game-nomanssky",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "id": "game-nomanssky",
       "hide": true
     },
@@ -2968,7 +2968,7 @@
         "short": "Support for Baldur's Gate 3",
         "long": "Support for Baldur's Gate 3"
       },
-      "version": "1.5.3",
+      "version": "1.5.4",
       "hide": true
     },
     {
