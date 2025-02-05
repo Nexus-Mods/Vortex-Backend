@@ -1,5 +1,5 @@
 {
-  "last_updated": 1738657794588,
+  "last_updated": 1738737738730,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10137,6 +10137,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Ninja Gaiden: Master Collection"
+    },
+    {
+      "modId": 1146,
+      "fileId": 4663,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Kingdom Come Deliverance II modding support to Vortex Mod Manager.",
+        "long": "This extension adds Kingdom Come Deliverance II modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version should find the installation location automatically. [b][color=#ea9999]Epic Users - See note below.[/color][/b]\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Installs mods to the \"Mods\" folder by default and includes Load Ordering. Includes any mod with mod.manifest, a .cfg file, or these folders: Data, Localization, Engine.\n<br />[*]Any mod that does not suit the criteria for the \"Mods\" folder will be installed to the Binaries folder.\n<br />[*]Includes a mod type to install mods to the game's root folder. \n<br />[/list]\n<br />\n<br />[color=#ffd966][b]FOMOD Authors - Make sure your file output includes a top level folder. So if your mod contains mod.manifest and a \"Data\" folder, make sure you include a folder with the mod name above those files. Otherwise, the mod will show up with a generic \"Data\" name in the load order page. [/b]\n<br />[/color]\n<br />=======================================================\n<br />\n<br />[b][color=#ea9999][size=3]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.[/size][/color][/b]\n<br />[list]\n<br />[*][size=3]Follow this guide and let me know the Epic Games ID (AppName): [url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />[*][size=3]Let me know the folder path to the game executable. In Steam it is \"Bin/Win64MasterMasterSteamPGO/KingdomCome.exe\", so it is almost certainly different for Epic.[/size]\n<br />[/list]\n<br />=======================================================\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/infarctus/about-me]infarctus[/url] and his Darktide Vortex extension for assisting with some of the load order functions in this extension. \n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7286.jpg",
+      "name": "Kingdom Come Deliverance II Vortex Extension",
+      "timestamp": 1738712297,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Kingdom Come: Deliverance II"
     }
   ]
 }
