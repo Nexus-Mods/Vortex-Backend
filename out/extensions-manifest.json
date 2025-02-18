@@ -1,5 +1,5 @@
 {
-  "last_updated": 1739872312438,
+  "last_updated": 1739872366608,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10179,6 +10179,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Sid Meier's Civilization VII"
+    },
+    {
+      "modId": 1183,
+      "fileId": 4714,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Sid Meier's Civilization VI modding support to Vortex Mod Manager.",
+        "long": "[b][size=3]﻿NOTE: Until the Nexus Mods staff review this extension, you need to use the Manual Download button and drag and drop the zip into the Vortex Extensions tab to install. [/size]\n<br />[/b]\n<br />This extension adds Sid Meier's Civilization VI modding support to Vortex Mod Manager.\n<br />\n<br />Steam version should find the installation location automatically. [b]Epic Users - See note below.[/b]\n<br />\n<br />Mod Installation Notes:\n<br />[list]\n<br />[*]Installs mods to the correct \"My Games\" mods folder by default.\n<br />[*]Includes a mod type to install mods to the game's root folder. \n<br />[/list]\n<br />=======================================================================\n<br />\n<br />[b][size=4]Epic Users - The game will not be automatically detected or launch properly until I get a piece of information only available after installing the Epic version.[/size]\n<br />[/b][list]\n<br />[*][size=4][b]Please follow this guide and let me know the Epic Games ID ([color=#b6d7a8]AppName[/color]).[/b][/size]\n<br />[*][size=4][b]Let me know the folder path to the game executable and it's file name. For Steam, it is: [/b][code]path.join(\"Base\" , \"Binaries\", \"Win64Steam\", \"CivilizationVI.exe\");[/code][/size]\n<br />[/list]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />=======================================================================\n<br />\n<br />\n<br />\n<br />\n<br />[size=2]If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url][/size]"
+      },
+      "downloads": 11,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_1694.jpg",
+      "name": "Sid Meier's Civilization VI Vortex Extension",
+      "timestamp": 1739411576,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Sid Meier's Civilization VI"
     }
   ]
 }
