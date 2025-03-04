@@ -1,5 +1,5 @@
 {
-  "last_updated": 1741083010415,
+  "last_updated": 1741083232397,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10236,6 +10236,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Legacy of Kain: Soul Reaver 1 & 2 Remastered"
+    },
+    {
+      "modId": 1149,
+      "fileId": 4798,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Monster Hunter Wilds support to Vortex Mod Manager. Fluffy Mod Manager and REFramework will be installed automatically.",
+        "long": "[b][size=4][color=#ffe599]NOTE: You will need to install this extension manually until it is added to the Vortex manifest. You can do this easily by selecting the Manual Download option, then dragging and dropping the zip file into the drop box at the bottom right of the Vortex Extensions tab.[/color]\n<br />[/size][/b]\n<br />﻿[img]https://live.staticflickr.com/65535/54356685633_c12bb2f675_z.jpg[/img]\n<br />\n<br />[b][color=#ea9999][size=3]NOTE 2: Pak mods are currently not working for MH Wilds. Keep an eye on the Fluiffy Mod Manager page for updates on this.\n<br />[/size][/color][/b]\n<br />\n<br />This extension adds Monster Hunter Wilds support to Vortex Mod Manager. Fluffy Mod Manager and REFramework will be installed automatically.\n<br />\n<br />Should automatically detect the installation location for the Steam version of the game. Other versions will need to specify the game folder manually when activating the game. \n<br />[color=#ffe599]\n<br />[b][size=3]This extension will automatically download and install[url=https://www.nexusmods.com/site/mods/818] Fluffy Mod Manager[/url] and [url=https://www.nexusmods.com/monsterhunterwilds/mods/93]REFramework[/url] (for plugins and script mods).\n<br />[/size][/b][/color]\n<br />[b][color=#b6d7a8][size=3]You need to enable mods in Fluffy Mod Manger for them to be installed to the game files! There is a tool included with the extension, so you will see a button for Fluffy in the Dashboard tab. A notification will be shown after deploying mods with a button to run Fluffy.\n<br />[/size][/color][/b]\n<br />Mod Installation Notes:[list]\n<br />[*]Automatically installs[url=https://www.nexusmods.com/site/mods/818] Fluffy Mod Manager[/url] (FMM) and [url=https://www.nexusmods.com/monsterhunterwilds/mods/93]REFramework[/url]﻿ (for plugins and script mods). You must run FMM to install mods into the game data archives. \n<br />[*]Installs mods for FMM to the correct folder \"Games/MonsterHunterWilds/Mods\".\n<br />[*]For mods not to be used with FMM (upscalers, reshades, etc.), you will need to change the mod type to \"Binaries / Root Folder\" and unzip the mod in the staging folder.\n<br />[/list]\n<br />\n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />If you would like to support my work you can do so below. Your support is greatly appreciated!\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1]Buy Me a Coffee\n<br />[/url]\n<br />[url=https://www.patreon.com/chemboy1/membership]Join My Patreon\n<br />\n<br />[/url]"
+      },
+      "downloads": 1223,
+      "endorsements": 7,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6993.jpg",
+      "name": "Monster Hunter Wilds Vortex Extension",
+      "timestamp": 1740796443,
+      "tags": [],
+      "version": "0.1.3",
+      "type": "game",
+      "gameName": "Monster Hunter Wilds"
     }
   ]
 }
