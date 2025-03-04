@@ -1,5 +1,5 @@
 {
-  "last_updated": 1741082904871,
+  "last_updated": 1741083010415,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10217,6 +10217,25 @@
       "version": "1.0.2",
       "type": "game",
       "gameName": "Tomb Raider IV-VI Remastered"
+    },
+    {
+      "modId": 1134,
+      "fileId": 4491,
+      "author": "Zander Alchemist",
+      "uploader": "ZanderAlchemist",
+      "description": {
+        "short": "Basic support for Legacy of Kain™ Soul Reaver 1&amp;2 Remastered",
+        "long": "Basic support for Legacy of Kain™ Soul Reaver 1&amp;2 Remastered, addon based on Tomb Raider I-III Remastered Vortex Support by StarlightSkull\n<br />\n<br />The addon takes the directory where the executable (SRX.exe) is as a base (like the Tomb Raider Remastered) .\n<br />\n<br />For example, if you have a mod that changes textures in Soul Reaver 1 you should do the following:\n<br />\n<br />\n<br />1/TEX/somefile.dds\n<br />\n<br />\n<br />\"somefile.dds\" corresponds to the file that your mod modifies"
+      },
+      "downloads": 17,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7115.jpg",
+      "name": "Legacy of Kain Soul Reaver 1 and 2 Remastered Vortex Support",
+      "timestamp": 1735437949,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Legacy of Kain: Soul Reaver 1 & 2 Remastered"
     }
   ]
 }
