@@ -1,5 +1,5 @@
 {
-  "last_updated": 1741074465463,
+  "last_updated": 1741082904871,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10198,6 +10198,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Sid Meier's Civilization VI"
+    },
+    {
+      "modId": 1190,
+      "fileId": 4745,
+      "author": "ZanderAlchemist",
+      "uploader": "ZanderAlchemist",
+      "description": {
+        "short": "Basic support for Tomb Raider IV-VI Remastered",
+        "long": "Basic support for Tomb Raider IV-VI Remastered, addon based on Tomb Raider I-III Remastered Vortex Support by StarlightSkull\n<br />\n<br />The addon takes the directory where the executable (tomb456.exe) is as a base (like the Tomb Raider Remastered I-III) .\n<br />\n<br />For example, if you have a mod that changes textures in Tomb Raider IV you should do the following:\n<br />\n<br />\n<br />4/TEX/somefile.dds\n<br />\n<br />\n<br />\"somefile.dds\" corresponds to the file that your mod modifies\n<br />\n<br />\n<br />[b][font=Times New Roman][size=5]Troubleshooting[/size][/font][/b]\n<br />\n<br />You should be able to install the add-on directly in Vortex, at least when I tested it, it gave me an \"Archive not recognized as a Vortex extention\" error (no idea why). If you encounter the same issue,[b] you can can drag and drop the downloaded file into the extensions section box[/b] and it should be installed ( recommended)\n<br />\n<br />[img]https://i.imgur.com/yC9shR7.png[/img]\n<br />\n<br />\n<br />[b] OR (the hard way) extract the downloaded file to:[code]%APPDATA%&#92;Vortex&#92;plugins&#92;[/code][/b]Step by step:[list=1]\n<br />[*]close vortex and go to the plugins directory (you can paste \"[b]%APPDATA%&#92;Vortex&#92;plugins&#92;[/b]\" without quotes into the File Explorer address bar, or press Windows+R to open the Run dialog and paste the path there).\n<br />[*]Create a new folder called [b]Vortex Extension - Tomb Raider IV-VI Remastered[/b].\n<br />[*]Inside that folder, place the files extracted from the downloaded .7z archive.\n<br />[*]launch vortex\n<br />[*]go to games and seach for \"Tomb raider IV\" it should appear on the list (If it doesn't appear you must go to extensions and enable it.)\n<br />[/list][b][i]The final structure should look like this:[/i][/b]\n<br />\n<br />%APPDATA%&#92;Vortex&#92;plugins&#92;Vortex Extension - Tomb Raider IV-VI Remastered&#92;\n<br />│\n<br />├── index.js\n<br />├── info.json\n<br />└── gameart.png\n<br />PD:\n<br />[b]What is %APPDATA%?\n<br />[/b]is a Windows environment variable that points to the AppData&#92;Roaming folder inside your user profile directory. This is where many applications store user-specific files and settings. You don’t need to navigate to it manually—just use the path as is, and Windows will take you there."
+      },
+      "downloads": 24,
+      "endorsements": 2,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7011.jpg",
+      "name": "Vortex Extension Update - Tomb Raider IV-VI Remastered Vortex Support",
+      "timestamp": 1739846506,
+      "tags": [],
+      "version": "1.0.2",
+      "type": "game",
+      "gameName": "Tomb Raider IV-VI Remastered"
     }
   ]
 }
