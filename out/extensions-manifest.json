@@ -1,5 +1,5 @@
 {
-  "last_updated": 1741852017391,
+  "last_updated": 1741878511552,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10255,6 +10255,25 @@
       "version": "0.1.5",
       "type": "game",
       "gameName": "Monster Hunter Wilds"
+    },
+    {
+      "modId": 1218,
+      "fileId": 4871,
+      "author": "Senjay",
+      "uploader": "Senjay",
+      "description": {
+        "short": "Vortex Extension for R.E.P.O.",
+        "long": "[color=#00ffff][size=4][b][b]Vortex installation[/b][/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3]Open the extension page and click find more, search for the extension name and click install, you will be prompted to restart by vortex.[/size][size=2][b]\n<br />\n<br />[/b][/size][color=#00ffff][size=4][b][b]Alternate vortex installation[/b][/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3]Manually download the mod, Open the extension page, drag and drop the zip file at the dedicated drop file box, you will be prompted to restart by vortex.[/size][size=2][b]\n<br />[color=#00ffff]\n<br />[/color][/b][/size][color=#00ffff][size=4][b]Mod authors package guide [/b][/size][/color][size=2][b]\n<br />[/b][/size][size=3][size=3]Mods that doesn't have any pattern will be installed to the game root folder by default.[/size]\n<br />To ensure that your mods gets correctly installed just have \"bepinex\" or \"mods\" (for melonloader mods) as the top level directory.[/size][size=2]\n<br />[/size][size=3]I've only provided partial support for those that don't.[/size][size=2]\n<br />[/size]"
+      },
+      "downloads": 20,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7398.jpg",
+      "name": "R.E.P.O. Vortex Extension",
+      "timestamp": 1741532071,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "R.E.P.O."
     }
   ]
 }
