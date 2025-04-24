@@ -1,5 +1,5 @@
 {
-  "last_updated": 1745494331687,
+  "last_updated": 1745498145665,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -2968,7 +2968,7 @@
         "short": "Support for Baldur's Gate 3",
         "long": "Support for Baldur's Gate 3"
       },
-      "version": "1.5.5",
+      "version": "1.5.6",
       "hide": true
     },
     {
