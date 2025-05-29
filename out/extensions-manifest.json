@@ -1,5 +1,5 @@
 {
-  "last_updated": 1748516984664,
+  "last_updated": 1748517952997,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10520,6 +10520,25 @@
       "version": "0.1.3",
       "type": "game",
       "gameName": "Doom: The Dark Ages"
+    },
+    {
+      "modId": 1315,
+      "fileId": 5340,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Balatro modding support to Vortex Mod Manager. Supports Steam version only. Installs Lovely-Injector and SteamModded.",
+        "long": "[color=#ea9999][size=3][b]NOTE: Until Nexus Mods adds this extension to the Vortex manifest, you must use the Manual Download button, then drag-and-drop the zip file into the dropbox at the bottom-right corner of the Vortex extensions tab to install. \n<br />[/b][/size][/color]\n<br />This extension adds Balatro modding support to Vortex Mod Manager. Supports Steam version only (Game Pass version not supported by injector).\n<br />\n<br />[b][color=#ffff00][size=3]This extension will automatically download and install [url=https://github.com/ethangreen-dev/lovely-injector]Lovely-Injector[/url] and [url=https://www.nexusmods.com/balatro/mods/45]SteamModded[/url] for the user, which are required by almost all mods.\n<br />[/size][/color][/b]\n<br />[size=3][b]Mod Installation Notes:\n<br />[/b][/size][list]\n<br />[*]Installs mods to %APPDATA%/Balatro/Mods.\n<br />[*]Automatically installs Lovely-Injector and SteamModded.\n<br />[/list][color=#ffff00]\n<br />\n<br />[/color][size=2]\n<br />\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url][/size]"
+      },
+      "downloads": 15,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6217.jpg",
+      "name": "Balatro Vortex Extension",
+      "timestamp": 1748486275,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "Balatro"
     }
   ]
 }
