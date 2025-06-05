@@ -1,5 +1,5 @@
 {
-  "last_updated": 1749109605103,
+  "last_updated": 1749111655232,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10558,6 +10558,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Wreckfest 2"
+    },
+    {
+      "modId": 1318,
+      "fileId": 5350,
+      "author": "jonanoj",
+      "uploader": "jondnoj",
+      "description": {
+        "short": "Vortex support for loading BepInEx mods to Tainted Grail: The Fall of Avalon",
+        "long": "[b][size=5]Vortex Support for Loading BepInEx Mods for [i]Tainted Grail: The Fall of Avalon[/i][/size][/b]\n<br />This extension automatically installs the minimum required version of BepInEx that can successfully run mods for the game.\n<br />As of this writing, there is no stable version that supports this functionality, so the extension downloads a \"bleeding edge\" (nightly) build.\n<br />\n<br />\n<br />[size=4]For Modders - Important[/size]\n<br />[b]When packaging a mod[/b] into a .zip file, make sure you use one of the following file structures:\n<br />\n<br />This extension is based off the [url=https://github.com/Nexus-Mods/extension-modtype-bepinex]official modtype-bepinex extension[/url], which provides out-of-the-box support for deploying BepInEx mods to the game folder\n<br />\n<br />Example packages:\n<br />\n<br />[b]MyMod.zip[/b]\n<br />[list]\n<br />[*]Plugin1.dll\n<br />[*]Plugin2.dll\n<br />[/list]Will be deployed automatically to [b]BepInEx/plugins/[/b] (and NOT BepInEx/patchers/)\n<br />\n<br />---\n<br />\n<br />[b]MyModWithConfig.zip[/b]\n<br />[list]\n<br />[*]config/\n<br />    MyMod.cfg[*]plugins/\n<br />    MyMod.dll[/list]Will be deployed to [b]BepInEx/[/b]\n<br />\n<br />---\n<br />\n<br />[b]MyPatcher.zip[/b]\n<br />[list]\n<br />[*]patchers/\n<br />    Patcher1.dll[/list]Will be deployed to [b]BepInEx/[/b]\n<br />\n<br />---\n<br />\n<br />For reference - here is the code that loads the mods - [url=https://github.com/Nexus-Mods/extension-modtype-bepinex/blob/9041a9c0bf1f337601adc8708fe60eaf0704bb79/src/index.ts#L218]https://github.com/Nexus-Mods/extension-modtype-bepinex/blob/9041a9c0bf1f337601adc8708fe60eaf0704bb79/src/index.ts#L218[/url]"
+      },
+      "downloads": 46,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5886.jpg",
+      "name": "Tainted Grail - The Fall of Avalon Vortex Extension",
+      "timestamp": 1748551746,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Tainted Grail: The Fall of Avalon"
     }
   ]
 }
