@@ -1,5 +1,5 @@
 {
-  "last_updated": 1750232877929,
+  "last_updated": 1750240684818,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10615,6 +10615,25 @@
       "version": "0.1.4",
       "type": "game",
       "gameName": "Stellar Blade"
+    },
+    {
+      "modId": 1125,
+      "fileId": 5376,
+      "author": "mike9k1",
+      "uploader": "mike9k1",
+      "description": {
+        "short": "This extension will allow the installation of mods formatted as .pak or .asi files.",
+        "long": "This extension will allow the installation of mods formatted as .pak files or patches as .asi files. That includes the vast majority of Dragon Quest mods. \n<br />\n<br />Only Steam is currently tested and working. EGS/MS store/Gamepass are currently unsupported. If someone wants to add support for those, contact me and with the necessary information, I'll update the extension to add support."
+      },
+      "downloads": 54,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7044.jpg",
+      "name": "Dragon Quest III HD-2D Remake - Vortex Support",
+      "timestamp": 1749144462,
+      "tags": [],
+      "version": "1.0.7",
+      "type": "game",
+      "gameName": "Dragon Quest III HD-2D Remake"
     }
   ]
 }
