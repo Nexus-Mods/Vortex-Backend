@@ -1,5 +1,5 @@
 {
-  "last_updated": 1753968186578,
+  "last_updated": 1753968603923,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10748,6 +10748,24 @@
       "version": "1.0.0",
       "type": "game",
       "gameName": "Luma Island"
+    },
+    {
+      "modId": 1349,
+      "fileId": 5512,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This Vortex extension helps the user set up their Fallout 4 modding environment for Fallout: London (FOLON).",
+        "long": "This Vortex extension helps the user set up their Fallout 4 modding environment for Fallout: London (FOLON).\n<br />\n<br />This extension helps the user set up their Fallout 4 modding environment for FOLON by doing the following things:\n<br />[list]\n<br />[*]Linking FOLON GOG game files directory to FO4 Staging Folder and creating a mod called \"falloutlondon\" - This is done using a directory link, so the files will be updated whenever FOLON is patched. This method does not alter the FO4 installation directory like the installer does, so you can create a new profile in Vortex just for FOLON and easily switch back to other standard FO4 profiles.\n<br />[*]Writing the \"[Archive]\" settings to Fallout4.ini and Fallout4Custom.ini - This is a required step for FOLON to work.\n<br />[*]Informing the user to change the Mod Type of the falloutlondon mod to \"FOLON GOG Files\" - This must be done to put the files in the correct location (root FO4 game folder).\n<br />[/list]\n<br />At this time, the following actions are still manual:[list]\n<br />[*]Changing mod type for \"falloutlondon\" mod to \"FOLON GOG Files\".\n<br />[*]Enabling \"falloutlondon\" mod and deploying - if there are conflicts, falloutlondon should load after other mods, unless those mods are specifically for FOLON.\n<br />[*]Enabling 2 FOLON plugins in the Plugins tab.\n<br />[/list]\n<br />Future Improvements:\n<br />[list]\n<br />[*]Automatically enable the falloutlondon mod and change the mod type.\n<br />[*]Automatically enable the 2 plugins.\n<br />[/list]\n<br />Caveats:\n<br />[list]\n<br />[*]Because of the way the falloutlondon mod is added to Vortex (directory link), that particular mod will not be removed from the game folder properly when using the Purge Mods function. The mod must be Disabled in the mod list to remove the FOLON files from the FO4 game folder. Note that if you Purge Mods while the falloutlondon mod is enabled, you will trigger External Changes popups in Vortex.  Mildly annoying, but won't break your setup. Just tell Vortex to always use the staging folder files for falloutlondon, and revert any deletions. If you mess up, the worst outcome is that you'd need to re-download FOLON on GOG.\n<br />[/list]\n<br />\n<br />Based on the method from this thread: [url=https://forums.nexusmods.com/topic/13495490-a-clean-way-to-install-fallout-london-with-vortex/]https://forums.nexusmods.com/topic/13495490-a-clean-way-to-install-fallout-london-with-vortex/\n<br />[/url]\n<br />\n<br />[size=3][b]Credits:[/b]\n<br />[/size]Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for the community post above outlining the steps in this method. \n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 28,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1349/1349-1750730770-1251182888.png",
+      "name": "Fallout London (FOLON) Setup Helper Extension",
+      "timestamp": 1752063959,
+      "tags": [],
+      "version": "0.1.5",
+      "type": null
     }
   ]
 }
