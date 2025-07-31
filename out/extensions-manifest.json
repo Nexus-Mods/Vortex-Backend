@@ -1,5 +1,5 @@
 {
-  "last_updated": 1753968000758,
+  "last_updated": 1753968186578,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10729,6 +10729,25 @@
       "version": "1.0.0",
       "type": "game",
       "gameName": "Cash Cleaner Simulator"
+    },
+    {
+      "modId": 1374,
+      "fileId": 5527,
+      "author": "AwaitsTheWeekend",
+      "uploader": "awaitstheweekend",
+      "description": {
+        "short": "Adds support for Luma Island to Vortex.",
+        "long": "Currently, the extension supports BepInEx plugins, and configures Vortex to install and manage BepInEx for you.\n<br />\n<br />The source code is available at [url=https://github.com/awaitstheweekend/luma-island-vortex-support]https://github.com/awaitstheweekend/luma-island-vortex-support[/url]. \n<br />\n<br />I've tested the extension with a handful of Luma Island mods and it seems to work for them. Feel free to comment here or [url=https://github.com/awaitstheweekend/luma-island-vortex-support/issues]create a Github issue[/url]﻿ if things aren't working as you expect."
+      },
+      "downloads": 10,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6933.jpg",
+      "name": "Luma Island Vortex Support",
+      "timestamp": 1752461746,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Luma Island"
     }
   ]
 }
