@@ -1,5 +1,5 @@
 {
-  "last_updated": 1753967733918,
+  "last_updated": 1753968000758,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10710,6 +10710,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Abiotic Factor"
+    },
+    {
+      "modId": 1387,
+      "fileId": 5587,
+      "author": "CrazyMetal",
+      "uploader": "crazymetal",
+      "description": {
+        "short": "Enables Vortex mod manage for CashCleaner simulator. Supports Lua and Assets mods",
+        "long": "Enables Vortex mod manage for CashCleaner simulator. Supports Lua and Assets mods\n<br />\n<br />\n<br />\n<br />1. Download and Install Vortex itself. Login to your nexus mods account in Vortex\n<br />2. Download Extension archive file\n<br />3. Drag and drop the downloaded archive into Vortex Extensions tab\n<br />[url=https://ibb.co/7dvRzHnt][img]https://i.ibb.co/VcVQNdgY/Screenshot-2025-07-25-195737.jpg[/img]\n<br />[/url]4.Restart Vortex\n<br />5. Now the game should become visible in Games tab. Find Cash Cleaner Simulator and enable mod management for game \n<br />[url=https://ibb.co/4w8GhKST][img]https://i.ibb.co/WNkwmGzy/Screenshot-2025-07-25-200109.png[/img]\n<br />[/url]6.Open Settings - Mods TAB \n<br />7. press \"Suggest\" near Mod Staging Folder and Apply after. THis will enable Deployment Method Selection\n<br />8. Select Deployment method as \"Move deployment (Experimental)\"\n<br /> [url=https://ibb.co/vtTnNmb][img]https://i.ibb.co/R5swXP1/Screenshot-2025-07-25-200314.png[/img]\n<br />\n<br />[/url]10.Now you are ready to install mods and first to install is this one to support Lua mods [url=https://www.nexusmods.com/cashcleanersimulator/mods/25]https://www.nexusmods.com/cashcleanersimulator/mods/25[/url]\n<br />\n<br />[size=4]N O T I C E [/size]: in case of conflincts - Press Manage rules button on top. its defaulf requirement for all Vortex mods if there are any conflicts files in different mods.\n<br />example of conflict. set one to before. \n<br />[url=https://ibb.co/9Hmd4VGr][img]https://i.ibb.co/tpw12x3J/Screenshot-2025-07-25-201250.png[/img][/url]\n<br />[size=4]N O T I C E[/size]\n<br />\n<br />Most of the mods may show Error when enabeling/ installing\n<br />\n<br />\"The installer in (mod's name) tried to install files that were not part of the archive.\"\n<br />\n<br />It`s expected as allmos all mods has no propper structure of folders inside its archives, and the extension is appending path/creating folders structure for each od those mods. Becouse of this Vortex notifies that files are not the same as in archive"
+      },
+      "downloads": 11,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7711.jpg",
+      "name": "Cash Cleaner Simulator Vortex Extension",
+      "timestamp": 1753452465,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Cash Cleaner Simulator"
     }
   ]
 }
