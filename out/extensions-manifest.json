@@ -1,5 +1,5 @@
 {
-  "last_updated": 1756108024745,
+  "last_updated": 1756183026589,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10766,6 +10766,25 @@
       "tags": [],
       "version": "0.1.5",
       "type": null
+    },
+    {
+      "modId": 1377,
+      "fileId": 5543,
+      "author": "BrayDog2010",
+      "uploader": "BrayDog2010",
+      "description": {
+        "short": "This allows you to manage your mods in vortex for Thief Simulator",
+        "long": "This allows you to manage your mods in vortex for Thief Simulator"
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4720.jpg",
+      "name": "Thief Simulator Vortex Extension",
+      "timestamp": 1752635711,
+      "tags": [],
+      "version": "V1.0.0",
+      "type": "game",
+      "gameName": "Thief Simulator"
     }
   ]
 }
