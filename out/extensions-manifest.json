@@ -1,5 +1,5 @@
 {
-  "last_updated": 1756194465402,
+  "last_updated": 1756269556796,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10785,6 +10785,25 @@
       "version": "V1.0.0",
       "type": "game",
       "gameName": "Thief Simulator"
+    },
+    {
+      "modId": 1380,
+      "fileId": 5693,
+      "author": "BrayDog2010",
+      "uploader": "BrayDog2010",
+      "description": {
+        "short": "This allows you to manage your mods in vortex for PayDay 3",
+        "long": "[b][size=3][color=#ff7700]No longer need to pass the parameter yourself, the extension with take care of that. Read the UE4SS guide if you are having issues. If that doesn't work, please report it here. Make sure you tell me what version you are on.[/color]\n<br />[/size]\n<br />[size=3]Mod Installation Notes:  [/size][list]\n<br />[*]UE5 Pak (.pak/.ucas/.utoc) mods will be installed to \"Paks\" folder automatically.\n<br />[/list]\n<br />[color=#ff0000][size=5]Read this if you are having issues with the parameter not working[/size][/color][/b]\n<br />[size=4]\n<br />[/size][color=#00ff00][size=4]UE4SS Guide[/size]\n<br />\n<br />[/color][size=3]1. Download the zip (Click the Requirements box and click the [url=https://storage.modworkshop.net/mods/files/47771_151327_uEuIP81BnkMeJfIN4LEdm0QI1HL16iq1noUjYIlt.zip?filename=PD3-UE4SS.zip]UE4SS[/url] link)\n<br />2. Click on the zip file\n<br />3. Click Extract all\n<br />4. Click Browse...\n<br />4. Find where your game is stored\n<br />5. Once in the game's files, go to PAYDAY3&#92;Binaries&#92;Win64 and click Select Folder\n<br />6. Click Extract\n<br />\n<br />Once it finishes, Now click on play (In steam) or run the game shortcut[/size]"
+      },
+      "downloads": 22,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_5717.jpg",
+      "name": "PayDay 3 Vortex Extension",
+      "timestamp": 1756240568,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Payday 3"
     }
   ]
 }
