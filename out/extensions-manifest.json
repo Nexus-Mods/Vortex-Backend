@@ -1,5 +1,5 @@
 {
-  "last_updated": 1756972056237,
+  "last_updated": 1756987142575,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10823,6 +10823,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Metal Gear Solid Delta: Snake Eater"
+    },
+    {
+      "modId": 1398,
+      "fileId": 5721,
+      "author": "BrayDog2010",
+      "uploader": "BrayDog2010",
+      "description": {
+        "short": "This allows you to manage your mods in Vortex for Grounded 2",
+        "long": "This allows you to manage your mods in Vortex for Grounded 2\n<br />[size=4]\n<br />[color=#ff0000][b]For Pak Mod Authors - You can include a folder above your .pak file or have no folder, both are supported in this extension, so don't worry about the files not copying right.\n<br />[/b][/color][/size]\n<br />[size=3]Mod Installation Notes:  [/size][list]\n<br />[*]UE5 Pak (.pak/.ucas/.utoc) mods will be installed to \"Paks\" folder automatically.\n<br />[*]Installs mods containing a \"Augusta\" folder to the game root folder.\n<br />[/list]\n<br />\n<br />[color=#00ffff][b][size=4]How To Set Up The Extension[/size][/b]\n<br />[/color]\n<br />[size=3]1. Download the extensions file\n<br />2. Open Vortex\n<br />3. Go to extensions and drag the zip into 'Drop File(s)' section\n<br />4. Restart Vortex\n<br />5. Search Grounded 2 in Games tab\n<br />6. Click manage\n<br />\n<br />[/size][size=3]Now you can start to mod Grounded 2\n<br />[/size]"
+      },
+      "downloads": 53,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_7996.jpg",
+      "name": "Grounded 2 Vortex Extension",
+      "timestamp": 1756778883,
+      "tags": [],
+      "version": "1.0.2",
+      "type": "game",
+      "gameName": "Grounded 2"
     }
   ]
 }
