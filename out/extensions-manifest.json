@@ -1,5 +1,5 @@
 {
-  "last_updated": 1757307465042,
+  "last_updated": 1757307648540,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -10918,6 +10918,25 @@
       "version": "0.1.2",
       "type": "game",
       "gameName": "Hollow Knight: Silksong"
+    },
+    {
+      "modId": 1222,
+      "fileId": 5746,
+      "author": "Garethp",
+      "uploader": "Garethp",
+      "description": {
+        "short": "Add support for Fields of Mistria mods to Vortex",
+        "long": "This extension adds support for Fields of Mistria mods to Vortex. It will download, and keep updated, a version of the Mods of Mistria Installer and run MOMI after deploying mods to install the mods managed by Vortex"
+      },
+      "downloads": 43,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_6685.jpg",
+      "name": "Fields of Mistria Support",
+      "timestamp": 1757017120,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Fields of Mistria"
     }
   ]
 }
