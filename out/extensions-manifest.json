@@ -1,5 +1,5 @@
 {
-  "last_updated": 1758797821711,
+  "last_updated": 1758797882432,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11127,6 +11127,25 @@
       "version": "0.2.0",
       "type": "game",
       "gameName": "Borderlands 3"
+    },
+    {
+      "modId": 1455,
+      "fileId": 5879,
+      "author": "stunl0ck",
+      "uploader": "stunl0ck",
+      "description": {
+        "short": "Adds The Last Spell support to Vortex Mod Manager. BepInEx will be automatically installed. Steam supported.",
+        "long": "[b][size=3]NOTE: Vortex version 1.15.2+ is recommended.\n<br />\n<br />[/size][/b]This extension adds The Last Spell modding support to Vortex Mod Manager.\n<br />\n<br />Features:\n<br />[list]\n<br />[*]Automatic downloading of [url=https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.3]BepInEx[/url]﻿ and streamlines mod downloads.\n<br />[*]Steam version of the game will be automatically discovered.\n<br />[*]Mods for BepInEx will be installed in the correct plugins folder.\n<br />[/list]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/Images/games/4_3/tile_4042.jpg",
+      "name": "The Last Spell Vortex Extension",
+      "timestamp": 1758362380,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "The Last Spell"
     }
   ]
 }
