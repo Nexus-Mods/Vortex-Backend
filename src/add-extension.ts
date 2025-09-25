@@ -243,7 +243,7 @@ class Driver {
     let extension = this.getManifestEntryTemplate(modInfo, file, type);
 
     // use image from game page not from extension page
-    extension.image = `https://staticdelivery.nexusmods.com/Images/games/4_3/tile_${gameInfo.id}.jpg`;
+    extension.image = modInfo.picture_url ?? `https://staticdelivery.nexusmods.com/images/games/4_3/tile_${gameInfo.id}.jpg`;
 
     // use game name from game page
     extension.gameName = gameInfo.name;
