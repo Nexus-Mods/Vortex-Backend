@@ -1,5 +1,5 @@
 {
-  "last_updated": 1759391286677,
+  "last_updated": 1759412999802,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11184,6 +11184,25 @@
       "version": "0.3.0",
       "type": "game",
       "gameName": "Dying Light: The Beast"
+    },
+    {
+      "modId": 1409,
+      "fileId": 5925,
+      "author": "TelmoFar",
+      "uploader": "TelmoFar",
+      "description": {
+        "short": "Adds support for Pacific Drive to Vortex, enabling you to easily automate installation of mods for Pacific Drive without having to worry about where the files are supposed to go.",
+        "long": "This Vortex extension adds full support for Pacific Drive, allowing you to easily install and manage mods. Simply add your own. This Vortex extension adds full support for Pacific Drive, allowing you to easily install and manage mods. Simply add your  files or mod archives, and the extension will automatically place them in the correct game folder, so you don’t have to worry about paths or manual installation."
+      },
+      "downloads": 18,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1409/1409-1756122540-1372094021.png",
+      "name": "Pacific Drive Support",
+      "timestamp": 1758826183,
+      "tags": [],
+      "version": "1.1.1",
+      "type": "game",
+      "gameName": "Pacific Drive"
     }
   ]
 }
