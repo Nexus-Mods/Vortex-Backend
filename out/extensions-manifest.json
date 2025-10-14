@@ -1,5 +1,5 @@
 {
-  "last_updated": 1760341608389,
+  "last_updated": 1760414742767,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11260,6 +11260,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Deus Ex: Mankind Divided"
+    },
+    {
+      "modId": 1468,
+      "fileId": 5978,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Deus Ex: Human Revolution modding support to Vortex Mod Manager. Steam and GOG supported. ModHook automatically installed.",
+        "long": "This extension adds Deus Ex: Human Revolution modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />[b][color=#ffff00]The legacy and Director's Cut (DC) versions of the game are both supported, but most mods, including the ModHook, are only for the DC version.\n<br />[/color][/b]\n<br />[b][size=3]The extension will automatically download and install the [url=https://www.nexusmods.com/deusexhumanrevolution/mods/28]DXHR Patcher with ModHook[/url][url=https://github.com/gibbed/DXHRDC-ModHook] [/url](Director's Cut only). \n<br />[/size][/b]\n<br />[size=3][b]Mod Installation Notes:\n<br />[/b][/size][list]\n<br />[*]Automatically downloads and install the [url=https://github.com/gibbed/DXHRDC-ModHook]ModHook [/url]﻿to the game root folder.\n<br />[*]Installs .000 mods to \"mods\" folder.\n<br />[*]All other mods not described above will be installed to the game root folder.\n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[/list][color=#f9cb9c][size=2]\n<br />\n<br />\n<br />[/size][/color][size=3][b]Credits:[/b][list]\n<br />[*][size=2]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)[/size]\n<br />[/list][/size]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 9,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1468/1468-1759191225-565268194.jpg",
+      "name": "Deus Ex Human Revolution Vortex Extension",
+      "timestamp": 1759415384,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Deus Ex: Human Revolution"
     }
   ]
 }
