@@ -1,0 +1,83 @@
+name: Publish Extensions (Manual)
+
+on:
+  # Manual trigger only - requires user to click "Run workflow"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run in dry-run mode (no changes made)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Vortex Extension Bot"
+          git config --global user.email "noreply@nexusmods.com"
+
+      - name: Display current status
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        run: |
+          echo "📊 Current Status:"
+          echo "================="
+          yarn read-extension-review-requests || true
+
+      - name: Process review requests
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          NEXUS_APIKEY: ${{ secrets.NEXUS_APIKEY }}
+          DRYRUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "${{ inputs.dry_run }}" == "true" ]; then
+            echo "🧪 Running in DRY RUN mode (no changes will be made)"
+          fi
+          yarn process-review-requests
+
+      - name: Publish extensions
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          DRYRUN: ${{ inputs.dry_run }}
+        run: |
+          if [ "${{ inputs.dry_run }}" == "true" ]; then
+            echo "🧪 Running in DRY RUN mode (no changes will be made)"
+          fi
+          yarn publish-extensions
+
+      - name: Summary
+        run: |
+          if [ "${{ inputs.dry_run }}" == "true" ]; then
+            echo "🧪 Dry run completed - no changes were made"
+          else
+            echo "✅ Extensions published successfully!"
+            echo ""
+            echo "📝 Latest commit:"
+            git log -1 --pretty=format:"%h - %s%n%b"
+          fi
