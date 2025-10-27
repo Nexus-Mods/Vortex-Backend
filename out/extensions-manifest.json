@@ -1,5 +1,5 @@
 {
-  "last_updated": 1761548466030,
+  "last_updated": 1761548610159,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11507,6 +11507,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "The Outer Worlds 2"
+    },
+    {
+      "modId": 1503,
+      "fileId": 6118,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Jurassic World Evolution 3 modding support to Vortex Mod Manager. ACSE automatically installed.",
+        "long": "This extension adds Jurassic World Evolution 3 modding support to Vortex Mod Manager. ACSE will be automatically downloaded and installed. \n<br />\n<br />Steam and Epic versions should find the installation location automatically. Other versions may need to select the installation location manually.\n<br />\n<br />[b][size=3]Mod Installation Notes:\n<br />[/size][/b][list]\n<br />[*]Mods installed to the \"Win64/ovldata\" folder by default.\n<br />[*]Installs mods with a known folder in the game root folder to the root folder.\n<br />[*]Installs mods with \"ovldata\" folder to \"Win64\" folder. \n<br />[*]Mods with a \"Localised\" folder are installed to \"Win64/ovldata/ACSE\" folder.\n<br />[*]Mods with .webm movie files are installed to the \"Movies\" folder.\n<br />[*]Automatically downloads and installs [url=https://www.nexusmods.com/jurassicworldevolution3/mods/2]ACSE[/url]﻿, which is required by most mods.\n<br />[*]Installs saves to the \"Saved Games\" folder (files with .blpr2 and .prk2 extensions).\n<br />[*]Includes a mod type to install mods to the game's root folder. \n<br />[/list]\n<br />[size=2]\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. \n<br />[/list][/size]\n<br />\n<br />\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 6,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1503/1503-1761148338-1149450722.jpg",
+      "name": "Jurassic World Evolution 3 Vortex Extension",
+      "timestamp": 1761263211,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Jurassic World Evolution 3"
     }
   ]
 }
