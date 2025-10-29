@@ -1,5 +1,5 @@
 {
-  "last_updated": 1761724027640,
+  "last_updated": 1761729064344,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11640,6 +11640,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "PC Building Simulator"
+    },
+    {
+      "modId": 1237,
+      "fileId": 6170,
+      "author": "shadowsiam",
+      "uploader": "shadowsiam",
+      "description": {
+        "short": "This extension adds support for \"Avatar: Frontiers of Pandora\" to Vortex Mod Manager. Ubisoft Connect, Steam and Epic (not verified) versions supported.",
+        "long": "This is an extension for Vortex to add support for [b]Avatar: Frontiers of Pandora[/b]. The [i]Ubisoft Connect[/i], [i]Steam [/i] and [i]Epic[/i] versions are supported [i][size=2](it has not been tested with the Epic version though, please report if it doesn't work)[/size][/i].\n<br />\n<br />[b][size=4]Features[/size][/b]\n<br />[list]\n<br />[*]Semi-automatic detection of where and how to install a mod based on the mod's archive contents [i][size=2](support for \"blue\", \"dlc1\" and \"dlc2\" folders at the root game folder next to the game's executable. Supports asking for alternatives if detection fails)[/size][/i].\n<br />[*]Allows choosing and installing multiple variations if they can be detected from the mod's archive contents.\n<br />[*]Easy installation and management of the required [url=https://www.nexusmods.com/avatarfrontiersofpandora/mods/20]Universal Snowdrop Modloader[/url].\n<br />[*]﻿Support for installing USM plugin/script files.\n<br />[*]﻿Support for installing configuration files (.cfg) to the correct [i]User Documents[/i] folder.\n<br />[/list]\n<br />[i][b]Notes[/b]\n<br />[list]\n<br />[*]No support for ReShade files and presets.\n<br />[*]Variation detection is based on the subfolders structure, the extension cannot detect them if they are defined through file names.\n<br />[/list][/i]\n<br />[b][size=4]Installation[/size][/b]\n<br />\n<br />This extension requires Vortex [b]1.9.10[/b] or greater.\n<br />[list=1]\n<br />[*]Click the [b]Vortex[/b] button at the top of page on Nexus Mods, and then click [b]Install[/b].\n<br />[*]Restart Vortex.\n<br />[/list]\n<br />Alternatively, you can install it manually by clicking the [b]Manual[/b] button instead and dragging the file into the drop target labelled [b]Drop File(s)[/b] in the [b]Extensions[/b] page at the bottom right.\n<br />\n<br />[b][size=4]Game detection[/size][/b]\n<br />\n<br />This extension enables Vortex to automatically locate installs from the Ubisoft Connect, Steam and Epic Games apps.\n<br />\n<br />It is also possible to manually set the game folder if the auto detection doesn't find the correct installation. A valid game folder contains a \"[i]afop.exe[/i]\" file. If your game lacks this file then it is likely that your installation has become corrupted somehow.\n<br />\n<br />[b][size=4]Notes[/size][/b]\n<br />\n<br />Symlink deployment seems to be fully supported, please report any issues.\n<br />\n<br />This extension has been tested with some of the most popular mods and ones I knew were special cases. However, due the different ways a mod author can pack their files some mods may not be compatible with this extension. Consider reporting any incompatibility, feedback is appreciated.\n<br />\n<br />[b][size=4]See also[/size][/b]\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/avatarfrontiersofpandora]Mods for Avatar: Frontiers of Pandora (Nexus Mods)[/url]﻿﻿\n<br />[*][url=https://forums.nexusmods.com/index.php?/forum/4306-vortex-support/]Vortex Forum (Nexus Mods)[/url]\n<br />[*][url=https://www.nexusmods.com/about/vortex/]Download Vortex (Nexus Mods)[/url]\n<br />[*][url=https://wiki.nexusmods.com/index.php/Category:Vortex]Vortex Knowledge Base (Nexus Mods)[/url]\n<br />[/list]"
+      },
+      "downloads": 101,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1237/1237-1742698931-354198792.png",
+      "name": "Avatar Frontiers of Pandora Support for Vortex",
+      "timestamp": 1761541526,
+      "tags": [],
+      "version": "1.0.3",
+      "type": "game",
+      "gameName": "Avatar: Frontiers of Pandora"
     }
   ]
 }
