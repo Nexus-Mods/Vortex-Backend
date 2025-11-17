@@ -1,5 +1,5 @@
 {
-  "last_updated": 1763365613098,
+  "last_updated": 1763372768374,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11678,6 +11678,196 @@
       "version": "1.15.2-32",
       "type": "translation",
       "language": "ru"
+    },
+    {
+      "modId": 1515,
+      "fileId": 6176,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds FINAL FANTASY TACTICS - The Ivalice Chronicles support to Vortex Mod Manager. Reloaded-II and FFTIVC ModLoader installed automatically.",
+        "long": "Adds FINAL FANTASY TACTICS - The Ivalice Chronicles support to Vortex Mod Manager. Steam version supported.\n<br />\n<br />[b][size=3]This extension will automatically install [url=https://github.com/Reloaded-Project/Reloaded-II]Reloaded-II Mod Manager[/url] and [url=https://www.nexusmods.com/finalfantasytacticstheivalicechronicles/mods/4]FFTIVC Mod Loader[/url].\n<br />[/size]\n<br />[/b][color=#ea9999][size=3][b]The extension does not support Symlinks, so the mod staging folder and game folder need to be on the same drive. [/b]\n<br />[/size][/color]\n<br />[size=3][b]Mod Installation Notes:[/b][/size][list]\n<br />[*]Reloaded-II Mod Manager will be automatically downloaded and installed into a \"Reloaded\" folder inside the game folder.\n<br />[*]The FFTIVC Mod Loader will be automatically installed to \"Reloaded&#92;Mods&#92;FFTIVC_Mod_Loader\" folder. \n<br />[*]Mods for Reloaded (have a \"ModConfig.json\" file) will be installed in the correct \"Reloaded&#92;Mods\" folder for the tool to load them. \n<br />[*]Any mods not described above will be installed to the game root folder.\n<br />[/list]\n<br />\n<br />[size=3][b][color=#ffff00]IMPORTANT: You may need to launch Reloaded-II as Administrator to allow it to download dependencies required by the game. This is only necessary if the game is installed in a privileged folder, such as [color=#ffff00]\"C:&#92;Program Files (x86)\"[/color]. This is the default install location for Steam on the C Drive. [/color]\n<br />Users will receive a notification after deploying mods with a button to run Reloaded as Admin.[/b][/size]\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated!\n<br />\n<br />[/size]\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1515/1515-1761693066-521498416.jpg",
+      "name": "FINAL FANTASY TACTICS The Ivalice Chronicles Vortex Extension",
+      "timestamp": 1761693183,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "FINAL FANTASY TACTICS - The Ivalice Chronicles"
+    },
+    {
+      "modId": 1517,
+      "fileId": 6205,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Escape from Duckov support to Vortex Mod Manager. Choice of MelonLoader or BepInEx will be automatically installed.",
+        "long": "Adds Escape from Duckov support to Vortex Mod Manager. Choice of MelonLoader or BepInEx will be automatically installed.\n<br />\n<br />Steam version of the game will be automatically discovered. Other versions may need to specify the installation location manually. \n<br />\n<br />[size=3][b]Mod Installation Notes:[/b][/size][list]\n<br />[*][color=#ffff00][b][url=https://github.com/BepInEx/BepInEx]BepInEx[/url]﻿ or [url=https://github.com/LavaGang/MelonLoader]MelonLoader [/url]﻿will be automatically downloaded and installed, based on user choice. You can swap loaders at any time by Removing the current one from Vortex and changing your selection in the popup.[/b][/color]\n<br />[*]Assembly DLL files will be installed to the \"Duckov_Data/Managed\" folder.\n<br />[*]Mods for BepInEx will be installed in the correct folders (\"BepInEx/plugins\" or \"BepInEx/patchers\").\n<br />[*]Mods for MelonLoader will be installed to correct folders (\"mods\" or \"plugins\").\n<br />[*]Asset files (.assets, .resource, .resS) will be installed to the \"Duckov_Data\" folder.\n<br />[*]Mods with a \"Duckov_Data\" folder will be installed to the root folder. \n<br />[*]Any other mod not described above will be installed to the root folder.\n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[*][size=2]You can change which mod loader you have installed by Removing the current one and changing your selection in the popup.[/size]\n<br />[/list]\n<br />\n<br />[b][size=3]Credits:[/size]\n<br />[/b][list]\n<br />[*][size=2]Credit to Senjay and his [url=https://www.nexusmods.com/site/mods/1243]Schedule 1 Vortex extension[/url]﻿ for some of the logic used in the plugin installer[/size]\n<br />[/list]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 57,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1517/1517-1761836524-1176510206.jpg",
+      "name": "Escape from Duckov Vortex Extension",
+      "timestamp": 1762027183,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Escape from Duckov"
+    },
+    {
+      "modId": 1519,
+      "fileId": 6206,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Blue Prince support to Vortex Mod Manager. Choice of MelonLoader or BepInEx will be automatically installed. Steam and Xbox supported.",
+        "long": "Adds Blue Prince support to Vortex Mod Manager. Choice of MelonLoader or BepInEx will be automatically installed.\n<br />\n<br />Steam and Xbox Game Pass versions of the game will be automatically discovered. Other versions may need to specify the installation location manually. \n<br />\n<br />[size=3][b]Mod Installation Notes:[/b][/size][list]\n<br />[*][color=#ffff00][b]BepInEx ([url=https://builds.bepinex.dev/projects/bepinex_be]Bleeding Edge build #738[/url]﻿) or [url=https://github.com/LavaGang/MelonLoader]MelonLoader [/url]﻿will be automatically downloaded and installed, based on user choice. You can swap loaders at any time by Removing the current one from Vortex and changing your selection in the popup.[/b][/color]\n<br />[*]GameAssembly.dll files will be installed to the root folder.\n<br />[*]Mods for BepInEx will be installed in the correct folders (\"BepInEx/plugins\" or \"BepInEx/patchers\").\n<br />[*]Mods for MelonLoader will be installed to correct folders (\"mods\" or \"plugins\").\n<br />[*]Asset files (.assets, .resource, .resS) will be installed to the \"BLUE PRINCE_Data\" folder.\n<br />[*]Mods with a \"BLUE PRINCE_Data\" folder will be installed to the root folder. \n<br />[*]Any other mod not described above will be installed to the root folder.\n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[*][size=2][b]You can change which mod loader you have installed by Removing the current one and changing your selection in the popup.[/b][/size]\n<br />[/list]\n<br />\n<br />[b][size=3]Credits:[/size]\n<br />[/b][list]\n<br />[*][size=2]Credit to Senjay and his [url=https://www.nexusmods.com/site/mods/1243]Schedule 1 Vortex extension[/url]﻿ for some of the logic used in the plugin installer[/size]\n<br />[/list]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1519/1519-1761921796-132274222.jpg",
+      "name": "Blue Prince Vortex Extension",
+      "timestamp": 1762027215,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Blue Prince"
+    },
+    {
+      "modId": 1523,
+      "fileId": 6271,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds Football Manager 26 support to Vortex Mod Manager. Choice of MelonLoader or BepInEx automatically installed. Steam and Xbox supported.",
+        "long": "Adds Football Manager 26 support to Vortex Mod Manager. Choice of MelonLoader or BepInEx will be automatically installed.\n<br />\n<br />Steam and Xbox versions of the game will be automatically discovered. Other versions may need to specify the installation location manually. \n<br />\n<br />[size=3][b]Mod Installation Notes:[/b][/size][list]\n<br />[*][color=#ffff00][b]BepInEx ([url=https://builds.bepinex.dev/projects/bepinex_be]Bleeding Edge build #738[/url]﻿) or [url=https://github.com/LavaGang/MelonLoader]MelonLoader [/url]﻿will be automatically downloaded and installed, based on user choice. You can swap loaders at any time by Removing the current one from Vortex and changing your selection in the popup.[/b][/color]\n<br />[*]GameAssembly.dll files will be installed to the root folder.\n<br />[*]Mods for BepInEx will be installed in the correct folders (\"BepInEx/plugins\" or \"BepInEx/patchers\").\n<br />[*]Mods for MelonLoader will be installed to correct folders (\"mods\" or \"plugins\").\n<br />[*]Asset files (.assets, .resource, .resS) will be installed to the \"fm_Data\" folder.\n<br />[*]Mods with a \"fm_Data\" folder will be installed to the root folder. \n<br />[*]Any other mod not described above will be installed to the root folder.\n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[*][size=2][b]You can change which mod loader you have installed by Removing the current one and changing your selection in the popup.[/b][/size]\n<br />[/list]\n<br />\n<br />[b][size=3]Credits:[/size]\n<br />[/b][list]\n<br />[*][size=2]Credit to Senjay and his [url=https://www.nexusmods.com/site/mods/1243]Schedule 1 Vortex extension[/url]﻿ for some of the logic used in the plugin installer[/size]\n<br />[/list]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1523/1523-1762290594-170036641.jpg",
+      "name": "Football Manager 26 Vortex Extension",
+      "timestamp": 1762745714,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Football Manager 26"
+    },
+    {
+      "modId": 1524,
+      "fileId": 6329,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Europa Universalis V modding support to Vortex Mod Manager.",
+        "long": "This extension adds Europa Universalis V modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually.[size=3]\n<br />[/size]\n<br />[size=3][b]Mod Installation Notes:\n<br />[/b][/size][list]\n<br />[*]Installs mods with a \".mod\" file extension to the %DOCUMENTS%&#92;Paradox Interactive&#92;Europa Universalis V&#92;mod\" folder, inside a folder named to match the \".mod\" file name.\n<br />[*]Installs mods with a folder found in the game root to the root folder (i.e. \"game\", \"binaries\").\n<br />[*]All other mods not described above will be installed to the Documents mod folder. \n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[/list][color=#f9cb9c][size=2]\n<br />\n<br />\n<br />[/size][/color][size=3][b]Credits:[/b][list]\n<br />[*][size=2]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)[/size]\n<br />[/list][/size]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 18,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1524/1524-1762372519-721764031.jpg",
+      "name": "Europa Universalis V Vortex Extension",
+      "timestamp": 1763278280,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Europa Universalis V"
+    },
+    {
+      "modId": 1526,
+      "fileId": 6328,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Europa Universalis IV modding support to Vortex Mod Manager. Steam and GOG supported.",
+        "long": "This extension adds Europa Universalis IV modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and GOG versions of the game should be automatically discovered. Other versions may need to select the install location manually.[size=3]\n<br />[/size]\n<br />[size=3][b]Mod Installation Notes:\n<br />[/b][/size][list]\n<br />[*]Installs mods with a \".mod\" file extension to the %DOCUMENTS%&#92;Paradox Interactive&#92;Europa Universalis IV&#92;mod\" folder, inside a folder named to match the \".mod\" file name.\n<br />[*]All other mods not described above will be installed to the Documents mod folder. \n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[/list][color=#f9cb9c][size=2]\n<br />\n<br />\n<br />[/size][/color][size=3][b]Credits:[/b][list]\n<br />[*][size=2]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)[/size]\n<br />[/list][/size]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1526/1526-1762387382-1442524814.jpg",
+      "name": "Europa Universalis IV Vortex Extension",
+      "timestamp": 1763278225,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Europa Universalis 4"
+    },
+    {
+      "modId": 1531,
+      "fileId": 6327,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Anno 117: Pax Romana modding support to Vortex Mod Manager.",
+        "long": "This extension adds Anno 117: Pax Romana modding support to Vortex Mod Manager.\n<br />\n<br />The Steam version of the game should be automatically discovered. Other versions may need to select the install location manually. \n<br />\n<br />[b][color=#ea9999]If anyone can share the Ubisoft ID, I can have that version automatically discovered.[/color][/b][size=3]\n<br />[/size]\n<br />[size=3][b]Mod Installation Notes:\n<br />[/b][/size][list]\n<br />[*]Installs mods with a \".jsonc\" file extension or \"data\" folder to the \"mods\" folder. The extension will repackage so the game can load the mod properly. FOMOD installers are supported!\n<br />[*]Installs mods with a folder found in the game root to the root folder (i.e. \"Bin\", \"maindata\").\n<br />[*]All other mods not described above will be installed to the \"Bin/Win64\" folder. \n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[/list][color=#f9cb9c][size=2]\n<br />\n<br />\n<br />[/size][/color][size=3][b]Credits:[/b][list]\n<br />[*][size=2]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)[/size]\n<br />[/list][/size]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 70,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1531/1531-1763060564-108644408.jpg",
+      "name": "Anno 117 Pax Romana Vortex Extension",
+      "timestamp": 1763277827,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Anno 117: Pax Romana"
+    },
+    {
+      "modId": 1532,
+      "fileId": 6333,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Dishonored: Death of the Outsider modding support to Vortex Mod Manager. Supports Xbox, Steam, GOG, and Epic versions. Automatically installs Void Installer.",
+        "long": "[size=2]This extension adds Dishonored: Death of the Outsider modding support to Vortex Mod Manager.[/size]\n<br />\n<br />[size=2]This works for the Steam, GOG, Epic, and Xbox versions of the game.[/size]\n<br />\n<br />[size=3][b][color=#ffff00]The extension will automatically download and install [url=https://www.nexusmods.com/dishonored2/mods/31]Void Installer[/url]. It is a new tool for modding the game and is required for most mods. [/color][color=#ffff00]\n<br />[/color][/b]\n<br />[/size][color=#ea9999][b][size=3]The Epic version will not be automatically discovered or launch the game properly until I get the info requested below.[/size]\n<br />[/b][/color]\n<br />[b][size=3]Mod Installation Notes:[/size]\n<br />[/b][list]\n<br />[*]Installs [url=https://www.nexusmods.com/dishonored2/mods/31]Void Installer[/url]﻿ program to \"Void Installer\" folder.\n<br />[*]Includes a tool for [url=https://www.nexusmods.com/dishonored2/mods/30]Void Explorer[/url]﻿. \n<br />[*][b][color=#00ff00]Will install mods for Void Installer to \"Void Installer&#92;Mods\" folder. You need to run Void Installer to complete the installation of these mods. Vortex will give you a notification with a button to run the app after each deployment.[/color][/b]\n<br />[*]Installs save games (\"profile.bin\" or \".sav\" files) to the appropriate \"Saved Games\" folder.\n<br />[*]Installs .cfg mods to the appropriate \"Saved Games\" folder.\n<br />[*]Installs mods with a \"base\" folder to the game root folder.\n<br />[*]Installs .bk2 video mods to the \"base/video\" folder. \n<br />[*]All other mods are installed to the game's root folder. \n<br />[/list]\n<br />[b]=======================================================\n<br />\n<br />[size=4]Epic versions will not be automatically discovered or launch the game properly until I receive some information about the game that is only available after installation.\n<br />[/size][size=4]If anyone can follow this guide and let me know the Epic Games ID ([color=#00ff00]AppName[/color]), that would be very helpful!\n<br />\n<br />I also need to know the name of the game executable in the main folder.\n<br />[/size]\n<br />[size=4][url=https://jayd.ml/games/2020/05/16/epic-games-store-steam-libraries.html]Library Information for Epic Games Store and Steam | Jayden’s Blog[/url][/size]\n<br />\n<br />=======================================================\n<br />[/b]\n<br />\n<br />\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 1,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1532/1532-1763070670-816125810.jpg",
+      "name": "Dishonored Death of the Outsider Vortex Extension",
+      "timestamp": 1763310193,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Dishonored: Death of the Outsider"
+    },
+    {
+      "modId": 1534,
+      "fileId": 6314,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Whiskerwood modding support to Vortex Mod Manager. Steam, GOG, Epic, Game Pass, and Steam Demo supported.",
+        "long": "This extension adds Whiskerwood modding support to Vortex Mod Manager.\n<br />\n<br />The Steam, GOG, Epic, Xbox Game Pass, and Steam Demo versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />[size=3]\n<br />[color=#f9cb9c][b]UE4SS LogicMod (Blueprint) Mod Authors - You MUST include a \"LogicMods\" folder above your .pak file in order for this extension to install the mod to the correct location. Without this, there is no way to differentiate between LogicMod paks and regular pak mods. \n<br />[/b][/color][/size]\n<br />\n<br />[size=3][b]?️ Mod Installation Notes:  [/b][/size][list]\n<br />[*]UE Pak mods will be installed to the correct \"Paks/~mods\" folder automatically and are sortable in the Load Order tab.  FOMOD installers will place files here, but will not be sortable in the Load Order.\n<br />[*]The UE4SS mod will be installed next to the game's shipping executable. This extension is setup for the new UE4SS folder structure \"ue4ss/Mods\".\n<br />[*]UE4SS Script mods will be installed to the \"ue4ss/Mods\" folder. An \"enabled.txt\" file will be written to the mod if it was not included by the author.\n<br />[*]UE4SS DLL mods will be installed to the \"ue4ss/Mods\" folder. An \"enabled.txt\" file will be written to the mod if it was not included by the author.\n<br />[*]UE4SS LogicMod (Blueprint) mods will be installed to the \"Paks/LogicMods\" folder.\n<br />[*]Installs mods containing a \"WhiskerWood\" folder to the game root folder.\n<br />[*]Installs mods containing a root sub-folder (i.e. \"Content\", \"Binaries\", \"Plugins\") to the \"Whiskerwood\" folder.\n<br />[*]Config files (.ini) are installed to the correct Local AppData folder.\n<br />[*]Save files (.sav) are installed to the correct Local AppData folder.\n<br />[*]Any other mods not described above will be installed in the \"Binaries\" folder by the shipping executable. \n<br />[/list][size=2]\n<br />\n<br />[b][size=3]? Usage Notes:[/size]\n<br />[/b][list]\n<br />[*]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. \n<br />[/list]\n<br />[/size]\n<br />[size=3][b]? Credits:\n<br />[/b][/size]Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I customized to make it work here with all UE5 mods. \n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />[b][size=4]❤️ Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1534/1534-1763082472-621308222.jpg",
+      "name": "Whiskerwood Vortex Extension",
+      "timestamp": 1763082550,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Whiskerwood"
+    },
+    {
+      "modId": 1540,
+      "fileId": 6335,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Voidtrain modding support to Vortex Mod Manager. Steam, Epic, Game Pass, and Steam Demo supported.",
+        "long": "This extension adds Voidtrain modding support to Vortex Mod Manager.\n<br />\n<br />The Steam, Epic, Xbox Game Pass, and Steam Demo versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />[size=3]\n<br />[color=#f9cb9c][b]UE4SS LogicMod (Blueprint) Mod Authors - You MUST include a \"LogicMods\" folder above your .pak file in order for this extension to install the mod to the correct location. Without this, there is no way to differentiate between LogicMod paks and regular pak mods. \n<br />[/b][/color][/size]\n<br />\n<br />[size=3][b]?️ Mod Installation Notes:  [/b][/size][list]\n<br />[*]UE Pak mods will be installed to the correct \"Paks/~mods\" folder automatically and are sortable in the Load Order tab.  FOMOD installers will place files here, but will not be sortable in the Load Order.\n<br />[*]The UE4SS mod will be installed next to the game's shipping executable. This extension is setup for the new UE4SS folder structure \"ue4ss/Mods\".\n<br />[*]UE4SS Script mods will be installed to the \"ue4ss/Mods\" folder. An \"enabled.txt\" file will be written to the mod if it was not included by the author.\n<br />[*]UE4SS DLL mods will be installed to the \"ue4ss/Mods\" folder. An \"enabled.txt\" file will be written to the mod if it was not included by the author.\n<br />[*]UE4SS LogicMod (Blueprint) mods will be installed to the \"Paks/LogicMods\" folder.\n<br />[*]Installs mods containing a \"VoidTrain\" folder to the game root folder.\n<br />[*]Installs mods containing a root sub-folder (i.e. \"Content\", \"Binaries\", \"Plugins\") to the \"VoidTrain\" folder.\n<br />[*]Config files (.ini) are installed to the correct Local AppData folder.\n<br />[*]Save files (.sav) are installed to the correct Local AppData folder.\n<br />[*]Any other mods not described above will be installed in the \"Binaries\" folder by the shipping executable. \n<br />[/list][size=2]\n<br />\n<br />[b][size=3]? Usage Notes:[/size]\n<br />[/b][list]\n<br />[*]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. \n<br />[/list]\n<br />[/size]\n<br />[size=3][b]? Credits:\n<br />[/b][/size]Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I customized to make it work here with all UE5 mods. \n<br />Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />\n<br />\n<br />\n<br />\n<br />\n<br />[b][size=4]❤️ Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 1,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1540/1540-1763311644-459423290.jpg",
+      "name": "Voidtrain Vortex Extension",
+      "timestamp": 1763311714,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Voidtrain"
     }
   ]
 }
