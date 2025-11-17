@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@types/adm-zip": "^0.5.0",
+    "@types/adm-zip": "^0.5.7",
     "@types/babel__traverse": "^7.20.1",
     "@types/decompress": "^4.2.4",
     "@types/fs-extra": "^11.0.1",
@@ -17,6 +17,7 @@
   "version": "1.1.0",
   "main": "index.js",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
     "@babel/parser": "^7.22.5",
     "@babel/traverse": "^7.22.5",
     "@nexusmods/nexus-api": "Nexus-Mods/node-nexus-api",
@@ -24,6 +25,7 @@
     "@tsdotnet/stopwatch": "^1.0.13",
     "acorn": "^8.9.0",
     "acorn-walk": "^8.2.0",
+    "adm-zip": "^0.5.16",
     "anymatch": "^3.1.3",
     "arg": "^4.1.3",
     "axios": "^1.4.0",
@@ -94,6 +96,9 @@
     "add-mod-spotlights-video": "ts-node src/add-mod-spotlights-video.ts",
     "read-extension-review-requests": "ts-node src/read-extension-review-requests.ts",
     "process-review-requests": "ts-node src/process-review-requests.ts",
+    "review-extensions": "ts-node src/review-extensions.ts",
+    "ai-review-extensions": "ts-node src/ai-review-extensions.ts",
+    "sanitize-manifest": "ts-node src/sanitize-manifest.ts",
     "publish-extensions": "ts-node src/publish-extensions.ts",
     "test-slack": "ts-node src/test-slack.ts",
     "test-github": "ts-node src/test-github.ts",

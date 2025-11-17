@@ -14,10 +14,12 @@ const REPO_ROOT_PATH: string = path.join(__dirname, '/../');
 const PACKAGE_PATH = path.join(REPO_ROOT_PATH, 'package.json');
 const MANIFEST_PATH: string = path.join(REPO_ROOT_PATH, 'out');
 const MANIFEST_ARCHIVE_PATH: string = path.join(REPO_ROOT_PATH, 'archive');
+const DOWNLOADS_PATH: string = path.join(REPO_ROOT_PATH, 'review-downloads');
 
 // env variables
 const NEXUS_APIKEY = process.env.NEXUS_APIKEY || process.env.NEXUS_API_KEY || '';
 const DRYRUN: boolean = (process.env.DRYRUN === 'true') || false;
+const DOWNLOAD_FOR_REVIEW: boolean = (process.env.DOWNLOAD_FOR_REVIEW === 'true') || false;
 const SLACK_SIGNING_SECRET = process.env.SLACK_SIGNING_SECRET || '';
 const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN || '';
 
@@ -40,6 +42,7 @@ interface IProcessingResult {
   success: boolean;
   entry?: IAvailableExtension;
   error?: string;
+  downloadPath?: string;
 }
 
 function exitWithError(message: string, context?: any): never {
@@ -110,6 +113,12 @@ class BatchProcessor {
     console.log(`Last updated: ${new Date(this.manifest.last_updated).toString()}`);
     console.log(`Total extensions: ${this.manifest.extensions.length}\n`);
 
+    // Setup downloads directory if needed
+    if (DOWNLOAD_FOR_REVIEW) {
+      await fs.mkdirp(DOWNLOADS_PATH);
+      console.log(`Download mode enabled. Files will be saved to: ${DOWNLOADS_PATH}\n`);
+    }
+
     // Read all queued review requests
     console.log('Fetching extension review requests from GitHub...\n');
     const requests = await readExtensionReviewRequests();
@@ -157,6 +166,9 @@ class BatchProcessor {
         if (result.entry) {
           this.manifest.extensions.push(result.entry);
           console.log(`Added: ${result.entry.name} (Mod ID: ${result.entry.modId})`);
+          if (result.downloadPath) {
+            console.log(`  Downloaded to: ${result.downloadPath}`);
+          }
         }
       }
 
@@ -330,10 +342,22 @@ class BatchProcessor {
 
       console.log(`Successfully validated extension`);
 
+      // Download file for review if enabled
+      let downloadPath: string | undefined;
+      if (DOWNLOAD_FOR_REVIEW) {
+        try {
+          downloadPath = await this.downloadExtensionFile(modId, latestFile, nexus);
+          console.log(`Downloaded to: ${downloadPath}`);
+        } catch (err: any) {
+          console.log(`Warning: Failed to download file: ${err.message}`);
+        }
+      }
+
       return {
         request,
         success: true,
         entry: normalizedEntry,
+        downloadPath,
       };
 
     } catch (err: any) {
@@ -343,6 +367,78 @@ class BatchProcessor {
         error: `Unexpected error: ${err.message}`,
       };
     }
+  }
+
+  private async downloadExtensionFile(
+    modId: number,
+    file: IFileInfo,
+    nexus: Nexus
+  ): Promise<string> {
+    // Create folder structure: review-downloads/modId-modName/
+    const sanitizedFileName = file.name.replace(/[<>:"/\\|?*]/g, '_');
+    const folderName = `${modId}-${sanitizedFileName}`;
+    const downloadFolder = path.join(DOWNLOADS_PATH, folderName);
+
+    await fs.mkdirp(downloadFolder);
+
+    // Get download links
+    console.log(`Requesting download link for file ID ${file.file_id}...`);
+    const downloadLinks = await nexus.getDownloadURLs(modId, file.file_id);
+
+    if (!downloadLinks || downloadLinks.length === 0) {
+      throw new Error('No download links available');
+    }
+
+    // Use the first download link
+    const downloadUrl = downloadLinks[0].URI;
+    const filePath = path.join(downloadFolder, file.file_name);
+
+    console.log(`Downloading ${file.file_name}...`);
+
+    // Download the file using node's https module
+    const https = require('https');
+    const http = require('http');
+
+    return new Promise<string>((resolve, reject) => {
+      const protocol = downloadUrl.startsWith('https') ? https : http;
+      const fileStream = fs.createWriteStream(filePath);
+
+      protocol.get(downloadUrl, (response: any) => {
+        if (response.statusCode !== 200) {
+          reject(new Error(`Download failed with status ${response.statusCode}`));
+          return;
+        }
+
+        const totalSize = parseInt(response.headers['content-length'] || '0', 10);
+        let downloadedSize = 0;
+
+        response.on('data', (chunk: Buffer) => {
+          downloadedSize += chunk.length;
+          if (totalSize > 0) {
+            const percent = ((downloadedSize / totalSize) * 100).toFixed(1);
+            process.stdout.write(`\rDownload progress: ${percent}%`);
+          }
+        });
+
+        response.pipe(fileStream);
+
+        fileStream.on('finish', () => {
+          fileStream.close();
+          if (totalSize > 0) {
+            process.stdout.write('\n');
+          }
+          resolve(filePath);
+        });
+      }).on('error', (err: Error) => {
+        fs.unlink(filePath, () => {}); // Clean up partial download
+        reject(err);
+      });
+
+      fileStream.on('error', (err: Error) => {
+        fs.unlink(filePath, () => {}); // Clean up partial download
+        reject(err);
+      });
+    });
   }
 
   private createManifestEntryForTool(modInfo: IModInfo, file: IFileInfo, type: ExtensionType): IAvailableExtension {
