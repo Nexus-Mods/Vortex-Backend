@@ -16,7 +16,7 @@ export const ONE_DAY = 1000 * 60 * 60 * 24;
 
 // slack constants
 // this is dev-vortex. bot-test-slack = C06B8H5TGGG and bot-github-vortex = C05009EK5R6
-export const SLACK_CHANNEL = 'C0GM4G264'; 
+export const SLACK_CHANNEL = 'C05009EK5R6'; 
 
 // files and paths
 export const MANIFEST_FILENAME = 'extensions-manifest.json';
@@ -40,4 +40,5 @@ export const htmlMap: { [entity: string]: string } = {
 export const GAME_EXCLUSIONLIST = [
     'game-subnautica',
     'game-subnauticabelowzero',
+
 ];
