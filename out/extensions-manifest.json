@@ -1,5 +1,5 @@
 {
-  "last_updated": 1764918302051,
+  "last_updated": 1764920106536,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -12039,6 +12039,25 @@
       "version": "1.1.0",
       "type": "game",
       "gameName": "The First Berserker: Khazan"
+    },
+    {
+      "modId": 1522,
+      "fileId": 6264,
+      "author": "Unkn0wnN4me",
+      "uploader": "Unkn0wnN4me",
+      "description": {
+        "short": "A Vortex extension for Duet Night Abyss featuring mod management and load order support",
+        "long": "[b]Duet Night Abyss - Vortex Extension[/b]\n<br />\n<br />[b][b]★[/b] INSTALLATION GUIDE [b]★[/b]\n<br />[/b]1. Drag n drop my zip file into Vortex's extension page (It will auto install [url=https://www.nexusmods.com/site/mods/153]Unreal Engine Mod Installer extension[/url])\n<br />2. Search \"Duet Night Abyss\" in Vortex's games tab then click manage\n<br />3. Select your game folder containing EM.exe\n<br />4. Select your game store\n<br />5. Done\n<br />\n<br />[b]★ SUPPORTS 100% OF CURRENT MODS ★[/b]\n<br />• .pak / .sig → ~mods folder with drag-and-drop load order\n<br />• Any Config mod\n<br />• Bitfix DLL\n<br />• Any .lua script \n<br />\n<br />[b]★ 1-CLICK MODDED SHORTCUT ★[/b]\n<br />Toolbar → “Create Mod Shortcut (-fileopenlog)”  \n<br />→ Creates Duet Night Abyss (Mods Enabled).lnk right next to EM.exe  \n<br />\n<br />Made with ❤️ for the DNA community.\n<br />\n<br />Credit:\n<br />[url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url] for his Unreal Engine Mod Installer extension."
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1522/1522-1762266797-615159436.jpg",
+      "name": "Duet Night Abyss Vortex Extension",
+      "timestamp": 1762607388,
+      "tags": [],
+      "version": "0.1.4",
+      "type": "game",
+      "gameName": "Duet Night Abyss"
     }
   ]
 }
