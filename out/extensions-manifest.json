@@ -1,5 +1,5 @@
 {
-  "last_updated": 1764917057423,
+  "last_updated": 1764917113477,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -11963,6 +11963,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Batman: Arkham Asylum"
+    },
+    {
+      "modId": 1530,
+      "fileId": 6288,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds Trails in the Sky 1st Chapter modding support to Vortex Mod Manager. Steam and Steam Demo supported.",
+        "long": "This extension adds Trails in the Sky 1st Chapter modding support to Vortex Mod Manager.\n<br />\n<br />The Steam and Steam Demo versions of the game should be automatically discovered. Other versions may need to select the install location manually.\n<br />\n<br />[color=#ffff00][size=3][b]IMPORTANT: To run the game file extraction script, you must have [url=https://www.python.org/downloads/]Python [/url]installed. You can get it from the site or in the [url=https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-US&amp;gl=US]Microsoft Store[/url]. \n<br />[/b][/size][/color]\n<br />[size=3][b]Mod Installation Notes:\n<br />[/b][/size][list]\n<br />[*]Installs mods with an extracted data folder (i.e. \"assets\") to the game root folder. You must run the \"Extract Game Files\" function for these mods to load.\n<br />[*].pac files will be installed to \"pac/steam\" folder.\n<br />[*]All other mods not described will be installed to the game root folder. \n<br />[/list]\n<br />\n<br />[b][size=3]Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[*][color=#ffff00][size=2][b]You can extract and clean up the .pac files at any time using the buttons within the folder icon on the Mods toolbar. [/b][/size][/color]\n<br />[/list][color=#f9cb9c][size=2]\n<br />[img]https://i.imgur.com/VzMXNm8.png[/img]\n<br />\n<br />\n<br />[/size][/color][size=3][b]Credits:[/b][list]\n<br />[*][size=2]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)[/size]\n<br />[*][size=2]Credit to [url=https://github.com/eArmada8/kuro_mdl_tool]eArmada8 on GitHub[/url]﻿ for the .pac file extraction script.[/size]\n<br />[/list][/size]\n<br />\n<br />\n<br />[b][size=4]Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1530/1530-1762911145-1850793841.jpg",
+      "name": "Trails in the Sky 1st Chapter Vortex Extension",
+      "timestamp": 1762911243,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Trails in the Sky 1st Chapter"
     }
   ]
 }
