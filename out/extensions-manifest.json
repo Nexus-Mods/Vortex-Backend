@@ -1,5 +1,5 @@
 {
-  "last_updated": 1764917276621,
+  "last_updated": 1764918302051,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -12020,6 +12020,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "DRAGON QUEST I & II HD-2D Remake"
+    },
+    {
+      "modId": 1542,
+      "fileId": 6402,
+      "author": "ArchonStormNexus",
+      "uploader": "ArchonStormNexus",
+      "description": {
+        "short": "Vortex Extension for The First Berserker Khazan",
+        "long": "This Vortex Extension is for Mods for the Game [url=https://www.nexusmods.com/games/thefirstberserkerkhazan]The First Berserker Khazan[/url].\n<br />\n<br />I saw the lack of an Extension and made this. I followed the [url=https://github.com/Nexus-Mods/Vortex/wiki/MODDINGWIKI-Developers-General-Creating-a-game-extension]Instructions[/url] provided by the Nexus-Team, therefore I suspect this has just the bare minimum to be functional.\n<br />This is the first time I've made an Extension, please excuse any crude coding or missing functionality.\n<br />\n<br />\n<br />In case you install [url=https://www.nexusmods.com/thefirstberserkerkhazan/mods/22]Khazan Simple Loader[/url] and things aren't working as intended, you may have to manually install the mod's d3d12.dll file.\n<br />\n<br />\n<br />From my understanding, for Mod downloads to be handled by Vortex, the respective authors have to enable the button on their Mods.\n<br />After the first mod download handled by Vortex, the download folder for Khazan mods should be created on your PC, according to what you specified in the settings.\n<br />Any manually downloaded archives, that are put into that folder, will show up as \"never installed\" in your mod list. If not, drag&amp;drop will have to do for now.\n<br /> If that is something I have to include in the Extension, please tell me how that would be done, since I couldn't find any info regarding this."
+      },
+      "downloads": 13,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1542/1542-1763416308-1321970081.jpg",
+      "name": "The First Berserker Khazan - Extension",
+      "timestamp": 1764171226,
+      "tags": [],
+      "version": "1.1.0",
+      "type": "game",
+      "gameName": "The First Berserker: Khazan"
     }
   ]
 }
