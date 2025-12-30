@@ -4658,8 +4658,9 @@
     {
       "modId": 405,
       "fileId": 6569,
-      "author": "Nagev",
-      "uploader": "Nagev",
+      "type": "game",
+      "author": "shadowThatFax",
+      "uploader": "shadowThatFax",
       "description": {
         "short": "Install and manage your mods for V Rising with Vortex",
         "long": "This extension adds V Rising as a game supported in Vortex for mod management. The extension is able to install mods from any source and will automatically download the required BepInEx packages. \n<br />\n<br />\n<br />[size=4]Vortex Install (Easy)\n<br />[/size]\n<br />[list]\n<br />[*]In Vortex, locate Elegos in the Games tab.\n<br />[*]Click on the game tile to manage it, install the extension as prompted.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />\n<br />[size=4]Vortex Install (Advanced)\n<br />[/size]\n<br />[list]\n<br />[*]Navigate to the Extensions tab.\n<br />[*]Drop the 7z archive into the \"drop zone\" at the bottom of the page.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />\n<br />[size=4]Manual Install\n<br />[/size]\n<br />Extract the 7z archive to %appdata%&#92;Vortex&#92;plugins&#92;V Rising"
