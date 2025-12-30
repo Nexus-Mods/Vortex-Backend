@@ -1,5 +1,5 @@
 {
-  "last_updated": 1767104548624,
+  "last_updated": 1767104712556,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -120,7 +120,7 @@
         "short": "Russian translation for Vortex",
         "long": "[quote][size=4][color=#ffe599][b]Описание[/b][/color][/size]\n<br />[color=#999999][size=3]Russian translation for Vortex[/size][/color]\n<br />[size=3]Русский перевод&#92;локализация для приложения[/size][color=#f1c232][b][size=3] [/size][color=#f1c232][url=https://www.nexusmods.com/site/mods/1][size=3]Vortex[/size][/url][/color][/b][/color]\n<br />\n<br />[size=2]Примечание:[/size]\n<br />[list]\n<br />[*][size=2]Устанавливайте русский язык из настроек [color=#f6b26b]Vortex[/color], там происходит автоустановка.[/size]\n<br />[*][size=2]Рекомендую установить тему Fluent.[/size]\n<br />[*]\n<br />[*][size=2]Сообщайте о не переведённых строках и грам. ошибках во вкладку [b]BUGS[/b].[/size]\n<br />[*][size=2]Есть текст, который почему-то у меня не хочет принимать перевод, не знаю почему[/size]\n<br />[/list][/quote]\n<br />[quote][b][color=#ffe599][size=4]Автоустановка[/size][/color][/b]\n<br />\n<br />[color=#616161][size=3]1.[/size][/color][size=3] Запустите приложение Vortex\n<br />[color=#616161]2.[/color] Перейдите в [color=#f6b26b]Настройки -&gt; Интерфейс [/color]\n<br />[color=#616161]3.[/color] Смените язык [color=#f6b26b]English[/color] на [color=#f6b26b]Русский язык (Extension by vanjavs)[/color]\n<br />   [color=#999999]﻿~ Скачивание и установка языка произойдёт автоматически[/color]\n<br />[color=#616161]4.[/color] Перезапустите Vortex\n<br />\n<br />[/size][color=#ffe599][size=4][b]Установка вручную[/b][b] [/b][/size][/color][color=#ff0000][b]\n<br />\n<br />[/b][/color][color=#616161][size=3]1.[/size][/color][size=3] Скачайте архив и откройте его.\n<br />[color=#616161]2.[/color] Просто перетащите папку [b][color=#d0e0e3]ru[/color][/b] из архива в один из каталогов:\n<br />   ﻿~ [color=#f6b26b]%appdata%&#92;Vortex&#92;locales[/color] (если папки [color=#f6b26b]locales [/color]нет, создайте)\n<br />или\n<br />   ﻿~ [color=#f6b26b]C:&#92;ProgramData&#92;Vortex&#92;locales[/color]\n<br />\n<br />Не забудьте сменить язык приложения Vortex на русский язык.\n<br />\n<br />[/size][color=#ffe599][size=4][b]Обновление[/b][/size][/color][size=3]\n<br />[/size]\n<br />[color=#6aa84f][b]Автообновление через Vortex происходит в течении суток[/b][/color].\n<br />Вручную можно обновится если вы скачиваете и устанавливаете файлы вручную, просто замените старые файлы в папке [b][color=#cfe2f3]ru\n<br />[/color][/b][/quote]"
       },
-      "downloads": 576039,
+      "downloads": 576047,
       "endorsements": 38314,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/23/23-1579699355-1936786846.png",
       "name": "Vortex (Russian translation)",
@@ -4657,7 +4657,20 @@
     },
     {
       "modId": 405,
-      "fileId": 1527
+      "fileId": 6569,
+      "author": "Nagev",
+      "uploader": "Nagev",
+      "description": {
+        "short": "Install and manage your mods for V Rising with Vortex",
+        "long": "This extension adds V Rising as a game supported in Vortex for mod management. The extension is able to install mods from any source and will automatically download the required BepInEx packages. \n<br />\n<br />\n<br />[size=4]Vortex Install (Easy)\n<br />[/size]\n<br />[list]\n<br />[*]In Vortex, locate Elegos in the Games tab.\n<br />[*]Click on the game tile to manage it, install the extension as prompted.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />\n<br />[size=4]Vortex Install (Advanced)\n<br />[/size]\n<br />[list]\n<br />[*]Navigate to the Extensions tab.\n<br />[*]Drop the 7z archive into the \"drop zone\" at the bottom of the page.\n<br />[*]Click the prompt to restart Vortex.\n<br />[/list]\n<br />\n<br />[size=4]Manual Install\n<br />[/size]\n<br />Extract the 7z archive to %appdata%&#92;Vortex&#92;plugins&#92;V Rising"
+      },
+      "downloads": 11210,
+      "endorsements": 547,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/405/405-1654163053-2031963924.jpeg",
+      "name": "V Rising Support",
+      "timestamp": 1767103736,
+      "tags": [],
+      "version": "0.0.2"
     },
     {
       "modId": 409,
@@ -8502,7 +8515,7 @@
         "short": "Vortex extension sanity checks for Fallout New Vegas that handles common problems and quality of life addition",
         "long": "[size=3]Vortex extension sanity checks for Fallout New Vegas that handles common problems and quality of life addition.\n<br />Non-intrusive notification and can be dismissed permanently.[/size]\n<br />\n<br />[size=4][color=#00ffff][b]Features[/b][/color][/size]\n<br />\n<br />[list]\n<br />[*][size=3]Checks the presence of translation plugin that's included by default from the game and notify users by prompting a file deletion at their consent[/size]\n<br />[*][size=3]Checks if the executable files is not 4GB patched and send a notification linking the patcher[/size]\n<br />[*][size=3]Checks for legacy NVSE from the silverlock website[/size]\n<br />[*][size=3]Automatic creation for .override files for BSA files so that it can override previous BSA files[/size]\n<br />[*][size=3]Enhanced default GECK configuration files if it doesn't exists (only for mod makers)[/size]\n<br />[*][size=3]Important notice for first time setup regarding Base Address Randomization and outdated AMD GPU driver for New Vegas[/size]\n<br />[/list]\n<br />\n<br />[size=4][color=#00ffff][b]Vortex Installation[/b][/color][/size]\n<br />[size=3]Open the extension page and click find more, search for the extension name and click install, you will be prompted to restart by vortex.[/size]\n<br />\n<br />[color=#00ffff][size=4][b]Alternate Vortex Installation[/b][/size][/color]\n<br />[size=3]Manually download the mod, Open the extension page, drag and drop the zip file at the dedicated drop file box, you will be prompted to restart by vortex.[/size]\n<br />\n<br />[url=https://ko-fi.com/Senjay][img]https://i.imgur.com/7Cm07AZ.png[/img][/url]"
       },
-      "downloads": 822982,
+      "downloads": 823011,
       "endorsements": 5448,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/945/945-1720589323-1528196885.png",
       "name": "Fallout New Vegas Sanity Checks",
@@ -11654,7 +11667,7 @@
         "short": "Перевод Vortex на русский язык",
         "long": "[b][color=#ffd966]Рекомендуемый порядок установки[/color][/b]\n<br />\n<br />[list]\n<br />[*]Открыть Vortex.\n<br />[*]В меню слева перейти в раздел \"Settings\".\n<br />[*]Во вкладке \"Interface\" -&gt; секции \"Language\" в выпадающем меню выбрать [b]русский язык (Extension by enbl1tenment)[/b].\n<br />[*]После установки расширения перезапустить Vortex.\n<br />[/list]\n<br />\n<br />[b]Ручная установка[/b]\n<br />\n<br />[list]\n<br />[*]﻿Поместить папку [font=Courier New]ru[/font] из загруженного архива в папку [font=Courier New]locales[/font] по пути\n<br />[code]C:&#92;Users&#92;&lt;username&gt;&#92;AppData&#92;Roaming&#92;vortex&#92;locales[/code][*]﻿или\n<br />[code]﻿C:&#92;ProgramData&#92;vortex&#92;locales[/code][*][size=1]﻿Создайте папку, если её нет.[/size]\n<br />[/list]\n<br />\n<br />[b][color=#f6b26b]Примечание[/color][/b]\n<br />\n<br />Создание переводов Vortex не такое прямолинейное, каким может казаться. Разработчики Vortex не могут просто взять и предоставить полную таблицу строк, используемых внутри программы, которые можно было бы перевести \"за раз\". Переводы создаются с помощью [url=https://www.nexusmods.com/site/mods/28]Translation Helper[/url], который работает следующим образом.\n<br />\n<br />Во время работы Vortex строки, которые подлежат переводу, обнаруживаются динамически и попадают в также динамически создаваемые файлы, внутри которых в последствии и происходит ручной перевод.\n<br />\n<br />Например, при запуске приложения обнаруживаются строки для перевода раздела \"Dashboard\" и попадают в сгенерированный файл.\n<br />При переходе в раздел \"Games\" появляются новые строки, и файл с ними дополняется.\n<br />При открытии какого-либо выпадающего списка или всплывающей подсказки - новые строки =&gt; дополнение файла. И так далее.\n<br />\n<br />Также, некоторые строки по какой-то причине не хотят попадать в файлы, а при попытке вписать их вручную и перевести Vortex их игнорирует и не применяет перевод.\n<br />\n<br />Учитывая всё вышенаписанное, следует [color=#f6b26b]предупредить[/color], что предоставленный перевод не охватывает [i]весь[/i] Vortex. Переведены только те строки, с которыми я столкнулся при собственном пользовании, и которые [i]поддаются[/i] переводу. Хотя я старался нарочно открывать все доступные мне разделы и окна, чтобы охватить максимум строк.\n<br />\n<br />При обнаружении ошибок или непереведённых строк [b](не относящихся к какой-нибудь конкретной игре)[/b] сообщайте здесь, указав, в каком месте Vortex и при каких условиях эта строка видна."
       },
-      "downloads": 7817,
+      "downloads": 7822,
       "endorsements": 100,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1507/1507-1762733585-1989601524.png",
       "name": "Vortex - Russian Translation",
