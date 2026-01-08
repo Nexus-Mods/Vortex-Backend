@@ -1,5 +1,5 @@
 {
-  "last_updated": 1767876233124,
+  "last_updated": 1767878674734,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -12166,6 +12166,25 @@
       "version": "0.1.1",
       "type": "game",
       "gameName": "Of Ash and Steel"
+    },
+    {
+      "modId": 1599,
+      "fileId": 6644,
+      "author": "Nanatsu",
+      "uploader": "nanatsu50",
+      "description": {
+        "short": "Adds Ale &amp; Tale Tavern to Vortex Mod Manager. Automatically downloads BepInEx. Supports the Steam version.",
+        "long": "[size=4][b]Features[/b][/size]\n<br />[list]\n<br />[*]Adds Ale &amp; Tale Tavern as a supported game in Vortex\n<br />[*]Manages BepInEx mods (deploys to [b]BepInEx&#92;plugins[/b])\n<br />[*]Automatically downloads BepInEx v5.4.23.4 x64 (64-bit)\n<br />[*]Installs “DLL-at-root” mod archives into [b]BepInEx&#92;plugins[/b]\n<br />[/list]\n<br />[size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*]Ale &amp; Tale Tavern (Steam)\n<br />[/list]\n<br />[size=4][b]How to use[/b][/size]\n<br />[list]\n<br />[*]In Vortex, [b]Manage[/b] Ale &amp; Tale Tavern\n<br />[*]Enable the added [b]BepInEx[/b] entry in Mods and click [b]Deploy[/b]\n<br />[*]Install mods normally and confirm they are deployed into [b]BepInEx&#92;plugins[/b]\n<br />[/list]\n<br />[size=4][b]Notes[/b][/size]\n<br />[list]\n<br />[*]If Deploy fails, change Vortex Deployment Method (use a non-Hardlink option)\n<br />[/list]"
+      },
+      "downloads": 4,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1599/1599-1767358763-1108740008.jpg",
+      "name": "Ale and Tale Tavern Vortex Extension",
+      "timestamp": 1767877239,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Ale & Tale Tavern"
     }
   ]
 }
