@@ -1,5 +1,5 @@
 {
-  "last_updated": 1767858525596,
+  "last_updated": 1767875652235,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -12071,6 +12071,25 @@
       "version": "0.1.4",
       "type": "game",
       "gameName": "Duet Night Abyss"
+    },
+    {
+      "modId": 1547,
+      "fileId": 6449,
+      "author": "TelmoFar",
+      "uploader": "TelmoFar",
+      "description": {
+        "short": "This Vortex extension adds full support for Astroneer, making it easy to install and manage mods without manual file handling",
+        "long": "Simply drop your mod archives into Vortex, and the extension will automatically place them in the correct game folders — no need to worry about paths or installation steps.\n<br />Key features:\n<br />[list]\n<br />[*]✅ Full mod installation and deployment automation\n<br />[*]✅ Support for UE4SS and AutoIntegrator-based mods\n<br />[*]✅ Centralized mod management (enable/disable, update, remove)\n<br />[*]✅ No manual file placement required\n<br />[/list]Enjoy a streamlined modding experience and get back to exploring and building in Astroneer.\n<br />\n<br />Credits:\n<br />atenfyr: For helping with support for UE4SS and AutoIntegrator."
+      },
+      "downloads": 167,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1547/1547-1764275724-36646129.png",
+      "name": "Astroneer Support",
+      "timestamp": 1765020130,
+      "tags": [],
+      "version": "2.0.3",
+      "type": "game",
+      "gameName": "Astroneer"
     }
   ]
 }
