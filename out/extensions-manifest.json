@@ -1,5 +1,5 @@
 {
-  "last_updated": 1768976805713,
+  "last_updated": 1768976851948,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -12303,6 +12303,25 @@
       "version": "0.1.0",
       "type": "game",
       "gameName": "Pathologic 2"
+    },
+    {
+      "modId": 1635,
+      "fileId": 6711,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "This extension adds The Lord of the Rings: Return to Moria modding support to Vortex Mod Manager. Steam and Epic supported.",
+        "long": "This extension adds The Lord of the Rings: Return to Moria modding support to Vortex Mod Manager.\n<br />\n<br />[size=3][b]✅ Supported Versions:\n<br />[/b][/size][list]\n<br />[*]Steam\n<br />[*]Epic\n<br />[*]Other versions may need to select the game folder manually.\n<br />[/list]\n<br />[size=3][b]⚠️ IMPORTANT: \n<br />[/b][list]\n<br />[*][size=3][color=#ea9999][b]This game does not support symlinks. You must have the mod staging folder and the game on the same drive to use this extension. [/b][/color][/size]\n<br />[/list][/size]\n<br />[size=3][b]?️ Mod Installation Notes:  [/b][/size][list]\n<br />[*]UE Pak (.pak/.ucas/.utoc) mods will be installed to the correct \"Paks/~mods\" folder automatically and are sortable in the Load Order tab.  FOMOD installers will place files here, but they will not be sortable in the Load Order.\n<br />[*]The UE4SS mod will be installed next to the game's shipping executable. This extension is setup for the new UE4SS folder structure \"ue4ss/Mods\".\n<br />[*]UE4SS Script mods will be installed to the \"ue4ss/Mods\" folder. An \"enabled.txt\" file will be written to the mod if it was not included by the author.\n<br />[*]UE4SS DLL mods will be installed to the \"ue4ss/Mods\" folder. An \"enabled.txt\" file will be written to the mod if it was not included by the author.\n<br />[*]UE4SS LogicMod (Blueprint) mods will be installed to the \"Paks/LogicMods\" folder. [color=#ffe599]The mod MUST include a \"LogicMods\" folder above the pak files to trigger this installer.[/color]\n<br />[*]Installs mods containing a \"Moria\" folder to the game root folder.\n<br />[*]Installs mods with any of ['Content', 'Binaries', 'Plugins', 'Mods'] folders inside the \"Moria\" folder.\n<br />[*]Config files (.ini) are installed to the correct folder. - [i]Only works if game, staging folder, and user folder are ALL on C Drive[i] (limitation of hardlinks).[/i][/i]\n<br />[*]Save files (.sav) are installed to the correct folder. - [i]Only works if game, staging folder, and user folder are ALL on C Drive[i] (limitation of hardlinks). - Only for Steam game version.[/i][/i]\n<br />[*]Any other mods not described above will be installed in the \"Binaries\" folder by the shipping executable. \n<br />[/list]\n<br />\n<br />[size=3][b]? Mod Author Notes:\n<br />[/b][/size][list]\n<br />[*][size=2]UE4SS LogicMod (Blueprint) Mod Authors - You MUST include a \"LogicMods\" folder above your .pak file in order for this extension to install the mod to the correct location. Without this, there is no way to differentiate between LogicMod paks and regular pak mods. [/size]\n<br />[/list]\n<br />\n<br />[b][size=3]? Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[*][size=2][color=#f9cb9c][b]You can download UE4SS from GitHub using the button within the folder icon on the Mods toolbar. [/b][/color][/size]\n<br />[/list][color=#f9cb9c][size=2]\n<br />[img]https://i.imgur.com/h8UqsG3.png[/img]\n<br />\n<br />\n<br />[/size][/color][size=3][b]? Credits:\n<br />[/b][list]\n<br />[*]Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I have customized for this extension. \n<br />[*]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />[/list][/size]\n<br />\n<br />[b][size=4]❤️ Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 4,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1635/1635-1768585641-1987720156.jpg",
+      "name": "The Lord of the Rings Return to Moria Vortex Extension",
+      "timestamp": 1768585762,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "The Lord of the Rings: Return to Moria"
     }
   ]
 }
