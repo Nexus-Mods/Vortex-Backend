@@ -57,7 +57,7 @@ jobs:
           # Build the domain list for Slack (using mrkdwn format)
           DOMAIN_LIST=$(echo "$NEW_GAMES" | jq -r '.[] |
             if .gameId then
-              "• *\(.gameName // .name)* — <https://www.nexusmods.com/\(.gameId)/|\(.gameId)>"
+              "• *\(.gameName // .name)* — https://www.nexusmods.com/\(.gameId)/"
             else
               "• *\(.gameName // .name)* — _domain not available (modId: \(.modId))_"
             end
