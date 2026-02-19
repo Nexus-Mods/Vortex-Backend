@@ -2,7 +2,7 @@ import { parse } from "csv-parse";
 import { DownloadStats, ExtensionType, IAvailableExtension, IExtensionManifest, IExtraInfo, ModDownloadStats, Rejected } from "./types";
 import * as fs from 'fs-extra';
 import * as path from 'path';
-import Nexus, { IUpdateEntry, IModInfo, IFileInfo } from '@nexusmods/nexus-api';
+import Nexus, { IUpdateEntry, IModInfo, IFileInfo, IGameListEntry } from '@nexusmods/nexus-api';
 import * as semver from 'semver';
 import { CleanOptions, GitError, SimpleGit, simpleGit } from 'simple-git';
 import { exit } from "process";
@@ -177,6 +177,9 @@ class Driver {
 
     // get updated info from the vortex-games repo
     await this.processGames();
+
+    // backfill gameId for game extensions that are missing it
+    await this.backfillGameIds();
 
     // update last updated timestamp
     this.manifest.last_updated = now;
@@ -574,6 +577,40 @@ class Driver {
   }
 
   
+
+  private async backfillGameIds() {
+    const missing = this.manifest.extensions.filter(ext => ext.type === 'game' && ext.gameName && !ext.gameId);
+
+    if (missing.length === 0) {
+      console.log('No game extensions missing gameId.');
+      return;
+    }
+
+    console.log(`Backfilling gameId for ${missing.length} game extension(s)...`);
+
+    const nexus = await Nexus.create(this.nexusApiKey, 'backfill-game-ids', this.mPackage.version, 'site');
+    const allGames = await nexus.getGames();
+
+    // Build a lookup map from game name to domain_name
+    const gamesByName = new Map<string, string>();
+    for (const game of allGames) {
+      gamesByName.set(game.name.toLowerCase(), game.domain_name);
+    }
+
+    let backfilled = 0;
+    for (const ext of missing) {
+      const domain = gamesByName.get(ext.gameName!.toLowerCase());
+      if (domain) {
+        ext.gameId = domain;
+        backfilled++;
+        console.log(`  Backfilled: ${ext.gameName} -> ${domain}`);
+      } else {
+        console.log(`  No match found for: ${ext.gameName} (modId: ${ext.modId})`);
+      }
+    }
+
+    console.log(`Backfilled gameId for ${backfilled}/${missing.length} game extension(s).`);
+  }
 
   private removeNexusMod(entry: IAvailableExtension) {
     // we don't actually remove the entry in the manifest, we just reduce the object to just the modId and fileId
