@@ -248,6 +248,9 @@ class Driver {
     // use game name from game page
     extension.gameName = gameInfo.name;
 
+    // store the game domain for Nexus URL construction
+    extension.gameId = gameInfo.domain_name;
+
     return extension;
   }
 
