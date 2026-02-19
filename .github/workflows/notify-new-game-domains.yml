@@ -1,7 +1,7 @@
 name: Notify New Game Domains
 
 # Manually triggered workflow that detects game extensions added to the manifest
-# today and notifies the bot-app Slack channel about which domains need the
+# today and notifies the bot-github-vortex Slack channel about which domains need the
 # "Download with Mod Manager" button enabled.
 
 on:
@@ -20,8 +20,9 @@ jobs:
       - name: Check for new game extensions added today and notify Slack
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          # Set the SLACK_CHANNEL_BOT_APP repository variable to the bot-app channel ID
-          SLACK_CHANNEL: ${{ vars.SLACK_CHANNEL_BOT_APP }}
+          SLACK_SIGNING_SECRET: ${{ secrets.SLACK_SIGNING_SECRET }}
+          # bot-github-vortex channel (same as constants.ts SLACK_CHANNEL)
+          SLACK_CHANNEL: 'C05009EK5R6'
         run: |
           # Find the last commit before today (midnight UTC)
           TODAY=$(date -u +%Y-%m-%dT00:00:00Z)
