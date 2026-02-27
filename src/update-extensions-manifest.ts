@@ -281,6 +281,17 @@ class Driver {
         let versionRequirement;
 
         const filteredFiles = mainFiles.filter((iter) => {
+          if (!iter.description) {
+            console.warn(`File with null/undefined description found:`, {
+              modId: modInfo.mod_id,
+              modName: modInfo.name,
+              fileId: iter.file_id,
+              fileName: iter.file_name,
+              categoryId: iter.category_id,
+              version: iter.version
+            });
+            return true;
+          }
           versionRequirement = iter.description.replace(HTML_REGEX, (i) => htmlMap[i]).match(VERSION_MATCH_REGEX);
           if (versionRequirement === null) {
             return true;
