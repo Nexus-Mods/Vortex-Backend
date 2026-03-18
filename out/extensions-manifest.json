@@ -1,5 +1,5 @@
 {
-  "last_updated": 1773832422368,
+  "last_updated": 1773832689281,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13318,6 +13318,25 @@
       "tags": [],
       "version": "1.8.11",
       "type": null
+    },
+    {
+      "modId": 1574,
+      "fileId": 6504,
+      "author": "ST4RlessNight",
+      "uploader": "ST4RlessNight",
+      "description": {
+        "short": "Traditional Chinese Translation for Vortex",
+        "long": "[b]\n<br />[size=4]適用於Vortex的繁體中文翻譯[/size][/b]\n<br />\n<br />------------------------------------------------------------------------------------------------------------\n<br />\n<br />Vortex版本：1.15.2\n<br />\n<br />作者：ST4RlessNight\n<br />\n<br />------------------------------------------------------------------------------------------------------------\n<br />\n<br />[size=3][b]安裝方法[/b][/size]\n<br />\n<br />[list=1]\n<br />[*][b][size=3]手動安裝[/size][/b]\n<br />Win+R 打開 執行\n<br />輸入 %appdata% ，並按下 Enter\n<br />進入到 C:&#92;Users&#92;使用者名稱&#92;AppData&#92;Roaming&#92;Vortex\n<br />建立名為 locales 的資料夾\n<br />下載翻譯檔案並解壓縮 \n<br />將解壓縮後的 zh 資料夾，放進 locales 資料夾裡面\n<br />打開Vortex\n<br />點擊左側 Settings &gt; Interface &gt; Language\n<br />選擇 中文\n<br />重新開啟 Vortex 即可。            \n<br />          \n<br />          \n<br />          \n<br />            \n<br />         \n<br />\n<br />[*][b][size=3]透過Vortex安裝[/size][/b]\n<br />下載翻譯檔案\n<br />打開 Vortex\n<br />點擊左側的 Extensions\n<br />將下載的檔案拖曳至介面右下角\n<br />重新開啟 Vortex\n<br />點擊左側 Settings &gt; Interface &gt; Language \n<br />選擇 中文\n<br />再重新開啟Vortex即可。\n<br />\n<br />[/list]\n<br />------------------------------------------------------------------------------------------------------------\n<br />\n<br />[b]使用工具\n<br />[/b]\n<br />Translation Helper byTannin42 ([url=https://www.nexusmods.com/site/mods/28]https://www.nexusmods.com/site/mods/28[/url]) \n<br />Claude 與 Chatgpt 進行翻譯\n<br />大部分內容有進行一次校對\n<br />\n<br />\n<br />因為Vortex運作方式的關係\n<br />所以沒有進入某些功能介面時\n<br />就不會生成文本\n<br />可能會有部分翻譯遺漏"
+      },
+      "downloads": 547,
+      "endorsements": 6,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1574/1574-1765999462-1035077330.png",
+      "name": "Vortex - Traditional Chinese Translation",
+      "timestamp": 1765998386,
+      "tags": [],
+      "version": "1.15.2",
+      "type": "translation",
+      "language": "zh"
     }
   ]
 }
