@@ -1,5 +1,5 @@
 {
-  "last_updated": 1773832299541,
+  "last_updated": 1773832422368,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13300,6 +13300,24 @@
       "type": "game",
       "gameName": "Roadside Research",
       "gameId": "roadsideresearch"
+    },
+    {
+      "modId": 1582,
+      "fileId": 6664,
+      "author": "Kramer7046",
+      "uploader": "Kramer7046",
+      "description": {
+        "short": "Automatically installs and cleans up Fallout 76 loading screen images using a Vortex extension. Safe, deploy-based, no game file edits.",
+        "long": "Loading Screen Installer [b](v1.8.11)[/b] is a Vortex extension for [b]Fallout 76[/b] that installs and removes custom loading screens by copying PNGs into your in-game [b]Photo Gallery[/b] folder.\n<br />\n<br />Fallout 76 loads custom loading screens from:\n<br />[code]%USERPROFILE%&#92;Documents&#92;My Games&#92;Fallout 76&#92;Photos&#92;&lt;UserFolder&gt;&#92;[/code]\n<br />Vortex can’t deploy files directly into [b]Documents[/b], so this extension runs after Deploy (or on-demand) and safely copies images from a selected “Loading Screens” mod into the correct Photos subfolder.\n<br />\n<br />[line]\n<br />Features (v1.8.11)[list]\n<br />[*][b]Destination picker in Vortex (no JSON editing)[/b]\n<br />[list]\n<br />[*]Choose the correct\n<br />[code]Photos&#92;&lt;UserFolder&gt;[/code] from a detected list or enter a custom folder name[*]Destination preview + warnings if the folder looks missing/empty\n<br />[/list][*][b]Run automatically after Deploy[/b] (toggle)\n<br />[*][b]Install/Sync Now[/b] button (manual run)\n<br />[*]Source selection options:\n<br />[list]\n<br />[*]Auto-detect the best loading screen pack [b]or pin a specific mod[/b]\n<br />[/list][*][b]Confirm/Preview[/b] option before applying changes\n<br />[*][b]Backups before overwrite/delete[/b] (optional) + [b]Restore last backup[/b]\n<br />[*][b]Safe cleanup (tracked-only):[/b] only removes files the extension previously copied (never touches user photos)\n<br />[*]Performance/stability:\n<br />[list]\n<br />[*]Deploy [b]cooldown[/b] to prevent duplicate runs\n<br />[*]Optional [b]progress updates[/b]\n<br />[*][b]No-op detection[/b] (“No changes detected”)\n<br />[*]Optional [b]skip identical files[/b] (size-based) and optional [b]hash verification[/b] (most accurate)\n<br />[/list][*]Selection controls:\n<br />[list]\n<br />[*]Optional [b]max full-size images[/b] cap (0 = unlimited)\n<br />[*]Optional subset modes: [b]Seeded (stable)[/b] or [b]Daily rotation[/b]\n<br />[*]Optional custom seed\n<br />[/list][*]Handles duplicate filenames via selectable [b]collision policy[/b]\n<br />[*]Troubleshooting tools:\n<br />[list]\n<br />[*][b]Diagnostics[/b] (copy/write)\n<br />[*][b]Support Bundle[/b] generator (optional path redaction)\n<br />[*]Maintenance tools (reset settings, clear overrides)\n<br />[/list][/list]Windows only. Works with Steam / Microsoft Store / Game Pass installs.\n<br />\n<br />[line]\n<br />First-time setup (required)Fallout 76 does not create your Photos subfolder until you take at least one picture:\n<br />[list=1]\n<br />[*]Launch Fallout 76\n<br />\n<br />[*]Enter Photo Mode and take [b]1 picture[/b]\n<br />\n<br />[*]Close the game\n<br />\n<br />[/list]Then select your Photos subfolder in:\n<br />[b]Vortex → Settings → Loading Screens\n<br />[/b]\n<br />[line]\n<br />Install[list=1]\n<br />[*]Download the extension ZIP\n<br />\n<br />[*]Vortex → [b]Extensions → Install From File[/b] → select the ZIP\n<br />\n<br />[*]Restart Vortex if prompted\n<br />\n<br />[*]Install and enable a loading screen PNG pack as a normal Vortex mod\n<br />\n<br />[*]Click [b]Deploy[/b] (or use [b]Install/Sync Now[/b] in Settings)\n<br />\n<br />[/list][line]\n<br />Settings (v1.8.11)Vortex UI: [b]Settings → Loading Screens[/b]\n<br />Config file:\n<br />[code]%USERPROFILE%&#92;Documents&#92;My Games&#92;Fallout 76&#92;LoadingScreenInstaller&#92;config.json\n<br />[/code]\n<br />[line]\n<br />Uninstall / cleanup[b]Remove a loading screen pack (keep the extension):[/b]\n<br />[list]\n<br />[*]Disable/uninstall the pack in Vortex\n<br />[*]Click Deploy (or Install/Sync Now)\n<br />[*]The extension removes only files it previously copied (tracked)\n<br />[/list][b]Remove the extension:[/b]\n<br />[list]\n<br />[*]Disable/remove it in Extensions\n<br />[*]Optional: delete\n<br />[code]%USERPROFILE%&#92;Documents&#92;My Games&#92;Fallout 76&#92;LoadingScreenInstaller&#92;[/code][/list]\n<br />[line]\n<br />Safety / Ban risk - This extension does [b]not[/b] modify the game executable, inject DLLs, hook memory, or change gameplay. It only copies/removes image files in the user’s Photo Gallery folder that Fallout 76 already uses for loading screens."
+      },
+      "downloads": 53,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1582/1582-1768094560-1467588423.png",
+      "name": "Loading Screen Installer",
+      "timestamp": 1768091714,
+      "tags": [],
+      "version": "1.8.11",
+      "type": null
     }
   ]
 }
