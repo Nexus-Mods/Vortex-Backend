@@ -1,5 +1,5 @@
 {
-  "last_updated": 1773832013537,
+  "last_updated": 1773832299541,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13280,6 +13280,26 @@
       "type": "game",
       "gameName": "Monster Hunter Stories 3 Twisted Reflection",
       "gameId": "monsterhunterstories3twistedreflection"
+    },
+    {
+      "modId": 1692,
+      "fileId": 6992,
+      "author": "Nanatsu",
+      "uploader": "nanatsu50",
+      "description": {
+        "short": "Adds Roadside Research to Vortex Mod Manager. Installs BepInEx automatically. Supports Steam and (experimental) Game Pass.",
+        "long": "[size=4][b]Features[/b][/size][list]\n<br />[*]Registers [b]Roadside Research[/b] as a supported game in Vortex.\n<br />[*]Installs [b]BepInEx 6 (Unity.IL2CPP, win-x64) – pinned to bleeding-edge build be.752[/b] automatically.\n<br />[*]Deploys BepInEx mods to [b][color=#a4c2f4]BepInEx/plugins[/color][/b]\n<br /> using Vortex’s BepInEx integration.[*]Patches [b][color=#9fc5e8]BepInEx/config/BepInEx.cfg[/color][/b]\n<br /> to set:[list]\n<br />[*][code][Logging] UnityLogListening = false[/code]\n<br />(prevents a first-launch crash seen in some Unity 6000 IL2CPP titles)[/list][/list][b][size=4]Requirements[/size][/b][list]\n<br />[*]Windows (x64)\n<br />[*]Vortex Mod Manager (with bundled BepInEx support / [color=#9fc5e8][b]modtype-bepinex[/b][/color])\n<br />[*]Roadside Research:\n<br />[list]\n<br />[*][b]Steam[/b]: supported via Steam AppID detection\n<br />[*][b]Game Pass (Xbox app / Microsoft Store)[/b]: [b]best-effort[/b] detection (see notes)\n<br />[/list][/list][b][size=4]How to Use[/size][/b][list=1]\n<br />[*]Install this extension in Vortex (Install From File).\n<br />[*]Enable [i]Roadside Research[/i] game mode in Vortex.\n<br />[*]The extension will auto-download &amp; install [b]BepInEx be.752 (IL2CPP x64)[/b].\n<br />[*]Install BepInEx mods normally via Vortex. They will be deployed into [b][color=#9fc5e8]BepInEx/plugins.[/color][/b]\n<br />\n<br />[/list][b][size=4]Game Pass Notes (Experimental)[/size][/b][list]\n<br />[*]Auto-detection may fail depending on your install location.\n<br />[*]If Vortex cannot find the game, set the game folder manually in Vortex.\n<br />[*]Installs inside protected [b]WindowsApps[/b] locations may be problematic; a modifiable install location is recommended.\n<br />[/list][b][size=4]SemVer / Version Display Note[/size][/b][list]\n<br />[*]Vortex requires a stable SemVer for IL2CPP BepInEx support.\n<br />The installed package is [b]be.752[/b], but it may be [b]registered/displayed as “6.0.0”[/b] in Vortex to satisfy the check. This is expected.[/list]\n<br />[line]\n<br />If you enjoy this mod, please buy me a [url=https://ko-fi.com/nanatsu50]coffee[/url] ☕\n<br />\n<br />[url=https://ko-fi.com/nanatsu50][img]https://ul.h3z.jp/aioFxHOk.png[/img][/url]"
+      },
+      "downloads": 46,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1692/1692-1771136602-1325822804.jpg",
+      "name": "Roadside Research Vortex Extension",
+      "timestamp": 1771136752,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Roadside Research",
+      "gameId": "roadsideresearch"
     }
   ]
 }
