@@ -9860,7 +9860,10 @@
       "name": "Dead Rising Deluxe Remaster Vortex Extension",
       "timestamp": 1774385794,
       "tags": [],
-      "version": "0.3.1"
+      "version": "0.3.1",
+      "type": "game",
+      "gameName": "Dead Rising Deluxe Remaster",
+      "gameId": "deadrisingdeluxeremaster"
     },
     {
       "modId": 1048,
