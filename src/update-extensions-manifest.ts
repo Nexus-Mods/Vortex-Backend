@@ -235,7 +235,9 @@ class Driver {
           return Promise.resolve();
         }
 
-        if (modInfo.picture_url === null) {
+        const existing = this.manifest.extensions.find((ext) => ext.modId === entry);
+
+        if (modInfo.picture_url === null && existing === undefined) {
           console.error(`${entry}: Missing picture_url`, { modId: entry });
           return Promise.resolve();
         }
@@ -268,9 +270,6 @@ class Driver {
         //await Promise.all(Object.keys(this.mState).map(async version => {
 
         //const version = LATEST_VERSION;
-
-        // get existing extension data for this file version
-        const existing = this.manifest.extensions.find((ext) => ext.modId === entry);
 
         const refVersionLow = '1.8.0';
         const refVersionHigh = '1.9.12';
