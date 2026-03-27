@@ -359,6 +359,9 @@ class Driver {
 
             if (updated || existing.name !== undefined) {
               //if (supported) {
+                // preserve existing image in case API returns null
+                const existingImage = existing.image;
+
                 // make a new extension and then assign to existing. saves us duplicating code
                 Object.assign(existing, this.makeExtension(modInfo, latestFile, type!, extraInfo));
 
@@ -375,7 +378,7 @@ class Driver {
                 short: modInfo.summary ?? '',
                 long: modInfo.description ?? '',
               };
-              existing.image = modInfo.picture_url ?? existing.image;
+              existing.image = modInfo.picture_url ?? existingImage;
               existing.name = modInfo.name;
               existing.uploader = modInfo.uploaded_by;
               existing.type = type;
