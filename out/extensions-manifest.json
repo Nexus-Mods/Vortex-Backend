@@ -1,5 +1,5 @@
 {
-  "last_updated": 1775124129494,
+  "last_updated": 1775124633494,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13377,6 +13377,26 @@
       "type": "game",
       "gameName": "Windrose",
       "gameId": "windrose"
+    },
+    {
+      "modId": 1760,
+      "fileId": 7367,
+      "author": "RBNebula",
+      "uploader": "RBNebula",
+      "description": {
+        "short": "Adds Vortex support for MineMogul.",
+        "long": "[center][color=#00ffff][size=6][b]MineMogul Vortex Extension[/b][/size][/color][/center]\n<br />[center][color=#B0B0B0]Adds Vortex support for MineMogul with automatic BepInEx setup and plugin mod installation.[/color][/center]\n<br />[line]\n<br />\n<br />[center][size=5][b][color=#3FE3FF]Overview[/color][/b][/size][/center]\n<br />\n<br />[quote][center]\n<br />This extension adds native Vortex support for [b]MineMogul[/b].\n<br />\n<br />It lets Vortex detect the game, manage MineMogul mods, and automatically set up the required \n<br />[b]BepInEx[/b] framework so players can install supported mod archives directly through Vortex.\n<br />[/center]\n<br />[/quote]\n<br />[line]\n<br />[center][size=5][b][color=#3FE3FF]Features[/color][/b][/size][/center]\n<br />\n<br />[list]\n<br />[*]Adds Vortex support for [b]MineMogul[/b][/*]\n<br />[*]Detects the Steam version of the game[/*]\n<br />[*]Uses Vortex's built-in [b]BepInEx[/b] integration[/*]\n<br />[*]Automatically downloads and installs the required [b]BepInEx[/b] package[/*]\n<br />[*]Supports standard MineMogul [b]BepInEx plugin mods[/b][/*]\n<br />[*]Supports MineMogul [b]save-file installs[/b][/*]\n<br />[/list]\n<br />[line]\n<br />[center][size=5][b][color=#3FE3FF]How To Use[/color][/b][/size][/center]\n<br />\n<br />[list=1]\n<br />[*]Install this extension in Vortex[/*]\n<br />[*]Click [b]Games[/b] on the navigation menu[/*]\n<br />[*]Search for [b]MineMogul[/b][/*]\n<br />[*]Click [b]Manage[/b][/*]\n<br />[*]Let Vortex install BepInEx when prompted[/*]\n<br />[*](For now) download mods from [url=https://www.nexusmods.com/games/minemogul]Nexus Mods[/url][/*]\n<br />[*]In the MineMogul [b]Mods[/b] section, click [b]Install From File[/b] and select the downloaded zip\n<br />or drag and drop the zip file into the drop area at the bottom of the Mods tab[/*]\n<br />[/list]\n<br />[line]\n<br />[center][size=5][b][color=#3FE3FF]Requirements[/color][/b][/size][/center]\n<br />\n<br />[list]\n<br />[*][b]MineMogul[/b][/*]\n<br />[*][b]Vortex Mod Manager[/b][/*]\n<br />[/list]\n<br />[line]\n<br />[center][size=5][b][color=#3FE3FF]Notes[/color][/b][/size][/center]\n<br />\n<br />[list]\n<br />[*]Tested with MineMogul on Steam[/*]\n<br />[*]BepInEx is handled automatically through Vortex[/*]\n<br />[*]MineMogul mod archives should be installed as their original [b].zip[/b] files and should not be extracted first[/*]\n<br />[/list]"
+      },
+      "downloads": 5,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1760/1760-1774821113-1002307745.png",
+      "name": "MineMogul Vortex Extension",
+      "timestamp": 1774821274,
+      "tags": [],
+      "version": "0.1.2",
+      "type": "game",
+      "gameName": "MineMogul",
+      "gameId": "minemogul"
     }
   ]
 }
