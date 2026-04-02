@@ -1,5 +1,5 @@
 {
-  "last_updated": 1775124633494,
+  "last_updated": 1775124922560,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13397,6 +13397,26 @@
       "type": "game",
       "gameName": "MineMogul",
       "gameId": "minemogul"
+    },
+    {
+      "modId": 1765,
+      "fileId": 7390,
+      "author": "Carricus",
+      "uploader": "Carricus",
+      "description": {
+        "short": "This extension will provide basic support for mods in My Hero Ultra Rumble.",
+        "long": "[size=4][b]Description[/b][/size]\n<br />[size=3][color=#D4D4D8]Describe the main purpose of your mod[/color][/size]\n<br />\n<br />[color=#D4D4D8]This extension will provide basic support for mods in My Hero Ultra Rumble.[/color]\n<br />[color=#D4D4D8]After this is accepted I will try adding a mod installer to this extension.[/color]\n<br />\n<br />\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />Basic functionality in the Vortex Application\n<br />\n<br />\n<br />"
+      },
+      "downloads": 2,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1765/1765-1774992570-189277803.jpg",
+      "name": "My Hero Ultra Rumble (MHUR) Game Extension",
+      "timestamp": 1774992764,
+      "tags": [],
+      "version": "0.0.1",
+      "type": "game",
+      "gameName": "My Hero Ultra Rumble",
+      "gameId": "myheroultrarumble"
     }
   ]
 }
