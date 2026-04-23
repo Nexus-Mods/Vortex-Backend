@@ -1,5 +1,5 @@
 {
-  "last_updated": 1776941358703,
+  "last_updated": 1776941431523,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13437,6 +13437,26 @@
       "type": "game",
       "gameName": "Story of Seasons: Grand Bazaar",
       "gameId": "storyofseasonsgrandbazaar"
+    },
+    {
+      "modId": 1785,
+      "fileId": 7642,
+      "author": "ChemBoy1",
+      "uploader": "ChemBoy1",
+      "description": {
+        "short": "Adds FANTASY LIFE i: The Girl Who Steals Time modding support to Vortex Mod Manager. Steam supported.",
+        "long": "This extension adds FANTASY LIFE i: The Girl Who Steals Time modding support to Vortex Mod Manager.\n<br />\n<br />[size=3][b]✅ Supported Versions:\n<br />[/b][/size][list]\n<br />[*]Steam\n<br />[*]Other versions may need to select the game folder manually.\n<br />[/list][size=3][b]🛠️ Mod Installation Notes:  [/b][/size][list]\n<br />[*]UE Pak (.pak/.ucas/.utoc) mods will be installed to the correct \"Paks/~mods\" folder automatically and are sortable in the Load Order tab.  FOMOD installers will place files here, but they will not be sortable in the Load Order.\n<br />[*]Installs mods containing a \"Game\" folder to the game root folder.\n<br />[*]Installs mods with any of ['Content', 'Binaries', 'Mods'] folders inside the \"Game\" folder.\n<br />[*]Any other mods not described above will be installed in the \"Binaries\" folder by the shipping executable. \n<br />[/list][size=3][b]👀 Mod Author Notes:\n<br />[/b][/size][list]\n<br />[*][size=2]UE4SS LogicMod (Blueprint) Mod Authors - You MUST include a \"LogicMods\" folder above your .pak file in order for this extension to install the mod to the correct location. Without this, there is no way to differentiate between LogicMod paks and regular pak mods. [/size]\n<br />[/list][size=2]\n<br />[/size][b][size=3]📋 Usage Notes:[/size]\n<br />[/b][list]\n<br />[*][size=2]You can open several useful files and folders using the buttons within the folder icon on the Mods toolbar. [/size]\n<br />[/list][color=#f9cb9c][size=2]\n<br />[img]https://live.staticflickr.com/65535/55187947491_4afe253b94_c.jpg[/img]\n<br />\n<br />\n<br />[/size][/color][size=3][b]🙏 Credits:\n<br />[/b][list]\n<br />[*]Credit to [url=https://next.nexusmods.com/profile/Pickysaurus/about-me]Pickysaurus[/url]  (Nexus Mods Community Manager) for his Unreal Engine Mod Installer extension, which I have customized for this extension. \n<br />[*]Credit to BeYkeRYkt and his Ready Or Not Vortex extension for some FBLO functions.\n<br />[*]Credit to [url=https://next.nexusmods.com/profile/Nagev/about-me]Nagev[/url] (Nexus Mods Vortex Developer) for his support on helping me learn to make Vortex extensions, and being patient when I break things :)\n<br />[/list][/size]\n<br />\n<br />[b][size=4]❤️ Support the Mod Author: [/size]\n<br />[/b][size=3]If you would like to support my work, you can do so below. Your support is greatly appreciated![/size]\n<br />\n<br />\n<br />[url=https://www.paypal.com/donate/?hosted_button_id=ZFE99JKP43D2G][img]https://live.staticflickr.com/65535/54395661414_10e6ef111d_m.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://ko-fi.com/chemboy1nexusmods/][img]https://live.staticflickr.com/65535/54380730333_357df43249_n.jpg[/img][/url]\n<br />\n<br />\n<br />[url=https://buymeacoffee.com/chemboy1/][img]https://live.staticflickr.com/65535/54379586002_8dcc6370e5_m.jpg[/img]\n<br />[/url]"
+      },
+      "downloads": 4,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1785/1785-1775346743-1622849714.jpg",
+      "name": "FANTASY LIFE i The Girl Who Steals Time Vortex Extension",
+      "timestamp": 1776867911,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Fantasy Life i: The Girl who Steals Time",
+      "gameId": "fantasylifeithegirlwhostealstime"
     }
   ]
 }
