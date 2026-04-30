@@ -1,5 +1,5 @@
 {
-  "last_updated": 1777548698567,
+  "last_updated": 1777549096619,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13657,6 +13657,26 @@
       "type": "game",
       "gameName": "Green Hell",
       "gameId": "greenhell"
+    },
+    {
+      "modId": 1750,
+      "fileId": 7722,
+      "author": "toebeann",
+      "uploader": "toebeann",
+      "description": {
+        "short": "Provides support for Megastore Simulator to Vortex!",
+        "long": "[size=6]Features[/size]\n<br />\n<br />[list]\n<br />[*][size=3]Provides support for Megastore Simulator to [url=https://www.nexusmods.com/about/vortex/]Vortex[/url][/size][/*]\n<br />[*][size=3]Automatically detects mod types and installs them to the appropriate locations e.g. Tobey's BepInEx pack, BepInEx plugins, Additional Products packs, config files, save files, etc.[/size][/*]\n<br />[*][size=3]Detects when the game has been updated and informs you that your mods might need to be updated[/size][/*]\n<br />[*][size=3]Provides easy access to Megastore Simulator's save folder, BepInEx log file and more via the \"Open...\" button on the Mods tab[/size][/*]\n<br />[/list][line]\n<br />[size=6]How to install[/size]\n<br />\n<br />[quote][size=4][b]⚠️ [color=#ffd966]Warning[/color][/b][/size]\n<br />\n<br />[size=4][b]This extension was developed against [url=https://www.nexusmods.com/about/vortex/]Vortex Mod Manager[/url] v1.16.7, and as such I recommend you have at least this version of Vortex installed. I cannot guarantee this extension will function correctly for older versions.[/b][/size][/quote][size=3]Assuming you have [url=https://www.nexusmods.com/about/vortex/]Vortex[/url] installed, you should be able to simply click the Vortex button at the top of this page to open the extension within Vortex, and then click [b]Install[/b], restarting Vortex when prompted.[/size]\n<br />\n<br />[size=3]If that doesn't work for whatever reason, you can alternatively install the extension manually by downloading the main file, and then you can simply drag-and-drop it into the [b]Drop File(s)[/b] area at the bottom of the [b]Extensions[/b] tab in Vortex, restarting Vortex when prompted.[/size]\n<br />\n<br />[line]\n<br />\n<br />[center]﻿[url=https://ko-fi.com/toebean_][img]https://uploads-ssl.webflow.com/5c14e387dab576fe667689cf/61e11d503cc13747866d338b_Button-2-p-800.png[/img][/url]﻿[/center]\n<br />[line]\n<br />[size=6]How can I make my mod compatible with this extension?[/size]\n<br />\n<br />[size=3]Most mods should work as-is. I will be adding support for more mod types as needed when mods get uploaded to Nexus, and I plan to shortly add support for BepInEx patchers, hybrid mods, and more very soon, but for now I just wanted to get a simple v1.0 available for the mods that already exist.[/size]\n<br />\n<br />[size=3]If you have developed a mod and find that it is not being correctly installed via this extension, reach out to me either via [url=?tab=posts]the posts tab[/url], the [url=https://github.com/toebeann/megastore-simulator-vortex-extension/issues]GitHub issues[/url] tracker, or ping me (@toebean) in the #dev-chat channel of the [url=https://discord.gg/9KrRZx7akG]Modded Megastore Simulator discord server[/url]. Ideally provide me with a link to your mod page, or an example archive and some info on how it should be installed. I'll make sure to get back to you as soon as I can to let you know whether I will be able to add support for your mod to the extension, and give you tips for how to handle it in the meantime.[/size]\n<br />\n<br />[line]\n<br />[size=4][url=https://github.com/toebeann/megastore-simulator-vortex-extension]View the source code on GitHub[/url][/size]"
+      },
+      "downloads": 46,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1750/1750-1776798396-2130447393.png",
+      "name": "Megastore Simulator Vortex Extension",
+      "timestamp": 1777451848,
+      "tags": [],
+      "version": "1.3.7",
+      "type": "game",
+      "gameName": "Megastore Simulator",
+      "gameId": "megastoresimulator"
     }
   ]
 }
