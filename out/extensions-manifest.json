@@ -1,5 +1,5 @@
 {
-  "last_updated": 1777549731683,
+  "last_updated": 1777550186611,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13737,6 +13737,26 @@
       "type": "game",
       "gameName": "Mad Max",
       "gameId": "madmax"
+    },
+    {
+      "modId": 1841,
+      "fileId": 7684,
+      "author": "RedFog18",
+      "uploader": "RedFog18",
+      "description": {
+        "short": "A bare bones icarus vortex intergration/extension",
+        "long": "[size=4][b]Description[/b][/size]\n<br />[color=#d4d4d8]Add Mod Integration Support For Icarus[/color]\n<br />"
+      },
+      "downloads": 3,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1841/1841-1777024410-1871007249.jpg",
+      "name": "Icarus Vortex Extension",
+      "timestamp": 1777025243,
+      "tags": [],
+      "version": "1.0.0.3",
+      "type": "game",
+      "gameName": "ICARUS",
+      "gameId": "icarus"
     }
   ]
 }
