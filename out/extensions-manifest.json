@@ -1,5 +1,5 @@
 {
-  "last_updated": 1777538049066,
+  "last_updated": 1777548698567,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13637,6 +13637,26 @@
       "type": "game",
       "gameName": "Pragmata",
       "gameId": "pragmata"
+    },
+    {
+      "modId": 1753,
+      "fileId": 7690,
+      "author": "Hotfuzz123",
+      "uploader": "Hotfuzz123",
+      "description": {
+        "short": "This extension will place whatever .dll files you package Into Green Hell/BepInEx/Plugins",
+        "long": "[size=4][b]Description[/b][/size]\n<br />Automatic Download lastest BepInEx from [url=https://github.com/BepInEx/BepInEx]Github[/url]\n<br />This extension will place whatever .dll files you package Into Green Hell/BepInEx/Plugins\n<br />All other file types (such as .png, .txt, .obj, etc.) will need to be structured exactly as the game is.\n<br />\n<br />Examples:\n<br />.assets or .resource: &#92;GH_Data&#92;files here\n<br />.png: &#92;BepInEx&#92;plugins&#92;TextureReplacer&#92;objects_textures&#92;files here\n<br />.obj: &#92;BepInEx&#92;plugins&#92;TextureReplacer&#92;meshes&#92;files here\n<br />\n<br />\n<br />Also Includes a BepInEx CFG To make sure config manager will work natively.\n<br />\n<br />Please feel free to reach out to us if you have any questions.\n<br />\n<br />Buy me some coffee if you like my work ?\n<br />https://buymeacoffee.com/hotfuzz123 "
+      },
+      "downloads": 9,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1753/1753-1774688045-1792048400.png",
+      "name": "Green Hell Extensions",
+      "timestamp": 1777054460,
+      "tags": [],
+      "version": "0.1.3",
+      "type": "game",
+      "gameName": "Green Hell",
+      "gameId": "greenhell"
     }
   ]
 }
