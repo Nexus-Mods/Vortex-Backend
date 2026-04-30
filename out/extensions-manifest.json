@@ -1,5 +1,5 @@
 {
-  "last_updated": 1777549226244,
+  "last_updated": 1777549602828,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13697,6 +13697,26 @@
       "type": "game",
       "gameName": "Raiders of Blackveil",
       "gameId": "raidersofblackveil"
+    },
+    {
+      "modId": 1780,
+      "fileId": 7435,
+      "author": "Interstellarcodes",
+      "uploader": "Interstellarcodes",
+      "description": {
+        "short": "Drop the game-retro-rewind folder into %APPDATA%&#92;Vortex&#92;plugins&#92; and restart Vortex",
+        "long": "This extension adds full Vortex mod manager support for Retro Rewind. Install and manage your .pak mods easily through Vortex."
+      },
+      "downloads": 56,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1780/1780-1775309647-1007785322.jpg",
+      "name": "Retro Rewind Vortex Extension",
+      "timestamp": 1775310166,
+      "tags": [],
+      "version": "1.0.0.",
+      "type": "game",
+      "gameName": "Retro Rewind - Video Store Simulator",
+      "gameId": "retrorewindvideostoresimulator"
     }
   ]
 }
