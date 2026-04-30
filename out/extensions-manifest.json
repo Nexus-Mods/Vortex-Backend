@@ -1,5 +1,5 @@
 {
-  "last_updated": 1777549096619,
+  "last_updated": 1777549226244,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13677,6 +13677,26 @@
       "type": "game",
       "gameName": "Megastore Simulator",
       "gameId": "megastoresimulator"
+    },
+    {
+      "modId": 1764,
+      "fileId": 7513,
+      "author": "christphe",
+      "uploader": "christphe",
+      "description": {
+        "short": "Adds Vortex support for Raiders of Blackveil.",
+        "long": "[size=4][b]Description[/b][/size]\n<br />Adds Vortex support for Raiders of Blackveil.\n<br />[line]\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[list]\n<br />[*]Install this extension in Vortex[/*]\n<br />[/list][list]\n<br />[*]Click [b]Games[/b] on the navigation menu[/*]\n<br />[/list][list]\n<br />[*]Search for [b]Raiders of Blackveil[/b][/*]\n<br />[/list][list]\n<br />[*]Click [b]Manage[/b][/*]\n<br />[/list][list]\n<br />[*]Install BepinEx BE from https://builds.bepinex.dev/projects/bepinex_be (BepInEx-Unity.Mono-win-x64-6.*) in game folder[/*]\n<br />[/list][line]\n<br />[size=4][b]Main features[/b][/size]\n<br />[list]\n<br />[*]Adds Vortex support for [b]Raiders of Blackveil[/b][/*]\n<br />[/list][list]\n<br />[*]Detects the Steam version of the game[/*]\n<br />[/list][list]\n<br />[*]Supports standard [b]BepInEx plugin mods[/b] (either with zip containing Bepinex/plugins/* structure, or just a dll)[/*]\n<br />[/list][line]\n<br />[size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*][color=#D4D4D8][size=3]Vortex[/size][/color][/*]\n<br />[/list][list]\n<br />[*][color=#D4D4D8][size=3]BepInEx BE[/size][/color][/*]\n<br />[/list]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1764/1764-1774980704-124606214.png",
+      "name": "Raiders of Blackveil Vortex Extension",
+      "timestamp": 1775852916,
+      "tags": [],
+      "version": "0.4.0",
+      "type": "game",
+      "gameName": "Raiders of Blackveil",
+      "gameId": "raidersofblackveil"
     }
   ]
 }
