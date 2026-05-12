@@ -6432,12 +6432,15 @@
       "fileId": 4764,
       "author": "Katycat",
       "uploader": "katycat6",
+      "type": "game",
+      "gameName": "Derail Valley",
+      "gameId": "derailvalley",
       "description": {
         "short": "Vortex Mod Manager support for Derail Valley mods, skins, custom cars, sounds, and maps.",
         "long": "[color=#6aa84f][size=4][b]Now compatible with DV: Simulator\n<br />[/b][/size][/color][color=#f1c232][size=4][b]Remember to check compatibility of other mods before installing! Many/most Overhauled mods are in need of updates![/b][/size][/color]\n<br />\n<br />Allows the management and automatic install of the most common mod types for Derail Valley:\n<br />\n<br />[list]\n<br />[*]Code Mods (DLL based mods)\n<br />[*]Skins ([url=https://www.nexusmods.com/derailvalley/mods/34]Skin Manager[/url]﻿ content) (both overhauled &amp; simulator versions)\n<br />\n<br />[*]New Maps ([url=https://www.nexusmods.com/derailvalley/mods/593]Mapify[/url]﻿ content)\n<br />[/list]\n<br />When first adding the Derail Valley profile to Vortex, you will be prompted to install Unity Mod Manager if it is not found on your system. The UMM extension will add a tool launcher to Vortex. [b]You must run the tool at least once and install UMM into Derail Valley using the \"doorstop proxy\" method before you will be able to run any mods.[/b] After the mod manager is installed into the game, if it continues to pop up when trying to launch Derail Valley, open the menu next to the tool icon and select \"unset as primary\".\n<br />\n<br />When installing any of the content type mods, you will be prompted to also install the corresponding content manager mod if it is missing. The extension also tries to detect skins that are bundled inside custom cars, and [url=https://www.nexusmods.com/derailvalley/mods/197]Number Manager[/url] configurations that are bundled within skins.\n<br />\n<br />Extension Source Code is hosted on [url=https://github.com/derail-valley-modding/vortex-extension]GitHub[/url]﻿ - please create a new issue there for any bugs you might encounter"
       },
-      "downloads": 4500,
-      "endorsements": 273,
+      "downloads": 4403,
+      "endorsements": 265,
       "image": "https://staticdelivery.nexusmods.com/mods/2295/images/527/527-1688322716-1789869958.jpeg",
       "name": "Derail Valley Vortex Support",
       "timestamp": 1740244672,
