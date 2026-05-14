@@ -1,5 +1,5 @@
 {
-  "last_updated": 1778747837857,
+  "last_updated": 1778795192641,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13780,6 +13780,26 @@
       "type": "game",
       "gameName": "Road to Vostok",
       "gameId": "roadtovostok"
+    },
+    {
+      "modId": 1891,
+      "fileId": 7857,
+      "author": "halgari",
+      "uploader": "halgari",
+      "description": {
+        "short": "Vortex support for Subnautica 2",
+        "long": "[size=4][b]Subnautica 2 modding support for Vortex[/b][/size]"
+      },
+      "downloads": 3,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1891/1891-1778765340-1002581242.jpg",
+      "name": "Subnautica 2 Support",
+      "timestamp": 1778781599,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Subnautica 2",
+      "gameId": "subnautica2"
     }
   ]
 }
