@@ -1,5 +1,5 @@
 {
-  "last_updated": 1779611773204,
+  "last_updated": 1779719877437,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13800,6 +13800,26 @@
       "type": "game",
       "gameName": "Subnautica 2",
       "gameId": "subnautica2"
+    },
+    {
+      "modId": 1917,
+      "fileId": 7965,
+      "author": "NexusMods",
+      "uploader": "NexusMods",
+      "description": {
+        "short": "Vortex Extension for Paralives",
+        "long": "This is an extension for [url=https://www.nexusmods.com/about/vortex/]Vortex[/url] to add modding support for Paralives.\n<br />\n<br />[b][size=4]Features[/size][/b]\n<br />[list]\n<br />[*]Basic game launching and mod install support[/*]\n<br />[*]Currently copies mod into the game folder, assuming they are formatted correctly to overlay over the game files[/*]\n<br />[*]Better mod format support coming in future versions of the extension, as new mod types emerge[/*]\n<br />[/list]\n<br />[b][size=4]Installation[/size][/b]\n<br />\n<br />This extension requires Vortex 1.9.10 or greater.\n<br />\n<br />To install, click the Vortex button at the top of the Paralives Extension page on Nexus Mods, and then click Install.\n<br />\n<br />You can also manually install it by clicking the Manual button at the top of the page and dragging it into the drop target labelled Drop File(s) in the Extensions page at the bottom right.\n<br />\n<br />Afterwards, restart Vortex and you can begin installing supported Paralives mods with Vortex.\n<br />If you've already got a previous version, the extension should auto update on a Vortex restart.\n<br />\n<br />\n<br />[b][size=4]Game detection[/size][/b]\n<br />\n<br />The Paralives game extension enables Vortex to automatically locate installs from Steam.\n<br />It is also possible to manually set the game folder if the auto detection doesn't find the correct installation. A valid Paralives game folder contains:\n<br />[code]paralives.exe[/code]If your game lacks this file then it is likely that your installation has become corrupted somehow.\n<br />\n<br />\n<br />[b][size=4]Mod Management[/size][/b]\n<br />\n<br />By default, Vortex will deploy files to the game's root folder and extracts the archive while preserving it's folder structure.\n<br />\n<br />\n<br />[b][size=5]See also[/size][/b]\n<br />\n<br />[list]\n<br />[*][url=https://www.nexusmods.com/games/paralives]Mods for Paralives[/url][/*]\n<br />[*][url=https://forums.nexusmods.com/index.php?/forum/4306-vortex-support/]Vortex Forum (Nexus Mods)[/url][/*]\n<br />[*][url=https://www.nexusmods.com/about/vortex/]Download Vortex (Nexus Mods)[/url][/*]\n<br />[/list]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1917/1917-1779390777-70336835.png",
+      "name": "Paralives Vortex Extension",
+      "timestamp": 1779719663,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Paralives",
+      "gameId": "paralives"
     }
   ]
 }
