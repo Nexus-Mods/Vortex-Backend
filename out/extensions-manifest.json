@@ -1,5 +1,5 @@
 {
-  "last_updated": 1779969947850,
+  "last_updated": 1780004433978,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13900,6 +13900,26 @@
       "type": "game",
       "gameName": "LEGO Batman: Legacy of the Dark Knight",
       "gameId": "legobatmanlegacyofthedarkknight"
+    },
+    {
+      "modId": 1943,
+      "fileId": 8012,
+      "author": "NexusMods",
+      "uploader": "NexusMods",
+      "description": {
+        "short": "Gothic 1 Remake extension for Vortex",
+        "long": "[size=4][b]Description[/b][/size]\n<br />[color=#d4d4d8]Adds basic support for Gothic 1 Remake to Vortex[/color]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1943/1943-1780002996-1087443648.jpg",
+      "name": "Gothic 1 Remake Extension",
+      "timestamp": 1780003541,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Gothic 1 Remake",
+      "gameId": "gothic1remake"
     }
   ]
 }
