@@ -1,5 +1,5 @@
 {
-  "last_updated": 1781082019109,
+  "last_updated": 1781094889744,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -13940,6 +13940,26 @@
       "type": "game",
       "gameName": "shapez 2",
       "gameId": "shapez2"
+    },
+    {
+      "modId": 1975,
+      "fileId": 8123,
+      "author": "NexusMods",
+      "uploader": "NexusMods",
+      "description": {
+        "short": "Adds support for Solarpunk to Vortex.",
+        "long": "This is an extension for [url=https://www.nexusmods.com/about/vortex/]Vortex[/url] to add modding support for Solarpunk.\n<br />\n<br />[b][size=4]Installation[/size][/b]\n<br />[list=1]\n<br />[*]Inside Vortex, open dashboard by clicking the \"Home\" icon at the top of the spine.[/*]\n<br />[*]Open the \"Games\" page and locate the correct game. [/*]\n<br />[*]Click on the tile to download and start managing the game.[/*]\n<br />[/list][spoiler][b]Additional Install Options\n<br />[/b]\n<br />[list]\n<br />[*][b]To install, click the Vortex button at the top of this page. Vortex will open and show the extension details, with an option to install. [/b][/*]\n<br />[*][b]Alternatively, you can manually install it by clicking the Manual button at the top of the page and dragging it into the drop target labelled Drop File(s) in the Extensions page at the bottom right.[/b][/*]\n<br />[/list][/spoiler]\n<br />[b][size=4]Help &amp; Support[/size][/b]\n<br />If you're having issues with this official extension from Nexus Mods, please post in one of the locations below.\n<br />[list]\n<br />[*][url=https://forums.nexusmods.com/index.php?/forum/4306-vortex-support/]🛟 Support Forum (Nexus Mods)[/url][/*]\n<br />[*][url=https://github.com/Nexus-Mods/Vortex/issues]🪲 Vortex Issue Track (GitHub)[/url][/*]\n<br />[/list]"
+      },
+      "downloads": 3,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1975/1975-1781002390-105899231.jpg",
+      "name": "Solarpunk Vortex Extension",
+      "timestamp": 1781029618,
+      "tags": [],
+      "version": "0.0.2",
+      "type": "game",
+      "gameName": "Solarpunk",
+      "gameId": "solarpunk"
     }
   ]
 }
