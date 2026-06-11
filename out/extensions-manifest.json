@@ -1,5 +1,5 @@
 {
-  "last_updated": 1781155081518,
+  "last_updated": 1781156813436,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14020,6 +14020,26 @@
       "type": "game",
       "gameName": "Fatekeeper",
       "gameId": "fatekeeper"
+    },
+    {
+      "modId": 1966,
+      "fileId": 8096,
+      "author": "JustChaldea",
+      "uploader": "JustChaldea",
+      "description": {
+        "short": "Adds support for Into the Dead: Our Darkest Days",
+        "long": "Into the Dead: Our Darkest Days (Vortex Extension)\n<br />\n<br />Adds support for Into the Dead: Our Darkest Days to the Vortex mod manager, using MelonLoader\n<br />\n<br />"
+      },
+      "downloads": 2,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1966/1966-1780915585-1607806187.png",
+      "name": "Our Darkest Days Support",
+      "timestamp": 1780917008,
+      "tags": [],
+      "version": "0.3.0",
+      "type": "game",
+      "gameName": "Into the Dead: Our Darkest Days",
+      "gameId": "intothedeadourdarkestdays"
     }
   ]
 }
