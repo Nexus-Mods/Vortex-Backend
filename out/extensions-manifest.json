@@ -1,5 +1,5 @@
 {
-  "last_updated": 1782983097475,
+  "last_updated": 1782983143757,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14138,6 +14138,26 @@
       "type": "game",
       "gameName": "Watch Dogs",
       "gameId": "watchdogs"
+    },
+    {
+      "modId": 2019,
+      "fileId": 8246,
+      "author": "STRmods",
+      "uploader": "STRm0ds",
+      "description": {
+        "short": "Enabling support for Subside mod management with Vortex. Giving easier mod installation with full management along with game save installation.",
+        "long": "[color=#F8B916][font=Verdana][b][size=6]Subside: [/size][/b][/font][size=5][font=Verdana][b]Vortex Extension[/b][/font][/size][/color]\n<br />\n<br />\n<br />This Vortex extension adds simple support to Vortex for [url=https://www.nexusmods.com/games/subside/mods]Subside[/url] to allow for full mod management. This allows installation of Pak based mods and installation of downloaded game saves. \n<br />\n<br />This requires you to install [url=https://www.nexusmods.com/site/mods/1]Vortex Mod Manager[/url] or download from [url=https://github.com/Nexus-Mods/Vortex/releases]GitHub[/url]\n<br />\n<br />[size=5]\n<br />See my [url=https://next.nexusmods.com/profile/STRm0ds/mods?gameId=6849]Subside content here![/url][/size]\n<br />﻿"
+      },
+      "downloads": 8,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2019/2019-1782148701-1081605280.png",
+      "name": "Subside Vortex Extension",
+      "timestamp": 1782151568,
+      "tags": [],
+      "version": "0.1.0",
+      "type": "game",
+      "gameName": "Subside",
+      "gameId": "subside"
     }
   ]
 }
