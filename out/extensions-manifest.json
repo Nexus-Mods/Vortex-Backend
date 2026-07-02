@@ -1,5 +1,5 @@
 {
-  "last_updated": 1782981566493,
+  "last_updated": 1782982907860,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14040,6 +14040,24 @@
       "type": "game",
       "gameName": "Into the Dead: Our Darkest Days",
       "gameId": "intothedeadourdarkestdays"
+    },
+    {
+      "modId": 1897,
+      "fileId": 8139,
+      "author": "LRikka",
+      "uploader": "LRikka",
+      "description": {
+        "short": "《怪物猎人：世界》的Vortex扩展。切换服装、武器和随从装备的替换目标，创建Vortex变体，并在不手动重命名文件的情况下批量分配服装目标。 Vortex extension for Monster Hunter: World. Switch armor, weapon, and Palico equipment replacement targets, create Vortex variants, and batch-assign layered arm",
+        "long": "中文名：MHW 服装武器随从装备替换切换器\n<br />\n<br />这是一个用于《Monster Hunter: World》的 Vortex 扩展，用来在 Vortex 里直接切换服装、武器、随从装备 Mod 的替换目标。\n<br />\n<br />它适合那种“本来替换某一套装备，但你想改成替换另一套装备”的 Mod。正常情况下需要手动改 nativePC 里的文件夹名、文件名和 ID；这个扩展可以在 Vortex 里通过列表选择目标，并自动生成新的 Vortex 变体包，尽量避免手动改文件。\n<br />\n<br />本扩展不包含任何游戏模型、贴图、音频或第三方 Mod 资产，只是一个 Vortex 工具扩展。\n<br />\n<br />## 功能\n<br />\n<br />- 从可搜索的 ID 列表中切换服装 / 外观装备替换目标。\n<br />- 支持按接近游戏内顺序浏览服装目标。\n<br />- 支持部分武器替换目标切换。\n<br />- 支持随从装备替换目标切换，包括随从防具 `ot001` 和随从武器 `ot_we001` 路径。\n<br />- 支持按接近游戏内顺序浏览随从装备目标。\n<br />- 对于复用同一个内部 `ot` 文件夹的随从装备，会按实际可替换路径合并显示，避免生成重复结果。\n<br />- 生成临时 Vortex 变体压缩包，不直接覆盖当前安装的 Mod。\n<br />- 支持对多个未启用的服装 Mod 批量指定覆盖目标。\n<br />- 安装拖入的 Mod 时，可补充默认版本、分类、变体名、下载来源等 Vortex 元数据。\n<br />- 列表支持中文名、英文名和 ID 搜索。\n<br />\n<br />## 安装方式 / Installation\n<br />\n<br />请不要在 Monster Hunter: World 的 Mods / Downloads 页面中把这个文件作为普通 Mod 安装。\n<br />\n<br />本文件是 Vortex 扩展，请使用以下方式安装：\n<br />\n<br />1. 点击 Manual Download 手动下载 zip。\n<br />2. 打开 Vortex。\n<br />3. 进入左侧 Extensions / 扩展 页面。\n<br />4. 将下载的 zip 拖入右下角的 Drop File(s) 区域。\n<br />5. 按提示重启 Vortex。\n<br />\n<br />## 使用方法\n<br />\n<br />1. 在 Vortex 中安装并启用本扩展。\n<br />2. 必要时重启 Vortex。\n<br />3. 安装一个符合 MHW `nativePC` 目录结构的替换类 Mod。\n<br />4. 在 Vortex 的 Mods 页面右键对应 Mod，选择装备替换切换相关操作。\n<br />5. 在列表中选择想要替换到的服装、武器或随从装备。\n<br />6. 扩展会生成一个新的临时 Vortex 变体包，并作为新变体安装。\n<br />\n<br />## 注意事项\n<br />\n<br />本扩展只修改替换目标 ID、文件夹路径和文件名，不会编辑模型、贴图、动画或游戏数据本身。\n<br />\n<br />部分随从装备在游戏 UI 中看起来是不同装备，但实际文件路径复用同一个内部 ID。遇到这种情况时，扩展会显示为一个可替换目标，而不是强行拆成多个实际输出相同的条目。\n<br />\n<br />如果 Mod 使用了非常规目录结构，可能无法被自动识别。\n<br />\n<br />## Requirements\n<br />\n<br />- Vortex Mod Manager\n<br />- Monster Hunter: World support in Vortex\n<br />- A replacement mod using the normal MHW `nativePC` folder structure\n<br />\n<br />No external tool is required for normal use.\n<br />\n<br />---\n<br />\n<br />## English Description\n<br />\n<br />A Vortex extension for Monster Hunter: World that helps users switch armor, weapon, and Palico equipment replacement targets without manually renaming folders and files.\n<br />\n<br />It is mainly intended for replacement mods that already use the standard MHW `nativePC` folder structure. The extension creates temporary Vortex variant archives instead of overwriting the currently installed mod.\n<br />\n<br />\n<br />Do not install this file from the Monster Hunter: World Mods / Downloads page as a normal mod.\n<br />\n<br />This is a Vortex extension. Please install it by manually downloading the zip, opening the Vortex Extensions page, dragging the zip into the Drop File(s) area, and restarting Vortex.\n<br />\n<br />\n<br />## Features\n<br />\n<br />- Switch armor replacement targets from a searchable ID list.\n<br />- Browse layered armor targets in an in-game-style order.\n<br />- Switch supported weapon replacement targets.\n<br />- Switch Palico armor and Palico weapon replacement targets.\n<br />- Browse Palico targets in a game-order list.\n<br />- Collapse Palico variants that share the same internal `ot` folder into one replaceable target.\n<br />- Create temporary Vortex variant archives.\n<br />- Batch assign armor overwrite targets for selected disabled armor mods.\n<br />- Add default Vortex metadata such as version, category, variant name, and Website as download source.\n<br />- Search by Chinese name, English name, or ID.\n<br />\n<br />## Credits\n<br />\n<br />需求设计、测试与维护：LRikka / 林瞳阳 \n<br />代码辅助生成：OpenAI ChatGPT \n<br />装备 ID 参考：Monster Hunter: World modding community documentation and public ID lists\n<br />"
+      },
+      "downloads": 19,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1897/1897-1778827648-263046250.png",
+      "name": "MHW Equipment Replacement Switcher",
+      "timestamp": 1781176678,
+      "tags": [],
+      "version": "1.0.12",
+      "type": null
     }
   ]
 }
