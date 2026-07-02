@@ -1,5 +1,5 @@
 {
-  "last_updated": 1782983244929,
+  "last_updated": 1782983901968,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14198,6 +14198,26 @@
       "type": "game",
       "gameName": "Resident Evil 6",
       "gameId": "residentevil6"
+    },
+    {
+      "modId": 1934,
+      "fileId": 8207,
+      "author": "shadowevor",
+      "uploader": "shadowevor",
+      "description": {
+        "short": "Vortex game support extension for Warhammer 40,000: Dawn of War – Definitive Edition",
+        "long": "Dawn of War — Definitive Edition · Vortex Game Support Extension\n<br />Adds full mod management support for [b]Warhammer 40,000: Dawn of War — Definitive Edition[/b] (Steam App ID 3556750) to Vortex.\n<br />[line]\n<br />[heading]Game Detection[/heading]\n<br />Automatically discovers the game installation via Steam (App ID \n<br />[code]3556750[/code]) and registers the executable \n<br />[code]W40k.exe[/code].\n<br />[line]\n<br />[heading]Mod Installer[/heading]\n<br />Generic File Replacement Installer [i](priority 20)[/i]\n<br />Handles [b]all mod types[/b] by deploying files to their game-root-relative paths. Supports:\n<br />[list]\n<br />[*]Localization mods (\n<br />[code]Engine/Locale/*/[/code])[/*]\n<br />[*]Campaign data (\n<br />[code]W40k/[/code], \n<br />[code]WXP/[/code], \n<br />[code]DXP2/[/code], \n<br />[code]DXP3/[/code])[/*]\n<br />[*]UI/Art assets (\n<br />[code]Engine/Data/[/code], \n<br />[code]DoWDE/[/code])[/*]\n<br />[*]Tools and editors (\n<br />[code]Tools/[/code], \n<br />[code]Dev/[/code])[/*]\n<br />[/list][b]Two archive layouts are supported automatically:[/b]\n<br />[table][tr][th]Layout[/th]\n<br />[th]Example archive structure[/th]\n<br />[th]Result[/th]\n<br />[/tr]\n<br />[tr][td][b]Game-root-relative[/b][/td]\n<br />[td][code]Engine/Locale/Chinese/Engine.ucs[/code]\n<br />[code]DXP2/data/attrib/gameplay.lua[/code][/td]\n<br />[td]Deployed as-is (paths preserved)[/td]\n<br />[/tr]\n<br />[tr][td][b]Wrapper folder[/b][/td]\n<br />[td][code]my-mod-v1.0/[/code]\n<br />[code]Engine/Locale/Chinese/Engine.ucs[/code]\n<br />[code]DXP2/data/attrib/gameplay.lua[/code][/td]\n<br />[td]Wrapper stripped → files deploy to game root[/td]\n<br />[/tr]\n<br />[/table][b]Edge cases handled:[/b]\n<br />[list]\n<br />[*]✅ Single files at root (\n<br />[code]readme.txt[/code]) — deployed to game root, not treated as wrapper[/*]\n<br />[*]✅ Lowercase directory names (\n<br />[code]engine/locale/[/code]) — case-insensitive matching ensures correct detection[/*]\n<br />[*]✅ Mixed content — falls back to deploying everything to game root[/*]\n<br />[/list][b]Recognized game directories:[/b]\n<br />[code]W40k[/code], \n<br />[code]WXP[/code], \n<br />[code]DXP2[/code], \n<br />[code]DXP3[/code], \n<br />[code]DoWDE[/code], \n<br />[code]Engine[/code], \n<br />[code]Dev[/code], \n<br />[code]Tools[/code][line]\n<br />[heading]Technical Details[/heading]\n<br />[b]Implementation:[/b] Simple, maintainable CommonJS module using Vortex API\n<br />[b]Key features:[/b]\n<br />[list]\n<br />[*]Case-insensitive directory matching for cross-platform compatibility[/*]\n<br />[*]Uses \n<br />[code]path.posix.relative()[/code] for robust wrapper stripping[/*]\n<br />[*]Guards against edge cases identified in Vortex code review[/*]\n<br />[*]No special processing or file exclusions — deploy as-is[/*]\n<br />[/list][b]Version:[/b] 1.0.4 (June 2026)\n<br />[line]\n<br />[heading]Source Code[/heading]\n<br />[url=https://github.com/shc261392/crystal-mods/tree/main/dawn-of-war-de/vortex-ext/game-warhammer40kdawnofwar]https://github.com/shc261392/crystal-mods/tree/main/dawn-of-war-de/vortex-ext/game-warhammer40kdawnofwar[/url]\n<br /> "
+      },
+      "downloads": 19,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1934/1934-1779736262-618732587.jpg",
+      "name": "Warhammer 40000 Dawn of War - Definitive Edition",
+      "timestamp": 1781805338,
+      "tags": [],
+      "version": "1.0.4",
+      "type": "game",
+      "gameName": "Warhammer 40,000: Dawn of War - Definitive Edition",
+      "gameId": "warhammerdawnofwarddefinitiveedtion"
     }
   ]
 }
