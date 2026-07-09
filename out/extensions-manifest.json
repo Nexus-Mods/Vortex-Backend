@@ -1,5 +1,5 @@
 {
-  "last_updated": 1783587096325,
+  "last_updated": 1783607840822,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14238,6 +14238,26 @@
       "type": "game",
       "gameName": "Moonlight Peaks",
       "gameId": "moonlightpeaks"
+    },
+    {
+      "modId": 1977,
+      "fileId": 8476,
+      "author": "NexusMods",
+      "uploader": "NexusMods",
+      "description": {
+        "short": "Adds support of Assassin's Creed Black Flag Resynced to Vortex.",
+        "long": "This is an extension for [url=https://www.nexusmods.com/about/vortex/]Vortex[/url] to add modding support for Assassin's Creed Black Flag Resynced.\n<br />\n<br />[b][size=4]Installation[/size][/b]\n<br />[list=1]\n<br />[*]Inside Vortex, open dashboard by clicking the \"Home\" icon at the top of the spine.[/*]\n<br />[*]Open the \"Games\" page and locate the correct game. [/*]\n<br />[*]Click on the tile to download and start managing the game.[/*]\n<br />[/list][spoiler][b]Additional Install Options\n<br />[/b]\n<br />[list]\n<br />[*][b]To install, click the Vortex button at the top of this page. Vortex will open and show the extension details, with an option to install. [/b][/*]\n<br />[*][b]Alternatively, you can manually install it by clicking the Manual button at the top of the page and dragging it into the drop target labelled Drop File(s) in the Extensions page at the bottom right.[/b][/*]\n<br />[/list][/spoiler]\n<br />[b][size=4]Help &amp; Support[/size][/b]\n<br />If you're having issues with this official extension from Nexus Mods, please post in one of the locations below.\n<br />[list]\n<br />[*][url=https://forums.nexusmods.com/index.php?/forum/4306-vortex-support/]🛟 Support Forum (Nexus Mods)[/url][/*]\n<br />[*][url=https://github.com/Nexus-Mods/Vortex/issues]🪲 Vortex Issue Tracker (GitHub)[/url][/*]\n<br />[/list]"
+      },
+      "downloads": 0,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1977/1977-1781097829-1977242645.jpg",
+      "name": "Assassin's Creed Black Flag Resynced Vortex Extension",
+      "timestamp": 1783607211,
+      "tags": [],
+      "version": "1.0.1",
+      "type": "game",
+      "gameName": "Assassin's Creed Black Flag Resynced",
+      "gameId": "assassinscreedblackflagresynced"
     }
   ]
 }
