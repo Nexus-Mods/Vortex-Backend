@@ -1,5 +1,5 @@
 {
-  "last_updated": 1784104348481,
+  "last_updated": 1784186100660,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14258,6 +14258,26 @@
       "type": "game",
       "gameName": "Assassin's Creed Black Flag Resynced",
       "gameId": "assassinscreedblackflagresynced"
+    },
+    {
+      "modId": 1907,
+      "fileId": 8404,
+      "author": "sylv",
+      "uploader": "Sylviebbq",
+      "description": {
+        "short": "Adds mod support to Vortex for Casualties: Unknown (Scav Prototype).",
+        "long": "Adds mod support to Vortex for Casualties: Unknown (Scav Prototype).\n<br />\n<br />"
+      },
+      "downloads": 125,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1907/1907-1779120606-1106916450.jpg",
+      "name": "Casualties Unknown (Scav Prototype) Vortex Extension",
+      "timestamp": 1783019407,
+      "tags": [],
+      "version": "1.2.2",
+      "type": "game",
+      "gameName": "Scav Prototype",
+      "gameId": "scavprototype"
     }
   ]
 }
