@@ -1,5 +1,5 @@
 {
-  "last_updated": 1784186205166,
+  "last_updated": 1784186248734,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14318,6 +14318,24 @@
       "type": "game",
       "gameName": "Supermarket Together",
       "gameId": "supermarkettogether"
+    },
+    {
+      "modId": 2076,
+      "fileId": 8518,
+      "author": "elsid2010",
+      "uploader": "elsid2010",
+      "description": {
+        "short": "An overview of game and mod information all in one view. Along with quick access to game and vortex logs. Specifically designed for users of the Immersive collections, but useful for everyone",
+        "long": "[size=4][b]Description[/b][/size]\n<br />[color=#d4d4d8]This tool will collect useful information regarding your Skyrim and Vortex environment, and perform a few sanity checks to help you, or your support team, get your game up and running ASAP.  This tool was almost completely coded by AI. [/color]\n<br />\n<br />[size=4][b]Installation instructions[/b][/size]\n<br />[size=3][color=#D4D4D8]Vortex: Manual download and drop the archive into the Home &gt; Extensions drop zone.[/color][/size]\n<br />[size=3][color=#D4D4D8]Manual: Download and extract to %appdata%&#92;Vortex&#92;Plugins[/color][/size]\n<br />\n<br />[size=4][b]Main features[/b][/size]\n<br />[size=3][color=#D4D4D8]Game and mod info[/color][/size]\n<br />[size=3][color=#D4D4D8]Links to log locations and Skyrim SE game folder[/color][/size]\n<br />[color=#d4d4d8]Immersive Discord link[/color]\n<br />[color=#d4d4d8]Suppressed notification count which can be click to reset[/color]\n<br />[color=#d4d4d8]Click to copy file paths[/color]\n<br />\n<br />[b][size=4]Shout outs[/size][/b]\n<br />[size=3][color=#D4D4D8]Deepwiki.com &amp; Devin AI[/color][/size]\n<br />"
+      },
+      "downloads": 12,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2076/2076-1783134355-1861360478.png",
+      "name": "Support Stats",
+      "timestamp": 1783914285,
+      "tags": [],
+      "version": "1.2.0",
+      "type": null
     }
   ]
 }
