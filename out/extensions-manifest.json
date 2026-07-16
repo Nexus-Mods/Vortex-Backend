@@ -1,5 +1,5 @@
 {
-  "last_updated": 1784186100660,
+  "last_updated": 1784186160360,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14278,6 +14278,26 @@
       "type": "game",
       "gameName": "Scav Prototype",
       "gameId": "scavprototype"
+    },
+    {
+      "modId": 1937,
+      "fileId": 8386,
+      "author": "TrustNoOneElse",
+      "uploader": "TrustNoOneElse",
+      "description": {
+        "short": "Adds support for Drova - Forsaken Kin (MelonLoader-based modding). Steam and GOG",
+        "long": "[b]Extras:[/b]\n<br />[list]\n<br />[*]Supports automatic install of the Melonloader, including updates.[/*]\n<br />[*]Supports detection of normal installations of .net 6 on Windows. If you are a poweruser and have your own dotnet installation path its not found, but you can still continue.[/*]\n<br />[/list][b]Supported Versions:[/b]\n<br />[list]\n<br />[*]Steam[/*]\n<br />[*]GOG[/*]\n<br />[*]Other versions may need to select the installation location manually.[/*]\n<br />[/list][b]Mod Installation Notes:[/b]\n<br />[list]\n<br />[*]Single dlls will be placed in the MelonLoader Mods folder[/*]\n<br />[*]Translation mods will be placed under Drova_Data/StreamingAssets/Localization as long as a valid i18n ressource identifier is find.[/*]\n<br />[*]Mods with a folder structure will be placed in the root directory, since Melonloader has 4 folders you just need to name them like that and your content is correctly placed.[/*]\n<br />[/list]"
+      },
+      "downloads": 8,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1937/1937-1779872665-980190341.png",
+      "name": "Drova - Forsaken Kin Extension",
+      "timestamp": 1782986121,
+      "tags": [],
+      "version": "1.2.0",
+      "type": "game",
+      "gameName": "Drova - Forsaken Kin",
+      "gameId": "drovaforsakenkin"
     }
   ]
 }
