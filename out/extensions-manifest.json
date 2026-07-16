@@ -1,5 +1,5 @@
 {
-  "last_updated": 1784186160360,
+  "last_updated": 1784186205166,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14298,6 +14298,26 @@
       "type": "game",
       "gameName": "Drova - Forsaken Kin",
       "gameId": "drovaforsakenkin"
+    },
+    {
+      "modId": 1946,
+      "fileId": 8411,
+      "author": "Hotfuzz123",
+      "uploader": "Hotfuzz123",
+      "description": {
+        "short": "Vortex extension support for Supermarket Together",
+        "long": "Dear Developers,\n<br />\n<br />This extension will handle the following mod types for Supermarket Together:\n<br />\n<br />.dll files will be placed into:\n<br />&#92;BepInEx&#92;plugins&#92;\n<br />\n<br />CustomProducts.dll specifically will be placed into:\n<br />&#92;BepInEx&#92;plugins&#92;CustomProducts&#92;\n<br />\n<br />CustomProducts data mods (non-dll files such as .png, .json, etc.) will be placed into:\n<br />&#92;BepInEx&#92;plugins&#92;CustomProducts&#92;Products&#92;\n<br />\n<br />If your mod files are inside a folder (e.g. Wonka&#92;image.png), the folder will be preserved:\n<br />&#92;BepInEx&#92;plugins&#92;CustomProducts&#92;Products&#92;Wonka&#92;image.png\n<br />\n<br />If your mod files are loose (e.g. image.png), they will be placed directly:\n<br />&#92;BepInEx&#92;plugins&#92;CustomProducts&#92;Products&#92;image.png\n<br />\n<br />All other file types (such as .png, .txt, .obj, etc.) will need to be structured exactly as the game is.\n<br />\n<br />Also Includes a BepInEx CFG To make sure config manager will work natively.\n<br />Please feel free to reach out to us if you have any questions.\n<br />\n<br />Buy me some coffee if you like my work 😊\n<br />[url=https://buymeacoffee.com/hotfuzz123]\n<br />[img]https://cdn.jsdelivr.net/gh/justarandomguyintheinternet/keanuWheeze@main/buymeacoffee.png[/img][/url]"
+      },
+      "downloads": 21,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1946/1946-1780139190-1123197031.jpg",
+      "name": "Supermarket Together Extension",
+      "timestamp": 1783091933,
+      "tags": [],
+      "version": "0.1.1",
+      "type": "game",
+      "gameName": "Supermarket Together",
+      "gameId": "supermarkettogether"
     }
   ]
 }
