@@ -1,5 +1,5 @@
 {
-  "last_updated": 1785400602628,
+  "last_updated": 1785413990061,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14356,6 +14356,26 @@
       "type": "game",
       "gameName": "Halo Campaign Evolved",
       "gameId": "halocampaignevolved"
+    },
+    {
+      "modId": 1964,
+      "fileId": 8550,
+      "author": "samas92i",
+      "uploader": "samas92i",
+      "description": {
+        "short": "Vortex game support for EMERGENCY 2023 - deploys UE4SS mods into Binaries/Win64/ue4ss/Mods. App ID 850170.",
+        "long": "[size=5][b]EMERGENCY 2023 - Vortex Game Extension[/b][/size]\n<br />\n<br />Adds [b]EMERGENCY 2023[/b] to Vortex as a managed game, so UE4SS mods install in one click instead of hand-dropping files into the game folder.\n<br />\n<br />[size=4][b]What it does[/b][/size]\n<br />[list]\n<br />[*][b]Adds the game to Vortex[/b] - auto-detects your Steam install (App ID 850170).[/*]\n<br />[*][b]Installs UE4SS for you[/b] - on first setup, if UE4SS is missing, the extension downloads the latest [b]experimental[/b] UE4SS build from the official repo and installs it (with a confirmation prompt). A safe guard never overwrites an existing UE4SS install.[/*]\n<br />[*][b]One-click mod installs[/b] - UE4SS script mods (Lua) deploy to the correct [i]ue4ss/Mods[/i] folder automatically.[/*]\n<br />[*][b]UE4SS settings, built in[/b] - a dedicated [b]UE4SS[/b] tab under Settings lets you edit [i]UE4SS-settings.ini[/i] without touching files: Graphics API (DirectX 11 / OpenGL), the debug console toggles, Render Mode, and your external mod-folder paths ([i]+ModsFolderPaths[/i]) - plus Open folder / Edit file shortcuts.[/*]\n<br />[/list]\n<br />[size=4][b]Why the experimental UE4SS build?[/b][/size]\n<br />EMERGENCY 2023 runs on Unreal Engine 5.3.2. The last [i]stable[/i] UE4SS (3.0.1, from early 2024) loads but [b]crashes[/b] this game a few seconds after launch. The experimental build supports newer Unreal versions and runs EMERGENCY 2023 correctly, so the extension installs that one. It also sets [i]GraphicsAPI = dx11[/i] for you (OpenGL causes a black screen) and disables the debug console by default.\n<br />\n<br />[size=4][b]Requirements[/b][/size]\n<br />[list]\n<br />[*]Vortex[/*]\n<br />[*]EMERGENCY 2023 (Steam)[/*]\n<br />[*]UE4SS - installed automatically by this extension (no manual download needed)[/*]\n<br />[/list]\n<br />[size=4][b]How to use[/b][/size]\n<br />[list=1]\n<br />[*]Install this extension in Vortex (Extensions → drag the file in, or install from Nexus), then restart Vortex.[/*]\n<br />[*]Open the [b]Games[/b] tab and [b]Manage[/b] EMERGENCY 2023 - accept the UE4SS install prompt.[/*]\n<br />[*]Install any UE4SS mod as usual; it deploys into the game and is ready to load.[/*]\n<br />[*](Optional) Open [b]Settings → UE4SS[/b] to tweak Graphics API, the console, or external mod folders.[/*]\n<br />[/list]\n<br />[size=4][b]Credits[/b][/size]\n<br />[list]\n<br />[*]Extension by [b]samas92i[/b][/*]\n<br />[*][url=https://github.com/UE4SS-RE/RE-UE4SS]UE4SS[/url] by the UE4SS-RE team[/*]\n<br />[*][url=https://www.nexusmods.com/about/vortex/]Vortex[/url] by Nexus Mods[/*]\n<br />[/list]\n<br />[size=4][b]Source[/b][/size]\n<br />[url=https://github.com/samuelds/game-emergency-2023]github.com/samuelds/game-emergency-2023[/url]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/1964/1964-1780758372-1426181438.png",
+      "name": "EMERGENCY 2023 Vortex Extension",
+      "timestamp": 1784231108,
+      "tags": [],
+      "version": "1.2.1",
+      "type": "game",
+      "gameName": "Emergency (2023)",
+      "gameId": "emergency2023"
     }
   ]
 }
