@@ -1,5 +1,5 @@
 {
-  "last_updated": 1785414208454,
+  "last_updated": 1785414259848,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14456,6 +14456,26 @@
       "type": "game",
       "gameName": "Solar Expanse",
       "gameId": "solarexpanse"
+    },
+    {
+      "modId": 2134,
+      "fileId": 8695,
+      "author": "d3Ex22",
+      "uploader": "d3Ex22",
+      "description": {
+        "short": "Vortex extension for Gold Mining Simulator",
+        "long": "[color=#d4d4d8][b][size=4]Description[/size][/b][/color]\n<br />[color=#d4d4d8]Vortex game extension for Gold Mining Simulator (Unity Mono).\n<br />It discovers the Steam install, downloads BepInEx from GitHub when missing (via Vortex modtype-bepinex), and deploys the usual BepInEx mod layouts used on Nexus for this game — including archives that already contain a BepInEx/ folder.[/color]\n<br />\n<br />[b][size=4]Installation[/size][/b]\n<br />Automatic:\n<br />1. Install the extension from Vortex / Nexus\n<br />2. Search for the game in Vortex, then click Manage\n<br />\n<br />Manual:\n<br />1. Download the archive\n<br />2. Open Vortex\n<br />3. Go to Home → Extensions\n<br />4. Drag and drop the file into \"Drop File(s)\"\n<br />5. Enable the extension\n<br />6. Restart Vortex\n<br />7. Go to Home → Games\n<br />8. Search for Gold Mining Simulator and click Manage\n<br />\n<br />Then enable [b]Bepis Injector Extensible[/b] (BepInEx) in the Mods page if Vortex offers it, and Deploy.\n<br />\n<br />[b][size=4]Main Features[/size][/b]\n<br />[list]\n<br />[*]Steam game discovery (App ID 451340)[/*]\n<br />[/list][list]\n<br />[*]Auto-download BepInEx 5.4.23.5 win_x64 from GitHub when missing[/*]\n<br />[/list][list]\n<br />[*]BepInEx plugins / patchers / root mod types (modtype-bepinex)[/*]\n<br />[/list][list]\n<br />[*]Installer for archives packaged as BepInEx/plugins|patchers|config/...[/*]\n<br />[/list]\n<br />[b][size=4]Requirements[/size][/b]\n<br />- Vortex with the built-in [b]modtype-bepinex[/b] extension\n<br />- Gold Mining Simulator (Steam)\n<br />\n<br />Steam may install the game under a folder named \"Gold Rush The Game\". Discovery uses the Steam App ID, so the folder name does not matter. Required file: GoldMiningSimulator.exe.\n<br />\n<br />[b][size=4]Managed Mod Types[/size][/b]\n<br />\n<br />[b]Bepis Injector Extensible (BepInEx)[/b]\n<br />[spoiler]\n<br />[b]Format accepted:[/b]\n<br />Official BepInEx zip (winhttp.dll, doorstop_config.ini, BepInEx/core, …)\n<br />\n<br />[b]Where placed:[/b]\n<br />Game install root[/spoiler]\n<br />\n<br />[b]BepInEx (plugins)[/b]\n<br />[spoiler]\n<br />[b]Format accepted:[/b]\n<br />&lt;Mod&gt;.dll\n<br />OR\n<br />&lt;ModFolder&gt;/&lt;Mod&gt;.dll (+ optional Assets/)\n<br />\n<br />[b]Where placed:[/b]\n<br />BepInEx/plugins/\n<br />\n<br />[b]Example:[/b]\n<br />LongerLegs.dll\n<br />OR\n<br />HandSmelting/HandSmelting.dll\n<br />HandSmelting/Assets/...[/spoiler]\n<br />\n<br />[b]BepInEx (patchers)[/b]\n<br />[spoiler]\n<br />[b]Format accepted:[/b]\n<br />Preloader patcher DLLs\n<br />\n<br />[b]Where placed:[/b]\n<br />BepInEx/patchers/[/spoiler]\n<br />\n<br />[b]BepInEx (root)[/b]\n<br />[spoiler]\n<br />[b]Format accepted:[/b]\n<br />plugins/ / patchers/ / config/ at archive root\n<br />OR\n<br />BepInEx/plugins/… / BepInEx/patchers/… / BepInEx/config/…\n<br />(the BepInEx/ prefix is stripped so files land correctly)\n<br />\n<br />[b]Where placed:[/b]\n<br />BepInEx/\n<br />\n<br />[b]Example:[/b]\n<br />BepInEx/plugins/Better_Dynamite.dll\n<br />→ BepInEx/plugins/Better_Dynamite.dll[/spoiler]\n<br />\n<br />[b][size=4]Credits[/size][/b]\n<br />Thanks to [b]Code Horizon[/b] and [b]PlayWay S.A.[/b] for Gold Mining Simulator.\n<br />Thanks to the Nexus Mods team for the official Vortex [b]modtype-bepinex[/b] extension — this game support builds on it for BepInEx download, Doorstop setup, and the plugins / patchers / root mod types.\n<br />Thanks also to the [url=https://github.com/BepInEx/BepInEx]BepInEx[/url] project.\n<br />\n<br />[b][size=4]Troubleshooting[/size][/b]\n<br />Questions / bug reports: message me here or open an issue on GitHub.\n<br />\n<br />Repo:\n<br />https://github.com/d3Ex22/VortexExtensions\n<br />\n<br />[b][size=4]Changelog[/size][/b]\n<br />[size=3]1.0.0 — Initial release: Steam discovery, BepInEx GitHub download, BepInEx/-prefixed archive support[/size]\n<br />"
+      },
+      "downloads": 4,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2134/2134-1785271948-1933122095.jpg",
+      "name": "Gold Mining Simulator",
+      "timestamp": 1785271993,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Gold Mining Simulator",
+      "gameId": "goldminingsimulator"
     }
   ]
 }
