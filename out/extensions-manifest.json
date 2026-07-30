@@ -1,5 +1,5 @@
 {
-  "last_updated": 1785414098987,
+  "last_updated": 1785414152045,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14416,6 +14416,26 @@
       "type": "game",
       "gameName": "Echoes Of Aincrad",
       "gameId": "echoesofaincrad"
+    },
+    {
+      "modId": 2079,
+      "fileId": 8649,
+      "author": "shadowevor",
+      "uploader": "shadowevor",
+      "description": {
+        "short": "Add Battlesector modding support.",
+        "long": "Vortex Mod Manager Game Extension for Warhammer 40,000: Battlesector\n<br />\n<br />This extension adds Warhammer 40,000: Battlesector support to Vortex Mod Manager, allowing you to easily install and manage mods for the game.\n<br />\n<br />What This Extension Does:\n<br />- Automatically detects your Battlesector installation (Steam or GOG)\n<br />- Enables drag-and-drop mod installation in Vortex\n<br />- Handles deployment to the correct game directories\n<br />- Creates automatic backups of game files before modding (sharedassets1.assets)\n<br />- Provides one-click purge to restore original game files\n<br />\n<br />How to Install:\n<br />1. Download this extension zip file\n<br />2. Open Vortex Mod Manager\n<br />3. Go to the Extensions tab\n<br />4. Drag and drop the zip file onto the Extensions panel\n<br />5. Click \"Enable\" when prompted\n<br />\n<br />After installation, Battlesector will appear in Vortex's game list. You can then install mods by dragging mod zip files onto Vortex.\n<br />\n<br />Technical Details:\n<br />- Supports Steam and GOG versions\n<br />- Auto-detects game installation via Steam App ID 1295500 and GOG App ID 1248481392\n<br />- Handles generic file replacement mods (sharedassets, bundles, catalog files)\n<br />- Smart wrapper folder detection and stripping for user convenience\n<br />- Creates one-time backup of sharedassets1.assets for safe reverting\n<br />\n<br />This extension is required for using Battlesector mods with Vortex. It does not modify your game on its own.\n<br />\n<br />Compatibility:\n<br />- Vortex v1.6.0 or later\n<br />- Warhammer 40,000: Battlesector (all versions)"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2079/2079-1783232739-1340818327.jpg",
+      "name": "Warhammer 40000 Battlesector Vortex Extension",
+      "timestamp": 1784962854,
+      "tags": [],
+      "version": "1.1.0",
+      "type": "game",
+      "gameName": "Warhammer 40,000: Battlesector",
+      "gameId": "warhammer40000battlesector"
     }
   ]
 }
