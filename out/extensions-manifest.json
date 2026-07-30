@@ -1,5 +1,5 @@
 {
-  "last_updated": 1785413990061,
+  "last_updated": 1785414045733,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14376,6 +14376,26 @@
       "type": "game",
       "gameName": "Emergency (2023)",
       "gameId": "emergency2023"
+    },
+    {
+      "modId": 2120,
+      "fileId": 8580,
+      "author": "Laymain",
+      "uploader": "Laymain",
+      "description": {
+        "short": "Vortex game extension for Farever",
+        "long": "Vortex game extension for Farever (Steam app id 3672400).\n<br />\n<br />[list]\n<br />[*]Registers Farever as a manageable game in Vortex.[/*]\n<br />[*]On every switch to Farever as the active game (`setup`), checks Nexus Mods site-mod 2118 (hlx-core) for a newer file than the last one installed, and if found, downloads and installs it automatically.[/*]\n<br />[/list]"
+      },
+      "downloads": 7,
+      "endorsements": 0,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2120/2120-1784425055-1372722111.png",
+      "name": "vortex-farever-extension",
+      "timestamp": 1784425100,
+      "tags": [],
+      "version": "0.0.1",
+      "type": "game",
+      "gameName": "Farever",
+      "gameId": "farever"
     }
   ]
 }
