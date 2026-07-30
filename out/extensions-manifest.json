@@ -1,5 +1,5 @@
 {
-  "last_updated": 1785414152045,
+  "last_updated": 1785414208454,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14436,6 +14436,26 @@
       "type": "game",
       "gameName": "Warhammer 40,000: Battlesector",
       "gameId": "warhammer40000battlesector"
+    },
+    {
+      "modId": 2126,
+      "fileId": 8640,
+      "author": "marr75",
+      "uploader": "marr75",
+      "description": {
+        "short": "Vortex support for the game Solar Expanse. Automatically handles bepinex installation and plugins/patchers paths making installs easy!",
+        "long": "[size=4][b]Solar Expanse support for Vortex[/b][/size]\n<br />\n<br />Adds full [b]Solar Expanse[/b] support to Vortex: automatic game discovery via Steam, one-click BepInEx setup, and correct installation of BepInEx plugin mods with no manual folder juggling.\n<br />\n<br />[b]Features[/b]\n<br />[list]\n<br />[*]Automatic game discovery through Steam (App ID 1369700)[/*]\n<br />[*]Automatic download and installation of BepInEx [b]5.4.22[/b] (Mono, x64) — the correct build for Solar Expanse[/*]\n<br />[*]Correct deployment of mod archives into [font=Courier New]BepInEx/plugins/&lt;Mod&gt;/[/font], regardless of how the archive is nested[/*]\n<br />[/list]\n<br />[b]BepInEx handling[/b]\n<br />This extension integrates with Vortex's [b]BepInEx Support[/b] extension (installed automatically as a dependency). When you manage Solar Expanse for the first time, Vortex will offer to download and deploy BepInEx 5.4.22, preconfigured for the game's engine: [b]Unity Mono[/b] build, [b]x64[/b] architecture. You don't need to pick a BepInEx variant, download anything yourself, or touch the game folder — accept the prompt and BepInEx is deployed into the game directory like any other mod, and removed cleanly if you stop managing it.\n<br />\n<br />[b]How mod paths are resolved[/b]\n<br />Solar Expanse mods are BepInEx plugins that need to end up at:\n<br />[code]&lt;Game&gt;/BepInEx/plugins/&lt;Mod&gt;/&lt;Mod&gt;.dll[/code]Mod archives vary: some are packaged as [font=Courier New]BepInEx/plugins/&lt;Mod&gt;/...[/font], some start at [font=Courier New]plugins/...[/font], some wrap everything in an extra top-level folder. This extension anchors installation at the first [font=Courier New]plugins[/font] (or [font=Courier New]patchers[/font]) folder found in the archive, strips everything above it, and preserves the per-mod subfolder beneath it — so files always land in the right place under [font=Courier New]BepInEx/plugins/[/font] (or [font=Courier New]BepInEx/patchers/[/font]) no matter how the archive was zipped.\n<br />\n<br />[b]Usage[/b]\n<br />[list=1]\n<br />[*]Install this extension (Vortex should prompt to restart)[/*]\n<br />[*]Scan for games or add Solar Expanse from the Games tab[/*]\n<br />[*]Accept the BepInEx installation prompt[/*]\n<br />[*]Install Solar Expanse mods from Nexus as usual[/*]\n<br />[/list]"
+      },
+      "downloads": 17,
+      "endorsements": 1,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2126/2126-1784846583-1251659759.png",
+      "name": "Solar Expanse Vortex Extension",
+      "timestamp": 1784847108,
+      "tags": [],
+      "version": "1.0.0",
+      "type": "game",
+      "gameName": "Solar Expanse",
+      "gameId": "solarexpanse"
     }
   ]
 }
