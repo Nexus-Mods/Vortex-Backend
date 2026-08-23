@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 1,
+  "providerId": "bethesda-v1",
+  "games": [
+    {
+      "gameId": "skyrimse",
+      "store": "steam",
+      "appId": "489830",
+      "targets": [
+        {
+          "version": "1.6.1170.0",
+          "aliases": [
+            "1.6.1170"
+          ],
+          "fingerprint": {
+            "files": [
+              {
+                "path": "SkyrimSE.exe",
+                "size": 37157144,
+                "sha256": "c434208894f07f604b852f29b8edc3a58c4de63de783373733e72b2b73f33be9"
+              },
+              {
+                "path": "SkyrimSELauncher.exe",
+                "size": 4713472,
+                "sha256": "ce2a1b3f9727c8b53ffb8e0bccd2bbed2bd8bec47b0ab8552c2850caa05e68b1"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 298384,
+                "sha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3"
+              },
+              {
+                "path": "Data/Skyrim - Shaders.bsa",
+                "size": 67308970,
+                "sha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "SkyrimSE.exe",
+                    "size": 37909416,
+                    "sha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSE.exe",
+                  "targetPath": "SkyrimSE.exe",
+                  "sourceSha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa",
+                  "targetSha256": "c434208894f07f604b852f29b8edc3a58c4de63de783373733e72b2b73f33be9",
+                  "targetSize": 37157144,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/fdf7b0bedc8db5f3b7b5801a4803cf4cfd54056e6e4971a4082cadb213257a59",
+                    "sha256": "fdf7b0bedc8db5f3b7b5801a4803cf4cfd54056e6e4971a4082cadb213257a59",
+                    "size": 26648334
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSELauncher.exe",
+                  "targetPath": "SkyrimSELauncher.exe",
+                  "sourceSha256": "884f73115c569987b24dc4464ad3e9c97f4cba6ab8f8215f065bacdb981370cf",
+                  "targetSha256": "ce2a1b3f9727c8b53ffb8e0bccd2bbed2bd8bec47b0ab8552c2850caa05e68b1",
+                  "targetSize": 4713472,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/0960805a41a7e7b9809d4d66f1c00fd5f624e143d2c78ccdd26fcff55a80ad6c",
+                    "sha256": "0960805a41a7e7b9809d4d66f1c00fd5f624e143d2c78ccdd26fcff55a80ad6c",
+                    "size": 179
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Data/Skyrim - Shaders.bsa",
+                  "targetPath": "Data/Skyrim - Shaders.bsa",
+                  "sourceSha256": "bb3c01bc3d5277f5f9d2a72eb63a543051c75cd3b2416fa602d44e92077a18ec",
+                  "targetSha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5",
+                  "targetSize": 67308970,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "sha256": "f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "size": 261086
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "version": "1.6.1130.0",
+          "aliases": [
+            "1.6.1130"
+          ],
+          "fingerprint": {
+            "files": [
+              {
+                "path": "SkyrimSE.exe",
+                "size": 36897792,
+                "sha256": "537527cec58e458425255b320844f0f1dac1a902a93d21891a50df7c1f238b8d"
+              },
+              {
+                "path": "SkyrimSELauncher.exe",
+                "size": 4713472,
+                "sha256": "ce2a1b3f9727c8b53ffb8e0bccd2bbed2bd8bec47b0ab8552c2850caa05e68b1"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 298384,
+                "sha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3"
+              },
+              {
+                "path": "Data/Skyrim - Shaders.bsa",
+                "size": 67308970,
+                "sha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "SkyrimSE.exe",
+                    "size": 37909416,
+                    "sha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSE.exe",
+                  "targetPath": "SkyrimSE.exe",
+                  "sourceSha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa",
+                  "targetSha256": "537527cec58e458425255b320844f0f1dac1a902a93d21891a50df7c1f238b8d",
+                  "targetSize": 36897792,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/93bea158727c2c0b259e5b19e40f113e60c8a5d71d775a4f61aca8d6446e819b",
+                    "sha256": "93bea158727c2c0b259e5b19e40f113e60c8a5d71d775a4f61aca8d6446e819b",
+                    "size": 3598236
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSELauncher.exe",
+                  "targetPath": "SkyrimSELauncher.exe",
+                  "sourceSha256": "884f73115c569987b24dc4464ad3e9c97f4cba6ab8f8215f065bacdb981370cf",
+                  "targetSha256": "ce2a1b3f9727c8b53ffb8e0bccd2bbed2bd8bec47b0ab8552c2850caa05e68b1",
+                  "targetSize": 4713472,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/0960805a41a7e7b9809d4d66f1c00fd5f624e143d2c78ccdd26fcff55a80ad6c",
+                    "sha256": "0960805a41a7e7b9809d4d66f1c00fd5f624e143d2c78ccdd26fcff55a80ad6c",
+                    "size": 179
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Data/Skyrim - Shaders.bsa",
+                  "targetPath": "Data/Skyrim - Shaders.bsa",
+                  "sourceSha256": "bb3c01bc3d5277f5f9d2a72eb63a543051c75cd3b2416fa602d44e92077a18ec",
+                  "targetSha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5",
+                  "targetSize": 67308970,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "sha256": "f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "size": 261086
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "version": "1.6.640.0",
+          "aliases": [
+            "1.6.640"
+          ],
+          "fingerprint": {
+            "files": [
+              {
+                "path": "SkyrimSE.exe",
+                "size": 35369752,
+                "sha256": "eb77d225cdd1832076001281c3c570dd0c95864ac5748701e0cf5652b2a24517"
+              },
+              {
+                "path": "SkyrimSELauncher.exe",
+                "size": 4705280,
+                "sha256": "af1fd8d00962c783044b8dc1fb28c13a19a1af62bc02a19087a617e3d56663c6"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 206760,
+                "sha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c"
+              },
+              {
+                "path": "Data/Skyrim - Shaders.bsa",
+                "size": 67308970,
+                "sha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "SkyrimSE.exe",
+                    "size": 37909416,
+                    "sha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSE.exe",
+                  "targetPath": "SkyrimSE.exe",
+                  "sourceSha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa",
+                  "targetSha256": "eb77d225cdd1832076001281c3c570dd0c95864ac5748701e0cf5652b2a24517",
+                  "targetSize": 35369752,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/b328d54dceba748378fffead64a96e0175ad764ce193a4236fe8d26fe41eba5f",
+                    "sha256": "b328d54dceba748378fffead64a96e0175ad764ce193a4236fe8d26fe41eba5f",
+                    "size": 25352130
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSELauncher.exe",
+                  "targetPath": "SkyrimSELauncher.exe",
+                  "sourceSha256": "884f73115c569987b24dc4464ad3e9c97f4cba6ab8f8215f065bacdb981370cf",
+                  "targetSha256": "af1fd8d00962c783044b8dc1fb28c13a19a1af62bc02a19087a617e3d56663c6",
+                  "targetSize": 4705280,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/c3b4d5c74b03acbe64fda622030e74592f7e3109670760a2d04515dbe3a9e132",
+                    "sha256": "c3b4d5c74b03acbe64fda622030e74592f7e3109670760a2d04515dbe3a9e132",
+                    "size": 17321
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "steam_api64.dll",
+                  "targetPath": "steam_api64.dll",
+                  "sourceSha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3",
+                  "targetSha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c",
+                  "targetSize": 206760,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "sha256": "6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "size": 85009
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Data/Skyrim - Shaders.bsa",
+                  "targetPath": "Data/Skyrim - Shaders.bsa",
+                  "sourceSha256": "bb3c01bc3d5277f5f9d2a72eb63a543051c75cd3b2416fa602d44e92077a18ec",
+                  "targetSha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5",
+                  "targetSize": 67308970,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "sha256": "f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "size": 261086
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "version": "1.5.97.0",
+          "aliases": [
+            "1.5.97"
+          ],
+          "compatibilityNote": "This runtime keeps the current game archives. Collections targeting Skyrim 1.5.97 should include Backported Extended ESL Support (BEES).",
+          "fingerprint": {
+            "files": [
+              {
+                "path": "SkyrimSE.exe",
+                "size": 34769792,
+                "sha256": "693e5a51ea2680119a68620bcf5080e81745549872b5d06bbd3f51131b67abab"
+              },
+              {
+                "path": "SkyrimSELauncher.exe",
+                "size": 4705280,
+                "sha256": "af1fd8d00962c783044b8dc1fb28c13a19a1af62bc02a19087a617e3d56663c6"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 206760,
+                "sha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c"
+              },
+              {
+                "path": "Data/Skyrim - Shaders.bsa",
+                "size": 67308970,
+                "sha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5"
+              },
+              {
+                "path": "binkw64.dll",
+                "size": 298496,
+                "sha256": "152aeb57ba9a5c36cc721a61ae69878ad43c7f6c5cfb87904a1eed037496dedd"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "SkyrimSE.exe",
+                    "size": 37909416,
+                    "sha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSE.exe",
+                  "targetPath": "SkyrimSE.exe",
+                  "sourceSha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa",
+                  "targetSha256": "693e5a51ea2680119a68620bcf5080e81745549872b5d06bbd3f51131b67abab",
+                  "targetSize": 34769792,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/a57b14aac5090112a6f4394d2343c02d146b67c623414f7e6262aa3bd0c9e5fe",
+                    "sha256": "a57b14aac5090112a6f4394d2343c02d146b67c623414f7e6262aa3bd0c9e5fe",
+                    "size": 25857034
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSELauncher.exe",
+                  "targetPath": "SkyrimSELauncher.exe",
+                  "sourceSha256": "884f73115c569987b24dc4464ad3e9c97f4cba6ab8f8215f065bacdb981370cf",
+                  "targetSha256": "af1fd8d00962c783044b8dc1fb28c13a19a1af62bc02a19087a617e3d56663c6",
+                  "targetSize": 4705280,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/c3b4d5c74b03acbe64fda622030e74592f7e3109670760a2d04515dbe3a9e132",
+                    "sha256": "c3b4d5c74b03acbe64fda622030e74592f7e3109670760a2d04515dbe3a9e132",
+                    "size": 17321
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "steam_api64.dll",
+                  "targetPath": "steam_api64.dll",
+                  "sourceSha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3",
+                  "targetSha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c",
+                  "targetSize": 206760,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "sha256": "6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "size": 85009
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Data/Skyrim - Shaders.bsa",
+                  "targetPath": "Data/Skyrim - Shaders.bsa",
+                  "sourceSha256": "bb3c01bc3d5277f5f9d2a72eb63a543051c75cd3b2416fa602d44e92077a18ec",
+                  "targetSha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5",
+                  "targetSize": 67308970,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "sha256": "f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "size": 261086
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "bink2w64.dll",
+                  "targetPath": "binkw64.dll",
+                  "sourceSha256": "653247e35db8d6453e83a008c805a877fd2d56a1d844282f9065ce2f34388fec",
+                  "targetSha256": "152aeb57ba9a5c36cc721a61ae69878ad43c7f6c5cfb87904a1eed037496dedd",
+                  "targetSize": 298496,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/9a6331e6f57b4a992b43e86a6d0c576f2d2e314376adc673e42411983409724d",
+                    "sha256": "9a6331e6f57b4a992b43e86a6d0c576f2d2e314376adc673e42411983409724d",
+                    "size": 111822
+                  }
+                },
+                {
+                  "type": "remove",
+                  "targetPath": "bink2w64.dll"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "version": "1.6.629.0",
+          "aliases": [
+            "1.6.629"
+          ],
+          "fingerprint": {
+            "files": [
+              {
+                "path": "SkyrimSE.exe",
+                "size": 35371288,
+                "sha256": "a0b4f6abde56d9684ae9d7fd1a79be0560fca87cd019dec0a8fb72433cc6ec31"
+              },
+              {
+                "path": "SkyrimSELauncher.exe",
+                "size": 4705280,
+                "sha256": "af1fd8d00962c783044b8dc1fb28c13a19a1af62bc02a19087a617e3d56663c6"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 206760,
+                "sha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c"
+              },
+              {
+                "path": "Data/Skyrim - Shaders.bsa",
+                "size": 67308970,
+                "sha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "SkyrimSE.exe",
+                    "size": 37909416,
+                    "sha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSE.exe",
+                  "targetPath": "SkyrimSE.exe",
+                  "sourceSha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa",
+                  "targetSha256": "a0b4f6abde56d9684ae9d7fd1a79be0560fca87cd019dec0a8fb72433cc6ec31",
+                  "targetSize": 35371288,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/c304faba607975579b55f2bf46c7b9d2c1f872817b0f380c410bc24256bdc208",
+                    "sha256": "c304faba607975579b55f2bf46c7b9d2c1f872817b0f380c410bc24256bdc208",
+                    "size": 25358250
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSELauncher.exe",
+                  "targetPath": "SkyrimSELauncher.exe",
+                  "sourceSha256": "884f73115c569987b24dc4464ad3e9c97f4cba6ab8f8215f065bacdb981370cf",
+                  "targetSha256": "af1fd8d00962c783044b8dc1fb28c13a19a1af62bc02a19087a617e3d56663c6",
+                  "targetSize": 4705280,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/c3b4d5c74b03acbe64fda622030e74592f7e3109670760a2d04515dbe3a9e132",
+                    "sha256": "c3b4d5c74b03acbe64fda622030e74592f7e3109670760a2d04515dbe3a9e132",
+                    "size": 17321
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "steam_api64.dll",
+                  "targetPath": "steam_api64.dll",
+                  "sourceSha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3",
+                  "targetSha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c",
+                  "targetSize": 206760,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "sha256": "6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "size": 85009
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Data/Skyrim - Shaders.bsa",
+                  "targetPath": "Data/Skyrim - Shaders.bsa",
+                  "sourceSha256": "bb3c01bc3d5277f5f9d2a72eb63a543051c75cd3b2416fa602d44e92077a18ec",
+                  "targetSha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5",
+                  "targetSize": 67308970,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "sha256": "f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "size": 261086
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "version": "1.6.353.0",
+          "aliases": [
+            "1.6.353"
+          ],
+          "fingerprint": {
+            "files": [
+              {
+                "path": "SkyrimSE.exe",
+                "size": 35410264,
+                "sha256": "84e76c4b8ee57d8d8a82a0a2346e4b352d6c135583d2097cab45ec07e726e6d3"
+              },
+              {
+                "path": "SkyrimSELauncher.exe",
+                "size": 4363776,
+                "sha256": "a26a67297a308595e97e0637473fdc6ce0c6b53cd6be0c4830b300b19c523338"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 206760,
+                "sha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c"
+              },
+              {
+                "path": "Data/Skyrim - Shaders.bsa",
+                "size": 67308970,
+                "sha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "SkyrimSE.exe",
+                    "size": 37909416,
+                    "sha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSE.exe",
+                  "targetPath": "SkyrimSE.exe",
+                  "sourceSha256": "b34e3655489dd655eb12b8221e24f8ce38524ed4e292e07bf3b977cdb488daaa",
+                  "targetSha256": "84e76c4b8ee57d8d8a82a0a2346e4b352d6c135583d2097cab45ec07e726e6d3",
+                  "targetSize": 35410264,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/0d393d33f1e6b800d48e7bd7f77b815d80399ed9059a7fbd0f4797a4a8ee79e6",
+                    "sha256": "0d393d33f1e6b800d48e7bd7f77b815d80399ed9059a7fbd0f4797a4a8ee79e6",
+                    "size": 25430197
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "SkyrimSELauncher.exe",
+                  "targetPath": "SkyrimSELauncher.exe",
+                  "sourceSha256": "884f73115c569987b24dc4464ad3e9c97f4cba6ab8f8215f065bacdb981370cf",
+                  "targetSha256": "a26a67297a308595e97e0637473fdc6ce0c6b53cd6be0c4830b300b19c523338",
+                  "targetSize": 4363776,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/e847b0dbe963693d7a990582ecd8d1317d8e78e9524ecb48ddb42289f0804e36",
+                    "sha256": "e847b0dbe963693d7a990582ecd8d1317d8e78e9524ecb48ddb42289f0804e36",
+                    "size": 41142
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "steam_api64.dll",
+                  "targetPath": "steam_api64.dll",
+                  "sourceSha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3",
+                  "targetSha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c",
+                  "targetSize": 206760,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "sha256": "6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "size": 85009
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Data/Skyrim - Shaders.bsa",
+                  "targetPath": "Data/Skyrim - Shaders.bsa",
+                  "sourceSha256": "bb3c01bc3d5277f5f9d2a72eb63a543051c75cd3b2416fa602d44e92077a18ec",
+                  "targetSha256": "4685203a8f115937e34fab3879c6b599734d8a913a698891866ed72385b5cfa5",
+                  "targetSize": 67308970,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "sha256": "f749b91592f01ebafae6f472c363124416a5943d9bad66810f332f3de33aec33",
+                    "size": 261086
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "fallout4",
+      "store": "steam",
+      "appId": "377160",
+      "targets": [
+        {
+          "version": "1.10.163.0",
+          "aliases": [
+            "1.10.163"
+          ],
+          "compatibilityNote": "This runtime keeps the current game archives. Collections targeting Fallout 4 1.10.163 should include Backported Archive2 Support System (BASS).",
+          "fingerprint": {
+            "files": [
+              {
+                "path": "Fallout4.exe",
+                "size": 65503104,
+                "sha256": "55f57947db9e05575122fae1088f0b0247442f11e566b56036caa0ac93329c36"
+              },
+              {
+                "path": "Fallout4Launcher.exe",
+                "size": 4522496,
+                "sha256": "5e457259dca72c8d1217e2f08a981b630ffd5fe0d30bf28269c8b7898491c6ae"
+              },
+              {
+                "path": "steam_api64.dll",
+                "size": 206760,
+                "sha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c"
+              }
+            ]
+          },
+          "transitions": [
+            {
+              "source": {
+                "files": [
+                  {
+                    "path": "Fallout4.exe",
+                    "size": 55343016,
+                    "sha256": "fdcef37ac1230af6d0b0050eb2142b139ef3a867b37b9211fb6edfcc646072f8"
+                  }
+                ]
+              },
+              "operations": [
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Fallout4.exe",
+                  "targetPath": "Fallout4.exe",
+                  "sourceSha256": "fdcef37ac1230af6d0b0050eb2142b139ef3a867b37b9211fb6edfcc646072f8",
+                  "targetSha256": "55f57947db9e05575122fae1088f0b0247442f11e566b56036caa0ac93329c36",
+                  "targetSize": 65503104,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/72160ebd161001c703a774b9498b752cd08241240bdab82174b18f4b3a9aa4ab",
+                    "sha256": "72160ebd161001c703a774b9498b752cd08241240bdab82174b18f4b3a9aa4ab",
+                    "size": 51779600
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "Fallout4Launcher.exe",
+                  "targetPath": "Fallout4Launcher.exe",
+                  "sourceSha256": "932c1585c6cef5fc69ddc548147bb9ab94a1ea49ac20962762840ac5b8fc5df3",
+                  "targetSha256": "5e457259dca72c8d1217e2f08a981b630ffd5fe0d30bf28269c8b7898491c6ae",
+                  "targetSize": 4522496,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/c5e8498f7f9a8c3dbf3656ccebed702a47ad33992ffcc6194a40672834786100",
+                    "sha256": "c5e8498f7f9a8c3dbf3656ccebed702a47ad33992ffcc6194a40672834786100",
+                    "size": 81137
+                  }
+                },
+                {
+                  "type": "patch",
+                  "algorithm": "bsdiff40-v1",
+                  "sourcePath": "steam_api64.dll",
+                  "targetPath": "steam_api64.dll",
+                  "sourceSha256": "1db3fd414039d3e5815a5721925dd2e0a3a9f2549603c6cab7c49b84966a1af3",
+                  "targetSha256": "81321a5cb72ae3f81243fd0b0d8928a063ca09129ab0878573bd36a28422ec4c",
+                  "targetSize": 206760,
+                  "artifact": {
+                    "url": "https://raw.githubusercontent.com/Nexus-Mods/Vortex-Backend/main/out/game-versioning/artifacts/sha256/6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "sha256": "6769f1105c8f6a52cc2d9a64df1ddbed8136fd639055b4677b9ddc7e83ad4bc5",
+                    "size": 85009
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

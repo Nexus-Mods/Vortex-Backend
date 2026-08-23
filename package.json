@@ -20,6 +20,7 @@
     "@anthropic-ai/sdk": "^0.68.0",
     "@babel/parser": "^7.22.5",
     "@babel/traverse": "^7.22.5",
+    "@hot-updater/bsdiff": "0.30.6",
     "@nexusmods/nexus-api": "Nexus-Mods/node-nexus-api",
     "@slack/bolt": "^3.13.3",
     "@tsdotnet/stopwatch": "^1.0.13",
@@ -102,6 +103,10 @@
     "publish-extensions": "ts-node src/publish-extensions.ts",
     "test-slack": "ts-node src/test-slack.ts",
     "test-github": "ts-node src/test-github.ts",
+    "create-game-version-patch": "ts-node src/game-versioning/create-chunk-map.ts",
+    "create-game-version-recipe": "ts-node src/game-versioning/create-recipe.ts",
+    "sign-game-version-catalog": "ts-node src/game-versioning/sign-catalog.ts",
+    "assemble-game-version-catalog": "ts-node src/game-versioning/assemble-catalog.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

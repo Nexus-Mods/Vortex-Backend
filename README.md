@@ -6,6 +6,7 @@ This repo contains all the live files that Vortex accesses and any relevant Acti
 - announcements.json
 - surveys.json
 - gameversion_hashmap.json
+- game-versioning/bethesda-v1.json
 
 ## `extensions-manifest.json`
 
@@ -71,7 +72,15 @@ The survey file is an array of `ISurveyInstance` objects
 
 This is complicated
 
+## `game-versioning/bethesda-v1.json`
 
+This is the signed catalog used by Vortex's opt-in Bethesda game-version transition provider. Patch artifacts are content-addressed by SHA-256 under `out/game-versioning/artifacts/sha256/`.
+
+Provider maintainers create verified drafts with `create-game-version-recipe`, combine drafts with `assemble-game-version-catalog`, and sign the final payload with `sign-game-version-catalog`. The Ed25519 private key is supplied through `GAME_VERSION_SIGNING_KEY_FILE` and must never be committed. Vortex contains only the corresponding public key.
+
+The current Bethesda-v1 data covers Skyrim SE `1.5.97`, `1.6.353`, `1.6.629`, `1.6.640`, `1.6.1130`, and `1.6.1170`, plus Fallout 4 `1.10.163`, using Steam/Windows source files.
+
+The Skyrim `1.5.97` and Fallout 4 `1.10.163` recipes intentionally follow the established "current archives, compatible runtime" approach. Their signed target records carry a user-facing compatibility note for BEES and BASS respectively; those third-party mods are not bundled by this repository.
 
 ## GitHub Actions
 
