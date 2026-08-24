@@ -1,5 +1,7 @@
 # Vortex-Backend (DEPRECATED - WILL BE ARCHIVED IN THE NEAR FUTURE)
 
+Please avoid submitting tickets/PRs into this repo.
+
 This repo contains all the live files that Vortex accesses and any relevant Actions that are needed to update them. They are contained in the `/out` folder.
 
 - extensions-manifest.json
