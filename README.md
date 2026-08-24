@@ -1,4 +1,5 @@
-# Vortex-Backend (DEPRECATED - WILL BE ARCHIVED IN THE NEAR FUTURE)
+# Vortex-Backend (DEPRECATED)
+# WILL BE ARCHIVED IN THE NEAR FUTURE)
 
 Please avoid submitting tickets/PRs into this repo.
 
