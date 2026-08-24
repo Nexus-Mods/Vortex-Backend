@@ -1,4 +1,4 @@
-# Vortex-Backend
+# Vortex-Backend (DEPRECATED - WILL BE ARCHIVED IN THE NEAR FUTURE)
 
 This repo contains all the live files that Vortex accesses and any relevant Actions that are needed to update them. They are contained in the `/out` folder.
 
