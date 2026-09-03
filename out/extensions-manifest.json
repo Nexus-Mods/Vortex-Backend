@@ -1,5 +1,5 @@
 {
-  "last_updated": 1788421658948,
+  "last_updated": 1788430027607,
   "extensions": [
     {
       "name": "Archive binding fix",
@@ -14516,6 +14516,26 @@
       "type": "game",
       "gameName": "The Blood of Dawnwalker",
       "gameId": "thebloodofdawnwalker"
+    },
+    {
+      "modId": 2183,
+      "fileId": 9159,
+      "author": "Ivan Karpan",
+      "uploader": "IvanKarpan",
+      "description": {
+        "short": "A Vortex extension for Mortal Shell II.",
+        "long": "[center][size=5][b]Mortal Shell II Vortex Extension[/b][/size]\n<br />\n<br />Adds automatic mod installation and management for the retail Steam version of [b]Mortal Shell II[/b].\n<br />[/center]\n<br />\n<br />[size=4][b]Supported version[/b][/size]\n<br />\n<br />[list]\n<br />[*][b]Steam retail release[/b] — AppID 2584270[/*]\n<br />[*]Validated with Vortex 2.5.0[/*]\n<br />[*]Other storefronts and builds are not currently supported[/*]\n<br />[/list]\n<br />[size=4][b]Manual installation[/b][/size]\n<br />\n<br />Until this extension becomes available through Vortex's extension browser:\n<br />\n<br />[list=1]\n<br />[*]Download the extension ZIP from the [b]Files[/b] tab. Do not extract it.[/*]\n<br />[*]Open Vortex and select [b]Extensions[/b] in the sidebar.[/*]\n<br />[*]Drag the ZIP into the panel at the bottom-right, or click that panel and select the file.[/*]\n<br />[*]Restart Vortex when prompted.[/*]\n<br />[*]Open [b]Games[/b], find [b]Mortal Shell II[/b], and select [b]Manage[/b].[/*]\n<br />[/list]\n<br />Manual installations may not receive automatic extension updates. Check the Files tab for newer releases until the extension is listed in Vortex.\n<br />\n<br />[size=4][b]Supported mod formats[/b][/size]\n<br />\n<br />The extension examines each archive's structure and automatically selects the appropriate installation location.\n<br />\n<br />[list]\n<br />[*][b]PAK and IoStore mods[/b] — [font=Courier New].pak[/font], [font=Courier New].ucas[/font], and [font=Courier New].utoc[/font] payloads[/*]\n<br />[*][b]UE4SS[/b] — framework archives and UE4SS Lua mod trees[/*]\n<br />[*][b]DmgModLoader (DML)[/b] and [b]LogicMods[/b][/*]\n<br />[*][b]ReShade presets[/b] and ReShade/RenoDX binary add-ons[/*]\n<br />[*]Archives containing complete game-root or project-folder layouts[/*]\n<br />[/list]\n<br />Convenient toolbar actions are also included for opening the UE4SS settings, UE4SS mod list, LogicMods folder, and standard [font=Courier New]~mods[/font] folder.\n<br />\n<br />[size=4][b]Dependencies and runtime ownership[/b][/size]\n<br />\n<br />Some mods require UE4SS, DML, BPModLoaderMod, or ReShade. When applicable, Vortex provides dependency guidance and can direct you to the appropriate download.\n<br />\n<br />The extension manages only files deployed through Vortex. It will not overwrite, repair, adopt, or remove UE4SS, DML, ReShade, Ultra+, or other runtimes installed manually or by another tool.\n<br />\n<br />[b]ReShade presets do not include ReShade itself.[/b] If no compatible runtime is detected, Vortex will link to the official [url=https://reshade.me/#download]ReShade download page[/url].\n<br />\n<br />[size=4][b]Installation notes[/b][/size]\n<br />\n<br />[list]\n<br />[*]Follow any additional instructions supplied by the mod author.[/*]\n<br />[*]Standalone applications, save files, and arbitrary [font=Courier New]Engine.ini[/font] archives cannot be configured automatically. Vortex will preserve recognized archives and display a warning instead.[/*]\n<br />[*]Unknown archive layouts are rejected instead of being copied to a guessed location.[/*]\n<br />[*]For hardlink deployment, the Vortex staging folder must be on the same drive as the game. Symlink deployment is also supported.[/*]\n<br />[/list]\n<br />[size=4][b]Issues and source code[/b][/size]\n<br />\n<br />Please report reproducible problems through the Bugs or Posts tab. Include the affected mod link, archive version, Vortex version, and relevant diagnostic logs.\n<br />\n<br />Source code:\n<br />[url=https://github.com/Nexus-Mods/gdl-games/pull/18]Mortal Shell II extension on GitHub[/url]\n<br />\n<br />[size=4][b]Credits[/b][/size]\n<br />\n<br />Community-maintained and built with the Nexus Mods [url=https://github.com/Nexus-Mods/game-description-language]Game Description Language[/url] toolchain."
+      },
+      "downloads": 120,
+      "endorsements": 3,
+      "image": "https://staticdelivery.nexusmods.com/mods/2295/images/2183/2183-1787030892-1865125795.jpg",
+      "name": "Mortal Shell II Vortex Extension",
+      "timestamp": 1787689002,
+      "tags": [],
+      "version": "0.1.6",
+      "type": "game",
+      "gameName": "Mortal Shell II",
+      "gameId": "mortalshell2"
     }
   ]
 }
